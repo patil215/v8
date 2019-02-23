@@ -71,7 +71,7 @@ declare_args() {
   v8_promise_internal_field_count = 0
 
   # Sets -dENABLE_GDB_JIT_INTERFACE.
-  v8_enable_gdbjit = ""
+  v8_enable_gdbjit = true
 
   # Sets -dENABLE_VTUNE_JIT_INTERFACE.
   v8_enable_vtunejit = false

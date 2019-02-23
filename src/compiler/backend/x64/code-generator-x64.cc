@@ -1072,6 +1072,12 @@ CodeGenerator::CodeGenResult CodeGenerator::AssembleArchInstruction(
     case kIeee754Float64Expm1:
       ASSEMBLE_IEEE754_UNOP(expm1);
       break;
+    case kIeee754Float64CheckReturnedType:
+        do {
+        __ PrepareCallCFunction(1);
+        __ CallCFunction(ExternalReference::check_type_function(), 1);
+      } while (false);
+      break;
     case kIeee754Float64Log:
       ASSEMBLE_IEEE754_UNOP(log);
       break;

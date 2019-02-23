@@ -704,6 +704,8 @@ namespace internal {
   TFJ(MathCosh, 1, kReceiver, kX)                                              \
   /* ES6 #sec-math.exp */                                                      \
   TFJ(MathExp, 1, kReceiver, kX)                                               \
+  /* Our checker node */                                                       \
+  TFJ(MathCheckReturnedType, 1, kReceiver, kX)                                   \
   /* ES6 #sec-math.expm1 */                                                    \
   TFJ(MathExpm1, 1, kReceiver, kX)                                             \
   /* ES6 #sec-math.floor */                                                    \

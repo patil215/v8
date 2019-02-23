@@ -1072,6 +1072,14 @@ void Logger::EnterExternal(Isolate* isolate) {
 }
 
 // static
+void Logger::CheckType(double arg) {
+  std::cout << arg << "\n";
+  // Use the arguments to check that the type is indeed valid
+  CHECK_EQ(true, false);
+  std::cout << "Checking type\n";
+}
+
+// static
 void Logger::LeaveExternal(Isolate* isolate) {
   DCHECK(FLAG_log_internal_timer_events);
   LOG(isolate, TimerEvent(END, TimerEventExternal::name()));

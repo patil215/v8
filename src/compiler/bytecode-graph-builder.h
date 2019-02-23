@@ -178,6 +178,14 @@ class BytecodeGraphBuilder {
   void BuildCall(ConvertReceiverMode receiver_mode, Node* const* args,
                  size_t arg_count, int slot_id);
   void BuildCall(ConvertReceiverMode receiver_mode,
+                                     Node* const* args, size_t arg_count,
+                                     int slot_id, bool createTypeCheckingNode);
+
+  void BuildCall(ConvertReceiverMode receiver_mode,
+                 std::initializer_list<Node*> args, int slot_id, bool createTypeCheckingNode) {
+    BuildCall(receiver_mode, args.begin(), args.size(), slot_id, createTypeCheckingNode);
+  }
+  void BuildCall(ConvertReceiverMode receiver_mode,
                  std::initializer_list<Node*> args, int slot_id) {
     BuildCall(receiver_mode, args.begin(), args.size(), slot_id);
   }

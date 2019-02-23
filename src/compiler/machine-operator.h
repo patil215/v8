@@ -435,6 +435,7 @@ class V8_EXPORT_PRIVATE MachineOperatorBuilder final
   // Floating point exponential functions (double-precision).
   const Operator* Float64Exp();
   const Operator* Float64Expm1();
+  const Operator* Float64CheckReturnedType();
   const Operator* Float64Pow();
 
   // Floating point logarithm (double-precision).

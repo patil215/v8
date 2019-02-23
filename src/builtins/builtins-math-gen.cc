@@ -325,6 +325,13 @@ TF_BUILTIN(MathExpm1, MathBuiltinsAssembler) {
   MathUnaryOperation(context, x, &CodeStubAssembler::Float64Expm1);
 }
 
+// Our checker node
+TF_BUILTIN(MathCheckReturnedType, MathBuiltinsAssembler) {
+  Node* context = Parameter(Descriptor::kContext);
+  Node* x = Parameter(Descriptor::kX);
+  MathUnaryOperation(context, x, &CodeStubAssembler::Float64CheckReturnedType);
+}
+
 // ES6 #sec-math.floor
 TF_BUILTIN(MathFloor, MathBuiltinsAssembler) {
   Node* context = Parameter(Descriptor::kContext);

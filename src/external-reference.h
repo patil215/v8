@@ -151,6 +151,7 @@ class StatsCounter;
   V(libc_memset_function, "libc_memset")                                      \
   V(log_enter_external_function, "Logger::EnterExternal")                     \
   V(log_leave_external_function, "Logger::LeaveExternal")                     \
+  V(check_type_function, "Logger::CheckType")                                 \
   V(mod_two_doubles_operation, "mod_two_doubles")                             \
   V(new_deoptimizer_function, "Deoptimizer::New()")                           \
   V(orderedhashmap_gethash_raw, "orderedhashmap_gethash_raw")                 \

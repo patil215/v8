@@ -558,6 +558,7 @@
   V(Float64Cos)                      \
   V(Float64Cosh)                     \
   V(Float64Exp)                      \
+  V(Float64CheckReturnedType)        \
   V(Float64Expm1)                    \
   V(Float64Log)                      \
   V(Float64Log1p)                    \

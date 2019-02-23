@@ -2728,6 +2728,7 @@ void Genesis::InitializeGlobal(Handle<JSGlobalObject> global_object,
     SimpleInstallFunction(isolate_, math, "cbrt", Builtins::kMathCbrt, 1, true);
     SimpleInstallFunction(isolate_, math, "expm1", Builtins::kMathExpm1, 1,
                           true);
+    SimpleInstallFunction(isolate_, math, "checkReturnedType", Builtins::kMathCheckReturnedType, 1, true);
     SimpleInstallFunction(isolate_, math, "clz32", Builtins::kMathClz32, 1,
                           true);
     SimpleInstallFunction(isolate_, math, "cos", Builtins::kMathCos, 1, true);

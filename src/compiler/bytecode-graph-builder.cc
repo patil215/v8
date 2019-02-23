@@ -1755,6 +1755,12 @@ Node* BytecodeGraphBuilder::ProcessCallArguments(const Operator* call_op,
 void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
                                      Node* const* args, size_t arg_count,
                                      int slot_id) {
+    BuildCall(receiver_mode, args, arg_count, slot_id, false);
+  }
+
+void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
+                                     Node* const* args, size_t arg_count,
+                                     int slot_id, bool createTypeCheckingNode) {
   DCHECK_EQ(interpreter::Bytecodes::GetReceiverMode(
                 bytecode_iterator().current_bytecode()),
             receiver_mode);
@@ -1763,6 +1769,30 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
   VectorSlotPair feedback = CreateVectorSlotPair(slot_id);
 
   CallFrequency frequency = ComputeCallFrequency(slot_id);
+
+  /*if (arg_count > 0) {
+      StdoutStream os;
+      NodeProperties::GetTypeOrAny(args[0]).PrintTo(os);
+      os << "\n";
+      os << std::flush;
+
+  }
+  if (arg_count > 1) {
+   StdoutStream os;
+      NodeProperties::GetTypeOrAny(args[1]).PrintTo(os);
+      os << "\n";
+      os << std::flush;
+
+  }
+  if (arg_count > 2) {
+
+   StdoutStream os;
+      NodeProperties::GetTypeOrAny(args[2]).PrintTo(os);
+      os << "\n";
+      os << std::flush;
+
+  }*/
+
   const Operator* op =
       javascript()->Call(arg_count, frequency, feedback, receiver_mode,
                          GetSpeculationMode(slot_id));
@@ -1778,6 +1808,21 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
     node = ProcessCallArguments(op, args, static_cast<int>(arg_count));
   }
   environment()->BindAccumulator(node, Environment::kAttachFrameState);
+
+  createTypeCheckingNode = false;
+  if (createTypeCheckingNode) {
+    /* Create node to check types (typer-happy)
+    The node takes only the previous node as an argument, and functions as an identity node.
+    It does the following:
+    1) Check if the previous node is a call to a function implemented in V8. (If not, goto 5).
+    2) If it is, get the value that the previous node outputs.
+    3) Check this value against the hardcoded list of valid types.
+    4) If it does not match, throw an error (AssertionFailed).
+    5) Return (pass through) the value from the previous node (i.e. make no effect). */
+    //std::cout << "Creating type checking\n";
+    //Node* checkerNode = BuildCheckerNode(node);
+    //environment()->BindAccumulator(checkerNode, Environment::kAttachFrameState);
+  }
 }
 
 Node* const* BytecodeGraphBuilder::ProcessCallVarArgs(
@@ -1880,7 +1925,7 @@ void BytecodeGraphBuilder::VisitCallProperty1() {
       environment()->LookupRegister(bytecode_iterator().GetRegisterOperand(2));
   int const slot_id = bytecode_iterator().GetIndexOperand(3);
   BuildCall(ConvertReceiverMode::kNotNullOrUndefined, {callee, receiver, arg0},
-            slot_id);
+            slot_id, true);
 }
 
 void BytecodeGraphBuilder::VisitCallProperty2() {
