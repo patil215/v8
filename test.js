@@ -1,7 +1,7 @@
 function f(x) {
-  console.log("start");
-  console.log(Math.checkReturnedType(2.34));
-  console.log("done");
+  //Math.checkReturnedType(2.34);
+  //console.log(Math.checkReturnedType("boob"));
+  console.log(Math.expm1(2.0));
   return 1;
   /*Math.random();
   y = Math.exp(x);

@@ -2416,6 +2416,7 @@ class RepresentationSelector {
         return;
       }
       case IrOpcode::kNumberAtan2:
+      case IrOpcode::kNumberCheckReturnedType:
       case IrOpcode::kNumberPow: {
         VisitBinop(node, UseInfo::TruncatingFloat64(),
                    MachineRepresentation::kFloat64);
@@ -2454,7 +2455,6 @@ class RepresentationSelector {
       case IrOpcode::kNumberCosh:
       case IrOpcode::kNumberExp:
       case IrOpcode::kNumberExpm1:
-      case IrOpcode::kNumberCheckReturnedType:
       case IrOpcode::kNumberLog:
       case IrOpcode::kNumberLog1p:
       case IrOpcode::kNumberLog2:

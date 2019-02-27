@@ -539,6 +539,7 @@ class CodeAssemblerParameterizedLabel;
   V(Float64Mul, Float64T, Float64T, Float64T)                           \
   V(Float64Div, Float64T, Float64T, Float64T)                           \
   V(Float64Mod, Float64T, Float64T, Float64T)                           \
+  V(Float64CheckReturnedType, Float64T, Float64T, Float64T)             \
   V(Float64Atan2, Float64T, Float64T, Float64T)                         \
   V(Float64Pow, Float64T, Float64T, Float64T)                           \
   V(Float64Max, Float64T, Float64T, Float64T)                           \
@@ -573,7 +574,6 @@ TNode<Float64T> Float64Add(TNode<Float64T> a, TNode<Float64T> b);
   V(Float64Cosh, Float64T, Float64T)                           \
   V(Float64Exp, Float64T, Float64T)                            \
   V(Float64Expm1, Float64T, Float64T)                          \
-  V(Float64CheckReturnedType, Float64T, Float64T)              \
   V(Float64Log, Float64T, Float64T)                            \
   V(Float64Log1p, Float64T, Float64T)                          \
   V(Float64Log2, Float64T, Float64T)                           \

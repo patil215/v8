@@ -613,8 +613,8 @@ class V8_EXPORT_PRIVATE RawMachineAssembler {
   Node* Float64Expm1(Node* a) {
     return AddNode(machine()->Float64Expm1(), a);
   }
-  Node* Float64CheckReturnedType(Node* a) {
-    return AddNode(machine()->Float64CheckReturnedType(), a);
+  Node* Float64CheckReturnedType(Node* a, Node* b) {
+    return AddNode(machine()->Float64CheckReturnedType(), a, b);
   }
   Node* Float64Log(Node* a) { return AddNode(machine()->Float64Log(), a); }
   Node* Float64Log1p(Node* a) { return AddNode(machine()->Float64Log1p(), a); }

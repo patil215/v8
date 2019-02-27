@@ -1072,9 +1072,9 @@ void Logger::EnterExternal(Isolate* isolate) {
 }
 
 // static
-double Logger::CheckType(double arg) {
+double Logger::CheckType(double arg, double arg2) {
   std::cout << "Running checking function\n";
-  std::cout << arg << "\n";
+  std::cout << arg << " " << arg2 << "\n";
   // Use the arguments to check that the type is indeed valid
   //CHECK_EQ(true, false);
   return 1337.0;

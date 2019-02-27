@@ -1814,7 +1814,8 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
     // Replace the node with the node + our type checker node.
     Node* test = graph()->NewNode(
       simplified()->NumberCheckReturnedType(),
-      node
+      node,
+      jsgraph()->OneConstant()
     );
     environment()->BindAccumulator(test, Environment::kAttachFrameState);
     /* Create node to check types (typer-happy)

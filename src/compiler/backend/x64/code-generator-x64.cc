@@ -1074,8 +1074,8 @@ CodeGenerator::CodeGenResult CodeGenerator::AssembleArchInstruction(
       break;
     case kIeee754Float64CheckReturnedType:
         do {
-        __ PrepareCallCFunction(1);
-        __ CallCFunction(ExternalReference::check_type_function(), 1);
+        __ PrepareCallCFunction(2);
+        __ CallCFunction(ExternalReference::check_type_function(), 2);
       } while (false);
       break;
     case kIeee754Float64Log:

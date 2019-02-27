@@ -2109,7 +2109,7 @@ void InstructionSelector::VisitFloat64Exp(Node* node) {
 }
 
 void InstructionSelector::VisitFloat64CheckReturnedType(Node* node) {
-  VisitFloat64Ieee754Unop(node, kIeee754Float64CheckReturnedType);
+  VisitFloat64Ieee754Binop(node, kIeee754Float64CheckReturnedType);
 }
 
 void InstructionSelector::VisitFloat64Expm1(Node* node) {

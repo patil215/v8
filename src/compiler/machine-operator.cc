@@ -201,7 +201,7 @@ MachineType AtomicOpType(Operator const* op) {
   V(Float64Cosh, Operator::kNoProperties, 1, 0, 1)                        \
   V(Float64Exp, Operator::kNoProperties, 1, 0, 1)                         \
   V(Float64Expm1, Operator::kNoProperties, 1, 0, 1)                       \
-  V(Float64CheckReturnedType, Operator::kNoProperties, 1, 0, 1)           \
+  V(Float64CheckReturnedType, Operator::kNoProperties, 2, 0, 1)           \
   V(Float64Log, Operator::kNoProperties, 1, 0, 1)                         \
   V(Float64Log1p, Operator::kNoProperties, 1, 0, 1)                       \
   V(Float64Log2, Operator::kNoProperties, 1, 0, 1)                        \
