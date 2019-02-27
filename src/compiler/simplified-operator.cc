@@ -690,6 +690,7 @@ bool operator==(CheckMinusZeroParameters const& lhs,
   V(NumberCosh, Operator::kNoProperties, 1, 0)                   \
   V(NumberExp, Operator::kNoProperties, 1, 0)                    \
   V(NumberExpm1, Operator::kNoProperties, 1, 0)                  \
+  V(NumberCheckReturnedType, Operator::kNoProperties, 1, 0)      \
   V(NumberLog, Operator::kNoProperties, 1, 0)                    \
   V(NumberLog1p, Operator::kNoProperties, 1, 0)                  \
   V(NumberLog10, Operator::kNoProperties, 1, 0)                  \

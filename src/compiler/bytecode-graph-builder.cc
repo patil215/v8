@@ -1813,7 +1813,7 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
   if (createTypeCheckingNode) {
     // Replace the node with the node + our type checker node.
     Node* test = graph()->NewNode(
-      simplified()->NumberSin(),
+      simplified()->NumberCheckReturnedType(),
       node
     );
     environment()->BindAccumulator(test, Environment::kAttachFrameState);

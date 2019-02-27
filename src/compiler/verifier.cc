@@ -1058,7 +1058,7 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
     case IrOpcode::kNumberCosh:
     case IrOpcode::kNumberExp:
     case IrOpcode::kNumberExpm1:
-    case IrOpcode::kFloat64CheckReturnedType:
+    case IrOpcode::kNumberCheckReturnedType:
     case IrOpcode::kNumberLog:
     case IrOpcode::kNumberLog1p:
     case IrOpcode::kNumberLog2:
@@ -1704,6 +1704,7 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
     case IrOpcode::kFloat64Cosh:
     case IrOpcode::kFloat64Exp:
     case IrOpcode::kFloat64Expm1:
+    case IrOpcode::kFloat64CheckReturnedType:
     case IrOpcode::kFloat64Log:
     case IrOpcode::kFloat64Log1p:
     case IrOpcode::kFloat64Log10:

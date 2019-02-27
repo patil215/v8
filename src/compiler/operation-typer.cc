@@ -420,6 +420,11 @@ Type OperationTyper::NumberExpm1(Type type) {
   return Type::Number();
 }
 
+Type OperationTyper::NumberCheckReturnedType(Type type) {
+  // TODO DCHECK necessary?
+  return Type::Number();
+}
+
 Type OperationTyper::NumberFloor(Type type) {
   DCHECK(type.Is(Type::Number()));
   if (type.Is(cache_->kIntegerOrMinusZeroOrNaN)) return type;

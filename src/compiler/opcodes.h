@@ -339,6 +339,7 @@
   V(NumberCosh)                        \
   V(NumberExp)                         \
   V(NumberExpm1)                       \
+  V(NumberCheckReturnedType)           \
   V(NumberFloor)                       \
   V(NumberFround)                      \
   V(NumberLog)                         \

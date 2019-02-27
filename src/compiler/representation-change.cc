@@ -1246,6 +1246,8 @@ const Operator* RepresentationChanger::Float64OperatorFor(
       return machine()->Float64Exp();
     case IrOpcode::kNumberExpm1:
       return machine()->Float64Expm1();
+    case IrOpcode::kNumberCheckReturnedType:
+      return machine()->Float64CheckReturnedType();
     case IrOpcode::kNumberFloor:
       return machine()->Float64RoundDown().placeholder();
     case IrOpcode::kNumberFround:

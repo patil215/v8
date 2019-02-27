@@ -3598,8 +3598,8 @@ Reduction JSCallReducer::ReduceJSCall(Node* node,
       return ReduceMathUnary(node, simplified()->NumberCosh());
     case Builtins::kMathExp:
       return ReduceMathUnary(node, simplified()->NumberExp());
-    /*case Builtins::kMathCheckReturnedType:
-      return ReduceMathUnary(node, simplified()->NumberCheckReturnedType());*/
+    case Builtins::kMathCheckReturnedType:
+      return ReduceMathUnary(node, simplified()->NumberCheckReturnedType());
     case Builtins::kMathExpm1:
       return ReduceMathUnary(node, simplified()->NumberExpm1());
     case Builtins::kMathFloor:
