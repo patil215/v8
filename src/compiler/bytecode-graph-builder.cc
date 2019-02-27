@@ -1809,8 +1809,14 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
   }
   environment()->BindAccumulator(node, Environment::kAttachFrameState);
 
-  createTypeCheckingNode = false;
+  createTypeCheckingNode = true;
   if (createTypeCheckingNode) {
+    // Replace the node with the node + our type checker node.
+    Node* test = graph()->NewNode(
+      simplified()->NumberSin(),
+      node
+    );
+    environment()->BindAccumulator(test, Environment::kAttachFrameState);
     /* Create node to check types (typer-happy)
     The node takes only the previous node as an argument, and functions as an identity node.
     It does the following:
