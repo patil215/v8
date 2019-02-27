@@ -254,6 +254,7 @@ size_t hash_value(NamedAccess const& p) {
 
 
 std::ostream& operator<<(std::ostream& os, NamedAccess const& p) {
+  //std::cout << "Printing namedaccess\n";
   return os << Brief(*p.name()) << ", " << p.language_mode();
 }
 

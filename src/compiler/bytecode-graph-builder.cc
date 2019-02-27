@@ -1793,6 +1793,16 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
 
   }*/
 
+  std::cout << (*args[0]) << "\n" << (*args[1]) << (*args[2]) << "\n\n";
+
+  std::cout << "BEGIN print node specifics:\n";
+  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter() << "\n";
+  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name() << "\n";
+  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name()->Hash() << "\n";
+  std::cout << "Node specifics: " << String::cast(*(((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name())).ToCString().get() << "\n";
+  
+  std::cout << "END print node specifics:\n";
+
   const Operator* op =
       javascript()->Call(arg_count, frequency, feedback, receiver_mode,
                          GetSpeculationMode(slot_id));
