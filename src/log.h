@@ -242,8 +242,6 @@ class Logger : public CodeEventListener {
   static void EnterExternal(Isolate* isolate);
   static void LeaveExternal(Isolate* isolate);
 
-  static double CheckType(double arg, double arg2);
-
   static void DefaultEventLoggerSentinel(const char* name, int event) {}
 
   V8_INLINE static void CallEventLogger(Isolate* isolate, const char* name,

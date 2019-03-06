@@ -1770,39 +1770,6 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
 
   CallFrequency frequency = ComputeCallFrequency(slot_id);
 
-  /*if (arg_count > 0) {
-      StdoutStream os;
-      NodeProperties::GetTypeOrAny(args[0]).PrintTo(os);
-      os << "\n";
-      os << std::flush;
-
-  }
-  if (arg_count > 1) {
-   StdoutStream os;
-      NodeProperties::GetTypeOrAny(args[1]).PrintTo(os);
-      os << "\n";
-      os << std::flush;
-
-  }
-  if (arg_count > 2) {
-
-   StdoutStream os;
-      NodeProperties::GetTypeOrAny(args[2]).PrintTo(os);
-      os << "\n";
-      os << std::flush;
-
-  }*/
-
-  std::cout << (*args[0]) << "\n" << (*args[1]) << (*args[2]) << "\n\n";
-
-  std::cout << "BEGIN print node specifics:\n";
-  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter() << "\n";
-  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name() << "\n";
-  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name()->Hash() << "\n";
-  std::cout << "Node specifics: " << String::cast(*(((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name())).ToCString().get() << "\n";
-  
-  std::cout << "END print node specifics:\n";
-
   const Operator* op =
       javascript()->Call(arg_count, frequency, feedback, receiver_mode,
                          GetSpeculationMode(slot_id));
@@ -1819,13 +1786,28 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
   }
   environment()->BindAccumulator(node, Environment::kAttachFrameState);
 
-  createTypeCheckingNode = true;
-  if (createTypeCheckingNode) {
+  /*std::cout << (*args[0]) << "\n" << (*args[1]) << (*args[2]) << "\n\n";
+  std::cout << "BEGIN print node specifics:\n";
+  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter() << "\n";
+  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name() << "\n";
+  std::cout << "Node specifics: " << ((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name()->Hash() << "\n";
+  std::cout << "Node specifics: " << String::cast(*(((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name())).ToCString().get() << "\n";
+  std::cout << "END print node specifics:\n";*/
+
+  std::unique_ptr<char[]> toCheck = String::cast(*(((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name())).ToCString();
+
+  double functionId = 0;
+  if (strcmp(toCheck.get(), "expm1") == 0) {
+    functionId = 1;
+    std::cout << "We have an expm1!\n";
+  }
+
+  if (functionId != 0) {
     // Replace the node with the node + our type checker node.
     Node* test = graph()->NewNode(
       simplified()->NumberCheckReturnedType(),
       node,
-      jsgraph()->OneConstant()
+      jsgraph()->Constant(functionId)
     );
     environment()->BindAccumulator(test, Environment::kAttachFrameState);
     /* Create node to check types (typer-happy)

@@ -28,6 +28,7 @@
 #include "src/simulator-base.h"
 #include "src/string-search.h"
 #include "src/wasm/wasm-external-refs.h"
+#include "src/typer-happy.h"
 
 // Include native regexp-macro-assembler.
 #if V8_TARGET_ARCH_IA32
@@ -336,7 +337,7 @@ FUNCTION_REFERENCE(wasm_call_trap_callback_for_testing,
 
 FUNCTION_REFERENCE(log_enter_external_function, Logger::EnterExternal)
 FUNCTION_REFERENCE(log_leave_external_function, Logger::LeaveExternal)
-FUNCTION_REFERENCE(check_type_function, Logger::CheckType)
+FUNCTION_REFERENCE(check_type_function, TyperHappy::CheckType)
 
 ExternalReference ExternalReference::isolate_root(Isolate* isolate) {
   return ExternalReference(isolate->isolate_root());

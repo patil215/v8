@@ -106,14 +106,13 @@ bool IsSmiDouble(double value) {
          !IsMinusZero(value) && value == FastI2D(FastD2I(value));
 }
 
-
 bool IsInt32Double(double value) {
   return value >= kMinInt && value <= kMaxInt && !IsMinusZero(value) &&
          value == FastI2D(FastD2I(value));
 }
 
-
 bool IsUint32Double(double value) {
+  // Marking
   return !IsMinusZero(value) && value >= 0 && value <= kMaxUInt32 &&
          value == FastUI2D(FastD2UI(value));
 }
