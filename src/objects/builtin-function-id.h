@@ -115,6 +115,7 @@ namespace internal {
   V(Math, asinh, MathAsinh)                                 \
   V(Math, atan, MathAtan)                                   \
   V(Math, atan2, MathAtan2)                                 \
+  V(Math, checkReturnedType, MathCheckReturnedType)   \
   V(Math, atanh, MathAtanh)                                 \
   V(Math, imul, MathImul)                                   \
   V(Math, clz32, MathClz32)                                 \

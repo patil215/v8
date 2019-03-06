@@ -225,6 +225,20 @@ TF_BUILTIN(MathAtan2, CodeStubAssembler) {
   Return(result);
 }
 
+// Our checker node
+TF_BUILTIN(MathCheckReturnedType, CodeStubAssembler) {
+  Node* context = Parameter(Descriptor::kContext);
+
+  Node* y = Parameter(Descriptor::kY);
+  Node* x = Parameter(Descriptor::kX);
+
+  Node* y_value = TruncateTaggedToFloat64(context, y);
+  Node* x_value = TruncateTaggedToFloat64(context, x);
+  Node* value = CodeStubAssembler::Float64CheckReturnedType(y_value, x_value);
+  Node* result = AllocateHeapNumberWithValue(value);
+  Return(result);
+}
+
 // ES6 #sec-math.ceil
 TF_BUILTIN(MathCeil, MathBuiltinsAssembler) {
   Node* context = Parameter(Descriptor::kContext);
@@ -323,20 +337,6 @@ TF_BUILTIN(MathExpm1, MathBuiltinsAssembler) {
   Node* context = Parameter(Descriptor::kContext);
   Node* x = Parameter(Descriptor::kX);
   MathUnaryOperation(context, x, &CodeStubAssembler::Float64Expm1);
-}
-
-// Our checker node
-TF_BUILTIN(MathCheckReturnedType, MathBuiltinsAssembler) {
-  Node* context = Parameter(Descriptor::kContext);
-
-  Node* y = Parameter(Descriptor::kY);
-  Node* x = Parameter(Descriptor::kX);
-
-  Node* y_value = TruncateTaggedToFloat64(context, y);
-  Node* x_value = TruncateTaggedToFloat64(context, x);
-  Node* value = CodeStubAssembler::Float64CheckReturnedType(y_value, x_value);
-  Node* result = AllocateHeapNumberWithValue(value);
-  Return(result);
 }
 
 // ES6 #sec-math.floor

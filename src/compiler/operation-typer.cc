@@ -421,11 +421,6 @@ Type OperationTyper::NumberExpm1(Type type) {
   return Type::Union(Type::PlainNumber(), Type::NaN(), zone());
 }
 
-Type OperationTyper::NumberCheckReturnedType(Type type) {
-  // TODO DCHECK necessary?
-  return Type::Number();
-}
-
 Type OperationTyper::NumberFloor(Type type) {
   DCHECK(type.Is(Type::Number()));
   if (type.Is(cache_->kIntegerOrMinusZeroOrNaN)) return type;
@@ -1019,6 +1014,11 @@ Type OperationTyper::NumberShiftRightLogical(Type lhs, Type rhs) {
 Type OperationTyper::NumberAtan2(Type lhs, Type rhs) {
   DCHECK(lhs.Is(Type::Number()));
   DCHECK(rhs.Is(Type::Number()));
+  return Type::Number();
+}
+
+Type OperationTyper::NumberCheckReturnedType(Type lhs, Type rhs) {
+  // TODO DCHECK necessary?
   return Type::Number();
 }
 

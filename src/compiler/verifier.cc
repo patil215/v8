@@ -1036,6 +1036,7 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
       CheckTypeIs(node, Type::Unsigned32());
       break;
     case IrOpcode::kNumberAtan2:
+    case IrOpcode::kNumberCheckReturnedType:
     case IrOpcode::kNumberMax:
     case IrOpcode::kNumberMin:
     case IrOpcode::kNumberPow:
@@ -1058,7 +1059,6 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
     case IrOpcode::kNumberCosh:
     case IrOpcode::kNumberExp:
     case IrOpcode::kNumberExpm1:
-    case IrOpcode::kNumberCheckReturnedType:
     case IrOpcode::kNumberLog:
     case IrOpcode::kNumberLog1p:
     case IrOpcode::kNumberLog2:

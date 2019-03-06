@@ -1530,6 +1530,7 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
     case BuiltinFunctionId::kMathPow:
     case BuiltinFunctionId::kMathMax:
     case BuiltinFunctionId::kMathMin:
+    case BuiltinFunctionId::kMathCheckReturnedType:
       return Type::Number();
     case BuiltinFunctionId::kMathImul:
       return Type::Signed32();

@@ -636,6 +636,7 @@ DebugInfo::SideEffectState BuiltinGetSideEffectState(Builtins::Name id) {
     case Builtins::kMathAtan:
     case Builtins::kMathAtanh:
     case Builtins::kMathAtan2:
+    case Builtins::kMathCheckReturnedType:
     case Builtins::kMathCeil:
     case Builtins::kMathCbrt:
     case Builtins::kMathExpm1:

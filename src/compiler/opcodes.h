@@ -304,6 +304,7 @@
   V(NumberShiftRight)                   \
   V(NumberShiftRightLogical)            \
   V(NumberAtan2)                        \
+  V(NumberCheckReturnedType)            \
   V(NumberImul)                         \
   V(NumberMax)                          \
   V(NumberMin)                          \
@@ -339,7 +340,6 @@
   V(NumberCosh)                        \
   V(NumberExp)                         \
   V(NumberExpm1)                       \
-  V(NumberCheckReturnedType)           \
   V(NumberFloor)                       \
   V(NumberFround)                      \
   V(NumberLog)                         \
@@ -559,7 +559,6 @@
   V(Float64Cos)                      \
   V(Float64Cosh)                     \
   V(Float64Exp)                      \
-  V(Float64CheckReturnedType)        \
   V(Float64Expm1)                    \
   V(Float64Log)                      \
   V(Float64Log1p)                    \
@@ -579,6 +578,7 @@
 
 #define MACHINE_FLOAT64_BINOP_LIST(V) \
   V(Float64Atan2)                     \
+  V(Float64CheckReturnedType)         \
   V(Float64Max)                       \
   V(Float64Min)                       \
   V(Float64Add)                       \
