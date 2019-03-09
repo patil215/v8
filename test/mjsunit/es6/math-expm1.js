@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// Flags: --no-fast-math --allow-natives-syntax --always_opt
+// Flags: --no-fast-math --allow-natives-syntax
 
 assertTrue(isNaN(Math.expm1(NaN)));
 assertTrue(isNaN(Math.expm1(function() {})));
@@ -13,7 +13,13 @@ assertEquals(-Infinity, 1/Math.expm1(-0));
 assertEquals(Infinity, Math.expm1(Infinity));
 assertEquals(-1, Math.expm1(-Infinity));
 
-assertEquals(-0, Math.expm1(-0));
+function assertEqualsFunc(a, b) {
+  b();
+  %OptimizeFunctionOnNextCall(b);
+  return a() == b();
+}
+
+assertEqualsFunc(() => -0, () => Math.expm1(-0));
 
 // Sanity check:
 // Math.expm1(x) stays reasonably close to Math.exp(x) - 1 for large values.
