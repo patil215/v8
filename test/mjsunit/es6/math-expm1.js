@@ -4,6 +4,18 @@
 
 // Flags: --no-fast-math --allow-natives-syntax
 
+import { unwrap, isKeyword } from '@sweet-js/helpers' for syntax;
+
+syntax assertEquals = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+    
+    let test = paramCtx.expand('expr').value;
+    paramCtx.next();
+    let r = paramCtx.expand('expr').value;
+
+    return #`assertEqualsF(() => ${test}, () => ${r})`;
+};
+
 assertTrue(isNaN(Math.expm1(NaN)));
 assertTrue(isNaN(Math.expm1(function() {})));
 assertTrue(isNaN(Math.expm1({ toString: function() { return NaN; } })));

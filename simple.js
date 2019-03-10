@@ -8,13 +8,11 @@ import { unwrap, isKeyword } from '@sweet-js/helpers' for syntax;
 
 syntax assertEquals = function (ctx) {
     let paramCtx = ctx.contextify(ctx.next().value);
+    
+    let test = paramCtx.expand('expr').value;
+    paramCtx.next();
+    let r = paramCtx.expand('expr').value;
 
-    for (let stx of paramCtx) {
-        let test = paramCtx.expand('expr').value;
-        paramCtx.next();
-        let r = paramCtx.expand('expr').value;
-        return #`assertEqualsF(() => ${test}, () => ${r})`;
-    }
+    return #`assertEqualsF(() => ${test}, () => ${r})`;
 };
 
-assertEquals(-0, Math.expm1(-0));
