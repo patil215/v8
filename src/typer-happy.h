@@ -23,13 +23,22 @@ public:
 class TyperHappy {
 
     template <class T>
-    static void addCheck(std::vector<Check<T>> * list, const char * name, void (*const _checkingFunction)(T)) {
-        list->push_back(Check<double> ((int) (list->size()) + 1, name, TyperHappy::checkExpm1));
+    static void addCheck(std::vector<Check<T>> * list, const char * name, void (*const checkingFunction)(T)) {
+        list->push_back(Check<double> ((int) (list->size()) + 1, name, checkingFunction));
     }
 
     static std::vector<Check<double>> * createChecksDouble() {
         std::vector<Check<double>> * checks = new std::vector<Check<double>>();
-        addCheck(checks, "expm1", TyperHappy::checkExpm1);
+
+        addCheck(checks, "random", TyperHappy::checkPlainNumberType);
+        addCheck(checks, "floor", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "ceil", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "round", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "trunc", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "abs", TyperHappy::checkPlainNumberNaNUnionType);
+        addCheck(checks, "exp", TyperHappy::checkPlainNumberNaNUnionType);
+        addCheck(checks, "expm1", TyperHappy::checkPlainNumberNaNUnionType);
+
         return checks;
     }
 
@@ -41,7 +50,24 @@ public:
 
     static int functionIdFromName(char* name);
 
-    static void checkExpm1(double value) {
+    static void checkPlainNumberType(double value) {
+        // TODO
+    }
+
+    static void checkNumberType(double value) {
+
+    }
+
+    static void checkIntegerMinusZeroNaNUnionType(double value) {
+
+    }
+
+    static void checkRangeType(double value, double min, double max) {
+        CHECK(min <= value && value <= max);
+    }
+
+    static void checkPlainNumberNaNUnionType(double value) {
+        // TODO implement better
         CHECK(std::isnan(value) || !IsMinusZero(value));
     }
 };
