@@ -22,24 +22,14 @@ public:
 
 class TyperHappy {
 
-    /*void addCheck(std::vector& v, Check& check) {
-        v.push_back(check);
-        index++;
+    template <class T>
+    static void addCheck(std::vector<Check<T>> * list, const char * name, void (*const _checkingFunction)(T)) {
+        list->push_back(Check<double> ((int) (list->size()) + 1, name, TyperHappy::checkExpm1));
     }
-
-    std::vector<int> CheckList() {
-        std::vector v;
-        addCheck(v, Check<double>("expm1", TyperHappy::checkExpm1);
-        return v;
-    }
-
-    int index = 0;
-    std::vector checkList = CheckList(); // can be const if you like*/
-    // https://stackoverflow.com/questions/16210707/c-vector-of-template-class
 
     static std::vector<Check<double>> * createChecksDouble() {
         std::vector<Check<double>> * checks = new std::vector<Check<double>>();
-        checks->push_back(Check<double> (1, "expm1", TyperHappy::checkExpm1));
+        addCheck(checks, "expm1", TyperHappy::checkExpm1);
         return checks;
     }
 
