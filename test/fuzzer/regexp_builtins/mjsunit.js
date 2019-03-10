@@ -4,6 +4,7 @@
 
 // Stripped-down version of test/mjsunit/mjsunit.js that only contains
 // assertEquals.S
+
 var assertEquals;
 
 (function () {
