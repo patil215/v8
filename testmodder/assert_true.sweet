@@ -1,0 +1,5 @@
+syntax assertTrue = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+
+    return #`assertTrueF(() => ${paramCtx})`;
+};

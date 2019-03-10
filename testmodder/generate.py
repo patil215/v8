@@ -1,6 +1,8 @@
 import click
 import os
 
+MACROS_TO_RUN = ["assert_true", "assert_equals"]
+
 def file_to_lines(filename):
     return open(filename).read().splitlines()
 
@@ -37,7 +39,8 @@ def transform(filename):
     # Prepend our modifications
     modifications = []
     modifications += file_to_lines("helpers.sweet")
-    modifications += file_to_lines("assert_equals.sweet")
+    for macro in MACROS_TO_RUN:
+        modifications += file_to_lines(macro + ".sweet")
 
     lines_to_modify = modifications + lines_to_modify
 

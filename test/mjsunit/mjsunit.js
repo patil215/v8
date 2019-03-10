@@ -97,6 +97,8 @@ var assertToStringEquals;
 // for tests that doesn't have their own assertXXX function.
 var assertTrue;
 
+var assertTrueF;
+
 // Checks that the found value is false.
 var assertFalse;
 
@@ -421,8 +423,14 @@ var prettyPrinted;
   };
 
   assertEqualsF = function assertEqualsF(a, b) {
+    a();
     b();
+    a();
+    b();
+    %OptimizeFunctionOnNextCall(a);
     %OptimizeFunctionOnNextCall(b);
+    a();
+    b();
     assertEquals(a(), b());
   }
 
@@ -477,6 +485,13 @@ var prettyPrinted;
     assertEquals(true, value, name_opt);
   };
 
+  assertTrueF = function assertTrueF(f, name_opt) {
+    f();
+    f();
+    %OptimizeFunctionOnNextCall(f);
+    f();
+    assertTrue(f(), name_opt);
+  }
 
   assertFalse = function assertFalse(value, name_opt) {
     assertEquals(false, value, name_opt);
