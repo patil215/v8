@@ -1,0 +1,9 @@
+syntax assertEquals = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+    
+    let test = paramCtx.expand('expr').value;
+    paramCtx.next();
+    let r = paramCtx.expand('expr').value;
+
+    return #`assertEqualsF(() => ${test}, () => ${r})`;
+};
