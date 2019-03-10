@@ -2,19 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// Flags: --no-fast-math --allow-natives-syntax
-
-import { unwrap, isKeyword } from '@sweet-js/helpers' for syntax;
-
-syntax assertEquals = function (ctx) {
-    let paramCtx = ctx.contextify(ctx.next().value);
-    
-    let test = paramCtx.expand('expr').value;
-    paramCtx.next();
-    let r = paramCtx.expand('expr').value;
-
-    return #`assertEqualsF(() => ${test}, () => ${r})`;
-};
+// Flags: --no-fast-math
 
 assertTrue(isNaN(Math.expm1(NaN)));
 assertTrue(isNaN(Math.expm1(function() {})));
@@ -24,8 +12,6 @@ assertEquals(Infinity, 1/Math.expm1(0));
 assertEquals(-Infinity, 1/Math.expm1(-0));
 assertEquals(Infinity, Math.expm1(Infinity));
 assertEquals(-1, Math.expm1(-Infinity));
-
-assertEqualsF(() => -0, () => Math.expm1(-0));
 
 // Sanity check:
 // Math.expm1(x) stays reasonably close to Math.exp(x) - 1 for large values.
