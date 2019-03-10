@@ -13,13 +13,7 @@ assertEquals(-Infinity, 1/Math.expm1(-0));
 assertEquals(Infinity, Math.expm1(Infinity));
 assertEquals(-1, Math.expm1(-Infinity));
 
-function assertEqualsFunc(a, b) {
-  b();
-  %OptimizeFunctionOnNextCall(b);
-  return a() == b();
-}
-
-assertEqualsFunc(() => -0, () => Math.expm1(-0));
+assertEqualsF(() => -0, () => Math.expm1(-0));
 
 // Sanity check:
 // Math.expm1(x) stays reasonably close to Math.exp(x) - 1 for large values.

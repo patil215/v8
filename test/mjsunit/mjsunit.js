@@ -64,6 +64,9 @@ var assertNotSame;
 // and the properties of non-Array objects).
 var assertEquals;
 
+// Takes in lambdas and calls the functions beforehand in order to run our type checking nodes.
+var assertEqualsF;
+
 // Deep equality predicate used by assertEquals.
 var deepEquals;
 
@@ -416,6 +419,12 @@ var prettyPrinted;
       fail(prettyPrinted(expected), found, name_opt);
     }
   };
+
+  assertEqualsF = function assertEqualsF(a, b) {
+    b();
+    %OptimizeFunctionOnNextCall(b);
+    assertEquals(a(), b());
+  }
 
   assertNotEquals = function assertNotEquals(expected, found, name_opt) {
     if (deepEquals(found, expected)) {
