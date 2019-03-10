@@ -106,3 +106,10 @@ tools/turbolizer/build
 tools/turbolizer/.rpt2_cache
 tools/turbolizer/deploy
 
+.cipd/
+.gclient
+.idea/
+cmake-build-debug/
+src/cmake-build-debug/
+
+
