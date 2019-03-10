@@ -19,6 +19,7 @@
 #include "src/objects/literal-objects-inl.h"
 #include "src/objects/smi.h"
 #include "src/vector-slot-pair.h"
+#include "src/typer-happy.h"
 
 namespace v8 {
 namespace internal {
@@ -1796,12 +1797,7 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
 
   std::unique_ptr<char[]> toCheck = String::cast(*(((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name())).ToCString();
 
-  double functionId = 0;
-  if (strcmp(toCheck.get(), "expm1") == 0) {
-    functionId = 1;
-    std::cout << "We have an expm1!\n";
-  }
-
+  double functionId = TyperHappy::functionIdFromName(toCheck.get());
   if (functionId != 0) {
     // Replace the node with the node + our type checker node.
     Node* test = graph()->NewNode(
