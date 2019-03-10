@@ -18,10 +18,11 @@ def transform(filename):
         if not (line.startswith('//') or line.strip() == ''):
             break
 
-        if line.startswith('// Flags:') and 'allow-natives-syntax' not in line:
-            line += ' --allow-natives-syntax'
-            lines[comments_or_empty_ind] = line
+        if line.startswith('// Flags:'):
             foundFlags = True
+            if 'allow-natives-syntax' not in line:
+                line += ' --allow-natives-syntax'
+                lines[comments_or_empty_ind] = line
 
         comments_or_empty_ind += 1
 
