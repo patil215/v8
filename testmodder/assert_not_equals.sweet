@@ -1,9 +1,9 @@
-syntax assertEquals = function (ctx) {
+syntax assertNotEquals = function (ctx) {
     let paramCtx = ctx.contextify(ctx.next().value);
     
     let left = paramCtx.expand('expr').value;
     paramCtx.next();
     let right = paramCtx.expand('expr').value;
 
-    return #`assertEqualsF(() => ${left}, () => ${right})`;
+    return #`assertNotEqualsF(() => ${left}, () => ${right})`;
 };

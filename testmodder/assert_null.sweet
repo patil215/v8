@@ -1,0 +1,5 @@
+syntax assertNull = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+
+    return #`assertNullF(() => ${paramCtx})`;
+};

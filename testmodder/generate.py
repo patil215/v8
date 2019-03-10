@@ -1,7 +1,7 @@
 import click
 import os
 
-MACROS_TO_RUN = ["assert_true", "assert_equals"]
+MACROS_TO_RUN = ["assert_true", "assert_false", "assert_equals", "assert_equals_delta", "assert_not_equals", "assert_null", "assert_not_null"]
 
 def file_to_lines(filename):
     return open(filename).read().splitlines()

@@ -76,8 +76,12 @@ var deepEquals;
 // and the properties of non-Array objects).
 var assertNotEquals;
 
+var assertNotEqualsF;
+
 // The difference between expected and found value is within certain tolerance.
 var assertEqualsDelta;
+
+var assertEqualsDeltaF;
 
 // The found object is an Array with the same length and elements
 // as the expected object. The expected object doesn't need to be an Array,
@@ -102,12 +106,18 @@ var assertTrueF;
 // Checks that the found value is false.
 var assertFalse;
 
+var assertFalseF;
+
 // Checks that the found value is null. Kept for historical compatibility,
 // please just use assertEquals(null, expected).
 var assertNull;
 
+var assertNullF;
+
 // Checks that the found value is *not* null.
 var assertNotNull;
+
+var assertNotNullF;
 
 // Assert that the passed function or eval code throws an exception.
 // The optional second argument is an exception constructor that the
@@ -422,16 +432,17 @@ var prettyPrinted;
     }
   };
 
-  assertEqualsF = function assertEqualsF(a, b) {
-    a();
-    b();
-    a();
-    b();
-    %OptimizeFunctionOnNextCall(a);
-    %OptimizeFunctionOnNextCall(b);
-    a();
-    b();
-    assertEquals(a(), b());
+  function typerPrep(f) {
+    f();
+    f();
+    %OptimizeFunctionOnNextCall(f);
+    f();
+  }
+
+  assertEqualsF = function assertEqualsF(a, b, name_opt) {
+    typerPrep(a);
+    typerPrep(b);
+    assertEquals(a(), b(), name_opt);
   }
 
   assertNotEquals = function assertNotEquals(expected, found, name_opt) {
@@ -440,6 +451,12 @@ var prettyPrinted;
     }
   };
 
+  assertNotEqualsF = function assertNotEqualsF(a, b, name_opt) {
+    typerPrep(a);
+    typerPrep(b);
+    assertNotEquals(a, b, name_opt);
+  }
+
 
   assertEqualsDelta =
       function assertEqualsDelta(expected, found, delta, name_opt) {
@@ -447,6 +464,12 @@ var prettyPrinted;
       fail(prettyPrinted(expected) + " +- " + prettyPrinted(delta), found, name_opt);
     }
   };
+
+  assertEqualsDeltaF = function assertEqualsDeltaF(a, b, delta, name_opt) {
+    typerPrep(a);
+    typerPrep(b);
+    assertEqualsDelta(a, b, delta, name_opt);
+  }
 
 
   assertArrayEquals = function assertArrayEquals(expected, found, name_opt) {
@@ -486,10 +509,7 @@ var prettyPrinted;
   };
 
   assertTrueF = function assertTrueF(f, name_opt) {
-    f();
-    f();
-    %OptimizeFunctionOnNextCall(f);
-    f();
+    typerPrep(f);
     assertTrue(f(), name_opt);
   }
 
@@ -497,6 +517,10 @@ var prettyPrinted;
     assertEquals(false, value, name_opt);
   };
 
+  assertFalseF = function assertFalseF(f, name_opt) {
+    typerPrep(f);
+    assertFalse(f);
+  }
 
   assertNull = function assertNull(value, name_opt) {
     if (value !== null) {
@@ -504,12 +528,22 @@ var prettyPrinted;
     }
   };
 
+  assertNullF = function assertNullF(f, name_opt) {
+    typerPrep(f);
+    assertNull(f);
+  }
+
 
   assertNotNull = function assertNotNull(value, name_opt) {
     if (value === null) {
       fail("not null", value, name_opt);
     }
   };
+
+  assertNotNullF = function assertNotNullF(f, name_opt) {
+    typerPrep(f);
+    assertNotNull(f);
+  }
 
   function executeCode(code) {
     if (typeof code === 'function')  return code();
