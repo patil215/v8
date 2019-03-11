@@ -3,13 +3,20 @@ import os
 
 MACROS_TO_RUN = ["assert_true", "assert_false", "assert_equals", "assert_equals_delta", "assert_not_equals", "assert_null", "assert_not_null"]
 
+SCRIPT_LOC = os.path.dirname(__file__)
+SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
+
 def file_to_lines(filename):
     return open(filename).read().splitlines()
+
+def abs_path(rel_path):
+    filename = os.path.join(os.path.dirname(__file__), rel_path)
+    return filename
 
 @click.command()
 @click.argument('filename')
 def transform(filename):
-    lines = open(filename).read().splitlines()
+    lines = file_to_lines(filename)
 
     # Find the leading comments, and add the '--allow-natives-syntax' flag
     comments_or_empty_ind = 0
@@ -31,16 +38,16 @@ def transform(filename):
     # Back up the leading comments, because they get stripped by sweet.js
     lines_to_save = lines[:comments_or_empty_ind]
     if not foundFlags:
-        lines_to_save.append(open('allow_natives_flag.js').read().splitlines()[0])
+        lines_to_save.append(file_to_lines(abs_path('allow_natives_flag.js'))[0])
 
 
     lines_to_modify = lines[comments_or_empty_ind:]
 
     # Prepend our modifications
     modifications = []
-    modifications += file_to_lines("helpers.sweet")
+    modifications += file_to_lines(abs_path("sweet/helpers.sweet"))
     for macro in MACROS_TO_RUN:
-        modifications += file_to_lines(macro + ".sweet")
+        modifications += file_to_lines(abs_path("sweet/" + macro + ".sweet"))
 
     lines_to_modify = modifications + lines_to_modify
 
@@ -55,8 +62,13 @@ def transform(filename):
     lines = lines_to_save + file_to_lines(filename + '.compiled')
 
     # Output our final modified file
-    with open(filename, 'w') as outfile:
+    outfilename = filename.replace('.js', '-typerhappy.js')
+    with open(outfilename, 'w') as outfile:
         outfile.writelines('\n'.join(lines) + '\n')
+
+    # Cleanup: remove the side files
+    os.remove(filename + '.sweet');
+    os.remove(filename + '.compiled');
 
 if __name__ == '__main__':
     transform()
