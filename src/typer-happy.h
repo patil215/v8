@@ -1,6 +1,7 @@
 #include <vector>
 #include <string>
 #include "src/conversions.h"
+#include "src/compiler/types.h"
 
 #ifndef V8_TYPER_HAPPY_H_
 #define V8_TYPER_HAPPY_H_
@@ -51,7 +52,8 @@ public:
     static int functionIdFromName(char* name);
 
     static void checkPlainNumberType(double value) {
-        // TODO
+        // TODO more checks
+        CHECK(!IsMinusZero(value));
     }
 
     static void checkNumberType(double value) {
@@ -59,7 +61,7 @@ public:
     }
 
     static void checkIntegerMinusZeroNaNUnionType(double value) {
-
+        CHECK(isnan(value) || IsMinusZero(value) || RangeType::IsInteger(value));
     }
 
     static void checkRangeType(double value, double min, double max) {
