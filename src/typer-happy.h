@@ -61,7 +61,7 @@ public:
     }
 
     static void checkIntegerMinusZeroNaNUnionType(double value) {
-        CHECK(isnan(value) || IsMinusZero(value) || RangeType::IsInteger(value));
+        CHECK(isnan(value) || IsMinusZero(value) || compiler::RangeType::IsInteger(value));
     }
 
     static void checkRangeType(double value, double min, double max) {
