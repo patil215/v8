@@ -1,5 +1,7 @@
-syntax assertTrue = function (ctx) {
-    let paramCtx = ctx.contextify(ctx.next().value);
-
-    return #`assertTrueF(() => ${paramCtx})`;
-};
+macro assertTrue {
+    rule {
+        ($x:expr)
+    } => {
+        assertTrueF(() => $x);
+    }
+}

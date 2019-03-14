@@ -1,9 +1,7 @@
-syntax assertEquals = function (ctx) {
-    let paramCtx = ctx.contextify(ctx.next().value);
-    
-    let left = paramCtx.expand('expr').value;
-    paramCtx.next();
-    let right = paramCtx.expand('expr').value;
-
-    return #`assertEqualsF(() => ${left}, () => ${right})`;
-};
+macro assertEquals {
+    rule {
+        ($x:expr, $y:expr)
+    } => {
+        assertEqualsF(() => $x, () => $y);
+    }
+}
