@@ -6,10 +6,10 @@ MACROS_TO_RUN = ["assert_true", "assert_false", "assert_equals", "assert_equals_
 SCRIPT_LOC = os.path.dirname(__file__)
 SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
 
-NATIVE_FUNCTIONS = ["OptimizeFunctionOnNextCall"]
-
-# GetUndetectable(0)
-# DeoptimizeFunction(sfi)
+NATIVE_FUNCTIONS = {
+    0: ["GetUndetectable"],
+    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction"]
+}
 
 
 def file_to_lines(filename):
@@ -25,10 +25,11 @@ def uncommentNativesSyntax(lines):
     for i in range(len(lines)):
         line = lines[i]
         #if line.startswith('//'):
-        for nativefunc in NATIVE_FUNCTIONS:
-            if line[1:].startswith(nativefunc):
-                line = '%' + line[1:]
-        lines[i] = line
+        for ops in NATIVE_FUNCTIONS:
+            for nativefunc in NATIVE_FUNCTIONS[ops]:
+                if line[1:].startswith(nativefunc):
+                    line = '%' + line[1:]
+            lines[i] = line
     return lines
 
 def stripNativesSyntax(lines):
@@ -76,9 +77,10 @@ def transform(filename):
     for macro in MACROS_TO_RUN:
         modifications += file_to_lines(abs_path("sweet/" + macro + ".sweet"))
 
-    for nativefunc in NATIVE_FUNCTIONS:
-        tomod = open(abs_path("passthrough_natives.sweet")).read().replace("nativefunc", nativefunc).splitlines()
-        modifications += tomod
+    for ops in NATIVE_FUNCTIONS:
+        for nativefunc in NATIVE_FUNCTIONS[ops]:
+            tomod = open(abs_path("passthrough_natives_{}.sweet".format(ops))).read().replace("nativefunc", nativefunc).splitlines()
+            modifications += tomod
 
     lines_to_modify = modifications + lines_to_modify
 

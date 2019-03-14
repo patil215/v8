@@ -1,0 +1,67 @@
+Building d8...
+# autoninja -C out/x64.debug d8
+/home/patil215/proj/depot_tools/ninja -C out/x64.debug d8
+ninja: Entering directory `out/x64.debug'
+ninja: no work to do.
+Running file test/mjsunit/math-floor-of-div-minus-zero.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-of-div-minus-zero-typerhappy
+
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+>>> SIGTERM received, early abort...
+[00:57|%   0|+   0|-   0]: Done
+>>> 0 tests ran
+                                                                 === mjsunit/math-floor-of-div-minus-zero-typerhappy ===
+Received signal 11 <unknown> 000000000000
+
+==== C stack trace ===============================
+
+ [0x7f98bbdb85ce]
+ [0x7f98bbdb8520]
+ [0x7f98b941f890]
+ [0x7f98bac679fd]
+ [0x7f98ba602e74]
+ [0x7f98ba5f7345]
+ [0x7f98ba893cc6]
+ [0x7f98ba893a16]
+ [0x7f98ba8980d9]
+ [0x7f98ba88db69]
+ [0x7f98ba88a325]
+ [0x7f98ba889512]
+ [0x7f98ba8890f1]
+ [0x7f98ba9980e1]
+ [0x7f98ba99276c]
+ [0x7f98ba992081]
+ [0x7f98ba913927]
+ [0x7f98ba91360c]
+ [0x7f98ba9130ef]
+ [0x7f98ba91385d]
+ [0x7f98baa3be22]
+ [0x7f98baa35e54]
+ [0x7f98baa2d39e]
+ [0x7f98baa2d029]
+ [0x7f98ba7e7ac1]
+ [0x7f98ba7f1d9a]
+ [0x7f98ba7eb3eb]
+ [0x7f98ba7eba5d]
+ [0x7f98bb0cca5e]
+ [0x7f98bb0cc752]
+ [0x7f98bb7892a9]
+[end of stack trace]
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/math-floor-of-div-minus-zero-typerhappy.js --random-seed=438982940 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
+exit code: -11
+--- CRASHED ---
+                                                                          [00:01|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+Running file test/mjsunit/asm/math-floor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-floor-typerhappy
+
+

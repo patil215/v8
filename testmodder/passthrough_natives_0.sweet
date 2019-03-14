@@ -1,0 +1,6 @@
+macro nativefunc {
+  rule { () } => {
+      Snativefunc()
+      1337
+  }
+}
