@@ -15,5 +15,7 @@ do
   test=${test/.js/-typerhappy}
   test=${test#test/}
   echo $test
+  echo ""
+  echo ""
   ./tools/run-tests.py --outdir=out/x64.debug $test
 done
