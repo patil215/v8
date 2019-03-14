@@ -1504,7 +1504,6 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
     // Unary math functions.
     case BuiltinFunctionId::kMathAbs:
     case BuiltinFunctionId::kMathExp:
-    case BuiltinFunctionId::kMathExpm1:
       return Type::Union(Type::PlainNumber(), Type::NaN(), t->zone());
     case BuiltinFunctionId::kMathAcos:
     case BuiltinFunctionId::kMathAcosh:
@@ -1522,6 +1521,7 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
     case BuiltinFunctionId::kMathSin:
     case BuiltinFunctionId::kMathSqrt:
     case BuiltinFunctionId::kMathTan:
+    case BuiltinFunctionId::kMathExpm1:
       return Type::Number();
     case BuiltinFunctionId::kMathSign:
       return t->cache_->kMinusOneToOneOrMinusZeroOrNaN;
@@ -1559,6 +1559,8 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
     case BuiltinFunctionId::kDateGetTime:
       return t->cache_->kJSDateValueType;
 
+    // TODO Typerhappy implement the below
+    
     // Symbol functions.
     case BuiltinFunctionId::kSymbolConstructor:
       return Type::Symbol();
