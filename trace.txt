@@ -1,0 +1,33 @@
+#0  0x00007ffff6ea09fd in v8::internal::HandleBase::IsDereferenceAllowed (this=0x7fffffffa008, mode=v8::internal::HandleBase::INCLUDE_DEFERRED_CHECK) at ../../src/handles.cc:33
+#1  0x00007ffff683be74 in v8::internal::HandleBase::operator* (this=0x7fffffffa008) at ../../src/handles.h:63
+#2  0x00007ffff6830345 in v8::internal::Handle<v8::internal::Name>::operator* (this=0x7fffffffa008) at ../../src/handles.h:132
+#3  0x00007ffff6acccc6 in v8::internal::compiler::BytecodeGraphBuilder::BuildCall (this=0x7fffffffaa48, receiver_mode=v8::internal::ConvertReceiverMode::kNullOrUndefined, args=0x7fffffffa170, arg_count=3, 
+    slot_id=0, createTypeCheckingNode=false) at ../../src/compiler/bytecode-graph-builder.cc:1798
+#4  0x00007ffff6acca16 in v8::internal::compiler::BytecodeGraphBuilder::BuildCall (this=0x7fffffffaa48, receiver_mode=v8::internal::ConvertReceiverMode::kNullOrUndefined, args=0x7fffffffa170, arg_count=3, 
+    slot_id=0) at ../../src/compiler/bytecode-graph-builder.cc:1759
+#5  0x00007ffff6ad10d9 in v8::internal::compiler::BytecodeGraphBuilder::BuildCall (this=0x7fffffffaa48, receiver_mode=v8::internal::ConvertReceiverMode::kNullOrUndefined, args=..., slot_id=0)
+    at ../../src/compiler/bytecode-graph-builder.h:190
+#6  0x00007ffff6ac6b69 in v8::internal::compiler::BytecodeGraphBuilder::VisitCallUndefinedReceiver1 (this=0x7fffffffaa48) at ../../src/compiler/bytecode-graph-builder.cc:1959
+#7  0x00007ffff6ac3325 in v8::internal::compiler::BytecodeGraphBuilder::VisitSingleBytecode (this=0x7fffffffaa48, source_position_iterator=0x7fffffffa390) at ../../src/compiler/bytecode-graph-builder.cc:873
+#8  0x00007ffff6ac2512 in v8::internal::compiler::BytecodeGraphBuilder::VisitBytecodes (this=0x7fffffffaa48) at ../../src/compiler/bytecode-graph-builder.cc:914
+#9  0x00007ffff6ac20f1 in v8::internal::compiler::BytecodeGraphBuilder::CreateGraph (this=0x7fffffffaa48) at ../../src/compiler/bytecode-graph-builder.cc:596
+#10 0x00007ffff6bd10e1 in v8::internal::compiler::JSInliner::ReduceJSCall (this=0x7fffffffbae8, node=0x5555556f5ea8) at ../../src/compiler/js-inlining.cc:498
+#11 0x00007ffff6bcb76c in v8::internal::compiler::JSInliningHeuristic::InlineCandidate (this=0x7fffffffbad0, candidate=..., small_function=true) at ../../src/compiler/js-inlining-heuristic.cc:600
+#12 0x00007ffff6bcb081 in v8::internal::compiler::JSInliningHeuristic::Reduce (this=0x7fffffffbad0, node=0x5555556f5ea8) at ../../src/compiler/js-inlining-heuristic.cc:171
+#13 0x00007ffff6b4c927 in v8::internal::compiler::GraphReducer::Reduce (this=0x7fffffffb9c8, node=0x5555556f5ea8) at ../../src/compiler/graph-reducer.cc:85
+#14 0x00007ffff6b4c60c in v8::internal::compiler::GraphReducer::ReduceTop (this=0x7fffffffb9c8) at ../../src/compiler/graph-reducer.cc:150
+#15 0x00007ffff6b4c0ef in v8::internal::compiler::GraphReducer::ReduceNode (this=0x7fffffffb9c8, node=0x5555556f62b8) at ../../src/compiler/graph-reducer.cc:56
+#16 0x00007ffff6b4c85d in v8::internal::compiler::GraphReducer::ReduceGraph (this=0x7fffffffb9c8) at ../../src/compiler/graph-reducer.cc:78
+#17 0x00007ffff6c74e22 in v8::internal::compiler::InliningPhase::Run (this=0x7fffffffbbb0, data=0x5555556a9490, temp_zone=0x5555556a0800) at ../../src/compiler/pipeline.cc:1113
+#18 0x00007ffff6c6ee54 in v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::InliningPhase> (this=0x5555556a9648) at ../../src/compiler/pipeline.cc:1009
+#19 0x00007ffff6c6639e in v8::internal::compiler::PipelineImpl::CreateGraph (this=0x5555556a9648) at ../../src/compiler/pipeline.cc:1930
+#20 0x00007ffff6c66029 in v8::internal::compiler::PipelineCompilationJob::PrepareJobImpl (this=0x5555556a9320, isolate=0x5555556049e0) at ../../src/compiler/pipeline.cc:939
+#21 0x00007ffff6a20ac1 in v8::internal::OptimizedCompilationJob::PrepareJob (this=0x5555556a9320, isolate=0x5555556049e0) at ../../src/compiler.cc:217
+#22 0x00007ffff6a2ad9a in v8::internal::(anonymous namespace)::GetOptimizedCodeNow (job=0x5555556a9320, isolate=0x5555556049e0) at ../../src/compiler.cc:679
+#23 0x00007ffff6a243eb in v8::internal::(anonymous namespace)::GetOptimizedCode (function=..., mode=v8::internal::ConcurrencyMode::kNotConcurrent, osr_offset=..., osr_frame=0x0) at ../../src/compiler.cc:834
+#24 0x00007ffff6a24a5d in v8::internal::Compiler::CompileOptimized (function=..., mode=v8::internal::ConcurrencyMode::kNotConcurrent) at ../../src/compiler.cc:1374
+#25 0x00007ffff7305a5e in v8::internal::__RT_impl_Runtime_CompileOptimized_NotConcurrent (args=..., isolate=0x5555556049e0) at ../../src/runtime/runtime-compiler.cc:90
+#26 0x00007ffff7305752 in v8::internal::Runtime_CompileOptimized_NotConcurrent (args_length=1, args_object=0x7fffffffc760, isolate=0x5555556049e0) at ../../src/runtime/runtime-compiler.cc:82
+#27 0x00007ffff79c22a9 in Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit () from /home/patil215/proj/v8/out/x64.debug/./libv8.so
+#28 0x00007ffff76d81f3 in Builtins_InterpreterEntryTrampoline () from /home/patil215/proj/v8/out/x64.debug/./libv8.so
+
