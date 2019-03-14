@@ -8,6 +8,9 @@ SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
 
 NATIVE_FUNCTIONS = ["OptimizeFunctionOnNextCall"]
 
+# GetUndetectable(0)
+# DeoptimizeFunction(sfi)
+
 
 def file_to_lines(filename):
     return open(filename).read().splitlines()
@@ -19,11 +22,13 @@ def abs_path(rel_path):
 
 
 def uncommentNativesSyntax(lines):
-    for line in lines:
-        if line.startswith('//'):
-            for nativefunc in NATIVE_FUNCTIONS:
-                if line[3:].startswith(nativefunc):
-                    line = line[3:]
+    for i in range(len(lines)):
+        line = lines[i]
+        #if line.startswith('//'):
+        for nativefunc in NATIVE_FUNCTIONS:
+            if line[1:].startswith(nativefunc):
+                line = '%' + line[1:]
+        lines[i] = line
     return lines
 
 def stripNativesSyntax(lines):
@@ -91,7 +96,7 @@ def transform(filename):
     lines = lines_to_save + file_to_lines(filename + '.compiled')
 
     # This is the saddest piece of code I've ever written in my life. It is absolutely disgusting, and I am sorry. Hovav, I apologize; please do not judge me.
-    lines = uncommentNativesSyntax(lines_to_modify)
+    lines = uncommentNativesSyntax(lines)
 
     # Output our final modified file
     outfilename = filename.replace('.js', '-typerhappy.js')

@@ -1,6 +1,6 @@
-macro nativefuncS {
+macro nativefunc {
   rule { ($f) } => {
-      nativefunc ($f)
+      Snativefunc ($f)
       1337
   }
 }
