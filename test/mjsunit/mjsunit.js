@@ -519,7 +519,7 @@ var prettyPrinted;
 
   assertFalseF = function assertFalseF(f, name_opt) {
     typerPrep(f);
-    assertFalse(f);
+    assertFalse(f(), name_opt);
   }
 
   assertNull = function assertNull(value, name_opt) {
