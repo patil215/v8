@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-#include "src/conversions.h"
+#include "src/conversions-inl.h"
 #include "src/compiler/types.h"
 #include "src/date.h"
 
@@ -98,7 +98,7 @@ public:
     }
 
     static void checkSigned32Type(double value) {
-        //CHECK(IsUint32Double(value));
+        CHECK(IsInt32Double(value));
     }
 
     static void checkMinusOneToOneOrMinusZeroOrNaNUnionType(double value) {
@@ -109,7 +109,16 @@ public:
         );
     }
 
+    static bool isPlainNumberType(double value) {
+        return ((!IsMinusZero(value) && !std::isnan(value)) ||
+            IsInt32Double(value) || IsUint32Double(value));
+    }
+
     static void checkPlainNumberType(double value) {
+        // PlainNumber = kIntegral32 | kOtherNumber
+        // Integral32 = kSigned32 | kUnsigned32)
+        // Signed32 = kSigned31 | kOtherUnsigned31 | kOtherSigned32)
+
         /*Type::bitset BitsetType::Lub(double value) {
         DisallowHeapAllocation no_allocation;
         if (IsMinusZero(value)) return kMinusZero;
@@ -117,17 +126,13 @@ public:
         if (IsUint32Double(value) || IsInt32Double(value)) return Lub(value, value);
         return kOtherNumber;
         }*/
-
-        // TODO more checks, but IDK if there's anything we can really do here.
-        CHECK(!IsMinusZero(value));
+        CHECK(isPlainNumberType(value));
     }
 
     static void checkNumberType(double value) {
+        // number is everything except bigint, so there's not much we can do here.
         // Number = Signed32 + Unsigned32 + Double
-        // TODO is there anything to actually do here?
         //CHECK(IsInt32Double(value) || IsUint32Double(value));
-        
-        // number is everything except bigint
     }
 
     static void checkIntegerMinusZeroNaNUnionType(double value) {
@@ -139,8 +144,7 @@ public:
     }
 
     static void checkPlainNumberNaNUnionType(double value) {
-        // TODO more checks for PlainNumber, but idk if there's really much we can do here
-        CHECK(std::isnan(value) || !IsMinusZero(value));
+        CHECK(isPlainNumberType(value) || std::isnan(value));
     }
 
     static void checkNow(double value) {
@@ -162,10 +166,10 @@ public:
     }
 
     static void checkGetFullYear(double value) {
-        /*CHECK(
-            //IsInt32Double(value)    ||
+        CHECK(
+            IsInt32Double(value)    ||
             std::isnan(value)
-        );*/
+        );
     }
 
     static void checkGetHours(double value) {
