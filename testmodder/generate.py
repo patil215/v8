@@ -23,7 +23,7 @@ def abs_path(rel_path):
 
 def uncommentNativesSyntax(lines):
     for i in range(len(lines)):
-        line = lines[i]
+        line = lines[i].lstrip();
         #if line.startswith('//'):
         for ops in NATIVE_FUNCTIONS:
             for nativefunc in NATIVE_FUNCTIONS[ops]:

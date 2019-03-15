@@ -1795,12 +1795,17 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
   std::cout << "Node specifics: " << String::cast(*(((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name())).ToCString().get() << "\n";
   std::cout << "END print node specifics:\n";*/
 
-  Operator1<NamedAccess>* access = (Operator1<NamedAccess> *) (*args[0]).op();
-  NamedAccess parameter = access->parameter();
-  Handle<Name> name = parameter.name();
-  std::unique_ptr<char[]> toCheck = String::cast(*name).ToCString();
+  const char * mnemonic = (*args[0]).op()->mnemonic();
 
-  double functionId = TyperHappy::functionIdFromName(toCheck.get());
+  double functionId = 0;
+  if (strcmp(mnemonic, "JSLoadNamed") == 0 || strcmp(mnemonic, "JSLoadGlobal") == 0) {
+    Operator1<NamedAccess>* access = (Operator1<NamedAccess> *) (*args[0]).op();
+    NamedAccess parameter = access->parameter();
+    Handle<Name> name = parameter.name();
+    std::unique_ptr<char[]> toCheck = String::cast(*name).ToCString();
+    functionId = TyperHappy::functionIdFromName(toCheck.get());
+  }
+
   if (functionId != 0) {
     // Replace the node with the node + our type checker node.
     Node* test = graph()->NewNode(
