@@ -8,7 +8,7 @@ SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
 
 NATIVE_FUNCTIONS = {
     0: ["GetUndetectable"],
-    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction"]
+    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction", "NeverOptimizeFunction"]
 }
 
 
@@ -23,22 +23,20 @@ def abs_path(rel_path):
 
 def uncommentNativesSyntax(lines):
     for i in range(len(lines)):
-        line = lines[i].lstrip();
-        #if line.startswith('//'):
+        line = lines[i]
         for ops in NATIVE_FUNCTIONS:
             for nativefunc in NATIVE_FUNCTIONS[ops]:
-                if line[1:].startswith(nativefunc):
-                    line = '%' + line[1:]
+                line = line.replace(nativefunc, "%" + nativefunc)
             lines[i] = line
     return lines
 
 def stripNativesSyntax(lines):
     for i in range(len(lines)):
         line = lines[i]
-        line = line.lstrip()
-        if len(line) > 0 and ord(line[0]) == 37:
-            line = line[1:]
-            lines[i] = line
+        for ops in NATIVE_FUNCTIONS:
+            for nativefunc in NATIVE_FUNCTIONS[ops]:
+                line = line.replace("%" + nativefunc, nativefunc)
+        lines[i] = line
     return lines
 
 @click.command()

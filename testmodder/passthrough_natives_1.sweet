@@ -1,6 +1,5 @@
 macro nativefunc {
-  rule { ($f) } => {
+  rule { ($f:expr) } => {
       Snativefunc ($f)
-      1337
   }
 }
