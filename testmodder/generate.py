@@ -43,7 +43,8 @@ def stripNativesSyntax(lines):
 
 @click.command()
 @click.argument('filename')
-def transform(filename):
+@click.option('--no-cleanup', is_flag=True)
+def transform(filename, no_cleanup):
     lines = file_to_lines(filename)
 
     # Find the leading comments, and add the '--allow-natives-syntax' flag
@@ -92,7 +93,7 @@ def transform(filename):
         sweetfile.writelines('\n'.join(lines_to_modify) + '\n')
 
     # Run sweet on the file
-    os.system("sjs -o " + filename + '.compiled ' + filename + '.sweet')
+    os.system("sjs -p -o " + filename + '.compiled ' + filename + '.sweet')
 
     # Concatenate this file with the lines we saved
     lines = lines_to_save + file_to_lines(filename + '.compiled')
@@ -106,8 +107,9 @@ def transform(filename):
         outfile.writelines('\n'.join(lines) + '\n')
 
     # Cleanup: remove the side files
-    os.remove(filename + '.sweet');
-    os.remove(filename + '.compiled');
+    if not no_cleanup:
+        os.remove(filename + '.sweet');
+        os.remove(filename + '.compiled');
 
 if __name__ == '__main__':
     transform()
