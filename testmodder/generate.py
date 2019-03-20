@@ -21,22 +21,14 @@ def abs_path(rel_path):
     return filename
 
 
-def uncommentNativesSyntax(lines):
+def modify_natives_syntax(lines, forward):
     for i in range(len(lines)):
-        line = lines[i]
         for ops in NATIVE_FUNCTIONS:
             for nativefunc in NATIVE_FUNCTIONS[ops]:
-                line = line.replace(nativefunc, "%" + nativefunc)
-            lines[i] = line
-    return lines
-
-def stripNativesSyntax(lines):
-    for i in range(len(lines)):
-        line = lines[i]
-        for ops in NATIVE_FUNCTIONS:
-            for nativefunc in NATIVE_FUNCTIONS[ops]:
-                line = line.replace("%" + nativefunc, nativefunc)
-        lines[i] = line
+                if not forward:
+                    lines[i] = lines[i].replace("S" + nativefunc, "%" + nativefunc)
+                else:
+                    lines[i] = lines[i].replace("%" + nativefunc, nativefunc)
     return lines
 
 @click.command()
@@ -72,7 +64,6 @@ def transform(filename, no_cleanup):
 
     # Prepend our modifications
     modifications = []
-    #modifications += file_to_lines(abs_path("sweet/helpers.sweet"))
     for macro in MACROS_TO_RUN:
         modifications += file_to_lines(abs_path("sweet/" + macro + ".sweet"))
 
@@ -83,8 +74,7 @@ def transform(filename, no_cleanup):
 
     lines_to_modify = modifications + lines_to_modify
 
-    # This is the saddest piece of code I've ever written in my life. It is absolutely disgusting, and I am sorry. Hovav, I apologize; please do not judge me.
-    lines_to_modify = stripNativesSyntax(lines_to_modify)
+    lines_to_modify = modify_natives_syntax(lines_to_modify, True)
 
     # Write lines to sweet to file
     with open(filename + '.sweet', 'w') as sweetfile:
@@ -96,8 +86,7 @@ def transform(filename, no_cleanup):
     # Concatenate this file with the lines we saved
     lines = lines_to_save + file_to_lines(filename + '.compiled')
 
-    # This is the saddest piece of code I've ever written in my life. It is absolutely disgusting, and I am sorry. Hovav, I apologize; please do not judge me.
-    lines = uncommentNativesSyntax(lines)
+    lines = modify_natives_syntax(lines, False)
 
     # Output our final modified file
     outfilename = filename.replace('.js', '-typerhappy.js')

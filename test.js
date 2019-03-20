@@ -13,6 +13,7 @@ function f(x) {
 }
 
 var sum = 0;
+% OptimizeFunctionOnNextCall(f)
 for (let i = 0; i < 0x100; ++i) {
  sum += f(sum); 
 }

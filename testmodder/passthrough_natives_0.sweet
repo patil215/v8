@@ -1,5 +1,5 @@
 macro nativefunc {
-  rule { () } => {
-      Snativefunc()
+  rule { } => {
+      Snativefunc;
   }
 }
