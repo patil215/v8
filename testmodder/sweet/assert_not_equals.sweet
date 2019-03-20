@@ -4,4 +4,9 @@ macro assertNotEquals {
     } => {
         assertNotEqualsF(() => $x, () => $y);
     }
+    rule {
+        ($x:expr, $y:expr, $msg:expr)
+    } => {
+        assertNotEqualsF(() => $x, () => $y, msg);
+    }
 }

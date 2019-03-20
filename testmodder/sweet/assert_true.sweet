@@ -4,4 +4,9 @@ macro assertTrue {
     } => {
         assertTrueF(() => $x);
     }
+    rule {
+        ($x:expr, $msg:expr)
+    } => {
+        assertTrueF(() => $x, $msg);
+    }
 }

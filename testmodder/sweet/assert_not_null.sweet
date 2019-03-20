@@ -4,4 +4,9 @@ macro assertNotNull {
     } => {
         assertNotNullF(() => $x);
     }
+    rule {
+        ($x:expr, $msg:expr)
+    } => {
+        assertNotNullF(() => $x, $msg);
+    }
 }
