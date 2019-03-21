@@ -81,7 +81,7 @@ def transform(filename, no_cleanup):
         sweetfile.writelines('\n'.join(lines_to_modify) + '\n')
 
     # Run sweet on the file
-    os.system("sjs -p -o " + filename + '.compiled ' + filename + '.sweet')
+    os.system("sjs -p " + filename + '.sweet > ' + filename + '.compiled')
 
     # Concatenate this file with the lines we saved
     lines = lines_to_save + file_to_lines(filename + '.compiled')
