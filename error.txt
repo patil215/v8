@@ -1,0 +1,32 @@
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 105: Unexpected token ;
+[... ( ) ; ( function ( ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2751:21)
+    at parseExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2787:16)
+    at parseExpressionStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3034:45)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3387:24)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3845:20)
+    at parseProgramElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3860:16)
+    at parseProgramElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3888:29)
+    at parseProgram (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3924:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 160: Unexpected number
+[... , 2 32 ) ) ; ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1966:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseArguments (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2361:17)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2405:24)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2452:20)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)

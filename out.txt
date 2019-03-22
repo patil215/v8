@@ -1,0 +1,638 @@
+Building d8...
+/Users/patil215/proj/depot_tools/ninja -C out/x64.debug d8
+ninja: Entering directory `out/x64.debug'
+ninja: no work to do.
+# autoninja -C out/x64.debug d8
+Done! - V8 compilation finished successfully.
+Running file test/mjsunit/math-floor-of-div-minus-zero.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-of-div-minus-zero-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   1|-   0]: mjsunit/math-floor-of-div-minus-zero-typerhappy                                                                           [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/math-floor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-floor-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   1|-   0]: mjsunit/asm/math-floor-typerhappy                                                             [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/regress/regress-smi-math-floor-round.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/regress/regress-smi-math-floor-round-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/regress/regress-smi-math-floor-round-typ...                                                                               [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-floor-part3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-part3-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:24|%   0|+   1|-   0]: mjsunit/math-floor-part3-typerhappy                                                               [00:24|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-floor-part2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-part2-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:23|%   0|+   1|-   0]: mjsunit/math-floor-part2-typerhappy                                                               [00:23|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-floor-of-div.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-of-div-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[01:09|%   0|+   1|-   0]: mjsunit/math-floor-of-div-typerhappy                                                                [01:09|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-floor-of-div-nosudiv.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-of-div-nosudiv-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[01:05|%   0|+   1|-   0]: mjsunit/math-floor-of-div-nosudiv-typerhappy                                                                        [01:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-floor-part1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-part1-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[01:53|%   0|+   1|-   0]: mjsunit/math-floor-part1-typerhappy                                                               [01:54|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-floor-negative.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-negative-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:07|%   0|+   0|-   1]: mjsunit/math-floor-negative-typerhappy                                                                  === mjsunit/math-floor-negative-typerhappy ===
+/Users/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <-10000000000.1> found <undefined>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /Users/patil215/proj/v8/test/mjsunit/math-floor-negative-typerhappy.js 56:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /Users/patil215/proj/v8/test/mjsunit/math-floor-negative-typerhappy.js 56:1
+Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/math-floor-negative-typerhappy.js --random-seed=412933288 --nohard-abort --enable-slow-asserts --verify-heap --noenable-sse4-1 --allow-natives-syntax
+                                                                 [00:07|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-floor-part4.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-floor-part4-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:19|%   0|+   1|-   0]: mjsunit/math-floor-part4-typerhappy                                                               [00:19|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/math-floor-global.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-floor-global-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   0|-   1]: mjsunit/compiler/math-floor-global-typerhappy                                                                         === mjsunit/compiler/math-floor-global-typerhappy ===
+undefined:3: ReferenceError: flo is not defined
+"0";return flo(n)
+    ^
+ReferenceError: flo is not defined
+    at eval (eval at testFloor$900 (/Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:34:20), <anonymous>:3:5)
+    at /Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:35:43
+    at typerPrep (/Users/patil215/proj/v8/test/mjsunit/mjsunit.js:436:5)
+    at assertEqualsF (/Users/patil215/proj/v8/test/mjsunit/mjsunit.js:444:5)
+    at testFloor$900 (/Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:35:5)
+    at test$902 (/Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:53:5)
+    at /Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:137:5
+Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js --random-seed=1684861099 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
+                                                                        [00:06|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/math-floor-local.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-floor-local-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:23|%   0|+   1|-   0]: mjsunit/compiler/math-floor-local-typerhappy                                                                        [00:23|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/number-floor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-floor-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/compiler/number-floor-typerhappy                                                                    [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/math-ceil.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-ceil-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   1|-   0]: mjsunit/asm/math-ceil-typerhappy                                                            [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-ceil.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-ceil-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:19|%   0|+   1|-   0]: mjsunit/math-ceil-typerhappy                                                        [00:19|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/number-ceil.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-ceil-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/number-ceil-typerhappy                                                                   [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/math-ceil.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-ceil-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/math-ceil-typerhappy                                                                 [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/math-fround.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-fround-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   1|-   0]: mjsunit/asm/math-fround-typerhappy                                                              [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/regress/regress-smi-math-floor-round.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/regress/regress-smi-math-floor-round-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/regress/regress-smi-math-floor-round-typ...                                                                               [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/pixel-array-rounding.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/pixel-array-rounding-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/pixel-array-rounding-typerhappy                                                                   [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/math-fround.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/math-fround-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:25|%   0|+   1|-   0]: mjsunit/es6/math-fround-typerhappy                                                              [00:25|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-round.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-round-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:12|%   0|+   1|-   0]: mjsunit/math-round-typerhappy                                                         [00:12|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/number-round.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-round-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/number-round-typerhappy                                                                    [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/math-round.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-round-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/compiler/math-round-typerhappy                                                                  [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/regress/regress-int32-truncation.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/regress/regress-int32-truncation-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/regress/regress-int32-truncation-typerha...                                                                               [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/regress/regress-phi-truncation.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/regress/regress-phi-truncation-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/regress/regress-phi-truncation-typerhapp...                                                                               [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/double-truncation.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/double-truncation-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   1|-   0]: mjsunit/double-truncation-typerhappy                                                                [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/math-trunc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/math-trunc-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:26|%   0|+   1|-   0]: mjsunit/es6/math-trunc-typerhappy                                                             [00:27|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/truncating-store.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/truncating-store-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/compiler/truncating-store-typerhappy                                                                        [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/math-trunc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-trunc-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   1|-   0]: mjsunit/compiler/math-trunc-typerhappy                                                                  [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/number-trunc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-trunc-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/number-trunc-typerhappy                                                                    [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/truncating-store-deopt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/truncating-store-deopt-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/truncating-store-deopt-typerhap...                                                                               [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/number-comparison-truncations.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-comparison-truncations-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/compiler/number-comparison-truncations-t...                                                                               [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/regress-truncate-number-or-undefined-to-float64.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-truncate-number-or-undefined-to-float64-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/regress-truncate-number-or-unde...                                                                               [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/math-abs.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-abs-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:05|%   0|+   1|-   0]: mjsunit/asm/math-abs-typerhappy                                                           [00:05|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-abs.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-abs-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:11|%   0|+   1|-   0]: mjsunit/math-abs-typerhappy                                                       [00:11|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/abstract-equal-receiver.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/abstract-equal-receiver-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   1|-   0]: mjsunit/compiler/abstract-equal-receiver-typerha...                                                                               [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/abstract-equal-symbol.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/abstract-equal-symbol-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/abstract-equal-symbol-typerhapp...                                                                               [00:04|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/abstract-equal-undetectable.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/abstract-equal-undetectable-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/abstract-equal-undetectable-typ...                                                                               [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/number-abs.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-abs-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   1|-   0]: mjsunit/compiler/number-abs-typerhappy                                                                  [00:03|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/math-exp-precision.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/math-exp-precision-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:19|%   0|+   1|-   0]: mjsunit/math-exp-precision-typerhappy                                                                 [00:19|%   0|+   1|-   0]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/math-expm1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/math-expm1-typerhappy
+Build found: /Users/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   0|-   1]: mjsunit/es6/math-expm1-typerhappy                                                             === mjsunit/es6/math-expm1-typerhappy ===
+#
+# Fatal error in ../../src/typer-happy.h, line 147
+# Check failed: isPlainNumberType(value) || std::isnan(value).
+#
+#
+#
+#FailureMessage Object: 0x7ffeea20da50
+==== C stack trace ===============================
+
+    0   libv8_libbase.dylib                 0x000000010b28664e v8::base::debug::StackTrace::StackTrace() + 30
+    1   libv8_libbase.dylib                 0x000000010b286685 v8::base::debug::StackTrace::StackTrace() + 21
+    2   libv8_libplatform.dylib             0x000000010b3230c5 v8::platform::(anonymous namespace)::PrintStackTrace() + 37
+    3   libv8_libbase.dylib                 0x000000010b26ef78 V8_Fatal(char const*, int, char const*, ...) + 536
+    4   libv8.dylib                         0x0000000106d63a44 v8::internal::TyperHappy::checkPlainNumberNaNUnionType(double) + 116
+    5   libv8.dylib                         0x0000000106d637db v8::internal::TyperHappy::CheckType(double, double) + 139
+    6   ???                                 0x00003798926039c1 0x0 + 61128430336449
+Received signal 6
+Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/es6/math-expm1-typerhappy.js --random-seed=-1890943350 --nohard-abort --enable-slow-asserts --verify-heap --no-fast-math --allow-natives-syntax
+                                                            [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
