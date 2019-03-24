@@ -31,6 +31,12 @@ def modify_natives_syntax(lines, forward):
                     lines[i] = lines[i].replace("%" + nativefunc, nativefunc)
     return lines
 
+def comment_assert_optimized(lines):
+    for i in range(len(lines)):
+        if "assertOptimized" in lines[i] or "assertUnoptimized" in lines[i]:
+            lines[i] = '// ' + lines[i]
+    return lines
+
 @click.command()
 @click.argument('filename')
 @click.option('--no-cleanup', is_flag=True)
@@ -81,12 +87,14 @@ def transform(filename, no_cleanup):
         sweetfile.writelines('\n'.join(lines_to_modify) + '\n')
 
     # Run sweet on the file
-    os.system("sjs -p " + filename + '.sweet > ' + filename + '.compiled')
+    #os.system("sjs -p " + filename + '.sweet > ' + filename + '.compiled')
+    os.system("sjs " + filename + '.sweet > ' + filename + '.compiled')
 
     # Concatenate this file with the lines we saved
     lines = lines_to_save + file_to_lines(filename + '.compiled')
 
     lines = modify_natives_syntax(lines, False)
+    lines = comment_assert_optimized(lines)
 
     # Output our final modified file
     outfilename = filename.replace('.js', '-typerhappy.js')

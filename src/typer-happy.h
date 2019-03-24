@@ -3,6 +3,7 @@
 #include "src/conversions-inl.h"
 #include "src/compiler/types.h"
 #include "src/date.h"
+#include "src/globals.h"
 
 #ifndef V8_TYPER_HAPPY_H_
 #define V8_TYPER_HAPPY_H_
@@ -15,72 +16,95 @@ template <typename T>
 class Check {
 public:
     int id;
+    const char * module;
     const char * name;
     void (*const checkingFunction)(T);
 
-    Check(int _id, const char * _name, void (*const _checkingFunction)(T)) : 
-    id(_id), name(_name), checkingFunction(_checkingFunction) {}
+    Check(int _id, const char * _module, const char * _name, void (*const _checkingFunction)(T)) : 
+    id(_id), module(_module), name(_name), checkingFunction(_checkingFunction) {}
 };
 
 class TyperHappy {
 
     template <class T>
-    static void addCheck(std::vector<Check<T>> * list, const char * name, void (*const checkingFunction)(T)) {
-        list->push_back(Check<double> ((int) (list->size()) + 1, name, checkingFunction));
+    static void addCheck(std::vector<Check<T>> * list, const char * module, const char * name, void (*const checkingFunction)(T)) {
+        list->push_back(Check<double> ((int) (list->size()) + 1, module, name, checkingFunction));
     }
 
     // Creates list of checking functions for anything that can be represented as a double/number type.
     static std::vector<Check<double>> * createChecksDouble() {
         std::vector<Check<double>> * checks = new std::vector<Check<double>>();
 
-        addCheck(checks, "random", TyperHappy::checkPlainNumberType);
+        addCheck(checks, "Math", "random", TyperHappy::checkPlainNumberType);
 
-        addCheck(checks, "floor", TyperHappy::checkIntegerMinusZeroNaNUnionType);
-        addCheck(checks, "ceil", TyperHappy::checkIntegerMinusZeroNaNUnionType);
-        addCheck(checks, "round", TyperHappy::checkIntegerMinusZeroNaNUnionType);
-        addCheck(checks, "trunc", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "Math", "floor", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "Math", "ceil", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "Math", "round", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+        addCheck(checks, "Math", "trunc", TyperHappy::checkIntegerMinusZeroNaNUnionType);
 
-        addCheck(checks, "abs", TyperHappy::checkPlainNumberNaNUnionType);
-        addCheck(checks, "exp", TyperHappy::checkPlainNumberNaNUnionType);
-        addCheck(checks, "expm1", TyperHappy::checkPlainNumberNaNUnionType);
+        addCheck(checks, "Math", "abs", TyperHappy::checkPlainNumberNaNUnionType);
+        addCheck(checks, "Math", "exp", TyperHappy::checkPlainNumberNaNUnionType);
+        addCheck(checks, "Math", "expm1", TyperHappy::checkPlainNumberNaNUnionType);
 
-        addCheck(checks, "acos", TyperHappy::checkNumberType);
-        addCheck(checks, "acosh", TyperHappy::checkNumberType);
-        addCheck(checks, "asinh", TyperHappy::checkNumberType);
-        addCheck(checks, "atan", TyperHappy::checkNumberType);
-        addCheck(checks, "atanh", TyperHappy::checkNumberType);
-        addCheck(checks, "cbrt", TyperHappy::checkNumberType);
-        addCheck(checks, "cos", TyperHappy::checkNumberType);
-        addCheck(checks, "fround", TyperHappy::checkNumberType);
-        addCheck(checks, "log", TyperHappy::checkNumberType);
-        addCheck(checks, "log1p", TyperHappy::checkNumberType);
-        addCheck(checks, "log10", TyperHappy::checkNumberType);
-        addCheck(checks, "log2", TyperHappy::checkNumberType);
-        addCheck(checks, "sin", TyperHappy::checkNumberType);
-        addCheck(checks, "sqrt", TyperHappy::checkNumberType);
-        addCheck(checks, "tan", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "acos", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "acosh", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "asinh", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "atan", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "atanh", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "cbrt", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "cos", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "fround", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "log", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "log1p", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "log10", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "log2", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "sin", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "sqrt", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "tan", TyperHappy::checkNumberType);
 
-        addCheck(checks, "sign", TyperHappy::checkMinusOneToOneOrMinusZeroOrNaNUnionType);
+        addCheck(checks, "Math", "sign", TyperHappy::checkMathSignType);
 
-        addCheck(checks, "atan2", TyperHappy::checkNumberType);
-        addCheck(checks, "pow", TyperHappy::checkNumberType);
-        addCheck(checks, "max", TyperHappy::checkNumberType);
-        addCheck(checks, "min", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "atan2", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "pow", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "max", TyperHappy::checkNumberType);
+        addCheck(checks, "Math", "min", TyperHappy::checkNumberType);
 
-        addCheck(checks, "imul", TyperHappy::checkSigned32Type);
+        addCheck(checks, "Math", "imul", TyperHappy::checkSigned32Type);
 
-        addCheck(checks, "clz32", TyperHappy::checkClz32);
+        addCheck(checks, "Math", "clz32", TyperHappy::checkMathClz32);
 
-        addCheck(checks, "now", TyperHappy::checkNow);
-        addCheck(checks, "getDate", TyperHappy::checkGetDate);
-        addCheck(checks, "getDay", TyperHappy::checkGetDay);
-        addCheck(checks, "getFullYear", TyperHappy::checkGetFullYear);
-        addCheck(checks, "getHours", TyperHappy::checkGetHours);
-        addCheck(checks, "getMilliseconds", TyperHappy::checkGetMilliseconds);
-        addCheck(checks, "getMinutes", TyperHappy::checkGetMinutes);
-        addCheck(checks, "getMonth", TyperHappy::checkGetMonth);
-        addCheck(checks, "getSeconds", TyperHappy::checkGetSeconds);
-        addCheck(checks, "getTime", TyperHappy::checkGetTime);
+        addCheck(checks, "Date", "now", TyperHappy::checkDateNow);
+        addCheck(checks, "Date", "getDate", TyperHappy::checkDateGetDate);
+        addCheck(checks, "Date", "getDay", TyperHappy::checkDateGetDay);
+        addCheck(checks, "Date", "getFullYear", TyperHappy::checkDateGetFullYear);
+        addCheck(checks, "Date", "getHours", TyperHappy::checkDateGetHours);
+        addCheck(checks, "Date", "getMilliseconds", TyperHappy::checkDateGetMilliseconds);
+        addCheck(checks, "Date", "getMinutes", TyperHappy::checkDateGetMinutes);
+        addCheck(checks, "Date", "getMonth", TyperHappy::checkDateGetMonth);
+        addCheck(checks, "Date", "getSeconds", TyperHappy::checkDateGetSeconds);
+        addCheck(checks, "Date", "getTime", TyperHappy::checkDateGetTime);
+
+        // Skipped a few
+        addCheck(checks, "String", "charCodeAt", TyperHappy::checkStringCharcodeAt);
+        addCheck(checks, "String", "codePointAt", TyperHappy::checkStringCodePointAt);
+        // Skipped a few
+        addCheck(checks, "String", "indexOf", TyperHappy::checkStringIndexOf);
+        addCheck(checks, "String", "lastIndexOf", TyperHappy::checkStringLastIndexOf);
+
+        // Skipped a few
+
+        addCheck(checks, "Array", "findIndex", TyperHappy::checkArrayFindIndex);
+        // Skip
+        addCheck(checks, "Array", "indexOf", TyperHappy::checkArrayIndexOf);
+        // Skip
+        addCheck(checks, "Array", "lastIndexOf", TyperHappy::checkArrayLastIndexOf);
+        // Skip
+        addCheck(checks, "Array", "push", TyperHappy::checkPositiveSafeIntegerType);
+        // Skip
+        addCheck(checks, "Array", "unshift", TyperHappy::checkPositiveSafeIntegerType);
+
+        // Skip a lot
+
 
         return checks;
     }
@@ -91,9 +115,9 @@ public:
 
     static double CheckType(double value, double functionId);
 
-    static int functionIdFromName(char* name);
+    static int functionIdFromName(char* module, char* name);
 
-    static void checkClz32(double value) {
+    static void checkMathClz32(double value) {
         CHECK(0 <= value && value <= 32);
     }
 
@@ -101,7 +125,7 @@ public:
         CHECK(IsInt32Double(value));
     }
 
-    static void checkMinusOneToOneOrMinusZeroOrNaNUnionType(double value) {
+    static void checkMathSignType(double value) {
         CHECK(
             (-1.0 <= value && value <= 1.0) ||
             IsMinusZero(value)              ||
@@ -139,75 +163,129 @@ public:
         CHECK(isnan(value) || IsMinusZero(value) || compiler::RangeType::IsInteger(value));
     }
 
+    static bool inRange(double value, double min, double max) {
+        return min <= value && value <= max;
+    }
+
     static void checkRangeType(double value, double min, double max) {
-        CHECK(min <= value && value <= max);
+        CHECK(inRange(value, min, max));
     }
 
     static void checkPlainNumberNaNUnionType(double value) {
         CHECK(isPlainNumberType(value) || std::isnan(value));
     }
 
-    static void checkNow(double value) {
+    static void checkDateNow(double value) {
         checkRangeType(value, -DateCache::kMaxTimeInMs, DateCache::kMaxTimeInMs);
     }
 
-    static void checkGetDate(double value) {
+    static void checkDateGetDate(double value) {
         CHECK(
             1 <= value && value <= 31.0 ||
             std::isnan(value)
         );
     }
 
-    static void checkGetDay(double value) {
+    static void checkDateGetDay(double value) {
         CHECK(
             0 <= value && value <= 6.0 ||
             std::isnan(value)
         );
     }
 
-    static void checkGetFullYear(double value) {
+    static void checkDateGetFullYear(double value) {
         CHECK(
             IsInt32Double(value)    ||
             std::isnan(value)
         );
     }
 
-    static void checkGetHours(double value) {
+    static void checkDateGetHours(double value) {
         CHECK(
             0 <= value && value <= 23.0 ||
             std::isnan(value)
         );
     }
 
-    static void checkGetMilliseconds(double value) {
+    static void checkDateGetMilliseconds(double value) {
         CHECK(
             0 <= value && value <= 999.0 ||
             std::isnan(value)
         );
     }
 
-    static void checkGetMinutes(double value) {
+    static void checkDateGetMinutes(double value) {
         CHECK(
             0 <= value && value <= 59.0 ||
             std::isnan(value)
         );
     }
 
-    static void checkGetMonth(double value) {
+    static void checkDateGetMonth(double value) {
         CHECK(
             0 <= value && value <= 11.0 ||
             std::isnan(value)
         );
     }
 
-    static void checkGetSeconds(double value) {
-        checkGetMinutes(value);
+    static void checkDateGetSeconds(double value) {
+        checkDateGetMinutes(value);
     }
 
-    static void checkGetTime(double value) {
+    static void checkDateGetTime(double value) {
         CHECK(
             -DateCache::kMaxTimeInMs <= value && value <= DateCache::kMaxTimeInMs ||
             std::isnan(value)
+        );
+    }
+
+    static void checkStringCharcodeAt(double value) {
+        CHECK(
+            inRange(value, 0, kMaxUInt16) ||
+            std::isnan(value)
+        );
+    }
+
+    static void checkStringCodePointAt(double value) {
+        CHECK(
+            inRange(value, 0, String::kMaxCodePoint)
+            // TODO how to check Type::Undefined()??
+        );
+    }
+
+    static void checkStringIndexOf(double value) {
+        CHECK(
+            inRange(value, -1, String::kMaxLength)
+        );
+    }
+
+    static void checkStringLastIndexOf(double value) {
+        CHECK(
+            inRange(value, -1, String::kMaxLength)
+        );
+    }
+
+    static void checkArrayFindIndex(double value) {
+        CHECK(
+            inRange(value, -1, kMaxSafeInteger)
+        );
+    }
+
+    static void checkArrayIndexOf(double value) {
+        CHECK(
+            inRange(value, -1, kMaxSafeInteger)
+        );
+    }
+
+    static void checkArrayLastIndexOf(double value) {
+        CHECK(
+            inRange(value, -1, kMaxSafeInteger)
+        );
+    }
+
+    static void checkPositiveSafeIntegerType(double value) {
+        CHECK(
+            inRange(value, 0, kMaxSafeInteger)
         );
     }
 

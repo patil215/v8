@@ -8,7 +8,8 @@ namespace internal {
 
 
   // Returns 0 if no functions matched the ID.
-  int TyperHappy::functionIdFromName(char * name) {
+  int TyperHappy::functionIdFromName(char * module, char * name) {
+      // TODO use module
       for (unsigned long i = 0; i < checksDouble->size(); i++) {
           if (strcmp(name, checksDouble->at(i).name) == 0) {
               return checksDouble->at(i).id;
