@@ -1,0 +1,67 @@
+random", TyperHappy::checkPlainNumberType);
+
+floor", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+ceil", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+round", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+trunc", TyperHappy::checkIntegerMinusZeroNaNUnionType);
+
+abs", TyperHappy::checkPlainNumberNaNUnionType);
+exp", TyperHappy::checkPlainNumberNaNUnionType);
+expm1", TyperHappy::checkPlainNumberNaNUnionType);
+
+acos", TyperHappy::checkNumberType);
+acosh", TyperHappy::checkNumberType);
+asinh", TyperHappy::checkNumberType);
+atan", TyperHappy::checkNumberType);
+atanh", TyperHappy::checkNumberType);
+cbrt", TyperHappy::checkNumberType);
+cos", TyperHappy::checkNumberType);
+fround", TyperHappy::checkNumberType);
+log", TyperHappy::checkNumberType);
+log1p", TyperHappy::checkNumberType);
+log10", TyperHappy::checkNumberType);
+log2", TyperHappy::checkNumberType);
+sin", TyperHappy::checkNumberType);
+sqrt", TyperHappy::checkNumberType);
+tan", TyperHappy::checkNumberType);
+
+sign", TyperHappy::checkMathSignType);
+
+atan2", TyperHappy::checkNumberType);
+pow", TyperHappy::checkNumberType);
+max", TyperHappy::checkNumberType);
+min", TyperHappy::checkNumberType);
+
+imul", TyperHappy::checkSigned32Type);
+
+clz32", TyperHappy::checkMathClz32);
+
+now", TyperHappy::checkDateNow);
+getDate", TyperHappy::checkDateGetDate);
+getDay", TyperHappy::checkDateGetDay);
+getFullYear", TyperHappy::checkDateGetFullYear);
+getHours", TyperHappy::checkDateGetHours);
+getMilliseconds", TyperHappy::checkDateGetMilliseconds);
+getMinutes", TyperHappy::checkDateGetMinutes);
+getMonth", TyperHappy::checkDateGetMonth);
+getSeconds", TyperHappy::checkDateGetSeconds);
+getTime", TyperHappy::checkDateGetTime);
+
+
+charCodeAt", TyperHappy::checkStringCharcodeAt);
+codePointAt", TyperHappy::checkStringCodePointAt);
+
+indexOf", TyperHappy::checkStringIndexOf);
+lastIndexOf", TyperHappy::checkStringLastIndexOf);
+
+
+
+findIndex", TyperHappy::checkArrayFindIndex);
+
+indexOf", TyperHappy::checkArrayIndexOf);
+
+lastIndexOf", TyperHappy::checkArrayLastIndexOf);
+
+push", TyperHappy::checkPositiveSafeIntegerType);
+
+unshift", TyperHappy::checkPositiveSafeIntegerType);
