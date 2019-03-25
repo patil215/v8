@@ -15,7 +15,17 @@ do
   test=${test/.js/-typerhappy}
   test=${test#test/}
   echo $test
- ./tools/run-tests.py --outdir=out/x64.debug $test
+ ./tools/run-tests.py --outdir=out/x64.debug $test > out.tmp 2> err.tmp
+  status=$?
+  if [ $status -ne 0 ]; then
+    echo ""
+    echo "FAILED!"
+    echo ""
+    cat out.tmp
+    cat err.tmp
+  else
+    echo "PASSED!"
+  fi
   echo ""
   echo ""
   echo ""

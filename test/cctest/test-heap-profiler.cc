@@ -2399,7 +2399,7 @@ TEST(ManyLocalsInSharedContext) {
   // This test gets very slow with slow asserts (18 minutes instead of 1:30,
   // as of November 2018).
 #ifdef ENABLE_SLOW_DCHECKS
-  i::FLAG_enable_slow_asserts = false;
+  i::FLAG_enable_slow_asserts = true;
 #endif
   LocalContext env;
   v8::HandleScope scope(env->GetIsolate());
