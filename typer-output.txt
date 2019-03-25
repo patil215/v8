@@ -65,3 +65,12 @@ Running the test...
 mjsunit/asm/math-floor-typerhappy
 
 
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+>>> Ctrl-C detected, early abort...
+>>> SIGTERM received, early abort...
+[50:10|%   0|+   0|-   0]: Done
+>>> 0 tests ran

@@ -21,7 +21,7 @@ namespace internal {
 V8_EXPORT_PRIVATE extern bool FLAG_enable_slow_asserts;
 #else
 #define SLOW_DCHECK(condition) ((void) 0)
-static const bool FLAG_enable_slow_asserts = true;
+static const bool FLAG_enable_slow_asserts = false;
 #endif
 
 }  // namespace internal
