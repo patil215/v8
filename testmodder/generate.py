@@ -10,8 +10,7 @@ SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
 
 NATIVE_FUNCTIONS = {
     0: ["GetUndetectable"],
-    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction", "NeverOptimizeFunction", "ArrayBufferDetach", "ClearFunctionFeedback", "ToLength", "_ToLength", "ToNumber", "ToName", "ToString", "FlattenString", "IsAsmWasmCode"],
-    2: ["OptimizeFunctionOnNextCall"]
+    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction", "NeverOptimizeFunction", "ArrayBufferDetach", "ClearFunctionFeedback", "ToLength", "_ToLength", "ToNumber", "ToName", "ToString", "FlattenString", "IsAsmWasmCode", "NormalizeElements", "HasSloppyArgumentsElements", "HasObjectElements", "HasDictionaryElements"]
 }
 
 
@@ -101,6 +100,7 @@ def transform(filename, no_cleanup):
     # Write lines to sweet to file
     with open(filename + '.sweet', 'w') as sweetfile:
         sweetfile.writelines('\n'.join(lines_to_modify) + '\n')
+        print("written")
 
     # Run sweet on the file
     #os.system("sjs -p " + filename + '.sweet > ' + filename + '.compiled')
@@ -120,7 +120,7 @@ def transform(filename, no_cleanup):
 
     # Cleanup: remove the side files
     if not no_cleanup:
-        os.remove(filename + '.sweet');
+        #os.remove(filename + '.sweet');
         os.remove(filename + '.compiled');
 
 if __name__ == '__main__':
