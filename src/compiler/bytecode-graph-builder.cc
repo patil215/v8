@@ -1804,12 +1804,13 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
     Handle<Name> name = parameter.name();
     std::unique_ptr<char[]> toCheck = String::cast(*name).ToCString();
 
-    Operator1<NamedAccess>* accessModule = (Operator1<NamedAccess> *) (*args[1]).op();
+    /*Operator1<NamedAccess>* accessModule = (Operator1<NamedAccess> *) (*args[1]).op();
     NamedAccess parameterModule = accessModule->parameter();
     Handle<Name> nameModule = parameterModule.name();
-    std::unique_ptr<char[]> toCheckModule = String::cast(*nameModule).ToCString();
+    std::unique_ptr<char[]> toCheckModule = String::cast(*nameModule).ToCString();*/
+    char bad[1] = "";
 
-    functionId = TyperHappy::functionIdFromName(toCheckModule.get(), toCheck.get());
+    functionId = TyperHappy::functionIdFromName(bad, toCheck.get());
   }
 
   if (functionId != 0) {
