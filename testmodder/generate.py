@@ -120,7 +120,7 @@ def transform(filename, no_cleanup):
 
     # Cleanup: remove the side files
     if not no_cleanup:
-        #os.remove(filename + '.sweet');
+        os.remove(filename + '.sweet');
         os.remove(filename + '.compiled');
 
 if __name__ == '__main__':

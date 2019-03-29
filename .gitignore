@@ -115,4 +115,5 @@ tools/turbolizer/deploy
 cmake-build-debug/
 src/cmake-build-debug/
 
-
+err.tmp
+out.tmp
