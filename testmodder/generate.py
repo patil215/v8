@@ -3,12 +3,15 @@ import os
 
 MACROS_TO_RUN = ["assert_true", "assert_false", "assert_equals", "assert_equals_delta", "assert_not_equals", "assert_null", "assert_not_null"]
 
+LINES_TO_COMMENT = ["assertDoesNotThrow"]
+
 SCRIPT_LOC = os.path.dirname(__file__)
 SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
 
 NATIVE_FUNCTIONS = {
     0: ["GetUndetectable"],
-    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction", "NeverOptimizeFunction"]
+    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction", "NeverOptimizeFunction", "ArrayBufferDetach", "ClearFunctionFeedback", "ToLength", "_ToLength", "ToNumber", "ToName", "ToString", "FlattenString", "IsAsmWasmCode"],
+    2: ["OptimizeFunctionOnNextCall"]
 }
 
 
@@ -20,6 +23,12 @@ def abs_path(rel_path):
     filename = os.path.join(os.path.dirname(__file__), rel_path)
     return filename
 
+def comment_bad_lines(lines):
+    for i in range(len(lines)):
+        for bad in LINES_TO_COMMENT:
+            if bad in lines[i]:
+                lines[i] = "//" + lines[i]
+    return lines
 
 def modify_natives_syntax(lines, forward):
     for i in range(len(lines)):
@@ -35,6 +44,12 @@ def comment_assert_optimized(lines):
     for i in range(len(lines)):
         if "assertOptimized" in lines[i] or "assertUnoptimized" in lines[i]:
             lines[i] = '// ' + lines[i]
+    return lines
+
+def replace_let_var_for_loop(lines):
+    for i in range(len(lines)):
+        lines[i] = lines[i].replace("for (let ", "for (var ")
+        lines[i] = lines[i].replace("for(let ", "for(var ")
     return lines
 
 @click.command()
@@ -81,6 +96,7 @@ def transform(filename, no_cleanup):
     lines_to_modify = modifications + lines_to_modify
 
     lines_to_modify = modify_natives_syntax(lines_to_modify, True)
+    lines_to_modify = replace_let_var_for_loop(lines_to_modify)
 
     # Write lines to sweet to file
     with open(filename + '.sweet', 'w') as sweetfile:
@@ -95,6 +111,7 @@ def transform(filename, no_cleanup):
 
     lines = modify_natives_syntax(lines, False)
     lines = comment_assert_optimized(lines)
+    lines = comment_bad_lines(lines)
 
     # Output our final modified file
     outfilename = filename.replace('.js', '-typerhappy.js')

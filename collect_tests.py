@@ -13,9 +13,10 @@ def generate(source_file, out_file, tests_dir):
         source = line[:line.find('\"')]
         if len(source) > 2:
             print(source)
-            command = "grep -r -l {} {} | grep -v 'sqlite' | grep -v 'typerhappy' | grep -v 'sweet' | grep -v 'status' >> {}".format(source, tests_dir, out_file)
+            command = "grep -r -l {} {} | grep -v 'sqlite' | grep -v 'typerhappy' | grep -v 'sweet' | grep -v 'poppler' | grep -v 'status' >> {}".format(source, tests_dir, out_file)
             print(command)
             os.system(command)
+    os.system("cat {} | sort | uniq > {}".format(out_file, out_file))
 
 if __name__ == '__main__':
     generate()
