@@ -8,12 +8,6 @@ LINES_TO_COMMENT = ["assertDoesNotThrow"]
 SCRIPT_LOC = os.path.dirname(__file__)
 SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
 
-NATIVE_FUNCTIONS = {
-    0: ["GetUndetectable"],
-    1: ["OptimizeFunctionOnNextCall", "DeoptimizeFunction", "NeverOptimizeFunction", "ArrayBufferDetach", "ClearFunctionFeedback", "ToLength", "_ToLength", "ToNumber", "ToName", "ToString", "FlattenString", "IsAsmWasmCode", "NormalizeElements", "HasSloppyArgumentsElements", "HasObjectElements", "HasDictionaryElements"]
-}
-
-
 def file_to_lines(filename):
     return open(filename).read().splitlines()
 
@@ -29,14 +23,14 @@ def comment_bad_lines(lines):
                 lines[i] = "//" + lines[i]
     return lines
 
+NATIVE_FUNCTIONS = [a.strip() for a in open(abs_path('intrinsics.txt')).readlines()]
 def modify_natives_syntax(lines, forward):
     for i in range(len(lines)):
-        for ops in NATIVE_FUNCTIONS:
-            for nativefunc in NATIVE_FUNCTIONS[ops]:
-                if not forward:
-                    lines[i] = lines[i].replace("S" + nativefunc, "%" + nativefunc)
-                else:
-                    lines[i] = lines[i].replace("%" + nativefunc, nativefunc)
+        for nativefunc in NATIVE_FUNCTIONS:
+            if forward:
+                lines[i] = lines[i].replace("%" + nativefunc, "TESTMODDER" + nativefunc)
+            else:
+                lines[i] = lines[i].replace("TESTMODDER" + nativefunc, "%" + nativefunc)
     return lines
 
 def comment_assert_optimized(lines):
@@ -87,11 +81,6 @@ def transform(filename, no_cleanup):
     for macro in MACROS_TO_RUN:
         modifications += file_to_lines(abs_path("sweet/" + macro + ".sweet"))
 
-    for ops in NATIVE_FUNCTIONS:
-        for nativefunc in NATIVE_FUNCTIONS[ops]:
-            tomod = open(abs_path("passthrough_natives_{}.sweet".format(ops))).read().replace("nativefunc", nativefunc).splitlines()
-            modifications += tomod
-
     lines_to_modify = modifications + lines_to_modify
 
     lines_to_modify = modify_natives_syntax(lines_to_modify, True)
@@ -120,8 +109,8 @@ def transform(filename, no_cleanup):
 
     # Cleanup: remove the side files
     if not no_cleanup:
-        os.remove(filename + '.sweet');
-        os.remove(filename + '.compiled');
+        os.remove(filename + '.sweet')
+        os.remove(filename + '.compiled')
 
 if __name__ == '__main__':
     transform()
