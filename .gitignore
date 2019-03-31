@@ -1,5 +1,7 @@
 *-typerhappy.js
-.js.sweet
+*.js.compiled
+*.js.sweet
+*.tmpcompiled
 
 #*#
 *.Makefile

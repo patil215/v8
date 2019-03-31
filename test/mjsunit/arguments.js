@@ -325,7 +325,7 @@ assertEquals(117, arg_set(0xFFFFFFFF));
   assertTrue(%HaveSameMap(args1, args2));
   args2.length = 12;
   assertTrue(%HaveSameMap(args1, args2));
-  args2.length = "aa"
+  args2.length = "aa";
   assertTrue(%HaveSameMap(args1, args2));
 
   let args3 = f(1);
@@ -349,7 +349,7 @@ assertEquals(117, arg_set(0xFFFFFFFF));
   assertTrue(%HaveSameMap(args1, args2));
   args2.length = 12.0;
   assertTrue(%HaveSameMap(args1, args2));
-  args2.length = "aa"
+  args2.length = "aa";
   assertTrue(%HaveSameMap(args1, args2));
 })();
 

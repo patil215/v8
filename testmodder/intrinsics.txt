@@ -457,3 +457,4 @@ StoreIC_Miss
 StoreInArrayLiteralIC_Slow
 StorePropertyWithInterceptor
 CloneObjectIC_Miss
+_DeoptimizeNow

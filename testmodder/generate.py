@@ -1,5 +1,6 @@
 import click
 import os
+import errno
 
 MACROS_TO_RUN = ["assert_true", "assert_false", "assert_equals", "assert_equals_delta", "assert_not_equals", "assert_null", "assert_not_null"]
 
@@ -11,6 +12,12 @@ SWEET_TEMPLATE_LOC = os.path.join(SCRIPT_LOC, '/sweet/') + "{}.sweet"
 def file_to_lines(filename):
     return open(filename).read().splitlines()
 
+def silentremove(filename):
+    try:
+        os.remove(filename)
+    except OSError as e: # this would be "except OSError, e:" before Python 2.6
+        if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
+            raise # re-raise exception if a different error occurred
 
 def abs_path(rel_path):
     filename = os.path.join(os.path.dirname(__file__), rel_path)
@@ -47,9 +54,14 @@ def replace_let_var_for_loop(lines):
 
 @click.command()
 @click.argument('filename')
-@click.option('--no-cleanup', is_flag=True)
-def transform(filename, no_cleanup):
+@click.option('--cleanup', is_flag=True, default=False)
+def transform(filename, cleanup):
     lines = file_to_lines(filename)
+
+    # Delete old files
+    silentremove(filename.replace('.js', '-typerhappy.js'))
+    silentremove(filename + '.sweet')
+    silentremove(filename + '.compiled')
 
     # Find the leading comments, and add the '--allow-natives-syntax' flag
     comments_or_empty_ind = 0
@@ -73,8 +85,18 @@ def transform(filename, no_cleanup):
     if not foundFlags:
         lines_to_save.append(file_to_lines(abs_path('allow_natives_flag.js'))[0])
 
-
     lines_to_modify = lines[comments_or_empty_ind:]
+    lines_to_modify = modify_natives_syntax(lines_to_modify, True)
+    lines_to_modify = replace_let_var_for_loop(lines_to_modify)
+
+    # Run ES6 macros by running sweet.js once
+    """with open(filename + '.sweet', 'w') as sweetfile:
+        sweetfile.writelines('\n'.join(lines_to_modify) + '\n')
+    # -m - enables ES6 macros (https://github.com/jlongster/es6-macros)            
+    os.system("sjs -r -m es6-macros " + filename + '.sweet > ' + filename + '.tmpcompiled')
+    lines_to_modify = file_to_lines(filename + '.sweet')
+    silentremove(filename + '.tmpcompiled')
+    silentremove(filename + '.sweet')"""
 
     # Prepend our modifications
     modifications = []
@@ -83,17 +105,16 @@ def transform(filename, no_cleanup):
 
     lines_to_modify = modifications + lines_to_modify
 
-    lines_to_modify = modify_natives_syntax(lines_to_modify, True)
-    lines_to_modify = replace_let_var_for_loop(lines_to_modify)
-
     # Write lines to sweet to file
     with open(filename + '.sweet', 'w') as sweetfile:
         sweetfile.writelines('\n'.join(lines_to_modify) + '\n')
-        print("written")
 
-    # Run sweet on the file
-    #os.system("sjs -p " + filename + '.sweet > ' + filename + '.compiled')
-    os.system("sjs " + filename + '.sweet > ' + filename + '.compiled')
+    """ Run sweet on the file. We do it twice - once for es6 macros, and once for our processing.
+    Options enabled:
+    -r - removes a lot of the hygenic renames
+    -p - don't parse what was generated
+    """
+    os.system("sjs -r -p " + filename + '.sweet > ' + filename + '.compiled') # Use macros for es6
 
     # Concatenate this file with the lines we saved
     lines = lines_to_save + file_to_lines(filename + '.compiled')
@@ -108,7 +129,7 @@ def transform(filename, no_cleanup):
         outfile.writelines('\n'.join(lines) + '\n')
 
     # Cleanup: remove the side files
-    if not no_cleanup:
+    if cleanup:
         os.remove(filename + '.sweet')
         os.remove(filename + '.compiled')
 

@@ -131,7 +131,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/arguments-typerhappy                                                        === mjsunit/arguments-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/arguments-typerhappy 
+                                                       
+=== mjsunit/arguments-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/arguments-typerhappy.js:285: ReferenceError: __fa_args is not defined
         return __fa_args.length;
         ^
@@ -142,7 +146,9 @@ ReferenceError: __fa_args is not defined
     at f3$1508 (/home/patil215/proj/v8/test/mjsunit/arguments-typerhappy.js:282:5)
     at /home/patil215/proj/v8/test/mjsunit/arguments-typerhappy.js:289:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/arguments-typerhappy.js --random-seed=355857204 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                       [00:02|%   0|+   0|-   1]: Done
+
+                                                       
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -169,7 +175,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-concat-typerhappy                                                           === mjsunit/array-concat-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-concat-typerhappy 
+                                                          
+=== mjsunit/array-concat-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <"undefined">
 
 Stack: MjsUnitAssertionError
@@ -181,7 +191,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-concat-typerhappy.js 226:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-concat-typerhappy.js --random-seed=924485362 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -208,7 +220,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-array-prototype-chai...                                                                               === mjsunit/array-elements-from-array-prototype-chain-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-array-prototype-chai... 
+                                                                              
+=== mjsunit/array-elements-from-array-prototype-chain-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (hole should be returned as undefined): expected <undefined> found <"@3">
 
 Stack: MjsUnitAssertionError
@@ -220,7 +236,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-chain-typerhappy.js 65:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-chain-typerhappy.js --random-seed=984476780 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -238,7 +256,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-array-prototype-type...                                                                               === mjsunit/array-elements-from-array-prototype-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-array-prototype-type... 
+                                                                              
+=== mjsunit/array-elements-from-array-prototype-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (hole should be returned as undefined): expected <undefined> found <"@3">
 
 Stack: MjsUnitAssertionError
@@ -250,7 +272,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-typerhappy.js 65:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-typerhappy.js --random-seed=526667472 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -268,7 +292,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-object-prototype-typ...                                                                               === mjsunit/array-elements-from-object-prototype-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-object-prototype-typ... 
+                                                                              
+=== mjsunit/array-elements-from-object-prototype-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (hole should be returned as undefined): expected <undefined> found <"@3">
 
 Stack: MjsUnitAssertionError
@@ -280,7 +308,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-object-prototype-typerhappy.js 65:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-elements-from-object-prototype-typerhappy.js --random-seed=1674383534 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -316,7 +346,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:17|%   0|+   0|-   1]: mjsunit/array-functions-prototype-misc-typerhapp...                                                                               === mjsunit/array-functions-prototype-misc-typerhappy ===
+
+
+[00:17|%   0|+   0|-   1]: mjsunit/array-functions-prototype-misc-typerhapp... 
+                                                                              
+=== mjsunit/array-functions-prototype-misc-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <1> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -328,7 +362,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-misc-typerhappy.js 579:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-misc-typerhappy.js --random-seed=1406635089 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:17|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:17|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -346,7 +382,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-functions-prototype-typerhappy                                                                        === mjsunit/array-functions-prototype-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-functions-prototype-typerhappy 
+                                                                       
+=== mjsunit/array-functions-prototype-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"zero"> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -360,7 +400,9 @@ MjsUnitAssertionError
     at runTest1$1405 /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js 73:5
     at               /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js 144:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js --random-seed=-85954916 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                       [00:02|%   0|+   0|-   1]: Done
+
+                                                                       
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -387,7 +429,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-indexing-typerhappy                                                             === mjsunit/array-indexing-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-indexing-typerhappy 
+                                                            
+=== mjsunit/array-indexing-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <-1>
 
 Stack: MjsUnitAssertionError
@@ -399,7 +445,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-indexing-typerhappy.js 89:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-indexing-typerhappy.js --random-seed=-845010801 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                            [00:02|%   0|+   0|-   1]: Done
+
+                                                            
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -417,7 +465,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-iteration-typerhappy                                                              === mjsunit/array-iteration-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-iteration-typerhappy 
+                                                             
+=== mjsunit/array-iteration-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (array element at index 0): expected <1> found <4>
 
 Stack: MjsUnitAssertionError
@@ -431,7 +483,9 @@ MjsUnitAssertionError
     at                   /home/patil215/proj/v8/test/mjsunit/array-iteration-typerhappy.js 432:5
     at                   /home/patil215/proj/v8/test/mjsunit/array-iteration-typerhappy.js 561:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-iteration-typerhappy.js --random-seed=-271450738 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -494,7 +548,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:09|%   0|+   0|-   1]: mjsunit/array-join-typerhappy                                                         === mjsunit/array-join-typerhappy ===
+
+
+[00:09|%   0|+   0|-   1]: mjsunit/array-join-typerhappy 
+                                                        
+=== mjsunit/array-join-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <"">
 
 Stack: MjsUnitAssertionError
@@ -506,7 +564,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-join-typerhappy.js 254:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-join-typerhappy.js --random-seed=-1010960622 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                        [00:09|%   0|+   0|-   1]: Done
+
+                                                        
+[00:09|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -542,7 +602,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-length-typerhappy                                                           === mjsunit/array-length-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-length-typerhappy 
+                                                          
+=== mjsunit/array-length-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <1073741825>
 
 Stack: MjsUnitAssertionError
@@ -554,7 +618,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/array-length-typerhappy.js 252:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-length-typerhappy.js --random-seed=-2003510043 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -572,7 +638,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-literal-feedback-typerhappy                                                                     === mjsunit/array-literal-feedback-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-literal-feedback-typerhappy 
+                                                                    
+=== mjsunit/array-literal-feedback-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"packed elements"> found <"packed double elements">
 
 Stack: MjsUnitAssertionError
@@ -588,7 +658,9 @@ MjsUnitAssertionError
     at changeOptimizedArrayLiteralKind /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 174:5
     at                                 /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 192:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js --random-seed=-1463369019 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc --opt --no-always-opt --deopt-every-n-times=0
-                                                                    [00:02|%   0|+   0|-   1]: Done
+
+                                                                    
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -624,7 +696,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-natives-elements-typerhappy                                                                     === mjsunit/array-natives-elements-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-natives-elements-typerhappy 
+                                                                    
+=== mjsunit/array-natives-elements-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -638,7 +714,9 @@ MjsUnitAssertionError
     at array_natives_test$1406 /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js 43:5
     at                         /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js 1379:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js --random-seed=234462878 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                    [00:02|%   0|+   0|-   1]: Done
+
+                                                                    
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -656,7 +734,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-pop-typerhappy                                                        === mjsunit/array-pop-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-pop-typerhappy 
+                                                       
+=== mjsunit/array-pop-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (1st pop): expected <1> found <4>
 
 Stack: MjsUnitAssertionError
@@ -670,7 +752,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js 43:9
     at               /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js 285:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js --random-seed=-1013232278 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                       [00:02|%   0|+   0|-   1]: Done
+
+                                                       
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -769,7 +853,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-prototype-pop-typerhappy                                                                  === mjsunit/array-prototype-pop-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-prototype-pop-typerhappy 
+                                                                 
+=== mjsunit/array-prototype-pop-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <6>
 
 Stack: MjsUnitAssertionError
@@ -783,7 +871,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js 27:5
     at               /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js 33:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js --random-seed=-2507389 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                 [00:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -846,7 +936,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-push-typerhappy                                                         === mjsunit/array-push-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-push-typerhappy 
+                                                        
+=== mjsunit/array-push-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (length after .push(1)): expected <1> found <4>
 
 Stack: MjsUnitAssertionError
@@ -860,7 +954,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js 47:9
     at               /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js 221:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js --random-seed=-203212318 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -986,7 +1082,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-reduce-typerhappy                                                           === mjsunit/array-reduce-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-reduce-typerhappy 
+                                                          
+=== mjsunit/array-reduce-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/array-reduce-typerhappy.js:48: ReferenceError: __fa_args is not defined
             return __fa_args.length;
             ^
@@ -999,7 +1099,9 @@ ReferenceError: __fa_args is not defined
     at testReduce$1403 (/home/patil215/proj/v8/test/mjsunit/array-reduce-typerhappy.js:92:44)
     at /home/patil215/proj/v8/test/mjsunit/array-reduce-typerhappy.js:137:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-reduce-typerhappy.js --random-seed=-529088072 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1017,7 +1119,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-slice-typerhappy                                                          === mjsunit/array-slice-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-slice-typerhappy 
+                                                         
+=== mjsunit/array-slice-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <7>
 
 Stack: MjsUnitAssertionError
@@ -1031,7 +1137,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/array-slice-typerhappy.js 208:9
     at               /home/patil215/proj/v8/test/mjsunit/array-slice-typerhappy.js 251:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-slice-typerhappy.js --random-seed=936339328 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1049,7 +1157,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/array-sort-typerhappy                                                         === mjsunit/array-sort-typerhappy ===
+
+
+[00:03|%   0|+   0|-   1]: mjsunit/array-sort-typerhappy 
+                                                        
+=== mjsunit/array-sort-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (sortaccessors length): expected <undefined> found <4>
 
 Stack: MjsUnitAssertionError
@@ -1063,7 +1175,9 @@ MjsUnitAssertionError
     at TestNonArrayWithAccessors$1410 /home/patil215/proj/v8/test/mjsunit/array-sort-typerhappy.js 380:5
     at                                /home/patil215/proj/v8/test/mjsunit/array-sort-typerhappy.js 412:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-sort-typerhappy.js --random-seed=-276034805 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                        [00:03|%   0|+   0|-   1]: Done
+
+                                                        
+[00:03|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1081,7 +1195,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/array-splice-typerhappy                                                           === mjsunit/array-splice-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/array-splice-typerhappy 
+                                                          
+=== mjsunit/array-splice-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
 expected:
 [1,"a","b","c",2,3]
@@ -1099,7 +1217,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js 113:9
     at               /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js 127:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js --random-seed=-1894789928 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1186,7 +1306,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/asm-heap-typerhappy                                                           === mjsunit/asm/asm-heap-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/asm-heap-typerhappy 
+                                                          
+=== mjsunit/asm/asm-heap-typerhappy ===
 TestValid_PowerOfTwo...
 undefined:8: ReferenceError: Template is not defined
 }; Template
@@ -1197,7 +1321,9 @@ ReferenceError: Template is not defined
     at TestValid_PowerOfTwo (/home/patil215/proj/v8/test/mjsunit/asm/asm-heap-typerhappy.js:38:18)
     at /home/patil215/proj/v8/test/mjsunit/asm/asm-heap-typerhappy.js:57:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/asm-heap-typerhappy.js --random-seed=1801815496 --nohard-abort --enable-slow-asserts --verify-heap --validate-asm --allow-natives-syntax --expose-gc --mock-arraybuffer-allocator
-                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1215,13 +1341,19 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/asm-memory-typerhappy                                                             === mjsunit/asm/asm-memory-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/asm-memory-typerhappy 
+                                                            
+=== mjsunit/asm/asm-memory-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/asm-memory-typerhappy.js:25: SyntaxError: Illegal return statement
         return Module$1401(this, {}, new ArrayBuffer(16));
         ^^^^^^
 SyntaxError: Illegal return statement
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/asm-memory-typerhappy.js --random-seed=-2052076093 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                            [00:02|%   0|+   0|-   1]: Done
+
+                                                            
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1248,7 +1380,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/asm-validation-typerhappy                                                                 === mjsunit/asm/asm-validation-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/asm-validation-typerhappy 
+                                                                
+=== mjsunit/asm/asm-validation-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/asm-validation-typerhappy.js:28: Invalid asm.js: Can only use immutable variables in global definition
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
 
@@ -1265,7 +1401,9 @@ MjsUnitAssertionError
     at TestConst      /home/patil215/proj/v8/test/mjsunit/asm/asm-validation-typerhappy.js 71:5
     at                /home/patil215/proj/v8/test/mjsunit/asm/asm-validation-typerhappy.js 113:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/asm-validation-typerhappy.js --random-seed=381827141 --nohard-abort --enable-slow-asserts --verify-heap --validate-asm --allow-natives-syntax --nostress-opt --allow-natives-syntax
-                                                                [00:02|%   0|+   0|-   1]: Done
+
+                                                                
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1283,7 +1421,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-add-typerhappy                                                              === mjsunit/asm/atomics-add-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-add-typerhappy 
+                                                             
+=== mjsunit/asm/atomics-add-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js:7: Invalid asm.js: Unexpected token
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <30>
 
@@ -1300,7 +1442,9 @@ MjsUnitAssertionError
     at testElement$1405     /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 99:5
     at                      /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 109:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js --random-seed=298772324 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1318,7 +1462,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-and-typerhappy                                                              === mjsunit/asm/atomics-and-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-and-typerhappy 
+                                                             
+=== mjsunit/asm/atomics-and-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js:7: Invalid asm.js: Unexpected token
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <127> found <15>
 
@@ -1335,7 +1483,9 @@ MjsUnitAssertionError
     at testElement$1405     /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 100:5
     at                      /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 110:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js --random-seed=32123417 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1353,7 +1503,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-compareexchange-typerhappy                                                                          === mjsunit/asm/atomics-compareexchange-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-compareexchange-typerhappy 
+                                                                         
+=== mjsunit/asm/atomics-compareexchange-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js:7: Invalid asm.js: Unexpected token
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <50>
 
@@ -1370,7 +1524,9 @@ MjsUnitAssertionError
     at testElement$1405     /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 113:5
     at                      /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 123:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js --random-seed=-311709337 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1388,7 +1544,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-exchange-typerhappy                                                                   === mjsunit/asm/atomics-exchange-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-exchange-typerhappy 
+                                                                  
+=== mjsunit/asm/atomics-exchange-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js:7: Invalid asm.js: Unexpected token
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <127> found <15>
 
@@ -1405,7 +1565,9 @@ MjsUnitAssertionError
     at testElement$1409     /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 90:5
     at                      /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 100:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js --random-seed=-1688520714 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
-                                                                  [00:02|%   0|+   0|-   1]: Done
+
+                                                                  
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1432,7 +1594,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-or-typerhappy                                                             === mjsunit/asm/atomics-or-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-or-typerhappy 
+                                                            
+=== mjsunit/asm/atomics-or-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js:7: Invalid asm.js: Unexpected token
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <15>
 
@@ -1449,7 +1615,9 @@ MjsUnitAssertionError
     at testElement$1409     /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 101:5
     at                      /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 111:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js --random-seed=224827107 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
-                                                            [00:02|%   0|+   0|-   1]: Done
+
+                                                            
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1476,7 +1644,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-sub-typerhappy                                                              === mjsunit/asm/atomics-sub-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-sub-typerhappy 
+                                                             
+=== mjsunit/asm/atomics-sub-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js:7: Invalid asm.js: Unexpected token
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <30> found <0>
 
@@ -1493,7 +1665,9 @@ MjsUnitAssertionError
     at testElement$1405     /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 100:5
     at                      /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 110:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js --random-seed=-12427202 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1511,7 +1685,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-xor-typerhappy                                                              === mjsunit/asm/atomics-xor-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-xor-typerhappy 
+                                                             
+=== mjsunit/asm/atomics-xor-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js:7: Invalid asm.js: Unexpected token
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <15>
 
@@ -1528,7 +1706,9 @@ MjsUnitAssertionError
     at testElement$1405     /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 99:5
     at                      /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 109:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js --random-seed=-861548873 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1555,7 +1735,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/call-annotation-typerhappy                                                                  === mjsunit/asm/call-annotation-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/call-annotation-typerhappy 
+                                                                 
+=== mjsunit/asm/call-annotation-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <1> found <4>
 
 Stack: MjsUnitAssertionError
@@ -1569,7 +1753,9 @@ MjsUnitAssertionError
     at SuccessExternCoercion /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js 39:5
     at                       /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js 45:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js --random-seed=93722836 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --validate-asm
-                                                                 [00:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1641,7 +1827,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:06|%   0|+   0|-   1]: mjsunit/asm/embenchen/lua_binarytrees-typerhappy                                                                            === mjsunit/asm/embenchen/lua_binarytrees-typerhappy ===
+
+
+[00:06|%   0|+   0|-   1]: mjsunit/asm/embenchen/lua_binarytrees-typerhappy 
+                                                                           
+=== mjsunit/asm/embenchen/lua_binarytrees-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/asm/embenchen/lua_binarytrees-typerhappy.js:26466: Invalid asm.js: Type mismatch in assignment
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
 expected:
@@ -1667,7 +1857,9 @@ MjsUnitAssertionError
     at run$1861                  /home/patil215/proj/v8/test/mjsunit/asm/embenchen/lua_binarytrees-typerhappy.js 58991:9
 /bin/this.program: cannot open binarytrees.lua: Success
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/embenchen/lua_binarytrees-typerhappy.js --random-seed=-623949648 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                           [00:06|%   0|+   0|-   1]: Done
+
+                                                                           
+[00:06|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1712,7 +1904,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/asm/global-imports-typerhappy                                                                 === mjsunit/asm/global-imports-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/asm/global-imports-typerhappy 
+                                                                
+=== mjsunit/asm/global-imports-typerhappy ===
 undefined:4: ReferenceError: foreign is not defined
     var x = foreign.x | 0;
             ^
@@ -1722,7 +1918,9 @@ ReferenceError: foreign is not defined
     at Run$1415 (/home/patil215/proj/v8/test/mjsunit/asm/global-imports-typerhappy.js:59:5)
     at /home/patil215/proj/v8/test/mjsunit/asm/global-imports-typerhappy.js:62:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/global-imports-typerhappy.js --random-seed=1493431892 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --validate-asm
-                                                                [00:02|%   0|+   0|-   1]: Done
+
+                                                                
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -1865,7 +2063,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/async-hooks/api-methods-typerhappy                                                                      === mjsunit/async-hooks/api-methods-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/async-hooks/api-methods-typerhappy 
+                                                                     
+=== mjsunit/async-hooks/api-methods-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (Async hooks missing executionAsyncId method): expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -1879,7 +2081,9 @@ MjsUnitAssertionError
     at             /home/patil215/proj/v8/test/mjsunit/async-hooks/api-methods-typerhappy.js 47:5
     at             /home/patil215/proj/v8/test/mjsunit/async-hooks/api-methods-typerhappy.js 66:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/async-hooks/api-methods-typerhappy.js --random-seed=1328049349 --nohard-abort --enable-slow-asserts --verify-heap --expose-async-hooks --allow-natives-syntax
-                                                                     [00:02|%   0|+   0|-   1]: Done
+
+                                                                     
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2216,7 +2420,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/char-escape-typerhappy                                                          === mjsunit/char-escape-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/char-escape-typerhappy 
+                                                         
+=== mjsunit/char-escape-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <8>
 
 Stack: MjsUnitAssertionError
@@ -2228,7 +2436,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/char-escape-typerhappy.js 61:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/char-escape-typerhappy.js --random-seed=556237812 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2291,7 +2501,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/codegen-coverage-typerhappy                                                               === mjsunit/codegen-coverage-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/codegen-coverage-typerhappy 
+                                                              
+=== mjsunit/codegen-coverage-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <8>
 
 Stack: MjsUnitAssertionError
@@ -2305,7 +2519,9 @@ MjsUnitAssertionError
     at cover_codegen_paths$1403 /home/patil215/proj/v8/test/mjsunit/codegen-coverage-typerhappy.js 70:9
     at                          /home/patil215/proj/v8/test/mjsunit/codegen-coverage-typerhappy.js 198:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/codegen-coverage-typerhappy.js --random-seed=114078254 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2332,7 +2548,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compare-known-objects-slow-typerhappy                                                                         === mjsunit/compare-known-objects-slow-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compare-known-objects-slow-typerhappy 
+                                                                        
+=== mjsunit/compare-known-objects-slow-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -2344,7 +2564,9 @@ MjsUnitAssertionError
     at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
     at             /home/patil215/proj/v8/test/mjsunit/compare-known-objects-slow-typerhappy.js 141:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compare-known-objects-slow-typerhappy.js --random-seed=1197440261 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2371,7 +2593,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compare-known-objects-typerhappy                                                                    === mjsunit/compare-known-objects-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compare-known-objects-typerhappy 
+                                                                   
+=== mjsunit/compare-known-objects-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -2383,7 +2609,9 @@ MjsUnitAssertionError
     at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
     at             /home/patil215/proj/v8/test/mjsunit/compare-known-objects-typerhappy.js 145:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compare-known-objects-typerhappy.js --random-seed=-432274377 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                   [00:02|%   0|+   0|-   1]: Done
+
+                                                                   
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2401,7 +2629,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compare-objects-typerhappy                                                              === mjsunit/compare-objects-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compare-objects-typerhappy 
+                                                             
+=== mjsunit/compare-objects-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -2415,7 +2647,9 @@ MjsUnitAssertionError
     at test$1406   /home/patil215/proj/v8/test/mjsunit/compare-objects-typerhappy.js 46:5
     at             /home/patil215/proj/v8/test/mjsunit/compare-objects-typerhappy.js 109:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compare-objects-typerhappy.js --random-seed=1565098310 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2505,7 +2739,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/abstract-equal-receiver-typerha...                                                                               === mjsunit/compiler/abstract-equal-receiver-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/abstract-equal-receiver-typerha... 
+                                                                              
+=== mjsunit/compiler/abstract-equal-receiver-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <false> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -2519,7 +2757,9 @@ MjsUnitAssertionError
     at              /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-receiver-typerhappy.js 149:5
     at              /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-receiver-typerhappy.js 156:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-receiver-typerhappy.js --random-seed=1476444478 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --noalways-opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2537,7 +2777,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/abstract-equal-symbol-typerhapp...                                                                               === mjsunit/compiler/abstract-equal-symbol-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/abstract-equal-symbol-typerhapp... 
+                                                                              
+=== mjsunit/compiler/abstract-equal-symbol-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -2551,7 +2795,9 @@ MjsUnitAssertionError
     at             /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-symbol-typerhappy.js 56:5
     at             /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-symbol-typerhappy.js 98:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-symbol-typerhappy.js --random-seed=1723435399 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --noalways-opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2569,7 +2815,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/abstract-equal-undetectable-typ...                                                                               === mjsunit/compiler/abstract-equal-undetectable-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/abstract-equal-undetectable-typ... 
+                                                                              
+=== mjsunit/compiler/abstract-equal-undetectable-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <false> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -2583,7 +2833,9 @@ MjsUnitAssertionError
     at              /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-undetectable-typerhappy.js 150:5
     at              /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-undetectable-typerhappy.js 157:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-undetectable-typerhappy.js --random-seed=-1464486970 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --noalways-opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2619,7 +2871,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-buffer-is-view-typerhappy                                                                            === mjsunit/compiler/array-buffer-is-view-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-buffer-is-view-typerhappy 
+                                                                           
+=== mjsunit/compiler/array-buffer-is-view-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/array-buffer-is-view-typerhappy.js:15: ReferenceError: x is not defined
         return ArrayBuffer.isView({ x }.x);
                                     ^
@@ -2631,7 +2887,9 @@ ReferenceError: x is not defined
     at /home/patil215/proj/v8/test/mjsunit/compiler/array-buffer-is-view-typerhappy.js:17:5
     at /home/patil215/proj/v8/test/mjsunit/compiler/array-buffer-is-view-typerhappy.js:75:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/array-buffer-is-view-typerhappy.js --random-seed=796522886 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                           [00:02|%   0|+   0|-   1]: Done
+
+                                                                           
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2676,7 +2934,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-multiple-receiver-maps-ty...                                                                               === mjsunit/compiler/array-multiple-receiver-maps-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-multiple-receiver-maps-ty... 
+                                                                              
+=== mjsunit/compiler/array-multiple-receiver-maps-typerhappy ===
 undefined:3: SyntaxError: Unexpected identifier
 let f = function () { [native code] };
                               ^^^^
@@ -2687,7 +2949,9 @@ SyntaxError: Unexpected identifier
     at Array.forEach (<anonymous>)
     at /home/patil215/proj/v8/test/mjsunit/compiler/array-multiple-receiver-maps-typerhappy.js:281:26
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/array-multiple-receiver-maps-typerhappy.js --random-seed=-2135896815 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --no-always-opt --no-stress-background-compile --trace-opt --trace-deopt --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2732,7 +2996,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-slice-clone-typerhappy                                                                         === mjsunit/compiler/array-slice-clone-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-slice-clone-typerhappy 
+                                                                        
+=== mjsunit/compiler/array-slice-clone-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <[1,2,3,4,5]>
 
 Stack: MjsUnitAssertionError
@@ -2746,7 +3014,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/array-slice-clone-typerhappy.js 120:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/array-slice-clone-typerhappy.js 138:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/array-slice-clone-typerhappy.js --random-seed=-1664248990 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2773,7 +3043,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-subclass-typerhappy                                                                      === mjsunit/compiler/array-subclass-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/array-subclass-typerhappy 
+                                                                     
+=== mjsunit/compiler/array-subclass-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <4> found <0>
 
 Stack: MjsUnitAssertionError
@@ -2787,7 +3061,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/array-subclass-typerhappy.js 52:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/array-subclass-typerhappy.js 73:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/array-subclass-typerhappy.js --random-seed=-459781066 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                     [00:02|%   0|+   0|-   1]: Done
+
+                                                                     
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2805,7 +3081,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/assignment-deopt-typerhappy                                                                        === mjsunit/compiler/assignment-deopt-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/assignment-deopt-typerhappy 
+                                                                       
+=== mjsunit/compiler/assignment-deopt-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <44> found <47>
 
 Stack: MjsUnitAssertionError
@@ -2817,7 +3097,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/assignment-deopt-typerhappy.js 151:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/assignment-deopt-typerhappy.js --random-seed=1140848081 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                       [00:02|%   0|+   0|-   1]: Done
+
+                                                                       
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -2907,7 +3189,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/concurrent-proto-change-typerha...                                                                               === mjsunit/compiler/concurrent-proto-change-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/concurrent-proto-change-typerha... 
+                                                                              
+=== mjsunit/compiler/concurrent-proto-change-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <1>
 
 Stack: MjsUnitAssertionError
@@ -2919,7 +3205,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/concurrent-proto-change-typerhappy.js 61:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/concurrent-proto-change-typerhappy.js --random-seed=1428977950 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --no-always-opt --concurrent-recompilation --block-concurrent-recompilation --allow-natives-syntax --no-always-opt --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3021,7 +3309,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/count-deopt-typerhappy                                                                   === mjsunit/compiler/count-deopt-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/count-deopt-typerhappy 
+                                                                  
+=== mjsunit/compiler/count-deopt-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <43> found <46>
 
 Stack: MjsUnitAssertionError
@@ -3033,7 +3325,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/count-deopt-typerhappy.js 169:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/count-deopt-typerhappy.js --random-seed=-1382775501 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                  [00:02|%   0|+   0|-   1]: Done
+
+                                                                  
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3051,7 +3345,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/dataview-constant-typerhappy                                                                         === mjsunit/compiler/dataview-constant-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/dataview-constant-typerhappy 
+                                                                        
+=== mjsunit/compiler/dataview-constant-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <42> found <45>
 
 Stack: MjsUnitAssertionError
@@ -3065,7 +3363,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js 17:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js 54:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js --random-seed=1164006864 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3092,7 +3392,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/dataview-nonconstant-typerhappy                                                                            === mjsunit/compiler/dataview-nonconstant-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/dataview-nonconstant-typerhappy 
+                                                                           
+=== mjsunit/compiler/dataview-nonconstant-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <42> found <45>
 
 Stack: MjsUnitAssertionError
@@ -3106,7 +3410,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js 17:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js 54:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js --random-seed=-1877493453 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                           [00:02|%   0|+   0|-   1]: Done
+
+                                                                           
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3151,7 +3457,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/delete-typerhappy                                                              === mjsunit/compiler/delete-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/delete-typerhappy 
+                                                             
+=== mjsunit/compiler/delete-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <1>
 
 Stack: MjsUnitAssertionError
@@ -3163,7 +3473,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/delete-typerhappy.js 48:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/delete-typerhappy.js --random-seed=705789538 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3190,7 +3502,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-every-typ...                                                                               === mjsunit/compiler/deopt-array-prototype-every-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-every-typ... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-every-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <false>
 
 Stack: MjsUnitAssertionError
@@ -3204,7 +3520,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-every-typerhappy.js 27:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-every-typerhappy.js 35:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-every-typerhappy.js --random-seed=-473200508 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3231,7 +3549,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-find-type...                                                                               === mjsunit/compiler/deopt-array-prototype-find-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-find-type... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-find-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <6>
 
 Stack: MjsUnitAssertionError
@@ -3245,7 +3567,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-find-typerhappy.js 27:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-find-typerhappy.js 35:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-find-typerhappy.js --random-seed=302015616 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3263,7 +3587,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-findindex...                                                                               === mjsunit/compiler/deopt-array-prototype-findindex-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-findindex... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-findindex-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -3277,7 +3605,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-findindex-typerhappy.js 27:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-findindex-typerhappy.js 35:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-findindex-typerhappy.js --random-seed=451613913 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3304,7 +3634,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-includes-...                                                                               === mjsunit/compiler/deopt-array-prototype-includes-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-includes-... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-includes-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -3318,7 +3652,9 @@ MjsUnitAssertionError
     at             /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-includes-typerhappy.js 77:5
     at             /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-includes-typerhappy.js 83:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-includes-typerhappy.js --random-seed=-130362816 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3336,7 +3672,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-indexof-t...                                                                               === mjsunit/compiler/deopt-array-prototype-indexof-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-indexof-t... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-indexof-typerhappy ===
 #
 # Fatal error in ../../src/compiler/verifier.cc, line 81
 # TypeError: node #24:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
@@ -3366,7 +3706,9 @@ embedded_builtins
     /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f9a537b0ae9]
 Received signal 6
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-indexof-typerhappy.js --random-seed=228655144 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3384,7 +3726,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-lastindex...                                                                               === mjsunit/compiler/deopt-array-prototype-lastindexof-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-lastindex... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-lastindexof-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -3398,7 +3744,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-lastindexof-typerhappy.js 25:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-lastindexof-typerhappy.js 33:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-lastindexof-typerhappy.js --random-seed=-1693760539 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3425,7 +3773,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-pop-typer...                                                                               === mjsunit/compiler/deopt-array-prototype-pop-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-pop-typer... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-pop-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <6>
 
 Stack: MjsUnitAssertionError
@@ -3439,7 +3791,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js 40:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js 46:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js --random-seed=-262405845 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3475,7 +3829,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-some-type...                                                                               === mjsunit/compiler/deopt-array-prototype-some-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-some-type... 
+                                                                              
+=== mjsunit/compiler/deopt-array-prototype-some-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <true>
 
 Stack: MjsUnitAssertionError
@@ -3489,7 +3847,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-some-typerhappy.js 27:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-some-typerhappy.js 35:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-some-typerhappy.js --random-seed=644112304 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3534,7 +3894,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-inlined-from-call-typerha...                                                                               === mjsunit/compiler/deopt-inlined-from-call-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-inlined-from-call-typerha... 
+                                                                              
+=== mjsunit/compiler/deopt-inlined-from-call-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <7> found <4>
 
 Stack: MjsUnitAssertionError
@@ -3548,7 +3912,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js 70:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js 106:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js --random-seed=-481291364 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --no-always-opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3611,7 +3977,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/escape-analysis-arguments-typer...                                                                               === mjsunit/compiler/escape-analysis-arguments-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/escape-analysis-arguments-typer... 
+                                                                              
+=== mjsunit/compiler/escape-analysis-arguments-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <3>
 
 Stack: MjsUnitAssertionError
@@ -3627,7 +3997,9 @@ MjsUnitAssertionError
     at testCapturedArguments /home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-arguments-typerhappy.js 82:5
     at                       /home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-arguments-typerhappy.js 87:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-arguments-typerhappy.js --random-seed=2015556215 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3670,7 +4042,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:04|%   0|+   0|-   1]: mjsunit/compiler/escape-analysis-typerhappy                                                                       === mjsunit/compiler/escape-analysis-typerhappy ===
+
+
+[00:04|%   0|+   0|-   1]: mjsunit/compiler/escape-analysis-typerhappy 
+                                                                      
+=== mjsunit/compiler/escape-analysis-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <7>
 
 Stack: MjsUnitAssertionError
@@ -3684,7 +4060,9 @@ MjsUnitAssertionError
     at testOOB       /home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-typerhappy.js 509:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-typerhappy.js 530:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-typerhappy.js --random-seed=-654735243 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc
-                                                                      [00:04|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:04|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3702,7 +4080,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/expression-trees-typerhappy                                                                        === mjsunit/compiler/expression-trees-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/expression-trees-typerhappy 
+                                                                       
+=== mjsunit/compiler/expression-trees-typerhappy ===
 undefined:3: ReferenceError: a is not defined
 return (a|(b|(c|(d|(e|f)))))
 ^
@@ -3713,7 +4095,9 @@ ReferenceError: a is not defined
     at assertEqualsF (/home/patil215/proj/v8/test/mjsunit/mjsunit.js:444:5)
     at /home/patil215/proj/v8/test/mjsunit/compiler/expression-trees-typerhappy.js:82:13
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/expression-trees-typerhappy.js --random-seed=973846500 --nohard-abort --enable-slow-asserts --verify-heap --always-opt --nocompilation-cache --allow-natives-syntax
-                                                                       [00:02|%   0|+   0|-   1]: Done
+
+                                                                       
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3792,7 +4176,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/globals-typerhappy                                                               === mjsunit/compiler/globals-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/globals-typerhappy 
+                                                              
+=== mjsunit/compiler/globals-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <1>
 
 Stack: MjsUnitAssertionError
@@ -3804,7 +4192,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/globals-typerhappy.js 31:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/globals-typerhappy.js --random-seed=-1971233704 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3822,7 +4212,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-accessors2-typerhappy                                                                         === mjsunit/compiler/inline-accessors2-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-accessors2-typerhappy 
+                                                                        
+=== mjsunit/compiler/inline-accessors2-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
 
 Stack: MjsUnitAssertionError
@@ -3838,7 +4232,9 @@ MjsUnitAssertionError
     at TestGetterInAllContexts$1412 /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 123:5
     at                              /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 136:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js --random-seed=536548696 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --inline-accessors
-                                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3874,7 +4270,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-exception-1-typerhappy                                                                          === mjsunit/compiler/inline-exception-1-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-exception-1-typerhappy 
+                                                                         
+=== mjsunit/compiler/inline-exception-1-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <15>
 
 Stack: MjsUnitAssertionError
@@ -3886,7 +4286,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-1-typerhappy.js 138:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-1-typerhappy.js --random-seed=1970912637 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --no-always-opt
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3904,7 +4306,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-exception-2-typerhappy                                                                          === mjsunit/compiler/inline-exception-2-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-exception-2-typerhappy 
+                                                                         
+=== mjsunit/compiler/inline-exception-2-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <15>
 
 Stack: MjsUnitAssertionError
@@ -3916,7 +4322,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-2-typerhappy.js 138:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-2-typerhappy.js --random-seed=-370266797 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --no-always-opt
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -3961,7 +4369,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/inlined-call-typerhappy                                                                    === mjsunit/compiler/inlined-call-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/inlined-call-typerhappy 
+                                                                   
+=== mjsunit/compiler/inlined-call-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/inlined-call-typerhappy.js:37: ReferenceError: __fa_args is not defined
         return __fa_args.length;
         ^
@@ -3973,7 +4385,9 @@ ReferenceError: __fa_args is not defined
     at callNoArgs$1414 (/home/patil215/proj/v8/test/mjsunit/compiler/inlined-call-typerhappy.js:119:12)
     at /home/patil215/proj/v8/test/mjsunit/compiler/inlined-call-typerhappy.js:121:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inlined-call-typerhappy.js --random-seed=379647068 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                   [00:02|%   0|+   0|-   1]: Done
+
+                                                                   
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4072,7 +4486,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/literals-assignment-typerhappy                                                                           === mjsunit/compiler/literals-assignment-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/literals-assignment-typerhappy 
+                                                                          
+=== mjsunit/compiler/literals-assignment-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/literals-assignment-typerhappy.js:84: TypeError: Cannot read property 'x' of undefined
     return a$1422.x;
                   ^
@@ -4082,7 +4500,9 @@ TypeError: Cannot read property 'x' of undefined
     at assertEqualsF (/home/patil215/proj/v8/test/mjsunit/mjsunit.js:444:5)
     at /home/patil215/proj/v8/test/mjsunit/compiler/literals-assignment-typerhappy.js:81:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/literals-assignment-typerhappy.js --random-seed=161140796 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4100,7 +4520,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/literals-typerhappy                                                                === mjsunit/compiler/literals-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/literals-typerhappy 
+                                                               
+=== mjsunit/compiler/literals-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <[1,2,3,4]>
 
 Stack: MjsUnitAssertionError
@@ -4112,7 +4536,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/literals-typerhappy.js 148:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/literals-typerhappy.js --random-seed=2121719725 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                               [00:02|%   0|+   0|-   1]: Done
+
+                                                               
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4166,7 +4592,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/loops-typerhappy                                                             === mjsunit/compiler/loops-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/loops-typerhappy 
+                                                            
+=== mjsunit/compiler/loops-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4178,7 +4608,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/loops-typerhappy.js 70:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/loops-typerhappy.js --random-seed=1828539796 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                            [00:02|%   0|+   0|-   1]: Done
+
+                                                            
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4214,7 +4646,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/math-floor-global-typerhappy                                                                         === mjsunit/compiler/math-floor-global-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/math-floor-global-typerhappy 
+                                                                        
+=== mjsunit/compiler/math-floor-global-typerhappy ===
 undefined:3: ReferenceError: flo is not defined
 "0";return flo(n)
     ^
@@ -4227,7 +4663,9 @@ ReferenceError: flo is not defined
     at test$1407 (/home/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:68:5)
     at /home/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:176:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js --random-seed=1426774883 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4245,7 +4683,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:12|%   0|+   0|-   1]: mjsunit/compiler/math-floor-local-typerhappy                                                                        === mjsunit/compiler/math-floor-local-typerhappy ===
+
+
+[00:12|%   0|+   0|-   1]: mjsunit/compiler/math-floor-local-typerhappy 
+                                                                       
+=== mjsunit/compiler/math-floor-local-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <-0>
 
 Stack: MjsUnitAssertionError
@@ -4257,7 +4699,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/math-floor-local-typerhappy.js 192:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/math-floor-local-typerhappy.js --random-seed=-1699287233 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                                       [00:12|%   0|+   0|-   1]: Done
+
+                                                                       
+[00:12|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4302,7 +4746,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/math-mul-typerhappy                                                                === mjsunit/compiler/math-mul-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/math-mul-typerhappy 
+                                                               
+=== mjsunit/compiler/math-mul-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <3221225469>
 
 Stack: MjsUnitAssertionError
@@ -4314,7 +4762,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/math-mul-typerhappy.js 71:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/math-mul-typerhappy.js --random-seed=-1123836421 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                               [00:02|%   0|+   0|-   1]: Done
+
+                                                               
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4395,7 +4845,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/nary-binary-ops-typerhappy                                                                       === mjsunit/compiler/nary-binary-ops-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/nary-binary-ops-typerhappy 
+                                                                      
+=== mjsunit/compiler/nary-binary-ops-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (numeric ,): expected <undefined> found <5>
 
 Stack: MjsUnitAssertionError
@@ -4407,7 +4861,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/nary-binary-ops-typerhappy.js 88:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/nary-binary-ops-typerhappy.js --random-seed=-227754835 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4468,7 +4924,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-add-typerhappy                                                                  === mjsunit/compiler/number-add-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-add-typerhappy 
+                                                                 
+=== mjsunit/compiler/number-add-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/number-add-typerhappy.js:43: ReferenceError: x is not defined
         return { x }.x + x$1438;
                  ^
@@ -4477,7 +4937,9 @@ ReferenceError: x is not defined
     at /home/patil215/proj/v8/test/mjsunit/compiler/number-add-typerhappy.js:45:5
     at /home/patil215/proj/v8/test/mjsunit/compiler/number-add-typerhappy.js:69:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-add-typerhappy.js --random-seed=-72772453 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                 [00:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4495,7 +4957,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-ceil-typerhappy                                                                   === mjsunit/compiler/number-ceil-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-ceil-typerhappy 
+                                                                  
+=== mjsunit/compiler/number-ceil-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4509,7 +4975,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js 38:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js 47:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js --random-seed=531256862 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                  [00:02|%   0|+   0|-   1]: Done
+
+                                                                  
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4527,7 +4995,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-comparison-truncations-t...                                                                               === mjsunit/compiler/number-comparison-truncations-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-comparison-truncations-t... 
+                                                                              
+=== mjsunit/compiler/number-comparison-truncations-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4541,7 +5013,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-comparison-truncations-typerhappy.js 53:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-comparison-truncations-typerhappy.js 68:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-comparison-truncations-typerhappy.js --random-seed=-1119001415 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4568,7 +5042,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-divide-typerhappy                                                                     === mjsunit/compiler/number-divide-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-divide-typerhappy 
+                                                                    
+=== mjsunit/compiler/number-divide-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <1>
 
 Stack: MjsUnitAssertionError
@@ -4582,7 +5060,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-divide-typerhappy.js 134:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-divide-typerhappy.js 181:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-divide-typerhappy.js --random-seed=1013382135 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --noalways-opt
-                                                                    [00:02|%   0|+   0|-   1]: Done
+
+                                                                    
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4600,7 +5080,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-floor-typerhappy                                                                    === mjsunit/compiler/number-floor-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-floor-typerhappy 
+                                                                   
+=== mjsunit/compiler/number-floor-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4614,7 +5098,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js 38:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js 47:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js --random-seed=389443851 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                   [00:02|%   0|+   0|-   1]: Done
+
+                                                                   
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4641,7 +5127,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-max-typerhappy                                                                  === mjsunit/compiler/number-max-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-max-typerhappy 
+                                                                 
+=== mjsunit/compiler/number-max-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4655,7 +5145,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-max-typerhappy.js 40:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-max-typerhappy.js 49:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-max-typerhappy.js --random-seed=-886452301 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                 [00:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4673,7 +5165,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-min-typerhappy                                                                  === mjsunit/compiler/number-min-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-min-typerhappy 
+                                                                 
+=== mjsunit/compiler/number-min-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <1>
 
 Stack: MjsUnitAssertionError
@@ -4687,7 +5183,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-min-typerhappy.js 40:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-min-typerhappy.js 49:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-min-typerhappy.js --random-seed=2020734960 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                 [00:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4714,7 +5212,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-round-typerhappy                                                                    === mjsunit/compiler/number-round-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-round-typerhappy 
+                                                                   
+=== mjsunit/compiler/number-round-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4728,7 +5230,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js 38:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js 47:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js --random-seed=267678039 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                   [00:02|%   0|+   0|-   1]: Done
+
+                                                                   
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4746,7 +5250,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-subtract-typerhappy                                                                       === mjsunit/compiler/number-subtract-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-subtract-typerhappy 
+                                                                      
+=== mjsunit/compiler/number-subtract-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/number-subtract-typerhappy.js:15: ReferenceError: x is not defined
         return { x }.x - x$1412;
                  ^
@@ -4755,7 +5263,9 @@ ReferenceError: x is not defined
     at /home/patil215/proj/v8/test/mjsunit/compiler/number-subtract-typerhappy.js:17:5
     at /home/patil215/proj/v8/test/mjsunit/compiler/number-subtract-typerhappy.js:41:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-subtract-typerhappy.js --random-seed=1705899743 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4773,7 +5283,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-toboolean-typerhappy                                                                        === mjsunit/compiler/number-toboolean-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-toboolean-typerhappy 
+                                                                       
+=== mjsunit/compiler/number-toboolean-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4787,7 +5301,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-toboolean-typerhappy.js 41:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-toboolean-typerhappy.js 50:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-toboolean-typerhappy.js --random-seed=-2062543816 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                       [00:02|%   0|+   0|-   1]: Done
+
+                                                                       
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4805,7 +5321,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-trunc-typerhappy                                                                    === mjsunit/compiler/number-trunc-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/number-trunc-typerhappy 
+                                                                   
+=== mjsunit/compiler/number-trunc-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -4819,7 +5339,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js 38:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js 47:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js --random-seed=402577026 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                   [00:02|%   0|+   0|-   1]: Done
+
+                                                                   
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4837,7 +5359,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/object-constructor-typerhappy                                                                          === mjsunit/compiler/object-constructor-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/object-constructor-typerhappy 
+                                                                         
+=== mjsunit/compiler/object-constructor-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/object-constructor-typerhappy.js:73: ReferenceError: Base is not defined
     A$1459.prototype = Object.create(Base.prototype);
                                      ^
@@ -4845,7 +5371,9 @@ ReferenceError: Base is not defined
     at ObjectConstructorSubClassing (/home/patil215/proj/v8/test/mjsunit/compiler/object-constructor-typerhappy.js:73:38)
     at /home/patil215/proj/v8/test/mjsunit/compiler/object-constructor-typerhappy.js:86:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/object-constructor-typerhappy.js --random-seed=-1466300674 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4916,7 +5444,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:04|%   0|+   0|-   1]: mjsunit/compiler/optimized-function-calls-typerh...                                                                               === mjsunit/compiler/optimized-function-calls-typerhappy ===
+
+
+[00:04|%   0|+   0|-   1]: mjsunit/compiler/optimized-function-calls-typerh... 
+                                                                              
+=== mjsunit/compiler/optimized-function-calls-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <127>
 
 Stack: MjsUnitAssertionError
@@ -4928,7 +5460,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/optimized-function-calls-typerhappy.js 39:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/optimized-function-calls-typerhappy.js --random-seed=1023843611 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc
-                                                                              [00:04|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:04|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -4990,7 +5524,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/osr-block-scope-id-typerhappy                                                                          === mjsunit/compiler/osr-block-scope-id-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/osr-block-scope-id-typerhappy 
+                                                                         
+=== mjsunit/compiler/osr-block-scope-id-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
 expected:
 45
@@ -5010,7 +5548,9 @@ MjsUnitAssertionError
     at check$1402    /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js 31:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js 52:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js --random-seed=-1652673525 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --use-osr
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5028,7 +5568,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/osr-block-scope-typerhappy                                                                       === mjsunit/compiler/osr-block-scope-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/osr-block-scope-typerhappy 
+                                                                      
+=== mjsunit/compiler/osr-block-scope-typerhappy ===
 undefined:12: SyntaxError: Unexpected token }
 }})
  ^
@@ -5036,7 +5580,9 @@ SyntaxError: Unexpected token }
     at test$1402 (/home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-typerhappy.js:40:42)
     at /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-typerhappy.js:73:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-typerhappy.js --random-seed=1537918633 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --use-osr
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5099,7 +5645,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/promise-constructor-typerhappy                                                                           === mjsunit/compiler/promise-constructor-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/promise-constructor-typerhappy 
+                                                                          
+=== mjsunit/compiler/promise-constructor-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/promise-constructor-typerhappy.js:20: ReferenceError: resolve is not defined
             resolve,
             ^
@@ -5108,7 +5658,9 @@ ReferenceError: resolve is not defined
     at /home/patil215/proj/v8/test/mjsunit/compiler/promise-constructor-typerhappy.js:25:5
     at /home/patil215/proj/v8/test/mjsunit/compiler/promise-constructor-typerhappy.js:29:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/promise-constructor-typerhappy.js --random-seed=-431435608 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --experimental-inline-promise-constructor
-                                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5176,7 +5728,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/promise-species-typerhappy                                                                       === mjsunit/compiler/promise-species-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/promise-species-typerhappy 
+                                                                      
+=== mjsunit/compiler/promise-species-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/compiler/promise-species-typerhappy.js:8: TypeError: undefined is not a promise
     Object.getPrototypeOf(Foo$1404.prototype).constructor.apply(this, arguments);
                                                           ^
@@ -5187,7 +5743,9 @@ TypeError: undefined is not a promise
     at f$1407 (/home/patil215/proj/v8/test/mjsunit/compiler/promise-species-typerhappy.js:15:77)
     at /home/patil215/proj/v8/test/mjsunit/compiler/promise-species-typerhappy.js:40:10
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/promise-species-typerhappy.js --random-seed=1042103208 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5223,7 +5781,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/redundancy-elimination-typerhap...                                                                               === mjsunit/compiler/redundancy-elimination-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/redundancy-elimination-typerhap... 
+                                                                              
+=== mjsunit/compiler/redundancy-elimination-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <9>
 
 Stack: MjsUnitAssertionError
@@ -5237,7 +5799,9 @@ MjsUnitAssertionError
     at               /home/patil215/proj/v8/test/mjsunit/compiler/redundancy-elimination-typerhappy.js 330:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/redundancy-elimination-typerhappy.js 344:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/redundancy-elimination-typerhappy.js --random-seed=1800471628 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5300,7 +5864,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-3218915-typerhappy                                                                       === mjsunit/compiler/regress-3218915-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-3218915-typerhappy 
+                                                                      
+=== mjsunit/compiler/regress-3218915-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <false> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -5312,7 +5880,9 @@ MjsUnitAssertionError
     at assertFalseF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 522:5
     at              /home/patil215/proj/v8/test/mjsunit/compiler/regress-3218915-typerhappy.js 56:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/regress-3218915-typerhappy.js --random-seed=1873589208 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5456,7 +6026,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-6-typerhappy                                                                 === mjsunit/compiler/regress-6-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-6-typerhappy 
+                                                                
+=== mjsunit/compiler/regress-6-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <1.5>
 
 Stack: MjsUnitAssertionError
@@ -5468,7 +6042,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/regress-6-typerhappy.js 58:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/regress-6-typerhappy.js --random-seed=1160781238 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                [00:02|%   0|+   0|-   1]: Done
+
+                                                                
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5567,7 +6143,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-arguments-typerhappy                                                                         === mjsunit/compiler/regress-arguments-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-arguments-typerhappy 
+                                                                        
+=== mjsunit/compiler/regress-arguments-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <42> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -5579,7 +6159,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/regress-arguments-typerhappy.js 44:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/regress-arguments-typerhappy.js --random-seed=-900588214 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5651,7 +6233,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-serialized-slots-typerh...                                                                               === mjsunit/compiler/regress-serialized-slots-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-serialized-slots-typerh... 
+                                                                              
+=== mjsunit/compiler/regress-serialized-slots-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <11>
 
 Stack: MjsUnitAssertionError
@@ -5667,7 +6253,9 @@ MjsUnitAssertionError
     at test$1403     /home/patil215/proj/v8/test/mjsunit/compiler/regress-serialized-slots-typerhappy.js 57:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/regress-serialized-slots-typerhappy.js 59:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/regress-serialized-slots-typerhappy.js --random-seed=-897362784 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5685,7 +6273,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-stacktrace-methods-type...                                                                               === mjsunit/compiler/regress-stacktrace-methods-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-stacktrace-methods-type... 
+                                                                              
+=== mjsunit/compiler/regress-stacktrace-methods-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
 
 Stack: MjsUnitAssertionError
@@ -5697,7 +6289,9 @@ MjsUnitAssertionError
     at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
     at             /home/patil215/proj/v8/test/mjsunit/compiler/regress-stacktrace-methods-typerhappy.js 63:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/regress-stacktrace-methods-typerhappy.js --random-seed=1854343017 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5715,7 +6309,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-stacktrace-typerhappy                                                                          === mjsunit/compiler/regress-stacktrace-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/regress-stacktrace-typerhappy 
+                                                                         
+=== mjsunit/compiler/regress-stacktrace-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
 
 Stack: MjsUnitAssertionError
@@ -5727,7 +6325,9 @@ MjsUnitAssertionError
     at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
     at             /home/patil215/proj/v8/test/mjsunit/compiler/regress-stacktrace-typerhappy.js 44:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/regress-stacktrace-typerhappy.js --random-seed=213316025 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5798,7 +6398,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/short-circuit-typerhappy                                                                     === mjsunit/compiler/short-circuit-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/short-circuit-typerhappy 
+                                                                    
+=== mjsunit/compiler/short-circuit-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <42>
 
 Stack: MjsUnitAssertionError
@@ -5810,7 +6414,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/compiler/short-circuit-typerhappy.js 34:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/short-circuit-typerhappy.js --random-seed=-1729944683 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                    [00:02|%   0|+   0|-   1]: Done
+
+                                                                    
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -5873,7 +6479,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/compiler/strict-equal-receiver-typerhapp...                                                                               === mjsunit/compiler/strict-equal-receiver-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/strict-equal-receiver-typerhapp... 
+                                                                              
+=== mjsunit/compiler/strict-equal-receiver-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <false> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -5887,7 +6497,9 @@ MjsUnitAssertionError
     at              /home/patil215/proj/v8/test/mjsunit/compiler/strict-equal-receiver-typerhappy.js 207:5
     at              /home/patil215/proj/v8/test/mjsunit/compiler/strict-equal-receiver-typerhappy.js 214:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/strict-equal-receiver-typerhappy.js --random-seed=66880075 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --noalways-opt
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6002,7 +6614,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/concurrent-initial-prototype-change-type...                                                                               === mjsunit/concurrent-initial-prototype-change-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/concurrent-initial-prototype-change-type... 
+                                                                              
+=== mjsunit/concurrent-initial-prototype-change-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0.5>
 
 Stack: MjsUnitAssertionError
@@ -6014,7 +6630,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/concurrent-initial-prototype-change-typerhappy.js 65:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/concurrent-initial-prototype-change-typerhappy.js --random-seed=-1398008910 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --concurrent-recompilation --block-concurrent-recompilation --allow-natives-syntax --nostress-opt --no-always-opt --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6066,7 +6684,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/constant-folding-2-typerhappy                                                                 === mjsunit/constant-folding-2-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/constant-folding-2-typerhappy 
+                                                                
+=== mjsunit/constant-folding-2-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <2> found <5>
 
 Stack: MjsUnitAssertionError
@@ -6082,7 +6704,9 @@ MjsUnitAssertionError
     at test$1401     /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 32:5
     at               /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 63:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js --random-seed=-109314530 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --nostress-opt --opt
-                                                                [00:02|%   0|+   0|-   1]: Done
+
+                                                                
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6100,7 +6724,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/constant-folding-typerhappy                                                               === mjsunit/constant-folding-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/constant-folding-typerhappy 
+                                                              
+=== mjsunit/constant-folding-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (fooNaN test): expected <undefined> found <"fooNaN">
 
 Stack: MjsUnitAssertionError
@@ -6114,7 +6742,9 @@ MjsUnitAssertionError
     at test_count$1401 /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js 38:5
     at                 /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js 131:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js --random-seed=-1837316827 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6132,13 +6762,19 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/context-calls-maintained-typerhappy                                                                       === mjsunit/context-calls-maintained-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/context-calls-maintained-typerhappy 
+                                                                      
+=== mjsunit/context-calls-maintained-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/context-calls-maintained-typerhappy.js:101: SyntaxError: Unexpected token }
 }());
 ^
 SyntaxError: Unexpected token }
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/context-calls-maintained-typerhappy.js --random-seed=367566080 --nohard-abort --enable-slow-asserts --verify-heap --expose-gc --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6201,7 +6837,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/cyrillic-typerhappy                                                       === mjsunit/cyrillic-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/cyrillic-typerhappy 
+                                                      
+=== mjsunit/cyrillic-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (25): expected <undefined> found <true>
 
 Stack: MjsUnitAssertionError
@@ -6213,7 +6853,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/cyrillic-typerhappy.js 196:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/cyrillic-typerhappy.js --random-seed=1278571003 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6249,10 +6891,16 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-script-typerhappy                                                                  === mjsunit/d8/d8-worker-script-typerhappy ===
+
+
+[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-script-typerhappy 
+                                                                 
+=== mjsunit/d8/d8-worker-script-typerhappy ===
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/d8/d8-worker-script-typerhappy.js --random-seed=526584551 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
 --- TIMEOUT ---
-                                                                 [08:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[08:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6270,10 +6918,16 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-sharedarraybuffer-typerhapp...                                                                               === mjsunit/d8/d8-worker-sharedarraybuffer-typerhappy ===
+
+
+[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-sharedarraybuffer-typerhapp... 
+                                                                              
+=== mjsunit/d8/d8-worker-sharedarraybuffer-typerhappy ===
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/d8/d8-worker-sharedarraybuffer-typerhappy.js --random-seed=-1013285869 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
 --- TIMEOUT ---
-                                                                              [08:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[08:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6291,10 +6945,16 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-typerhappy                                                           === mjsunit/d8/d8-worker-typerhappy ===
+
+
+[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-typerhappy 
+                                                          
+=== mjsunit/d8/d8-worker-typerhappy ===
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/d8/d8-worker-typerhappy.js --random-seed=-969399326 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
 --- TIMEOUT ---
-                                                          [08:02|%   0|+   0|-   1]: Done
+
+                                                          
+[08:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6321,7 +6981,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/date-typerhappy                                                   === mjsunit/date-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/date-typerhappy 
+                                                  
+=== mjsunit/date-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <8639999999999999>
 
 Stack: MjsUnitAssertionError
@@ -6333,7 +6997,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/date-typerhappy.js 267:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/date-typerhappy.js --random-seed=327119197 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                  [00:02|%   0|+   0|-   1]: Done
+
+                                                  
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6378,7 +7044,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/delete-typerhappy                                                     === mjsunit/delete-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/delete-typerhappy 
+                                                    
+=== mjsunit/delete-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <87>
 
 Stack: MjsUnitAssertionError
@@ -6390,7 +7060,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/delete-typerhappy.js 82:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/delete-typerhappy.js --random-seed=661990040 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                    [00:02|%   0|+   0|-   1]: Done
+
+                                                    
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6417,7 +7089,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/deopt-with-fp-regs-typerhappy                                                                 === mjsunit/deopt-with-fp-regs-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/deopt-with-fp-regs-typerhappy 
+                                                                
+=== mjsunit/deopt-with-fp-regs-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <10>
 
 Stack: MjsUnitAssertionError
@@ -6431,7 +7107,9 @@ MjsUnitAssertionError
     at test$1401     /home/patil215/proj/v8/test/mjsunit/deopt-with-fp-regs-typerhappy.js 33:5
     at               /home/patil215/proj/v8/test/mjsunit/deopt-with-fp-regs-typerhappy.js 130:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/deopt-with-fp-regs-typerhappy.js --random-seed=-1366157441 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --no-always-opt
-                                                                [00:02|%   0|+   0|-   1]: Done
+
+                                                                
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6474,7 +7152,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:20|%   0|+   0|-   1]: mjsunit/div-mod-typerhappy                                                      === mjsunit/div-mod-typerhappy ===
+
+
+[00:20|%   0|+   0|-   1]: mjsunit/div-mod-typerhappy 
+                                                     
+=== mjsunit/div-mod-typerhappy ===
 (function(left) { return left / 0; })
 (function(left) { return left / 1; })
 (function(left) { return left / 2; })
@@ -6505,7 +7187,9 @@ MjsUnitAssertionError
     at lithium_integer_mod$1408 /home/patil215/proj/v8/test/mjsunit/div-mod-typerhappy.js 392:9
     at                          /home/patil215/proj/v8/test/mjsunit/div-mod-typerhappy.js 769:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/div-mod-typerhappy.js --random-seed=1848029398 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                     [00:20|%   0|+   0|-   1]: Done
+
+                                                     
+[00:20|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6541,7 +7225,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/duplicate-parameters-typerhappy                                                                   === mjsunit/duplicate-parameters-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/duplicate-parameters-typerhappy 
+                                                                  
+=== mjsunit/duplicate-parameters-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <0>
 
 Stack: MjsUnitAssertionError
@@ -6557,7 +7245,9 @@ MjsUnitAssertionError
     at test$1403       /home/patil215/proj/v8/test/mjsunit/duplicate-parameters-typerhappy.js 131:5
     at                 /home/patil215/proj/v8/test/mjsunit/duplicate-parameters-typerhappy.js 147:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/duplicate-parameters-typerhappy.js --random-seed=1193347897 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                  [00:02|%   0|+   0|-   1]: Done
+
+                                                                  
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6602,7 +7292,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/elements-transition-typerhappy                                                                  === mjsunit/elements-transition-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/elements-transition-typerhappy 
+                                                                 
+=== mjsunit/elements-transition-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -6618,7 +7312,9 @@ MjsUnitAssertionError
     at run_test$1406 /home/patil215/proj/v8/test/mjsunit/elements-transition-typerhappy.js 158:5
     at               /home/patil215/proj/v8/test/mjsunit/elements-transition-typerhappy.js 161:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/elements-transition-typerhappy.js --random-seed=1419035542 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --nostress-opt --allow-natives-syntax
-                                                                 [00:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6663,7 +7359,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/empirical_max_arraybuffer-typerhappy                                                                        === mjsunit/empirical_max_arraybuffer-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/empirical_max_arraybuffer-typerhappy 
+                                                                       
+=== mjsunit/empirical_max_arraybuffer-typerhappy ===
 Allocated 2147418112 bytes
 --------------------
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <2864434414>
@@ -6681,7 +7381,9 @@ MjsUnitAssertionError
     at Test          /home/patil215/proj/v8/test/mjsunit/empirical_max_arraybuffer-typerhappy.js 60:13
     at               /home/patil215/proj/v8/test/mjsunit/empirical_max_arraybuffer-typerhappy.js 141:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/empirical_max_arraybuffer-typerhappy.js --random-seed=-899237207 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                       [00:02|%   0|+   0|-   1]: Done
+
+                                                                       
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6699,7 +7401,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/ensure-growing-store-learns-typerhappy                                                                          === mjsunit/ensure-growing-store-learns-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/ensure-growing-store-learns-typerhappy 
+                                                                         
+=== mjsunit/ensure-growing-store-learns-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <undefined>
 
 Stack: MjsUnitAssertionError
@@ -6713,7 +7419,9 @@ MjsUnitAssertionError
     at             /home/patil215/proj/v8/test/mjsunit/ensure-growing-store-learns-typerhappy.js 85:5
     at             /home/patil215/proj/v8/test/mjsunit/ensure-growing-store-learns-typerhappy.js 101:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/ensure-growing-store-learns-typerhappy.js --random-seed=1482125735 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --noverify-heap --noenable-slow-asserts --opt --no-always-opt --allow-natives-syntax
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6767,7 +7475,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/arguments-iterator-typerhappy                                                                     === mjsunit/es6/arguments-iterator-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/arguments-iterator-typerhappy 
+                                                                    
+=== mjsunit/es6/arguments-iterator-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/es6/arguments-iterator-typerhappy.js:14: ReferenceError: __fa_args is not defined
         return __fa_args.hasOwnProperty(Symbol.iterator);
         ^
@@ -6778,7 +7490,9 @@ ReferenceError: __fa_args is not defined
     at TestDirectArgumentsIteratorProperty$1401 (/home/patil215/proj/v8/test/mjsunit/es6/arguments-iterator-typerhappy.js:13:5)
     at /home/patil215/proj/v8/test/mjsunit/es6/arguments-iterator-typerhappy.js:47:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/arguments-iterator-typerhappy.js --random-seed=-1488002658 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                    [00:02|%   0|+   0|-   1]: Done
+
+                                                                    
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6820,7 +7534,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/array-copywithin-typerhappy                                                                   === mjsunit/es6/array-copywithin-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/array-copywithin-typerhappy 
+                                                                  
+=== mjsunit/es6/array-copywithin-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <34>
 
 Stack: MjsUnitAssertionError
@@ -6834,7 +7552,9 @@ MjsUnitAssertionError
     at copyWithinNumberThis /home/patil215/proj/v8/test/mjsunit/es6/array-copywithin-typerhappy.js 219:5
     at                      /home/patil215/proj/v8/test/mjsunit/es6/array-copywithin-typerhappy.js 227:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/array-copywithin-typerhappy.js --random-seed=-488809549 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                  [00:02|%   0|+   0|-   1]: Done
+
+                                                                  
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6904,7 +7624,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/array-from-typerhappy                                                             === mjsunit/es6/array-from-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/array-from-typerhappy 
+                                                            
+=== mjsunit/es6/array-from-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/es6/array-from-typerhappy.js:38: ReferenceError: __fa_args is not defined
             return __fa_args.length;
             ^
@@ -6917,7 +7641,9 @@ ReferenceError: __fa_args is not defined
     at /home/patil215/proj/v8/test/mjsunit/es6/array-from-typerhappy.js:48:16
     at /home/patil215/proj/v8/test/mjsunit/es6/array-from-typerhappy.js:360:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/array-from-typerhappy.js --random-seed=1616914795 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                            [00:02|%   0|+   0|-   1]: Done
+
+                                                            
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -6978,7 +7704,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/array-of-typerhappy                                                           === mjsunit/es6/array-of-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/array-of-typerhappy 
+                                                          
+=== mjsunit/es6/array-of-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <[undefined]>
 
 Stack: MjsUnitAssertionError
@@ -6990,7 +7720,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/array-of-typerhappy.js 67:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/array-of-typerhappy.js --random-seed=1105217331 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                          [00:02|%   0|+   0|-   1]: Done
+
+                                                          
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7008,7 +7740,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-constructor-accessor-t...                                                                               === mjsunit/es6/array-species-constructor-accessor-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-constructor-accessor-t... 
+                                                                              
+=== mjsunit/es6/array-species-constructor-accessor-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
 expected:
 function MyArray$1427() {
@@ -7026,7 +7762,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/array-species-constructor-accessor-typerhappy.js 61:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/array-species-constructor-accessor-typerhappy.js --random-seed=-2115386669 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7053,7 +7791,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-constructor-typerhappy                                                                            === mjsunit/es6/array-species-constructor-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-constructor-typerhappy 
+                                                                           
+=== mjsunit/es6/array-species-constructor-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
 expected:
 function MyArray$1427() {
@@ -7071,7 +7813,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/array-species-constructor-typerhappy.js 57:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/array-species-constructor-typerhappy.js --random-seed=393280315 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                           [00:02|%   0|+   0|-   1]: Done
+
+                                                                           
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7089,7 +7833,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-delete-typerhappy                                                                       === mjsunit/es6/array-species-delete-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-delete-typerhappy 
+                                                                      
+=== mjsunit/es6/array-species-delete-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
 expected:
 function MyArray$1427() {
@@ -7104,7 +7852,9 @@ Stack: MjsUnitAssertionError
     ^
 MjsUnitAssertionError
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/array-species-delete-typerhappy.js --random-seed=-129909475 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7122,7 +7872,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-proto-typerhappy                                                                      === mjsunit/es6/array-species-proto-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/array-species-proto-typerhappy 
+                                                                     
+=== mjsunit/es6/array-species-proto-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
 expected:
 function MyArray$1427() {
@@ -7140,7 +7894,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/array-species-proto-typerhappy.js 57:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/array-species-proto-typerhappy.js --random-seed=-16481297 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                     [00:02|%   0|+   0|-   1]: Done
+
+                                                                     
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7217,7 +7973,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/arrow-functions-typerhappy                                                                  === mjsunit/es6/arrow-functions-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/arrow-functions-typerhappy 
+                                                                 
+=== mjsunit/es6/arrow-functions-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Did not throw exception, expected TypeError
 
 Stack: MjsUnitAssertionError
@@ -7229,7 +7989,9 @@ MjsUnitAssertionError
     at assertThrows /home/patil215/proj/v8/test/mjsunit/mjsunit.js 582:5
     at              /home/patil215/proj/v8/test/mjsunit/es6/arrow-functions-typerhappy.js 22:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/arrow-functions-typerhappy.js --random-seed=-1642672825 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                 [00:02|%   0|+   0|-   1]: Done
+
+                                                                 
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7299,7 +8061,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/block-conflicts-sloppy-typerhappy                                                                         === mjsunit/es6/block-conflicts-sloppy-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/block-conflicts-sloppy-typerhappy 
+                                                                        
+=== mjsunit/es6/block-conflicts-sloppy-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (global:'let x;var x;'): expected <undefined> found <"Conflict">
 
 Stack: MjsUnitAssertionError
@@ -7315,7 +8081,9 @@ MjsUnitAssertionError
     at TestConflict$1406 /home/patil215/proj/v8/test/mjsunit/es6/block-conflicts-sloppy-typerhappy.js 68:5
     at                   /home/patil215/proj/v8/test/mjsunit/es6/block-conflicts-sloppy-typerhappy.js 110:9
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/block-conflicts-sloppy-typerhappy.js --random-seed=1319906928 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                        [00:02|%   0|+   0|-   1]: Done
+
+                                                                        
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7386,7 +8154,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/block-for-sloppy-typerhappy                                                                   === mjsunit/es6/block-for-sloppy-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/block-for-sloppy-typerhappy 
+                                                                  
+=== mjsunit/es6/block-for-sloppy-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <512> found <"outer_i">
 
 Stack: MjsUnitAssertionError
@@ -7398,7 +8170,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/block-for-sloppy-typerhappy.js 121:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/block-for-sloppy-typerhappy.js --random-seed=649703547 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                  [00:02|%   0|+   0|-   1]: Done
+
+                                                                  
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7416,7 +8190,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/block-for-typerhappy                                                            === mjsunit/es6/block-for-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/block-for-typerhappy 
+                                                           
+=== mjsunit/es6/block-for-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <512> found <"outer_i">
 
 Stack: MjsUnitAssertionError
@@ -7428,7 +8206,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/block-for-typerhappy.js 122:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/block-for-typerhappy.js --random-seed=39702053 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                           [00:02|%   0|+   0|-   1]: Done
+
+                                                           
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7446,7 +8226,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/block-leave-sloppy-typerhappy                                                                     === mjsunit/es6/block-leave-sloppy-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/block-leave-sloppy-typerhappy 
+                                                                    
+=== mjsunit/es6/block-leave-sloppy-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <2> found <3>
 
 Stack: MjsUnitAssertionError
@@ -7458,7 +8242,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/block-leave-sloppy-typerhappy.js 50:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/block-leave-sloppy-typerhappy.js --random-seed=114151562 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                    [00:02|%   0|+   0|-   1]: Done
+
+                                                                    
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7476,7 +8262,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/block-leave-typerhappy                                                              === mjsunit/es6/block-leave-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/block-leave-typerhappy 
+                                                             
+=== mjsunit/es6/block-leave-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <2> found <3>
 
 Stack: MjsUnitAssertionError
@@ -7488,7 +8278,9 @@ MjsUnitAssertionError
     at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
     at               /home/patil215/proj/v8/test/mjsunit/es6/block-leave-typerhappy.js 51:5
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/block-leave-typerhappy.js --random-seed=1552592118 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                             [00:02|%   0|+   0|-   1]: Done
+
+                                                             
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7789,7 +8581,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-derived-return-type-typerhap...                                                                               === mjsunit/es6/classes-derived-return-type-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-derived-return-type-typerhap... 
+                                                                              
+=== mjsunit/es6/classes-derived-return-type-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Did not throw exception, expected TypeError
 
 Stack: MjsUnitAssertionError
@@ -7801,7 +8597,9 @@ MjsUnitAssertionError
     at assertThrows /home/patil215/proj/v8/test/mjsunit/mjsunit.js 582:5
     at              /home/patil215/proj/v8/test/mjsunit/es6/classes-derived-return-type-typerhappy.js 15:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/classes-derived-return-type-typerhappy.js --random-seed=416845541 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7819,13 +8617,19 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-experimental-typerhappy                                                                       === mjsunit/es6/classes-experimental-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-experimental-typerhappy 
+                                                                      
+=== mjsunit/es6/classes-experimental-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/es6/classes-experimental-typerhappy.js:215: SyntaxError: 'super' keyword unexpected here
             Object.getPrototypeOf(Subclass1$1568.prototype).constructor.call(this, super(), f$1567());
                                                                                    ^^^^^
 SyntaxError: 'super' keyword unexpected here
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/classes-experimental-typerhappy.js --random-seed=711018008 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7843,7 +8647,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-lazy-parsing-typerhappy                                                                       === mjsunit/es6/classes-lazy-parsing-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-lazy-parsing-typerhappy 
+                                                                      
+=== mjsunit/es6/classes-lazy-parsing-typerhappy ===
 undefined:1: SyntaxError: 'super' keyword unexpected here
 super.m()
 ^^^^^
@@ -7854,7 +8662,9 @@ SyntaxError: 'super' keyword unexpected here
     at assertEqualsF (/home/patil215/proj/v8/test/mjsunit/mjsunit.js:444:5)
     at /home/patil215/proj/v8/test/mjsunit/es6/classes-lazy-parsing-typerhappy.js:29:1
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/classes-lazy-parsing-typerhappy.js --random-seed=1522958733 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                      [00:02|%   0|+   0|-   1]: Done
+
+                                                                      
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7872,7 +8682,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-maps-typerhappy                                                               === mjsunit/es6/classes-maps-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-maps-typerhappy 
+                                                              
+=== mjsunit/es6/classes-maps-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <function () { [native code] }> found <function Array() { [native code] }>
 
 Stack: MjsUnitAssertionError
@@ -7886,7 +8700,9 @@ MjsUnitAssertionError
     at TestProtoModificationArray /home/patil215/proj/v8/test/mjsunit/es6/classes-maps-typerhappy.js 35:5
     at                            /home/patil215/proj/v8/test/mjsunit/es6/classes-maps-typerhappy.js 53:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/classes-maps-typerhappy.js --random-seed=1752487804 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                              [00:02|%   0|+   0|-   1]: Done
+
+                                                              
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 
@@ -7913,7 +8729,11 @@ Build found: /home/patil215/proj/v8/out/x64.debug
 embedded_builtins
 >>> Running tests for x64.debug
 >>> Running with test processors
-[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-subclass-arrays-typerhappy                                                                          === mjsunit/es6/classes-subclass-arrays-typerhappy ===
+
+
+[00:02|%   0|+   0|-   1]: mjsunit/es6/classes-subclass-arrays-typerhappy 
+                                                                         
+=== mjsunit/es6/classes-subclass-arrays-typerhappy ===
 /home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
 
 Stack: MjsUnitAssertionError
@@ -7927,7 +8747,9 @@ MjsUnitAssertionError
     at TestDefaultConstructor /home/patil215/proj/v8/test/mjsunit/es6/classes-subclass-arrays-typerhappy.js 15:9
     at                        /home/patil215/proj/v8/test/mjsunit/es6/classes-subclass-arrays-typerhappy.js 77:2
 Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/classes-subclass-arrays-typerhappy.js --random-seed=109823177 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                                         [00:02|%   0|+   0|-   1]: Done
+
+                                                                         
+[00:02|%   0|+   0|-   1]: Done
 >>> 1 tests ran
 
 

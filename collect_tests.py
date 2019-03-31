@@ -16,7 +16,8 @@ banned_test_terms = [
         "tickprocessor",
         ".py",
         "testcfg",
-        ".default"
+        ".default",
+        "classes"
 
 ]
 
