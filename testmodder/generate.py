@@ -90,15 +90,15 @@ def transform(filename, cleanup):
     lines_to_modify = replace_let_var_for_loop(lines_to_modify)
 
     # Run ES6 macros by running sweet.js once
-    """with open(filename + '.sweet', 'w') as sweetfile:
+    with open(filename + '.sweet', 'w') as sweetfile:
         sweetfile.writelines('\n'.join(lines_to_modify) + '\n')
     # -m - enables ES6 macros (https://github.com/jlongster/es6-macros)            
     os.system("sjs -r -m es6-macros " + filename + '.sweet > ' + filename + '.tmpcompiled')
     lines_to_modify = file_to_lines(filename + '.sweet')
     silentremove(filename + '.tmpcompiled')
-    silentremove(filename + '.sweet')"""
+    silentremove(filename + '.sweet')
 
-    # Prepend our modifications
+# Prepend our modifications
     modifications = []
     for macro in MACROS_TO_RUN:
         modifications += file_to_lines(abs_path("sweet/" + macro + ".sweet"))
@@ -114,7 +114,7 @@ def transform(filename, cleanup):
     -r - removes a lot of the hygenic renames
     -p - don't parse what was generated
     """
-    os.system("sjs -r -p " + filename + '.sweet > ' + filename + '.compiled') # Use macros for es6
+    os.system("sjs " + filename + '.sweet > ' + filename + '.compiled') # Use macros for es6
 
     # Concatenate this file with the lines we saved
     lines = lines_to_save + file_to_lines(filename + '.compiled')
