@@ -1,12 +1,11 @@
-macro assertEqualsDelta {
-    rule {
-        ($x:expr, $y:expr, $delta:expr)
-    } => {
-        assertEqualsDeltaF(() => $x, () => $y, $delta);
-    }
-    rule {
-        ($x:expr, $y:expr, $z:expr, $msg:expr)
-    } => {
-        assertEqualsDeltaF(() => $x, () => $y, $delta, $msg);
-    }
-}
+syntax assertEqualsDelta = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+
+    let left = paramCtx.expand('expr').value;
+    paramCtx.next();
+    let right = paramCtx.expand('expr').value;
+    paramCtx.next();
+    let delta = paramCtx.expand('expr').value;
+
+    return #`assertEqualsDeltaF(() => ${left}, () => ${right}, ${delta})`;
+};

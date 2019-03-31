@@ -1,12 +1,5 @@
-macro assertNotNull {
-    rule {
-        ($x:expr)
-    } => {
-        assertNotNullF(() => $x);
-    }
-    rule {
-        ($x:expr, $msg:expr)
-    } => {
-        assertNotNullF(() => $x, $msg);
-    }
-}
+syntax assertNotNull = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+
+    return #`assertNotNullF(() => ${paramCtx})`;
+};

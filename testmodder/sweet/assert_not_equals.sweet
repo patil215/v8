@@ -1,12 +1,9 @@
-macro assertNotEquals {
-    rule {
-        ($x:expr, $y:expr)
-    } => {
-        assertNotEqualsF(() => $x, () => $y);
-    }
-    rule {
-        ($x:expr, $y:expr, $msg:expr)
-    } => {
-        assertNotEqualsF(() => $x, () => $y, msg);
-    }
-}
+syntax assertNotEquals = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+
+    let left = paramCtx.expand('expr').value;
+    paramCtx.next();
+    let right = paramCtx.expand('expr').value;
+
+    return #`assertNotEqualsF(() => ${left}, () => ${right})`;
+};

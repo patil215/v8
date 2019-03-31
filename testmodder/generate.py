@@ -78,6 +78,7 @@ def transform(filename, no_cleanup):
 
     # Prepend our modifications
     modifications = []
+    modifications += file_to_lines(abs_path("sweet/helpers.sweet"))
     for macro in MACROS_TO_RUN:
         modifications += file_to_lines(abs_path("sweet/" + macro + ".sweet"))
 
@@ -92,7 +93,6 @@ def transform(filename, no_cleanup):
         print("written")
 
     # Run sweet on the file
-    #os.system("sjs -p " + filename + '.sweet > ' + filename + '.compiled')
     os.system("sjs " + filename + '.sweet > ' + filename + '.compiled')
 
     # Concatenate this file with the lines we saved

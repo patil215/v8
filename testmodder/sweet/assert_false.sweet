@@ -1,12 +1,5 @@
-macro assertFalse {
-    rule {
-        ($x:expr)
-    } => {
-        assertFalseF(() => $x);
-    }
-    rule {
-        ($x:expr, $msg:expr)
-    } => {
-        assertFalseF(() => $x, $msg);
-    }
-}
+syntax assertFalse = function (ctx) {
+    let paramCtx = ctx.contextify(ctx.next().value);
+
+    return #`assertFalseF(() => ${paramCtx})`;
+};
