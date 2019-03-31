@@ -1,5 +1,12 @@
-syntax assertNull = function (ctx) {
-    let paramCtx = ctx.contextify(ctx.next().value);
-
-    return #`assertNullF(() => ${paramCtx})`;
-};
+macro assertNull {
+    rule {
+        ($x:expr)
+    } => {
+        assertNullF(() => $x);
+    }
+    rule {
+        ($x:expr, $msg:expr)
+    } => {
+        assertNullF(() => $x, $msg);
+    }
+}
