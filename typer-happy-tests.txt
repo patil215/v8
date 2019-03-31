@@ -1787,8 +1787,6 @@ test/mjsunit/tools/compiler-trace-flags.js
 test/mjsunit/tools/dumpcpp.js
 test/mjsunit/tools/profile.js
 test/mjsunit/tools/profile_view.js
-test/mjsunit/tools/profviz-test.default
-test/mjsunit/tools/profviz-test.log
 test/mjsunit/tools/profviz.js
 test/mjsunit/tools/splaytree.js
 test/mjsunit/track-fields.js
