@@ -1,0 +1,33 @@
+function main() {
+const v7 = [13.37];
+const v8 = [v7,13.37,BigInt64Array];
+let v9 = 65536;
+v9 = v8;
+let v12 = 0;
+let v15 = 0;
+const v16 = v15 + 1;
+v15 = v16;
+const v17 = v12 + 1;
+v12 = v17;
+v9[65536] = v12;
+const v18 = [1000.0,1000.0,1000.0,1000.0];
+const v20 = [1337];
+const v21 = [1337];
+const v22 = {};
+const v23 = {atan:v21,lastIndexOf:1337,global:"function",reduceRight:v18,call:1000.0,find:1000.0,parseFloat:Map,toLocaleString:Map};
+let v24 = Map;
+const v31 = "undefined" != 1337;
+const v32 = [13.37,13.37,13.37,13.37];
+const v34 = [1337];
+const v35 = [v34];
+const v36 = {max:Function,setPrototypeOf:10};
+const v37 = {exec:v34};
+let v38 = "undefined";
+let v40 = "undefined";
+const v42 = [13.37,13.37,13.37,13.37];
+let v43 = v40;
+const v45 = [1337];
+const v50 = String(1567064494);
+}
+%NeverOptimizeFunction(main);
+main();

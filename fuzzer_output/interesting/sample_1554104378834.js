@@ -1,0 +1,255 @@
+function main() {
+const v4 = [13.37,13.37,13.37,13.37];
+const v6 = [1337,1337,1337];
+const v7 = [Atomics,"function",v6,13.37];
+const v8 = {toLowerCase:-65535,getPrototypeOf:13.37,flags:-65535,leftContext:Atomics,setUint8:"function"};
+const v9 = {getPrototypeOf:v7,max:v8,flatMap:v8,asyncIterator:v4,leftContext:v7,pow:v6,input:v8,search:v8,toLowerCase:v7};
+let v10 = v4;
+const v12 = [13.37];
+const v14 = [1337,1337,1337];
+function v15(v16,v17,v18,v19) {
+    function v20(v21,v22,v23,v24) {
+        return v16;
+    }
+    const v29 = [13.37,13.37,13.37,13.37];
+    const v31 = [1337];
+    const v32 = [v31];
+    const v33 = {max:Function,setPrototypeOf:10};
+    const v34 = {exec:v31};
+    let v35 = "undefined";
+    const v39 = [13.37,13.37,13.37,13.37];
+    const v41 = [1337];
+    const v42 = [v41];
+    const v43 = {c:Function,setPrototypeOf:10};
+    const v44 = {exec:v41};
+    const v46 = v20(v17,Function,v33);
+    const v47 = [13.37,13.37,13.37,13.37];
+    const v51 = [13.37,13.37,13.37,13.37];
+    const v53 = [1337];
+    function v54(v55,v56,v57,v58) {
+        const v59 = v35 || "undefined";
+        return v32;
+    }
+    const v60 = [v53];
+    const v61 = {max:Function,setPrototypeOf:10};
+    const v65 = [13.37,13.37,13.37,13.37];
+    const v67 = [1337];
+    const v68 = [v67];
+    const v69 = {max:Function,setPrototypeOf:10};
+    const v74 = [13.37,13.37];
+    const v76 = [1337,1337];
+    const v77 = [13.37];
+    const v78 = {flat:1337,BYTES_PER_ELEMENT:-2,trim:13.37,trimStart:v74,rightContext:Boolean,assign:v74,all:"J9.cPbxCJ6",NEGATIVE_INFINITY:v76,message:"J9.cPbxCJ6"};
+    const v79 = {toPrimitive:v74};
+    const v83 = [13.37,13.37,13.37,13.37];
+    const v85 = [1337];
+    const v86 = [v85];
+    const v90 = [13.37,13.37,13.37,13.37];
+    const v92 = [1337];
+    const v93 = [v92];
+    const v94 = {max:Function,setPrototypeOf:10};
+    const v95 = {exec:v92};
+    const v99 = [13.37,13.37,13.37,13.37];
+    const v101 = [1337];
+    const v102 = [v101];
+    const v103 = {max:Function,setPrototypeOf:10};
+    const v104 = {exec:v101};
+    const v108 = [13.37,13.37,13.37,13.37];
+    const v110 = [1337];
+    function v113(v114,v115,v116,v117) {
+        const v118 = BigInt64Array >> "apply";
+        let v120 = "undefined";
+        let v124 = 0;
+        const v125 = v124 + 1;
+        v124 = v125;
+    }
+    const v126 = [v110];
+    const v127 = {max:Function,setPrototypeOf:10};
+    const v128 = {exec:v110};
+    const v130 = [13.37,13.37,13.37,13.37];
+    const v134 = [13.37,13.37,13.37,13.37];
+    const v136 = [1337];
+    const v137 = [v136];
+    const v138 = {max:Function,setPrototypeOf:10};
+    const v139 = {exec:v136};
+    const v143 = [13.37,13.37,13.37,13.37];
+    const v145 = [1337];
+    const v146 = [v145];
+    const v147 = {max:Function,setPrototypeOf:10};
+    const v148 = {exec:v145};
+    const v157 = [13.37,13.37,13.37,13.37];
+    const v159 = [1337];
+    const v160 = [v159];
+    const v161 = {max:Function,setPrototypeOf:10};
+    const v165 = [13.37,13.37,13.37,13.37];
+    const v167 = [1337];
+    const v168 = [v167];
+    const v169 = {max:Function,setPrototypeOf:10};
+    const v171 = Object();
+    const v172 = [13.37,13.37,13.37,13.37];
+    const v174 = [1337];
+    const v175 = [13.37];
+    const v176 = {max:Function,setPrototypeOf:10};
+    const v179 = [v174];
+    const v180 = [v179];
+    const v181 = {max:Function,setPrototypeOf:10};
+    const v182 = {exec:v179};
+    let v187 = 0;
+    v187 = v182;
+    const v188 = v187 + 1;
+    const v189 = [13.37,13.37,13.37,13.37];
+    const v191 = [1337];
+    const v193 = [Function];
+    const v194 = {max:Function,setPrototypeOf:10};
+    const v195 = {exec:v191};
+    const v198 = [13.37,13.37,13.37,13.37];
+    const v200 = [13.37];
+    const v201 = [1337];
+    const v203 = {pow:v200,catch:"undefined",b:v201,flat:v189};
+    const v204 = Object();
+    const v207 = [13.37,13.37,13.37,13.37];
+    const v209 = [1337];
+    const v210 = [v209];
+    const v211 = {max:Function,setPrototypeOf:10};
+    const v212 = {exec:v209};
+    const v218 = [13.37,13.37,13.37,13.37];
+    const v220 = [1337];
+    const v221 = [v220];
+    const v222 = {max:Function,setPrototypeOf:10};
+    const v223 = {exec:v220};
+    const v227 = [13.37,13.37,13.37,13.37];
+    const v229 = [1337];
+    const v231 = [Function];
+    const v232 = [v229];
+    const v233 = {max:Function,setPrototypeOf:10};
+    const v234 = {exec:v229};
+    const v237 = [13.37,13.37,13.37,13.37];
+    const v238 = [13.37];
+    const v239 = [v238];
+    const v241 = {pow:v238,catch:"undefined",b:v239,flat:v227};
+    const v242 = Object();
+    const v243 = [13.37,13.37,13.37,13.37];
+    const v245 = [13.37];
+    const v246 = [v245];
+    const v247 = {max:Function,setPrototypeOf:1337};
+    const v251 = [13.37,13.37,13.37,13.37];
+    const v253 = [1337];
+    const v254 = [v253];
+    const v255 = {max:Function,setPrototypeOf:10};
+    const v256 = {exec:v253};
+    let v259 = 0;
+    while (v259 < 3) {
+        v259 = "undefined";
+        function v260(v261,v262,v263) {
+            return v263;
+        }
+    }
+    const v264 = [];
+    for (const v266 in Function) {
+    }
+    const v267 = {max:Function,setPrototypeOf:10};
+    const v268 = {exec:v85};
+    const v272 = [13.37,13.37,13.37,13.37];
+    const v274 = [1337];
+    const v275 = [v274];
+    const v276 = {max:Function,setPrototypeOf:10};
+    const v277 = {exec:v274};
+    const v279 = {};
+    const v280 = [v279,v279,v279,v279];
+    v14[4294967297] = 1337;
+    const v281 = [13.37,13.37,13.37,13.37];
+    const v283 = [1337];
+    const v284 = [v283];
+    const v285 = {exec:v283};
+    const v287 = [13.37,13.37,13.37,13.37];
+    const v291 = [13.37,13.37,13.37,13.37];
+    const v293 = [1337];
+    const v294 = [v293];
+    const v295 = {max:Function,setPrototypeOf:10};
+    const v296 = {exec:v293};
+    const v300 = [13.37,13.37,13.37,13.37];
+    const v302 = [-3978287079];
+    const v303 = [v302];
+    const v304 = {max:Function,setPrototypeOf:10};
+    const v305 = {exec:v302};
+    const v309 = [13.37,13.37,13.37,13.37];
+    const v311 = [1337];
+    const v312 = [v311];
+    const v313 = {max:Function,setPrototypeOf:10};
+    const v314 = {exec:v311};
+    const v316 = [13.37,13.37,13.37,13.37];
+    const v321 = [13.37,13.37,13.37,13.37];
+    const v323 = [-536870912];
+    const v324 = [v323];
+    const v325 = {max:Function,setPrototypeOf:10};
+    const v326 = {exec:v323};
+    const v330 = [13.37,13.37,13.37,13.37];
+    const v332 = [1337];
+    const v333 = [v332];
+    const v334 = {max:Function,setPrototypeOf:10};
+    const v338 = [13.37,13.37,13.37,13.37];
+    const v340 = [1337];
+    const v341 = [v340];
+    const v342 = {max:Function,setPrototypeOf:10};
+    const v343 = {exec:v340};
+    const v350 = [13.37,13.37,13.37,13.37];
+    const v352 = [1337];
+    const v353 = [v352];
+    const v354 = {max:Function,setPrototypeOf:10};
+    const v355 = {exec:v352};
+    const v359 = [13.37,13.37,13.37,13.37];
+    const v361 = [1337];
+    const v362 = [v361];
+    const v363 = {max:Function,setPrototypeOf:10};
+    const v364 = {round:v361};
+    const v367 = [13.37,13.37,13.37,13.37];
+    const v368 = [13.37];
+    const v369 = {};
+    const v370 = [v369,v369,v369,v369];
+    const v371 = [v368];
+    const v372 = v342 - 1;
+    const v374 = {pow:v368,catch:"undefined",b:v371,flat:v359};
+    const v375 = Object();
+    const v376 = [13.37,13.37,13.37,13.37];
+    const v378 = [13.37];
+    const v379 = [v378];
+    const v380 = {max:Function,setPrototypeOf:1337};
+    const v384 = [1337];
+    const v385 = [v384];
+    const v386 = {max:Function,setPrototypeOf:10};
+    const v387 = {exec:v384};
+    const v392 = [13.37,13.37,13.37,13.37];
+    const v393 = [];
+    const v394 = [13.37,13.37,13.37,13.37];
+    const v397 = {max:Function,setPrototypeOf:10};
+    const v400 = {max:Function,reduceRight:10};
+    const v402 = [-3154563686];
+    const v403 = [v402];
+    const v404 = {max:Function,setPrototypeOf:10};
+    const v405 = {exec:v402};
+    const v408 = [13.37];
+    const v409 = [v408];
+    const v411 = {pow:v408,catch:"undefined",b:v409,flat:v394};
+    const v412 = Object();
+    const v413 = {pow:v378,catch:"undefined",b:v379,flat:v338};
+    const v414 = [1337];
+    const v415 = [v414];
+    const v417 = [13.37,13.37,13.37,13.37];
+    const v419 = [1337];
+    const v420 = [v419];
+    with (v12) {
+    }
+    let v422 = "undefined";
+    for (const v423 in v422) {
+    }
+    for (const v425 in Function) {
+    }
+    return v237;
+}
+const v431 = [1337];
+for (let v435 = 0; v435 < 100; v435++) {
+    const v436 = v15(10,Function,1337,v431,Function);
+}
+}
+%NeverOptimizeFunction(main);
+main();

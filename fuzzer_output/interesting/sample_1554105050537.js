@@ -1,0 +1,84 @@
+function main() {
+const v4 = [13.37,13.37,13.37];
+const v6 = [1337,1337,1337];
+const v7 = [2468829855,13.37,this];
+const v8 = {};
+const v9 = {unshift:v4,getUint8:this};
+let v10 = v7;
+const v15 = [13.37,13.37,13.37];
+const v17 = [1337,1337,1337];
+const v18 = [2468829855,13.37,this];
+const v19 = {};
+const v20 = {unshift:v15,getUint8:this};
+let v21 = v18;
+const v25 = this - 1;
+v21[v17] = v21;
+const v27 = [13.37,13.37,13.37];
+const v29 = [1337,1337,1337];
+const v30 = [2468829855,13.37,this];
+const v31 = {};
+const v32 = {unshift:v27,getUint8:this};
+let v33 = v30;
+const v37 = {max:Function,setPrototypeOf:10};
+let v42 = 0;
+v42 = 10;
+const v43 = {max:Function,lastParen:10};
+const v47 = [13.37];
+const v49 = [1337,1337,1337];
+const v50 = [v49,13.37,"number",Set];
+let v52 = 0;
+const v53 = {getUint8:v50,create:16,getPrototypeOf:"number",getOwnPropertyDescriptor:16,setInt16:v47,toStringTag:v49,filter:13.37};
+const v54 = {ceil:1337,log1p:1337,c:v50};
+let v55 = v53;
+const v60 = [13.37,13.37,Map,13.37];
+const v62 = [1337];
+const v63 = [1337];
+const v64 = {};
+const v65 = {atan:v63,lastIndexOf:1337,global:"function",reduceRight:v60,call:this,find:16,parseFloat:Map,toLocaleString:Map};
+let v66 = Map;
+const v79 = new Array(46647);
+const v85 = [1337];
+let v89 = 0;
+v89 = 10;
+for (let v93 = 0; v93 < 6; v93++) {
+    const v94 = v21.c;
+}
+Set[-2650608072] = Function;
+let v96 = "undefined";
+let v100 = 0;
+const v105 = [13.37,13.37,13.37,13.37];
+const v107 = [1337];
+let v110 = 0;
+do {
+    v15[v10] = v110;
+    const v111 = v110 + 1;
+    v110 = v111;
+} while (v110 < 8);
+const v114 = new Int16Array(42945);
+const v115 = [v107];
+const v116 = {max:Function,setPrototypeOf:10};
+const v117 = {exec:v107};
+const v119 = [13.37];
+let v120 = "undefined";
+let v127 = 10;
+const v128 = [13.37,13.37,13.37,13.37];
+const v130 = [1337];
+const v131 = [v130];
+const v132 = {max:Function,setPrototypeOf:10};
+const v133 = {exec:v130};
+let v134 = "undefined";
+const v136 = Object();
+const v138 = Object();
+const v142 = [13.37,13.37,13.37,13.37];
+const v144 = [13.37];
+const v145 = [v144];
+const v146 = {max:Function,setPrototypeOf:1337};
+let v147 = "undefined";
+const v149 = Object();
+v100 = 255;
+for (let v150 = 0; v150 < 5; v150 = v150 + 728813560) {
+    const v151 = gc(v150,v150,v150,v150,Function);
+}
+}
+%NeverOptimizeFunction(main);
+main();

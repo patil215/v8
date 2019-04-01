@@ -1,0 +1,30 @@
+function main() {
+const v4 = [13.37,13.37,13.37,13.37,13.37];
+const v6 = [1337,1337,1337,1337];
+const v7 = [13.37];
+const v8 = {find:v6,fill:RegExp,length:"number",acos:"number"};
+const v9 = {MIN_VALUE:"number",multiline:v8};
+let v10 = v6;
+const v15 = [13.37,13.37,13.37,13.37,13.37];
+const v17 = [1337,1337,1337,1337];
+const v18 = [13.37];
+const v19 = {find:v17,fill:RegExp,length:"number",acos:"number"};
+const v20 = {MIN_VALUE:"number",multiline:v19};
+let v21 = v17;
+const v26 = [13.37,13.37,13.37,13.37,13.37];
+const v29 = [1337,1337,1337,1337];
+const v30 = [13.37];
+const v31 = {find:v29,fill:RegExp,length:"number",acos:"number"};
+const v32 = {MIN_VALUE:v18,multiline:v31};
+const v37 = [1337,1337,1337,1337];
+let v38 = v37;
+const v39 = [13.37,13.37,13.37,13.37,13.37];
+const v41 = [1337,1337,1337,1337];
+const v42 = [13.37];
+const v43 = {MIN_VALUE:"number",multiline:-521713708};
+const v49 = [1337,1337,1337,1337];
+const v50 = {find:v49,fill:arguments,length:"number",acos:"number"};
+const v51 = {MIN_VALUE:"number",multiline:v50};
+}
+%NeverOptimizeFunction(main);
+main();

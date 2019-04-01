@@ -1,0 +1,30 @@
+function main() {
+const v4 = [13.37];
+const v6 = [1337];
+const v11 = [13.37];
+delete RegExp.pop;
+const v13 = [1337];
+const v14 = ["function",v11,-1522982082];
+const v15 = {startsWith:"function",raw:1337};
+const v16 = {toPrecision:-1522982082,getUint32:13.37,fromEntries:v13,raw:RegExp,E:RegExp};
+let v17 = -1522982082;
+const v22 = [13.37];
+const v24 = [1337];
+const v25 = ["values",v22,-1522982082];
+const v26 = {startsWith:"values",raw:1337};
+const v27 = {unicode:-1522982082,getUint32:13.37,fromEntries:v24,raw:RegExp,E:RegExp};
+let v28 = -1522982082;
+const v30 = Object();
+const v31 = ["function",v4,-1522982082];
+const v32 = {startsWith:"function",raw:1337};
+const v33 = {toPrecision:-1522982082,getUint32:13.37,fromEntries:v6,raw:RegExp,E:RegExp};
+let v34 = -1522982082;
+const v39 = [13.37];
+const v41 = [1337];
+v41.__lookupSetter__ = 13.37;
+const v42 = {startsWith:"function",raw:1337};
+const v43 = {toPrecision:-1522982082,getUint32:13.37,fromEntries:v41,raw:RegExp,E:RegExp};
+const v45 = {input:13.37,...v39,..."function",...v42,...RegExp,...v39,...RegExp,...v42};
+}
+%NeverOptimizeFunction(main);
+main();
