@@ -1,5 +1,0 @@
-macro nativefunc {
-  rule { ($f:expr) } => {
-      Snativefunc($f);
-  }
-}

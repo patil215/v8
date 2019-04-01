@@ -1,0 +1,4358 @@
+Building d8...
+# autoninja -C out/x64.debug d8
+/home/patil215/proj/depot_tools/ninja -C out/x64.debug d8
+ninja: Entering directory `out/x64.debug'
+ninja: no work to do.
+Running file test/mjsunit/accessors-on-global-object.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/accessors-on-global-object-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/allocation-folding.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/allocation-folding-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/allocation-site-info.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/allocation-site-info-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/apply-arguments-gc-safepoint.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/apply-arguments-gc-safepoint-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/apply.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/apply-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/arguments-apply.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/arguments-apply-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/arguments-deopt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/arguments-deopt-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/arguments-lazy.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/arguments-lazy-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/arguments-read-and-assignment.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/arguments-read-and-assignment-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/arguments-read-and-assignment-typerhappy                                                                            === mjsunit/arguments-read-and-assignment-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/arguments-read-and-assignment-typerhappy.js:131: SyntaxError: Unexpected token )
+             "captured parameters");
+                                  ^
+SyntaxError: Unexpected token )
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/arguments-read-and-assignment-typerhappy.js --random-seed=-1665151923 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                           [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/arguments.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/arguments-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-bounds-check-removal.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-bounds-check-removal-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-concat.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-concat-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-constructor-feedback.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-constructor-feedback-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-elements-from-array-prototype-chain.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-elements-from-array-prototype-chain-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-array-prototype-chai...                                                                               === mjsunit/array-elements-from-array-prototype-chain-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (hole should be returned as undefined): expected <undefined> found <"@3">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-chain-typerhappy.js 56:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-chain-typerhappy.js 56:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-chain-typerhappy.js --random-seed=-671378712 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-elements-from-array-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-elements-from-array-prototype-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-array-prototype-type...                                                                               === mjsunit/array-elements-from-array-prototype-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (hole should be returned as undefined): expected <undefined> found <"@3">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-typerhappy.js 56:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-typerhappy.js 56:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-elements-from-array-prototype-typerhappy.js --random-seed=-1487106097 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-elements-from-object-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-elements-from-object-prototype-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-elements-from-object-prototype-typ...                                                                               === mjsunit/array-elements-from-object-prototype-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (hole should be returned as undefined): expected <undefined> found <"@3">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-object-prototype-typerhappy.js 56:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-elements-from-object-prototype-typerhappy.js 56:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-elements-from-object-prototype-typerhappy.js --random-seed=-348441039 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-feedback.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-feedback-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-foreach.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-foreach-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-functions-prototype-misc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-functions-prototype-misc-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:19|%   0|+   0|-   1]: mjsunit/array-functions-prototype-misc-typerhapp...                                                                               === mjsunit/array-functions-prototype-misc-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <1> found <undefined>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-misc-typerhappy.js 353:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-misc-typerhappy.js 353:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-misc-typerhappy.js --random-seed=-596690043 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                              [00:20|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-functions-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-functions-prototype-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-functions-prototype-typerhappy                                                                        === mjsunit/array-functions-prototype-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"zero"> found <undefined>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at runTest1      /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js 64:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js 95:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at runTest1      /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js 64:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js 95:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-functions-prototype-typerhappy.js --random-seed=1944216720 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                       [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-indexing-receiver.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-indexing-receiver-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-indexing-receiver-typerhappy                                                                      === mjsunit/array-indexing-receiver-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #25:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
+#
+#
+#
+#FailureMessage Object: 0x7ffedf0d2380
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f2964b435ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f2964ae9467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f2964b31f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f2963866eed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f2963861ecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f29638640b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f29637c518c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f29637bfc71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f29637b8a9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f29637b77af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f29637b76ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f2963571bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7f296357bdac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7f29635753eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7f2963575a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7f2963e56b4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7f2963e56842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f2964513ae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-indexing-receiver-typerhappy.js --random-seed=-350433347 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc
+                                                                     [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-indexing.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-indexing-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-indexing-typerhappy                                                             === mjsunit/array-indexing-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #25:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
+#
+#
+#
+#FailureMessage Object: 0x7ffe379b5230
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f78fc7ea5ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f78fc790467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f78fc7d8f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f78fb50deed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f78fb508ecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f78fb50b0b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f78fb46c18c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f78fb466c71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f78fb45fa9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f78fb45e7af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f78fb45e6ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f78fb218bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7f78fb222dac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7f78fb21c3eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7f78fb21ca5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7f78fbafdb4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7f78fbafd842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f78fc1baae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-indexing-typerhappy.js --random-seed=-1928865637 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                            [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-iteration.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-iteration-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-iteration-typerhappy                                                              === mjsunit/array-iteration-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/array-iteration-typerhappy.js:260: SyntaxError: Unexpected token )
+      }));
+        ^
+SyntaxError: Unexpected token )
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-iteration-typerhappy.js --random-seed=734034855 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                             [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-iterator-prototype-next.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-iterator-prototype-next-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-join-element-tostring-side-effects.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-join-element-tostring-side-effects-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-join-index-getter-side-effects.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-join-index-getter-side-effects-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-join-nesting.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-join-nesting-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-join-separator-tostring-side-effects.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-join-separator-tostring-side-effects-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-join.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-join-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:14|%   0|+   0|-   1]: mjsunit/array-join-typerhappy                                                         === mjsunit/array-join-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
+expected:
+["length","0","1","2"]
+found:
+["length","0","1","2","length","0","1","2","length","0","1","2","length","0","1","2"]
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-join-typerhappy.js 144:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-join-typerhappy.js 144:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-join-typerhappy.js --random-seed=-1208155436 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                        [00:14|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-lastindexof.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-lastindexof-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-length-number-conversion.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-length-number-conversion-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-length.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-length-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-literal-feedback.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-literal-feedback-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-literal-feedback-typerhappy                                                                     === mjsunit/array-literal-feedback-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"packed elements"> found <"packed double elements">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF                   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at assertKind                      /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 59:1
+    at changeOptimizedArrayLiteralKind /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 157:3
+    at                                 /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 172:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF                   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at assertKind                      /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 59:1
+    at changeOptimizedArrayLiteralKind /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 157:3
+    at                                 /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js 172:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-literal-feedback-typerhappy.js --random-seed=263727120 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc --opt --no-always-opt --deopt-every-n-times=0
+                                                                    [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-literal-transitions.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-literal-transitions-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-methods-read-only-length.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-methods-read-only-length-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-natives-elements.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-natives-elements-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-natives-elements-typerhappy                                                                     === mjsunit/array-natives-elements-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <4> found <7>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF      /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at array_natives_test /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js 68:1
+    at                    /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js 691:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF      /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at array_natives_test /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js 68:1
+    at                    /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js 691:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-natives-elements-typerhappy.js --random-seed=1983150178 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                    [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-pop.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-pop-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-pop-typerhappy                                                        === mjsunit/array-pop-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (1st pop): expected <1> found <4>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js 36:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js 144:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js 36:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js 144:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-pop-typerhappy.js --random-seed=-1946890107 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                       [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-prototype-every.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-every-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-filter.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-filter-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-find.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-find-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-findindex.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-findindex-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-foreach.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-foreach-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-includes.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-includes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-indexof.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-indexof-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-prototype-indexof-typerhappy                                                                      === mjsunit/array-prototype-indexof-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #59:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
+#
+#
+#
+#FailureMessage Object: 0x7ffdeba94b40
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f4726c605ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f4726c06467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f4726c4ef18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f4725983eed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f472597eecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f47259810b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f47258e218c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f47258dcc71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f47258d5a9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f47258d47af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f47258d46ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f472568ebf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7f4725698dac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7f47256923eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7f4725692a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7f4725f73b4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7f4725f73842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f4726630ae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-prototype-indexof-typerhappy.js --random-seed=-1308001682 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                     [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-prototype-lastindexof.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-lastindexof-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-map.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-map-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-pop.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-pop-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-prototype-pop-typerhappy                                                                  === mjsunit/array-prototype-pop-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <6>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js 30:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js 32:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js 30:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js 32:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-prototype-pop-typerhappy.js --random-seed=-158454853 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                 [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-prototype-reduce.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-reduce-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-slice.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-slice-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-prototype-some.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-prototype-some-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push-hole-double.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push-hole-double-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push-non-smi-value.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push-non-smi-value-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-push-typerhappy                                                         === mjsunit/array-push-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (length after .push(1)): expected <1> found <4>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js 41:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js 165:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js 41:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js 165:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-push-typerhappy.js --random-seed=-1616399895 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                        [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-push10.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push10-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push11.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push11-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push12.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push12-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push13.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push13-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push14.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push14-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push3-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push4.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push4-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push5.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push5-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push6.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push6-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push8.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push8-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-push9.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-push9-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-reduce.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-reduce-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-reduce-typerhappy                                                           === mjsunit/array-reduce-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/array-reduce-typerhappy.js:418: SyntaxError: Unexpected token )
+           undefined);
+                    ^
+SyntaxError: Unexpected token )
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-reduce-typerhappy.js --random-seed=-2118927329 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                          [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-slice.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-slice-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-sort.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-sort-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-splice.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-splice-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-splice-typerhappy                                                           === mjsunit/array-splice-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
+expected:
+[1,"a","b","c",2,3]
+found:
+[1,"a","b","c","a","b","c","a","b","c","a","b","c",2,3]
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js 74:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js 84:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js 74:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js 84:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-splice-typerhappy.js --random-seed=-1468065996 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                          [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-store-and-grow.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-store-and-grow-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/array-tostring.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-tostring-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-tostring-typerhappy                                                             === mjsunit/array-tostring-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <false> found <true>
+
+Stack: MjsUnitAssertionError
+    at assertFalseF    /home/patil215/proj/v8/test/mjsunit/mjsunit.js 522:5
+    at Number.get      /home/patil215/proj/v8/test/mjsunit/array-tostring-typerhappy.js 120:1
+    at Number.toString  
+    at                 /home/patil215/proj/v8/test/mjsunit/array-tostring-typerhappy.js 127:40
+    at typerPrep       /home/patil215/proj/v8/test/mjsunit/mjsunit.js 437:5
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertFalseF    /home/patil215/proj/v8/test/mjsunit/mjsunit.js 522:5
+    at Number.get      /home/patil215/proj/v8/test/mjsunit/array-tostring-typerhappy.js 120:1
+    at Number.toString  
+    at                 /home/patil215/proj/v8/test/mjsunit/array-tostring-typerhappy.js 127:40
+    at typerPrep       /home/patil215/proj/v8/test/mjsunit/mjsunit.js 437:5
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-tostring-typerhappy.js --random-seed=-600644565 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                            [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/array-unshift.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/array-unshift-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/array-unshift-typerhappy                                                            === mjsunit/array-unshift-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <13> found <22>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-unshift-typerhappy.js 33:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-unshift-typerhappy.js 43:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/array-unshift-typerhappy.js 33:1
+    at               /home/patil215/proj/v8/test/mjsunit/array-unshift-typerhappy.js 43:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/array-unshift-typerhappy.js --random-seed=21690574 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                           [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/ascii-regexp-subject.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/ascii-regexp-subject-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/asm-heap.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/asm-heap-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/asm-memory.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/asm-memory-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/asm-stdlib.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/asm-stdlib-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/asm-validation.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/asm-validation-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/atomics-add.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-add-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-add-typerhappy                                                              === mjsunit/asm/atomics-add-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js:7: Invalid asm.js: Unexpected token
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <30>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 76:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 90:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 101:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 76:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 90:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js 101:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-add-typerhappy.js --random-seed=1706223349 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+                                                             [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/atomics-and.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-and-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-and-typerhappy                                                              === mjsunit/asm/atomics-and-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js:7: Invalid asm.js: Unexpected token
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <127> found <15>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 77:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 91:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 102:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 77:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 91:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js 102:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-and-typerhappy.js --random-seed=1258086601 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+                                                             [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/atomics-compareexchange.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-compareexchange-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-compareexchange-typerhappy                                                                          === mjsunit/asm/atomics-compareexchange-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js:7: Invalid asm.js: Unexpected token
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <50>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 84:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 99:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 110:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 84:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 99:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js 110:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-compareexchange-typerhappy.js --random-seed=-454705798 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+                                                                         [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/atomics-exchange.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-exchange-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-exchange-typerhappy                                                                   === mjsunit/asm/atomics-exchange-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js:7: Invalid asm.js: Unexpected token
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <127> found <15>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 80:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 90:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 101:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 80:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 90:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js 101:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-exchange-typerhappy.js --random-seed=337523681 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+                                                                  [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/atomics-load.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-load-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/atomics-or.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-or-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-or-typerhappy                                                             === mjsunit/asm/atomics-or-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js:7: Invalid asm.js: Unexpected token
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <15>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 79:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 93:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 104:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 79:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 93:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js 104:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-or-typerhappy.js --random-seed=-809965305 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+                                                            [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/atomics-store.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-store-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/atomics-sub.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-sub-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-sub-typerhappy                                                              === mjsunit/asm/atomics-sub-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js:7: Invalid asm.js: Unexpected token
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <30> found <0>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 77:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 91:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 102:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 77:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 91:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js 102:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-sub-typerhappy.js --random-seed=-916593399 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+                                                             [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/atomics-xor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/atomics-xor-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/atomics-xor-typerhappy                                                              === mjsunit/asm/atomics-xor-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js:7: Invalid asm.js: Unexpected token
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure ([object Int8Array]): expected <0> found <15>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 76:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 90:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 101:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF   /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testElementType /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 76:1
+    at testElement     /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 90:3
+    at                 /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js 101:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/atomics-xor-typerhappy.js --random-seed=197468851 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+                                                             [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/b5528-comma.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/b5528-comma-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/call-annotation.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/call-annotation-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/call-annotation-typerhappy                                                                  === mjsunit/asm/call-annotation-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <1> found <4>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF         /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at SuccessExternCoercion /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js 34:1
+    at                       /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js 36:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF         /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at SuccessExternCoercion /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js 34:1
+    at                       /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js 36:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/call-annotation-typerhappy.js --random-seed=1632955779 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --validate-asm
+                                                                 [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/asm/call-stdlib.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/call-stdlib-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/box2d.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/box2d-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/copy.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/copy-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/corrections.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/corrections-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/fannkuch.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/fannkuch-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/fasta.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/fasta-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/lua_binarytrees.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/lua_binarytrees-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/memops.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/memops-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/primes.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/primes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/embenchen/zlib.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/embenchen/zlib-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/global-imports.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/global-imports-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/int32div.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/int32div-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/int32mod-constant.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/int32mod-constant-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/math-abs.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-abs-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/math-ceil.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-ceil-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/math-clz32.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-clz32-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/math-floor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-floor-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/math-fround.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-fround-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/math-max.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-max-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/math-min.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/math-min-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/noexpose-wasm.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/noexpose-wasm-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/regress-718745.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/regress-718745-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/asm/regress-740325.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/asm/regress-740325-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/asm/regress-740325-typerhappy                                                                 === mjsunit/asm/regress-740325-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/asm/regress-740325-typerhappy.js:8: SyntaxError: Unexpected token }
+});
+^
+SyntaxError: Unexpected token }
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/asm/regress-740325-typerhappy.js --random-seed=-1948131460 --nohard-abort --enable-slow-asserts --verify-heap --expose-gc --allow-natives-syntax
+                                                                [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/async-hooks/api-methods.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-hooks/api-methods-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-hooks/async-await-tree.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-hooks/async-await-tree-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-hooks/chained-promises.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-hooks/chained-promises-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-hooks/execution-order.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-hooks/execution-order-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-hooks/promises-async-await.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-hooks/promises-async-await-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-stack-traces-prepare-stacktrace-1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-stack-traces-prepare-stacktrace-1-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-stack-traces-prepare-stacktrace-2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-stack-traces-prepare-stacktrace-2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-stack-traces-prepare-stacktrace-4.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-stack-traces-prepare-stacktrace-4-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-stack-traces-promise-all.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-stack-traces-promise-all-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/async-stack-traces.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/async-stack-traces-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/async-stack-traces-typerhappy                                                                 === mjsunit/async-stack-traces-typerhappy ===
+#
+# Fatal error in ../../src/objects/string-inl.h, line 37
+# Check failed: !v8::internal::FLAG_enable_slow_asserts || (IsString()).
+#
+#
+#
+#FailureMessage Object: 0x7fff9f7068e0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f25593175ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f25592bd467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f2559305f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::String::String(unsigned long)+0x82) [0x7f2557b5df72]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::String::cast(v8::internal::Object)+0x21) [0x7f2557b56c81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, v8::internal::compiler::Node* const*, unsigned long, int, bool)+0x37e) [0x7f2557df1d9e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, v8::internal::compiler::Node* const*, unsigned long, int)+0x36) [0x7f2557df1a16]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, std::initializer_list<v8::internal::compiler::Node*>, int)+0x59) [0x7f2557df61c9]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitCallProperty0()+0xcc) [0x7f2557deb6dc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitSingleBytecode(v8::internal::SourcePositionTableIterator*)+0x66f) [0x7f2557de82df]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitBytecodes()+0x2b2) [0x7f2557de7512]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::CreateGraph()+0x1c1) [0x7f2557de70f1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::GraphBuilderPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*)+0x1f4) [0x7f2557f99644]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::GraphBuilderPhase>()+0x54) [0x7f2557f93e54]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::CreateGraph()+0x29d) [0x7f2557f8b44d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::PrepareJobImpl(v8::internal::Isolate*)+0x2e9) [0x7f2557f8b119]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::PrepareJob(v8::internal::Isolate*)+0x2b1) [0x7f2557d45ac1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183d9a) [0x7f2557d4fd9a]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7f2557d493eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7f2557d49a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7f255862ab4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7f255862a842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f2558ce7ae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/async-stack-traces-typerhappy.js --random-seed=1913117329 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --async-stack-traces
+                                                                [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/big-array-literal.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/big-array-literal-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/big-object-literal.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/big-object-literal-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/binary-op-newspace.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/binary-op-newspace-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/bit-not.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/bit-not-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/bitops-info.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/bitops-info-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/body-not-visible.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/body-not-visible-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/bounds-checks-elimination.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/bounds-checks-elimination-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/call-intrinsic-type-error.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/call-intrinsic-type-error-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/call-non-function-call.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/call-non-function-call-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/call-non-function.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/call-non-function-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/char-escape.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/char-escape-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/class-of-builtins.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/class-of-builtins-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/closures.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/closures-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/code-coverage-ad-hoc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/code-coverage-ad-hoc-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/code-coverage-block.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/code-coverage-block-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/code-coverage-utils.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/code-coverage-utils-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/codegen-coverage.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/codegen-coverage-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-character.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-character-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-known-objects-slow.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-known-objects-slow-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-known-objects-tostringtag.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-known-objects-tostringtag-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-known-objects.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-known-objects-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-objects.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-objects-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-eq.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-eq-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-gt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-gt-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-gteq.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-gteq-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-lt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-lt-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-lteq.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-lteq-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-ne.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-ne-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-seq.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-seq-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compare-table-sne.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compare-table-sne-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/abstract-equal-receiver.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/abstract-equal-receiver-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/abstract-equal-symbol.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/abstract-equal-symbol-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/abstract-equal-undetectable.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/abstract-equal-undetectable-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/alloc-number.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/alloc-number-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/alloc-object-huge.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/alloc-object-huge-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-buffer-is-view.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-buffer-is-view-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-constructor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-constructor-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-findindex.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-findindex-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-is-array.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-is-array-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-multiple-receiver-maps.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-multiple-receiver-maps-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-push-1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-push-1-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-push-2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-push-2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-push-3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-push-3-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-slice-clone.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-slice-clone-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-species.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-species-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/array-subclass.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/array-subclass-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/assignment-deopt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/assignment-deopt-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/assignment-deopt-typerhappy                                                                        === mjsunit/compiler/assignment-deopt-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <44> found <47>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/assignment-deopt-typerhappy.js 115:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/assignment-deopt-typerhappy.js 115:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/assignment-deopt-typerhappy.js --random-seed=186300575 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                       [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/assignment.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/assignment-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/call-keyed.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/call-keyed-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/compare-map-elim.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/compare-map-elim-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/compare-map-elim2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/compare-map-elim2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/compare-objeq-elim.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/compare-objeq-elim-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/compare.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/compare-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/complex-for-in.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/complex-for-in-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/concurrent-invalidate-transition-map.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/concurrent-invalidate-transition-map-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/concurrent-proto-change.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/concurrent-proto-change-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/constant-fold-cow-array.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/constant-fold-cow-array-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/constant-fold-tostring.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/constant-fold-tostring-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/constructor-inlining.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/constructor-inlining-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/constructor-inlining-typerhappy                                                                            === mjsunit/compiler/constructor-inlining-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/compiler/constructor-inlining-typerhappy.js:117: SyntaxError: Unexpected end of input
+
+
+SyntaxError: Unexpected end of input
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/constructor-inlining-typerhappy.js --random-seed=-1393287534 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --stress-inline
+                                                                           [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/context-sensitivity.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/context-sensitivity-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:04|%   0|+   0|-   1]: mjsunit/compiler/context-sensitivity-typerhappy                                                                           === mjsunit/compiler/context-sensitivity-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"Some value"> found <"Another value">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/context-sensitivity-typerhappy.js 594:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/context-sensitivity-typerhappy.js 611:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/context-sensitivity-typerhappy.js 594:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/context-sensitivity-typerhappy.js 611:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/context-sensitivity-typerhappy.js --random-seed=-1618580417 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                          [00:04|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/count-deopt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/count-deopt-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/count-deopt-typerhappy                                                                   === mjsunit/compiler/count-deopt-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <43> found <46>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/count-deopt-typerhappy.js 123:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/count-deopt-typerhappy.js 123:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/count-deopt-typerhappy.js --random-seed=-988448578 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                  [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/dataview-constant.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/dataview-constant-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/dataview-constant-typerhappy                                                                         === mjsunit/compiler/dataview-constant-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <42> found <45>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js 19:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js 32:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js 19:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js 32:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/dataview-constant-typerhappy.js --random-seed=-954021861 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                        [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/dataview-get.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/dataview-get-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/dataview-nonconstant.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/dataview-nonconstant-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/dataview-nonconstant-typerhappy                                                                            === mjsunit/compiler/dataview-nonconstant-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <42> found <45>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js 19:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js 32:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js 19:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js 32:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/dataview-nonconstant-typerhappy.js --random-seed=-337920280 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                           [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/dataview-set.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/dataview-set-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/dead-code6.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/dead-code6-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/dead-loops-neg.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/dead-loops-neg-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/delete.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/delete-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-iterator-prototype-next.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-iterator-prototype-next-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-every.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-every-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-filter.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-filter-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-find.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-find-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-findindex.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-findindex-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-foreach.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-foreach-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-includes.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-includes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-indexof.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-indexof-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-indexof-t...                                                                               === mjsunit/compiler/deopt-array-prototype-indexof-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #58:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
+#
+#
+#
+#FailureMessage Object: 0x7fff63ee1d40
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f0bd1cf35ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f0bd1c99467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f0bd1ce1f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f0bd0a16eed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f0bd0a11ecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f0bd0a140b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f0bd097518c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f0bd096fc71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f0bd0968a9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f0bd09677af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f0bd09676ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f0bd0721bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7f0bd072bdac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7f0bd07253eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7f0bd0725a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7f0bd1006b4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7f0bd1006842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f0bd16c3ae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-indexof-typerhappy.js --random-seed=1627172 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
+                                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-lastindexof.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-lastindexof-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-map.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-map-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-pop.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-pop-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-array-prototype-pop-typer...                                                                               === mjsunit/compiler/deopt-array-prototype-pop-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <undefined> found <6>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js 28:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js 30:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js 28:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js 30:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-array-prototype-pop-typerhappy.js --random-seed=635289484 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
+                                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-reduce.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-reduce-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-slice.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-slice-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-prototype-some.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-prototype-some-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-array-push.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-array-push-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-bool2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-bool2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-followed-by-gc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-followed-by-gc-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deopt-inlined-from-call.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-inlined-from-call-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/deopt-inlined-from-call-typerha...                                                                               === mjsunit/compiler/deopt-inlined-from-call-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <7> found <4>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js 69:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js 85:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js 69:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js 85:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/deopt-inlined-from-call-typerhappy.js --random-seed=1573968063 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --no-always-opt
+                                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/deopt-materialize-accumulator.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deopt-materialize-accumulator-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/deoptimize-lazy-weak.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/deoptimize-lazy-weak-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/division-by-constant.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/division-by-constant-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/escape-analysis-15.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/escape-analysis-15-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/escape-analysis-17.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/escape-analysis-17-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/escape-analysis-arguments.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/escape-analysis-arguments-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/escape-analysis-arguments-typer...                                                                               === mjsunit/compiler/escape-analysis-arguments-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-arguments-typerhappy.js:118: SyntaxError: Unexpected token )
+})();
+ ^
+SyntaxError: Unexpected token )
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/escape-analysis-arguments-typerhappy.js --random-seed=616261764 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc
+                                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/escape-analysis-rest-parameters.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/escape-analysis-rest-parameters-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/escape-analysis.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/escape-analysis-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/expression-trees.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/expression-trees-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/function-bind.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/function-bind-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/function-bind-typerhappy                                                                     === mjsunit/compiler/function-bind-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/compiler/function-bind-typerhappy.js:369: SyntaxError: Unexpected end of input
+
+
+SyntaxError: Unexpected end of input
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/function-bind-typerhappy.js --random-seed=-1943710086 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                    [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/function-call.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/function-call-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/global-accessors.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/global-accessors-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/global-delete.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/global-delete-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/global-var-delete.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/global-var-delete-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/globals.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/globals-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/globals-typerhappy                                                               === mjsunit/compiler/globals-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <3> found <0>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/globals-typerhappy.js 81:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/globals-typerhappy.js 81:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/globals-typerhappy.js --random-seed=-2029475445 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/inline-accessors2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-accessors2-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-accessors2-typerhappy                                                                         === mjsunit/compiler/inline-accessors2-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
+
+Stack: MjsUnitAssertionError
+    at assertTrueF             /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at TryGetter               /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 86:1
+    at TestGetterInAllContexts /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 97:3
+    at                         /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 115:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertTrueF             /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at TryGetter               /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 86:1
+    at TestGetterInAllContexts /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 97:3
+    at                         /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js 115:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inline-accessors2-typerhappy.js --random-seed=-488220736 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --inline-accessors
+                                                                        [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/inline-arguments.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-arguments-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/inline-context-slots.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-context-slots-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/inline-exception-1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-exception-1-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-exception-1-typerhappy                                                                          === mjsunit/compiler/inline-exception-1-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <4> found <16>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at runThisShard  /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-1-typerhappy.js 182:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-1-typerhappy.js 2320:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at runThisShard  /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-1-typerhappy.js 182:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-1-typerhappy.js 2320:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-1-typerhappy.js --random-seed=-1593184765 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --no-always-opt
+                                                                         [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/inline-exception-2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-exception-2-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/inline-exception-2-typerhappy                                                                          === mjsunit/compiler/inline-exception-2-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <2> found <8>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at runThisShard  /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-2-typerhappy.js 183:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-2-typerhappy.js 2162:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at runThisShard  /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-2-typerhappy.js 183:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-2-typerhappy.js 2162:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inline-exception-2-typerhappy.js --random-seed=1614072731 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --no-always-opt
+                                                                         [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/inline-function-apply.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-function-apply-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/inline-literals.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-literals-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/inline-param.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inline-param-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/inlined-call.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/inlined-call-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   0|-   1]: mjsunit/compiler/inlined-call-typerhappy                                                                    === mjsunit/compiler/inlined-call-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <3> found <6>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/inlined-call-typerhappy.js 179:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/inlined-call-typerhappy.js 179:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/inlined-call-typerhappy.js --random-seed=399227596 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
+                                                                   [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/instance-of-overridden-has-instance.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/instance-of-overridden-has-instance-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/instanceof-opt1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/instanceof-opt1-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/instanceof-opt2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/instanceof-opt2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/instanceof-opt3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/instanceof-opt3-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/instanceof.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/instanceof-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/instanceof2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/instanceof2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/instanceof3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/instanceof3-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/int64.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/int64-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/lazy-iife-no-parens.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/lazy-iife-no-parens-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/literals-assignment.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/literals-assignment-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/literals.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/literals-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/load-elimination-global.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/load-elimination-global-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/load-elimination-osr.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/load-elimination-osr-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/load-elimination-params.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/load-elimination-params-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/load-elimination.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/load-elimination-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/loops.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/loops-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/manual-concurrent-recompile.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/manual-concurrent-recompile-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-ceil.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-ceil-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-floor-global.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-floor-global-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-floor-local.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-floor-local-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-imul.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-imul-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-max.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-max-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-min.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-min-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-mul.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-mul-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-round.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-round-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-sign.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-sign-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/math-trunc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/math-trunc-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/minus-zero.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/minus-zero-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/mul-div-52bit.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/mul-div-52bit-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/multiply-add.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/multiply-add-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/multiply-sub.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/multiply-sub-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/nary-binary-ops.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/nary-binary-ops-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/native-context-specialization-string-concat.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/native-context-specialization-string-concat-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/new-cons-string.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/new-cons-string-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-abs.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-abs-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-add.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-add-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-ceil.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-ceil-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-comparison-truncations.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-comparison-truncations-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-constructor-deopt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-constructor-deopt-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-divide.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-divide-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-floor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-floor-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-issafeinteger.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-issafeinteger-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-max.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-max-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-min.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-min-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-multiply.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-multiply-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-round.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-round-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-subtract.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-subtract-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-toboolean.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-toboolean-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/number-trunc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/number-trunc-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/object-constructor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/object-constructor-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/object-isprototypeof.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/object-isprototypeof-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/optimize_max.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/optimize_max-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/optimize_min.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/optimize_min-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/optimized-for-in.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/optimized-for-in-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/optimized-function-calls.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/optimized-function-calls-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/optimized-instanceof-1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/optimized-instanceof-1-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/optimized-instanceof-2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/optimized-instanceof-2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/optimized-with.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/optimized-with-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/osr-block-scope-id.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/osr-block-scope-id-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/compiler/osr-block-scope-id-typerhappy                                                                          === mjsunit/compiler/osr-block-scope-id-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <45> found <function() { return x; }>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at check         /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js 31:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js 41:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at check         /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js 31:1
+    at               /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js 41:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/compiler/osr-block-scope-id-typerhappy.js --random-seed=-272436976 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --use-osr
+                                                                         [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/compiler/osr-block-scope.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/osr-block-scope-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/osr-for-let.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/osr-for-let-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/osr-infinite.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/osr-infinite-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/osr-regress-max-locals.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/osr-regress-max-locals-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/osr-try-catch.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/osr-try-catch-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/osr-while-let.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/osr-while-let-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/promise-constructor.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/promise-constructor-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/promise-resolve-stable-maps.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/promise-resolve-stable-maps-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/promise-resolve.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/promise-resolve-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/promise-species.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/promise-species-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/proto-chain-constant.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/proto-chain-constant-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/receiver-conversion.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/receiver-conversion-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/redundancy-elimination.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/redundancy-elimination-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/reflect-construct.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/reflect-construct-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-106351.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-106351-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-1085.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-1085-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-177883.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-177883-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-3136962.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-3136962-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-3218915.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-3218915-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-3249650.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-3249650-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-3786.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-3786-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-4206.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-4206-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-4389-1.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-4389-1-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-4389-2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-4389-2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-4389-3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-4389-3-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-4389-4.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-4389-4-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-4389-5.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-4389-5-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-4389-6.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-4389-6-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-468162.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-468162-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-469089.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-469089-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-5100.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-5100-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-5538.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-5538-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-572409.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-572409-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-6.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-6-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-628516.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-628516-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-7.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-7-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-700883.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-700883-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-761892.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-761892-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-772420.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-772420-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-788539.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-788539-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-791245.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-791245-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-797596.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-797596-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-841117.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-841117-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-arguments.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-arguments-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-closures-with-eval.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-closures-with-eval-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-const.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-const-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-lbranch-double.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-lbranch-double-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-math-sign-nan-type.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-math-sign-nan-type-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-max.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-max-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-or.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-or-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-serialized-slots.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-serialized-slots-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-stacktrace-methods.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-stacktrace-methods-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-stacktrace.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-stacktrace-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/regress-v8-5756.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/regress-v8-5756-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/rotate.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/rotate-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/safepoint.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/safepoint-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/shift-shr.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/shift-shr-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/short-circuit.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/short-circuit-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/simple-bailouts.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/simple-bailouts-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/simple-deopt.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/simple-deopt-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/simple-inlining.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/simple-inlining-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/store-elimination.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/store-elimination-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/strict-equal-number.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/strict-equal-number-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/strict-equal-receiver.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/strict-equal-receiver-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/strict-equal-symbol.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/strict-equal-symbol-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/string-add-try-catch.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/string-add-try-catch-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/string-concat-try-catch.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/string-concat-try-catch-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/string-from-code-point.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/string-from-code-point-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/uint32.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/uint32-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/unsigned-min-max.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/unsigned-min-max-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/compiler/variables.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/compiler/variables-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/concurrent-initial-prototype-change.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/concurrent-initial-prototype-change-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/console.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/console-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/const-field-tracking.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/const-field-tracking-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/const-field-tracking-typerhappy                                                                   === mjsunit/const-field-tracking-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
+
+Stack: MjsUnitAssertionError
+    at assertTrueF                                /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at TestLoadFromConstantFieldOfAConstantObject /home/patil215/proj/v8/test/mjsunit/const-field-tracking-typerhappy.js 76:1
+    at                                            /home/patil215/proj/v8/test/mjsunit/const-field-tracking-typerhappy.js 102:3
+    at                                            /home/patil215/proj/v8/test/mjsunit/const-field-tracking-typerhappy.js 103:3
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertTrueF                                /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at TestLoadFromConstantFieldOfAConstantObject /home/patil215/proj/v8/test/mjsunit/const-field-tracking-typerhappy.js 76:1
+    at                                            /home/patil215/proj/v8/test/mjsunit/const-field-tracking-typerhappy.js 102:3
+    at                                            /home/patil215/proj/v8/test/mjsunit/const-field-tracking-typerhappy.js 103:3
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/const-field-tracking-typerhappy.js --random-seed=462124162 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --no-always-opt
+                                                                  [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/constant-folding-2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/constant-folding-2-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/constant-folding-2-typerhappy                                                                 === mjsunit/constant-folding-2-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <2> found <5>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at inc           /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 62:1
+    at test          /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 32:3
+    at               /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 57:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at inc           /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 62:1
+    at test          /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 32:3
+    at               /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js 57:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/constant-folding-2-typerhappy.js --random-seed=2077723507 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --nostress-opt --opt
+                                                                [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/constant-folding.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/constant-folding-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/constant-folding-typerhappy                                                               === mjsunit/constant-folding-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (y++ === 3, where y = "3"): expected <true> found <false>
+
+Stack: MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at test_count  /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js 46:1
+    at             /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js 86:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at test_count  /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js 46:1
+    at             /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js 86:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/constant-folding-typerhappy.js --random-seed=166832397 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/context-calls-maintained.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/context-calls-maintained-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/contextual-calls.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/contextual-calls-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/copy-on-write-assert.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/copy-on-write-assert-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/cross-realm-filtering.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/cross-realm-filtering-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/cross-realm-global-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/cross-realm-global-prototype-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/cyclic-array-to-string.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/cyclic-array-to-string-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/cyrillic.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/cyrillic-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/d8/d8-os.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/d8/d8-os-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/d8/d8-performance-now.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/d8/d8-performance-now-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/d8/d8-worker-script.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/d8/d8-worker-script-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-script-typerhappy                                                                  === mjsunit/d8/d8-worker-script-typerhappy ===
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/d8/d8-worker-script-typerhappy.js --random-seed=1797537100 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+--- TIMEOUT ---
+                                                                 [08:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/d8/d8-worker-sharedarraybuffer.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/d8/d8-worker-sharedarraybuffer-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-sharedarraybuffer-typerhapp...                                                                               === mjsunit/d8/d8-worker-sharedarraybuffer-typerhappy ===
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/d8/d8-worker-sharedarraybuffer-typerhappy.js --random-seed=760074292 --nohard-abort --enable-slow-asserts --verify-heap --harmony-sharedarraybuffer --allow-natives-syntax
+--- TIMEOUT ---
+                                                                              [08:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/d8/d8-worker.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/d8/d8-worker-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[08:02|%   0|+   0|-   1]: mjsunit/d8/d8-worker-typerhappy                                                           === mjsunit/d8/d8-worker-typerhappy ===
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/d8/d8-worker-typerhappy.js --random-seed=-2000830555 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+--- TIMEOUT ---
+                                                          [08:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/date-parse.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/date-parse-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/date.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/date-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/date-typerhappy                                                   === mjsunit/date-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/date-typerhappy.js:184: SyntaxError: Unexpected token )
+                   "0x40000000, 0x40000000, 0x40000000, 0x40000000)")
+                                                                    ^
+SyntaxError: Unexpected token )
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/date-typerhappy.js --random-seed=1773890833 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                  [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/default-nospec.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/default-nospec-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/define-property-gc.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/define-property-gc-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/dehoisted-array-index.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/dehoisted-array-index-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/delete.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/delete-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/deopt-minus-zero.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/deopt-minus-zero-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/deopt-with-fp-regs.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/deopt-with-fp-regs-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/dictionary-prototypes.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/dictionary-prototypes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/div-mod.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/div-mod-typerhappy

@@ -446,16 +446,7 @@ test/mjsunit/es6/call-with-spread-modify-array-iterator.js
 test/mjsunit/es6/call-with-spread-modify-next.js
 test/mjsunit/es6/call-with-spread.js
 test/mjsunit/es6/catch-parameter-redeclaration.js
-test/mjsunit/es6/classes-derived-return-type.js
-test/mjsunit/es6/classes-experimental.js
-test/mjsunit/es6/classes-lazy-parsing.js
-test/mjsunit/es6/classes-maps.js
-test/mjsunit/es6/classes-proxy.js
-test/mjsunit/es6/classes-subclass-arrays.js
-test/mjsunit/es6/classes-subclass-builtins.js
-test/mjsunit/es6/classes.js
 test/mjsunit/es6/collections.js
-test/mjsunit/es6/computed-property-names-classes.js
 test/mjsunit/es6/debug-promises/throw-with-undefined-reject.js
 test/mjsunit/es6/destructuring-assignment.js
 test/mjsunit/es6/destructuring.js
