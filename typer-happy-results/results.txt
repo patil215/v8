@@ -8076,3 +8076,3137 @@ PASSED!
 
 Running file test/mjsunit/es6/reflect-construct.js...
 Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:92
+                    throw err;
+                    ^
+
+RangeError: Maximum call stack size exceeded
+    at Array.forEach (<anonymous>)
+    at _.each._.forEach (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:76:11)
+    at Function._.extend (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:640:5)
+    at Function._.clone (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:670:45)
+    at cloneSyntax (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:339:34)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:343:21
+    at Array.map (<anonymous>)
+    at cloneSyntaxArray (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:342:20)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:345:33
+    at Array.map (<anonymous>)
+Running the test...
+mjsunit/es6/reflect-construct-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/reflect-construct-typerhappy                                                                    === mjsunit/es6/reflect-construct-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
+expected:
+"() => {} is not a constructor"
+found:
+"() => {\n        } is not a constructor"
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF                          /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testReflectConstructArg1NonConstructor /home/patil215/proj/v8/test/mjsunit/es6/reflect-construct-typerhappy.js 24:9
+    at                                        /home/patil215/proj/v8/test/mjsunit/es6/reflect-construct-typerhappy.js 29:2
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF                          /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at testReflectConstructArg1NonConstructor /home/patil215/proj/v8/test/mjsunit/es6/reflect-construct-typerhappy.js 24:9
+    at                                        /home/patil215/proj/v8/test/mjsunit/es6/reflect-construct-typerhappy.js 29:2
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/reflect-construct-typerhappy.js --random-seed=-121628253 --nohard-abort --enable-slow-asserts --verify-heap --allow-unsafe-function-constructor --allow-natives-syntax
+                                                                   [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/reflect-define-property.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/reflect-define-property-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/reflect-define-property-typerhappy                                                                          === mjsunit/es6/reflect-define-property-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <1> found <4>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/reflect-define-property-typerhappy.js 185:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/reflect-define-property-typerhappy.js 185:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/reflect-define-property-typerhappy.js --random-seed=-1308071751 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                         [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/reflect-get-prototype-of.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/reflect-get-prototype-of-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/reflect-prevent-extensions.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/reflect-prevent-extensions-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/reflect-set-prototype-of.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/reflect-set-prototype-of-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/reflect.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `assertTrue` could not be matched with `() ; assertFalse () ;...`
+326:     assertTrue(Reflect.set({set bla(x) {}}), "bla", value, target);
+         ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/es6/reflect-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/regexp-constructor.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:92
+                    throw err;
+                    ^
+
+RangeError: Maximum call stack size exceeded
+    at Array.forEach (<anonymous>)
+    at _.each._.forEach (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:76:11)
+    at Function._.extend (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:640:5)
+    at Function._.clone (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:670:45)
+    at cloneSyntax (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:339:34)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:343:21
+    at Array.map (<anonymous>)
+    at cloneSyntaxArray (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:342:20)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:345:33
+    at Array.map (<anonymous>)
+Running the test...
+mjsunit/es6/regexp-constructor-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/regexp-constructor-typerhappy                                                                     === mjsunit/es6/regexp-constructor-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/es6/regexp-constructor-typerhappy.js:143: SyntaxError: Class constructor may not be an accessor
+        get 'constructor'() {
+            ^^^^^^^^^^^^^
+SyntaxError: Class constructor may not be an accessor
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/regexp-constructor-typerhappy.js --random-seed=-1920381593 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                    [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/regexp-flags.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regexp-flags-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/regexp-flags-typerhappy                                                               === mjsunit/es6/regexp-flags-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <1> found <4>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/regexp-flags-typerhappy.js 65:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/regexp-flags-typerhappy.js 65:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/regexp-flags-typerhappy.js --random-seed=952638656 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/regexp-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regexp-prototype-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/regexp-sticky.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regexp-sticky-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/regexp-sticky-typerhappy                                                                === mjsunit/es6/regexp-sticky-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
+
+Stack: MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at             /home/patil215/proj/v8/test/mjsunit/es6/regexp-sticky-typerhappy.js 40:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at             /home/patil215/proj/v8/test/mjsunit/es6/regexp-sticky-typerhappy.js 40:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/regexp-sticky-typerhappy.js --random-seed=982253329 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                               [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/regexp-tolength.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regexp-tolength-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/regexp-tolength-typerhappy                                                                  === mjsunit/es6/regexp-tolength-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
+
+Stack: MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at             /home/patil215/proj/v8/test/mjsunit/es6/regexp-tolength-typerhappy.js 9:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at             /home/patil215/proj/v8/test/mjsunit/es6/regexp-tolength-typerhappy.js 9:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/regexp-tolength-typerhappy.js --random-seed=1108878022 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                 [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/regexp-tostring.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regexp-tostring-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/regexp-tostring-typerhappy                                                                  === mjsunit/es6/regexp-tostring-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
+expected:
+["p","ps","f","fs"]
+found:
+["p","ps","f","fs","p","ps","f","fs","p","ps","f","fs","p","ps","f","fs"]
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/regexp-tostring-typerhappy.js 44:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/regexp-tostring-typerhappy.js 44:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/regexp-tostring-typerhappy.js --random-seed=-801082524 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                 [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/regress/regress-2034.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regress/regress-2034-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/regress/regress-2219.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regress/regress-2219-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/regress/regress-2225.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regress/regress-2225-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/regress/regress-2681.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regress/regress-2681-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/regress/regress-2681-typerhappy                                                                       === mjsunit/es6/regress/regress-2681-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <Object()> found <Object()>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/regress/regress-2681-typerhappy.js 42:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/regress/regress-2681-typerhappy.js 42:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/regress/regress-2681-typerhappy.js --random-seed=1500450783 --nohard-abort --enable-slow-asserts --verify-heap --expose-gc --noincremental-marking --allow-natives-syntax
+                                                                      [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/regress/regress-347906.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regress/regress-347906-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/regress/regress-crbug-248025.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regress/regress-crbug-248025-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/regress/regress-lookup-transition.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/regress/regress-lookup-transition-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/rest-params.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 237: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 321: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+Running the test...
+mjsunit/es6/rest-params-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-iterator-10.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-iterator-10-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-iterator-2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-iterator-2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-iterator-3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-iterator-3-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-iterator-4.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-iterator-4-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-iterator-5.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-iterator-5-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-iterator-7.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-iterator-7-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-iterator-8.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-iterator-8-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/set-minus-zero.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/set-minus-zero-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/sloppy-restrictive-block-function.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/sloppy-restrictive-block-function-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/spread-array-misc.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 7: Unexpected token ,
+[... g ( ... , args ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3617:15)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+    at parseStatementList (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2829:25)
+    at parseBlock (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2840:17)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3385:24)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 91: Unexpected token ,
+[... g ( ... , args ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3617:15)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+    at parseStatementList (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2829:25)
+    at parseBlock (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2840:17)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3385:24)
+Running the test...
+mjsunit/es6/spread-array-misc-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/spread-array-mutated-prototype.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 11: Spread must be the final element of an element list
+[... , ... bc , d , ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2077:25)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+    at parseSpreadOrAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2373:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 95: Spread must be the final element of an element list
+[... , ... bc , d , ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2077:25)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+    at parseSpreadOrAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2373:16)
+Running the test...
+mjsunit/es6/spread-array-mutated-prototype-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/spread-array-pristine-prototype.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 7: Spread must be the final element of an element list
+[... , ... bc , d , ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2077:25)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+    at parseSpreadOrAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2373:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 91: Spread must be the final element of an element list
+[... , ... bc , d , ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2077:25)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+    at parseSpreadOrAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2373:16)
+Running the test...
+mjsunit/es6/spread-array-pristine-prototype-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/spread-call-new-class.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 3: Unexpected token ,
+[... Base ( ... , args ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3617:15)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3669:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2305:24)
+Running the test...
+mjsunit/es6/spread-call-new-class-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/spread-call-new.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `assertEquals` could not be matched with `() ; assertEquals () ;...`
+121:   assertEquals([1, 2, 3], (new TestClass(...[1, 2, 3])).method());
+       ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/es6/spread-call-new-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/spread-call.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 12: Spread must be the final element of an element list
+[... ( ... tes , ... t ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at parseArguments (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2359:21)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2405:24)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2452:20)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+    at parseSpreadOrAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2373:16)
+    at parseArguments (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2354:23)
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `assertEquals` could not be matched with `() ; assertEquals () ;...`
+91:   assertEquals(void 0, returnThis(..."test"));
+      ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/es6/spread-call-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/string-codepointat.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-codepointat-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   0|-   1]: mjsunit/es6/string-codepointat-typerhappy                                                                     === mjsunit/es6/string-codepointat-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <52> found <49>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/string-codepointat-typerhappy.js 142:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/string-codepointat-typerhappy.js 142:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/string-codepointat-typerhappy.js --random-seed=1625344554 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                    [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/string-endswith.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-endswith-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/string-fromcodepoint.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-fromcodepoint-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/string-fromcodepoint-typerhappy                                                                       === mjsunit/es6/string-fromcodepoint-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"d"> found <"a">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/string-fromcodepoint-typerhappy.js 86:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/string-fromcodepoint-typerhappy.js 86:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/string-fromcodepoint-typerhappy.js --random-seed=-1462473427 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                      [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/string-includes.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-includes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/string-iterator.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-iterator-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/string-iterator-typerhappy                                                                  === mjsunit/es6/string-iterator-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"𝌆"> found <"a">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at TestForOf$807 /home/patil215/proj/v8/test/mjsunit/es6/string-iterator-typerhappy.js 94:9
+    at               /home/patil215/proj/v8/test/mjsunit/es6/string-iterator-typerhappy.js 100:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at TestForOf$807 /home/patil215/proj/v8/test/mjsunit/es6/string-iterator-typerhappy.js 94:9
+    at               /home/patil215/proj/v8/test/mjsunit/es6/string-iterator-typerhappy.js 100:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/string-iterator-typerhappy.js --random-seed=1207029021 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                 [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/string-iterator2.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-iterator2-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/string-iterator3.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-iterator3-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/string-iterator4.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-iterator4-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/string-raw.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 289: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 373: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+Running the test...
+mjsunit/es6/string-raw-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/string-repeat.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/string-repeat-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/super-with-spread-modify-array-iterator.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 11: Unexpected token ,
+[... RestPoint ( ... , args ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3617:15)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3669:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2305:24)
+Running the test...
+mjsunit/es6/super-with-spread-modify-array-iterator-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/super-with-spread-modify-next.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/super-with-spread-modify-next-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/super-with-spread.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 18: Unexpected token ,
+[... RestPoint ( ... , args ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3617:15)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3669:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2305:24)
+Running the test...
+mjsunit/es6/super-with-spread-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/super.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [enforest] Unexpected token
+23:       var a = super.x;
+                  ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `assertEquals` could not be matched with `() ; var a =...`
+106:       assertEquals("Base this is Derived", super.f());
+           ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/es6/super-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/symbols.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/symbols-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   0|-   1]: mjsunit/es6/symbols-typerhappy                                                          === mjsunit/es6/symbols-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #75:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
+#
+#
+#
+#FailureMessage Object: 0x7fff299d4410
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f957b9535ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f957b8f9467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f957b941f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f957a676eed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f957a671ecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f957a6740b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f957a5d518c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f957a5cfc71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f957a5c8a9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f957a5c77af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f957a5c76ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f957a381bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7f957a38bdac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7f957a3853eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7f957a385a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7f957ac66b4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7f957ac66842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f957b323ae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/symbols-typerhappy.js --random-seed=-1550136684 --nohard-abort --enable-slow-asserts --verify-heap --expose-gc --allow-natives-syntax
+                                                         [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/templates.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 164: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at getEscapedIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:449:17)
+    at scanIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:503:48)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1323:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:85:35)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 248: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at getEscapedIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:449:17)
+    at scanIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:503:48)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1323:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:85:35)
+Running the test...
+mjsunit/es6/templates-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-construct-by-array-like.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-construct-by-array-like-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-construct-by-buffer-ordering.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-construct-by-buffer-ordering-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-copywithin.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-copywithin-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-every.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-every-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/typedarray-every-typerhappy                                                                   === mjsunit/es6/typedarray-every-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <12> found <3>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF             /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at TestTypedArrayForEach$804 /home/patil215/proj/v8/test/mjsunit/es6/typedarray-every-typerhappy.js 209:5
+    at                           /home/patil215/proj/v8/test/mjsunit/es6/typedarray-every-typerhappy.js 235:5
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF             /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at TestTypedArrayForEach$804 /home/patil215/proj/v8/test/mjsunit/es6/typedarray-every-typerhappy.js 209:5
+    at                           /home/patil215/proj/v8/test/mjsunit/es6/typedarray-every-typerhappy.js 235:5
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/typedarray-every-typerhappy.js --random-seed=474761004 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                  [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/typedarray-fill.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 16: Spread must be the final element of an element list
+[... [ ... intArrayConstructors , ... floatArrayConstructors ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2077:25)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+    at parseVariableDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2876:20)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 100: Spread must be the final element of an element list
+[... [ ... intArrayConstructors , ... floatArrayConstructors ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2077:25)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+    at parseVariableDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2876:20)
+Running the test...
+mjsunit/es6/typedarray-fill-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-find.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-find-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/typedarray-find-typerhappy                                                                  === mjsunit/es6/typedarray-find-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <12> found <3>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/typedarray-find-typerhappy.js 244:5
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/es6/typedarray-find-typerhappy.js 244:5
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/typedarray-find-typerhappy.js --random-seed=-2063101158 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                 [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/typedarray-findindex.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-findindex-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/typedarray-findindex-typerhappy                                                                       === mjsunit/es6/typedarray-findindex-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #28:NumberCheckReturnedType(input @0 = JSCall:JSCall) type NonInternal is not Number
+#
+#
+#
+#FailureMessage Object: 0x7ffc002dca30
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f32aa3185ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f32aa2be467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f32aa306f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f32a903beed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f32a9036ecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f32a90390b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f32a8f9a18c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f32a8f94c71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f32a8f8da9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f32a8f8c7af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f32a8f8c6ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f32a8d46bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7f32a8d50dac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7f32a8d4a3eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7f32a8d4aa5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7f32a962bb4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7f32a962b842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7f32a9ce8ae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/typedarray-findindex-typerhappy.js --random-seed=1393344892 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                      [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/typedarray-foreach.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-foreach-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/typedarray-foreach-typerhappy                                                                     === mjsunit/es6/typedarray-foreach-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <12> found <3>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF             /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at TestTypedArrayForEach$804 /home/patil215/proj/v8/test/mjsunit/es6/typedarray-foreach-typerhappy.js 189:5
+    at                           /home/patil215/proj/v8/test/mjsunit/es6/typedarray-foreach-typerhappy.js 214:5
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF             /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at TestTypedArrayForEach$804 /home/patil215/proj/v8/test/mjsunit/es6/typedarray-foreach-typerhappy.js 189:5
+    at                           /home/patil215/proj/v8/test/mjsunit/es6/typedarray-foreach-typerhappy.js 214:5
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/typedarray-foreach-typerhappy.js --random-seed=1308255271 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                    [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/typedarray-from.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 27: Unexpected number
+[... , 2 40 , 2 41 ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1966:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2080:21)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 111: Unexpected number
+[... , 2 40 , 2 41 ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1966:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2080:21)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+Running the test...
+mjsunit/es6/typedarray-from-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-indexing.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-indexing-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/typedarray-indexing-typerhappy                                                                      === mjsunit/es6/typedarray-indexing-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #34:NumberCheckReturnedType(input @0 = JSCall:JSCall) type NonInternal is not Number
+#
+#
+#
+#FailureMessage Object: 0x7fff073d32c0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7fae44a0e5ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7fae449b4467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7fae449fcf18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7fae43731eed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7fae4372cecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7fae4372f0b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7fae4369018c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7fae4368ac71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7fae43683a9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7fae436827af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7fae436826ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7fae4343cbf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7fae43446dac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7fae434403eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7fae43440a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7fae43d21b4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7fae43d21842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7fae443deae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/typedarray-indexing-typerhappy.js --random-seed=-837883797 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                     [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/typedarray-iteration.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-iteration-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/typedarray-iteration-typerhappy                                                                       === mjsunit/es6/typedarray-iteration-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
+
+Stack: MjsUnitAssertionError
+    at assertTrueF        /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at TypedArraySomeTest /home/patil215/proj/v8/test/mjsunit/es6/typedarray-iteration-typerhappy.js 310:9
+    at                    /home/patil215/proj/v8/test/mjsunit/es6/typedarray-iteration-typerhappy.js 389:6
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertTrueF        /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at TypedArraySomeTest /home/patil215/proj/v8/test/mjsunit/es6/typedarray-iteration-typerhappy.js 310:9
+    at                    /home/patil215/proj/v8/test/mjsunit/es6/typedarray-iteration-typerhappy.js 389:6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/typedarray-iteration-typerhappy.js --random-seed=-190830347 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                      [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/typedarray-neutered.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-neutered-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-of.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-of-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-proto.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-proto-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-reduce.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-reduce-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-reverse.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/typedarray-reverse-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-slice.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:92
+                    throw err;
+                    ^
+
+RangeError: Maximum call stack size exceeded
+    at Array.forEach (<anonymous>)
+    at _.each._.forEach (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:76:11)
+    at Function._.extend (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:640:5)
+    at Function._.clone (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:670:45)
+    at cloneSyntax (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:339:34)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:343:21
+    at Array.map (<anonymous>)
+    at cloneSyntaxArray (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:342:20)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:345:33
+    at Array.map (<anonymous>)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 196: Unexpected number
+[... , 2 50 , NaN ] ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1966:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseArrayInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2080:21)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2332:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+Running the test...
+mjsunit/es6/typedarray-slice-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-sort.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 122: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanNumericLiteral (/usr/local/lib/node_modules/sweet.js/lib/parser.js:905:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1348:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 206: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanNumericLiteral (/usr/local/lib/node_modules/sweet.js/lib/parser.js:905:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1348:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+Running the test...
+mjsunit/es6/typedarray-sort-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray-species.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:92
+                    throw err;
+                    ^
+
+RangeError: Maximum call stack size exceeded
+    at Array.forEach (<anonymous>)
+    at _.each._.forEach (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:76:11)
+    at Function._.extend (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:640:5)
+    at Function._.clone (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:670:45)
+    at cloneSyntax (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:339:34)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:343:21
+    at Array.map (<anonymous>)
+    at cloneSyntaxArray (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:342:20)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:345:33
+    at Array.map (<anonymous>)
+Running the test...
+mjsunit/es6/typedarray-species-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es6/typedarray-species-typerhappy                                                                     === mjsunit/es6/typedarray-species-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/es6/typedarray-species-typerhappy.js:34: SyntaxError: Unexpected token .
+        static get Symbol.species() {
+                         ^
+SyntaxError: Unexpected token .
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/typedarray-species-typerhappy.js --random-seed=-1011306839 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                    [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/typedarray-tostring.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `=>` could not be matched with `log . push () ;...`
+82:     let pushArgs = (label) => (...args) => log.push(label, args);
+                                            ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 166: Unexpected token ,
+[... => ( ... , args ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2749:26)
+    at parseConciseBody (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3449:16)
+    at parseArrowFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2725:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2765:24)
+    at parseVariableDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2876:20)
+Running the test...
+mjsunit/es6/typedarray-tostring-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/typedarray.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 661: Unexpected number
+[... , 2 64 ) , RangeError ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1966:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseArguments (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2361:17)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2405:24)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 745: Unexpected number
+[... , 2 64 ) , RangeError ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1966:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseArguments (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2361:17)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2405:24)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2452:20)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+    at parseAssignmentExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2757:16)
+Running the test...
+mjsunit/es6/typedarray-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/unicode-character-ranges.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/unicode-character-ranges-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/unicode-escapes-in-regexps.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/unicode-escapes-in-regexps-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   0|-   1]: mjsunit/es6/unicode-escapes-in-regexps-typerhapp...                                                                               === mjsunit/es6/unicode-escapes-in-regexps-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure:
+expected:
+null
+found:
+() => new RegExp('\\ud800\uDC00+', 'u').exec('\uD800\uDC00\uD800\uDC00')
+
+Stack: MjsUnitAssertionError
+    at assertNullF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 533:5
+    at             /home/patil215/proj/v8/test/mjsunit/es6/unicode-escapes-in-regexps-typerhappy.js 296:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertNullF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 533:5
+    at             /home/patil215/proj/v8/test/mjsunit/es6/unicode-escapes-in-regexps-typerhappy.js 296:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es6/unicode-escapes-in-regexps-typerhappy.js --random-seed=-1572719573 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                              [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es6/unicode-regexp-backrefs.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/unicode-regexp-backrefs-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/unicode-regexp-restricted-syntax.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/unicode-regexp-restricted-syntax-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/unicode-regexp-zero-length.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es6/unicode-regexp-zero-length-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es6/unscopables.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [enforest] with is not supported in sweet.js
+104:   with (array) {
+       ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [enforest] with is not supported in sweet.js
+188:   with (array) {
+       ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/es6/unscopables-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es7/array-includes-to-object-sloppy.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es7/array-includes-to-object-sloppy-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es7/array-includes-to-object-strict.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es7/array-includes-to-object-strict-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es7/array-includes.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es7/array-includes-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:03|%   0|+   0|-   1]: mjsunit/es7/array-includes-typerhappy                                                                 === mjsunit/es7/array-includes-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <true> found <false>
+
+Stack: MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at             /home/patil215/proj/v8/test/mjsunit/es7/array-includes-typerhappy.js 650:5
+    at             /home/patil215/proj/v8/test/mjsunit/es7/array-includes-typerhappy.js 681:2
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertTrueF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 513:5
+    at             /home/patil215/proj/v8/test/mjsunit/es7/array-includes-typerhappy.js 650:5
+    at             /home/patil215/proj/v8/test/mjsunit/es7/array-includes-typerhappy.js 681:2
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es7/array-includes-typerhappy.js --random-seed=-1655460062 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                [00:03|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es7/exponentiation-operator.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 273: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 357: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+Running the test...
+mjsunit/es7/exponentiation-operator-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es7/regress/regress-634273.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es7/regress/regress-634273-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es7/typed-array-includes.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es7/typed-array-includes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-arrow-lexical-arguments.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `=>` could not be matched with `JSON . stringify ()...`
+29:   return (async () => JSON.stringify([...arguments]))();
+                       ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 113: Unexpected token =>
+[... ( ) => JSON . stringify ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2816:13)
+    at parseGroupExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2277:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2338:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+Running the test...
+mjsunit/es8/async-arrow-lexical-arguments-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-arrow-lexical-new.target.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `=>` could not be matched with `new . target ;...`
+30:     return async () => new.target;
+                        ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 114: Unexpected token =>
+[... ( ) => new target ; ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2816:13)
+    at parseReturnStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3228:24)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3411:24)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3838:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseConciseBody (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3447:20)
+    at parsePropertyFunction (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2105:16)
+    at parsePropertyMethodFunction (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2121:18)
+Running the test...
+mjsunit/es8/async-arrow-lexical-new.target-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-arrow-lexical-super.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:92
+                    throw err;
+                    ^
+
+RangeError: Maximum call stack size exceeded
+    at Array.forEach (<anonymous>)
+    at _.each._.forEach (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:76:11)
+    at Function._.extend (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:640:5)
+    at Function._.clone (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:670:45)
+    at cloneSyntax (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:339:34)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:343:21
+    at Array.map (<anonymous>)
+    at cloneSyntaxArray (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:342:20)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:345:33
+    at Array.map (<anonymous>)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 121: Unexpected token =>
+[... ( ) => super ( x ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2816:13)
+    at parseReturnStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3228:24)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3411:24)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3838:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseConciseBody (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3447:20)
+    at parsePropertyFunction (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2105:16)
+    at parsePropertyMethodFunction (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2121:18)
+Running the test...
+mjsunit/es8/async-arrow-lexical-super-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-arrow-lexical-this.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 43: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:85:35)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 127: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:85:35)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+Running the test...
+mjsunit/es8/async-arrow-lexical-this-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-await-basic.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [enforest] Unexpected token
+63: let AsyncFunction = (async function() {}).constructor;
+                        ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [enforest] Unexpected token
+147: let AsyncFunction = (async function() {}).constructor;
+                         ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/es8/async-await-basic-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-await-interleaved.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 6: Unexpected token function
+[... 0 ; async function check ( ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1980:13)
+    at consumeSemicolon (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2033:13)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3442:9)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3845:20)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3669:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2305:24)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 90: Unexpected token function
+[... 0 ; async function check ( ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1980:13)
+    at consumeSemicolon (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2033:13)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3442:9)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3845:20)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3669:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2305:24)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+Running the test...
+mjsunit/es8/async-await-interleaved-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-await-species.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 81: Unexpected token function
+[... ) ; async function asyncFn ( ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1980:13)
+    at consumeSemicolon (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2033:13)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3442:9)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3845:20)
+    at parseProgramElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3860:16)
+    at parseProgramElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3888:29)
+    at parseProgram (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3924:16)
+    at Object.parse (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4882:23)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:23)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 165: Unexpected token function
+[... ) ; async function asyncFn ( ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1980:13)
+    at consumeSemicolon (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2033:13)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3442:9)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3845:20)
+    at parseProgramElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3860:16)
+    at parseProgramElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3888:29)
+    at parseProgram (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3924:16)
+    at Object.parse (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4882:23)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:23)
+Running the test...
+mjsunit/es8/async-await-species-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-destructuring.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `=>` could not be matched with `{} ; assertEqualsAsync () ;...`
+115:   var g1 = async ({x}) => { var x = 2; return x };
+                            ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [enforest] with is not supported in sweet.js
+409:   async function f1(y = eval("var x = 2")) { with ({}) { return x; } }
+                                                  ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/es8/async-destructuring-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-function-stacktrace.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 171: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 255: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+Running the test...
+mjsunit/es8/async-function-stacktrace-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/async-function-try-finally.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `=>` could not be matched with `{}...`
+85: assertEqualsAsync("finally-return (arrow)", async() => {
+                                                        ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 159: Unexpected token function
+[... AsyncFunction = async function ( ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1980:13)
+    at consumeSemicolon (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2033:13)
+    at parseVariableStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2895:9)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3419:24)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3838:24)
+    at parseProgramElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3860:16)
+    at parseProgramElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3888:29)
+    at parseProgram (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3924:16)
+    at Object.parse (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4882:23)
+Running the test...
+mjsunit/es8/async-function-try-finally-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/object-entries.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 406: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 490: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+Running the test...
+mjsunit/es8/object-entries-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/object-get-own-property-descriptors.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 215: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 299: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+Running the test...
+mjsunit/es8/object-get-own-property-descriptors-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/object-values.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 273: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 357: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at scanTemplate (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1115:13)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1320:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+Running the test...
+mjsunit/es8/object-values-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es8/regress/regress-618603.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `=>` could not be matched with `{}...`
+7:       return (async () => {[...await arguments] })();
+                          ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 91: Unexpected token =>
+[... ( ) => { [ ... ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2816:13)
+    at parseGroupExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2277:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2338:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+Running the test...
+mjsunit/es8/regress/regress-618603-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es9/regexp-lookbehind.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/es9/regexp-lookbehind-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/es9/regexp-lookbehind-typerhappy                                                                    === mjsunit/es9/regexp-lookbehind-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <null> found <() => 'b'.match(/^.(?<=a)/)>
+
+Stack: MjsUnitAssertionError
+    at assertNullF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 533:5
+    at             /home/patil215/proj/v8/test/mjsunit/es9/regexp-lookbehind-typerhappy.js 9:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertNullF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 533:5
+    at             /home/patil215/proj/v8/test/mjsunit/es9/regexp-lookbehind-typerhappy.js 9:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/es9/regexp-lookbehind-typerhappy.js --random-seed=-1296519124 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                   [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/es9/regress/regress-866229.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 6: Unexpected token ...
+[... obj2 = { ... obj } ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseObjectProperty (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2193:17)
+    at parseObjectInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2217:24)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2335:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 90: Unexpected token ...
+[... obj2 = { ... obj } ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseObjectProperty (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2193:17)
+    at parseObjectInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2217:24)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2335:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+Running the test...
+mjsunit/es9/regress/regress-866229-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es9/regress/regress-869342.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 1: Unexpected token ...
+[... { return { ... o } ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseObjectProperty (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2193:17)
+    at parseObjectInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2217:24)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2335:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 85: Unexpected token ...
+[... { return { ... o } ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseObjectProperty (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2193:17)
+    at parseObjectInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2217:24)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2335:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+Running the test...
+mjsunit/es9/regress/regress-869342-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es9/regress/regress-902965.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 6: Unexpected token ...
+[... clone = { ... instance , ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseObjectProperty (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2193:17)
+    at parseObjectInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2217:24)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2335:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 90: Unexpected token ...
+[... clone = { ... instance , ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseObjectProperty (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2193:17)
+    at parseObjectInitialiser (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2217:24)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2335:20)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+    at parsePostfixExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2432:45)
+    at parseUnaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2483:16)
+    at parseBinaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2546:16)
+    at parseConditionalExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2600:16)
+Running the test...
+mjsunit/es9/regress/regress-902965-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/es9/template-escapes.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 47: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at getEscapedIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:449:17)
+    at scanIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:503:48)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1323:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:85:35)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 131: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at getEscapedIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:449:17)
+    at scanIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:503:48)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1323:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at Object.read (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4783:28)
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:85:35)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+Running the test...
+mjsunit/es9/template-escapes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/escape.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/escape-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/eval-enclosing-function-name.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/eval-enclosing-function-name-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/eval-enclosing-function-name-typerhappy                                                                           === mjsunit/eval-enclosing-function-name-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"number"> found <"function">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/eval-enclosing-function-name-typerhappy.js 76:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/eval-enclosing-function-name-typerhappy.js 76:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/eval-enclosing-function-name-typerhappy.js --random-seed=949308187 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                          [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/eval-origin.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 31: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at getEscapedIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:449:17)
+    at scanIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:503:48)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1323:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:1948
+        throw error;
+        ^
+
+Error: Line 115: Unexpected token ILLEGAL
+[... ) } )  ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1942:21)
+    at getEscapedIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:449:17)
+    at scanIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:503:48)
+    at advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1323:20)
+    at _advance (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4619:35)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4695:16)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+    at readDelim (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4724:21)
+    at readToken (/usr/local/lib/node_modules/sweet.js/lib/parser.js:4630:35)
+Running the test...
+mjsunit/eval-origin-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/eval-stack-trace.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/eval-stack-trace-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/eval-stack-trace-typerhappy                                                               === mjsunit/eval-stack-trace-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <"g"> found <"g$803">
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF            /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at                          /home/patil215/proj/v8/test/mjsunit/eval-stack-trace-typerhappy.js 48:9
+    at Array.forEach             
+    at Array.Array.verifyEquals /home/patil215/proj/v8/test/mjsunit/eval-stack-trace-typerhappy.js 44:10
+    at                          /home/patil215/proj/v8/test/mjsunit/eval-stack-trace-typerhappy.js 95:7
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF            /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at                          /home/patil215/proj/v8/test/mjsunit/eval-stack-trace-typerhappy.js 48:9
+    at Array.forEach             
+    at Array.Array.verifyEquals /home/patil215/proj/v8/test/mjsunit/eval-stack-trace-typerhappy.js 44:10
+    at                          /home/patil215/proj/v8/test/mjsunit/eval-stack-trace-typerhappy.js 95:7
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/eval-stack-trace-typerhappy.js --random-seed=2038875001 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                              [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/eval-typeof-non-existing.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/eval-typeof-non-existing-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/external-array.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/external-array-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/extra-arguments.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/extra-arguments-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/extra-commas.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/extra-commas-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/fast-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/fast-prototype-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/field-type-tracking.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/field-type-tracking-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/filter-element-kinds.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/filter-element-kinds-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/for-in-delete.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/for-in-delete-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/for-in-special-cases.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/for-in-special-cases-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/for-in.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 139: Unexpected token in
+[... = hest in { } ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1980:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseForStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3133:17)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3403:24)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3838:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3669:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2305:24)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 223: Unexpected token in
+[... = hest in { } ) ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1980:13)
+    at expect (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1991:13)
+    at parseForStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3133:17)
+    at parseStatement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3403:24)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3838:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3669:16)
+    at parsePrimaryExpression (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2305:24)
+    at parseLeftHandSideExpressionAllowCall (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2402:61)
+Running the test...
+mjsunit/for-in-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/for.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/for-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/function-bind.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/function-bind-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/function-bind-typerhappy                                                            === mjsunit/function-bind-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure: expected <3> found <NaN>
+
+Stack: MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/function-bind-typerhappy.js 116:1
+    throw new MjsUnitAssertionError(message);
+    ^
+MjsUnitAssertionError
+    at assertEqualsF /home/patil215/proj/v8/test/mjsunit/mjsunit.js 445:5
+    at               /home/patil215/proj/v8/test/mjsunit/function-bind-typerhappy.js 116:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/function-bind-typerhappy.js --random-seed=-1092198546 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                           [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/function-call.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/function-call-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/function-names.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/function-names-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/function-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/function-prototype-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/function-without-prototype.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/function-without-prototype-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/function-without-prototype-typerhappy                                                                         === mjsunit/function-without-prototype-typerhappy ===
+undefined:1: ReferenceError: regexp is not defined
+regexp.test.prototype = 42;
+^
+ReferenceError: regexp is not defined
+    at eval (eval at testConstruction$803 (/home/patil215/proj/v8/test/mjsunit/function-without-prototype-typerhappy.js:43:5), <anonymous>:1:1)
+    at testConstruction$803 (/home/patil215/proj/v8/test/mjsunit/function-without-prototype-typerhappy.js:43:5)
+    at /home/patil215/proj/v8/test/mjsunit/function-without-prototype-typerhappy.js:55:1
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/function-without-prototype-typerhappy.js --random-seed=-316004084 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                        [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/generated-transition-stub.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/generated-transition-stub-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/get-prototype-of.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/get-prototype-of-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/getters-on-elements.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90
+                    throw new SyntaxError(syn.printSyntaxError(source$2, err));
+                    ^
+
+SyntaxError: [macro] Macro `assertTrue` could not be matched with `= function () {} assertFalse...`
+87:   assertTrue = function(val) {
+      ^
+    at expand$2 (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:90:27)
+    at parse (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:123:29)
+    at Object.compile (/usr/local/lib/node_modules/sweet.js/lib/sweet.js:129:19)
+    at Object.exports.run (/usr/local/lib/node_modules/sweet.js/lib/sjs.js:96:27)
+    at Object.<anonymous> (/usr/local/lib/node_modules/sweet.js/bin/sjs:7:23)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+Running the test...
+mjsunit/getters-on-elements-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-hash.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-hash-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-infinity-strict.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-infinity-strict-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-infinity.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-infinity-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-nan-strict.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-nan-strict-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-nan.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-nan-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-properties.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-properties-typerhappy
+
+FAILED!
+
+                                                                                                                                                       [00:02|%   0|+   0|-   1]: mjsunit/global-properties-typerhappy                                                                === mjsunit/global-properties-typerhappy ===
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #45:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
+#
+#
+#
+#FailureMessage Object: 0x7ffeb47c68d0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7fa66ecd65ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7fa66ec7c467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7fa66ecc4f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7fa66d9f9eed]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7fa66d9f4ecb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7fa66d9f70b4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7fa66d95818c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7fa66d952c71]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7fa66d94ba9f]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7fa66d94a7af]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7fa66d94a6ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7fa66d704bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183dac) [0x7fa66d70edac]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7fa66d7083eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7fa66d708a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb4e) [0x7fa66dfe9b4e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7fa66dfe9842]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bae9) [0x7fa66e6a6ae9]
+Received signal 6
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/global-properties-typerhappy.js --random-seed=-887611825 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                               [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/global-prototypes.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 217: Unexpected token =
+[... , do_delete , = , true ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3617:15)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3625:16)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+/usr/local/lib/node_modules/sweet.js/lib/parser.js:4894
+            throw e;
+            ^
+
+Error: Line 301: Unexpected token =
+[... , do_delete , = , true ...]
+    at throwError (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1937:21)
+    at throwUnexpected (/usr/local/lib/node_modules/sweet.js/lib/parser.js:1986:9)
+    at parseVariableIdentifier (/usr/local/lib/node_modules/sweet.js/lib/parser.js:2847:13)
+    at parseParam (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3547:21)
+    at parseParams (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3582:22)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3617:15)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+    at parseFunctionSourceElements (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3491:29)
+    at parseFunctionDeclaration (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3625:16)
+    at parseSourceElement (/usr/local/lib/node_modules/sweet.js/lib/parser.js:3832:24)
+Running the test...
+mjsunit/global-prototypes-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-undefined-strict.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-undefined-strict-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/global-undefined.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/global-undefined-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/handle-count-runtime-literals.js...
+Generating compiled file with modified testcases...
+Running the test...
+mjsunit/handle-count-runtime-literals-typerhappy
+PASSED!
+
+
+
+Running file test/mjsunit/harmony/array-flat-species.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:92
+                    throw err;
+                    ^
+
+RangeError: Maximum call stack size exceeded
+    at Array.forEach (<anonymous>)
+    at _.each._.forEach (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:76:11)
+    at Function._.extend (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:640:5)
+    at Function._.clone (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:670:45)
+    at cloneSyntax (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:339:34)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:343:21
+    at Array.map (<anonymous>)
+    at cloneSyntaxArray (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:342:20)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:345:33
+    at Array.map (<anonymous>)
+Running the test...
+mjsunit/harmony/array-flat-species-typerhappy
+
+FAILED!
+
+Build found: /home/patil215/proj/v8/out/x64.debug
+>>> Autodetected:
+embedded_builtins
+>>> Running tests for x64.debug
+>>> Running with test processors
+[00:02|%   0|+   0|-   1]: mjsunit/harmony/array-flat-species-typerhappy                                                                         === mjsunit/harmony/array-flat-species-typerhappy ===
+/home/patil215/proj/v8/test/mjsunit/harmony/array-flat-species-typerhappy.js:8: SyntaxError: Unexpected token .
+        static get Symbol.species() {
+                         ^
+SyntaxError: Unexpected token .
+Command: /home/patil215/proj/v8/out/x64.debug/d8 --test /home/patil215/proj/v8/test/mjsunit/mjsunit.js /home/patil215/proj/v8/test/mjsunit/harmony/array-flat-species-typerhappy.js --random-seed=-331368684 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
+                                                                        [00:02|%   0|+   0|-   1]: Done
+>>> 1 tests ran
+
+
+
+Running file test/mjsunit/harmony/array-flatMap-species.js...
+Generating compiled file with modified testcases...
+/usr/local/lib/node_modules/sweet.js/lib/sweet.js:92
+                    throw err;
+                    ^
+
+RangeError: Maximum call stack size exceeded
+    at Array.forEach (<anonymous>)
+    at _.each._.forEach (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:76:11)
+    at Function._.extend (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:640:5)
+    at Function._.clone (/usr/local/lib/node_modules/sweet.js/node_modules/underscore/underscore.js:670:45)
+    at cloneSyntax (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:339:34)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:343:21
+    at Array.map (<anonymous>)
+    at cloneSyntaxArray (/usr/local/lib/node_modules/sweet.js/lib/syntax.js:342:20)
+    at /usr/local/lib/node_modules/sweet.js/lib/syntax.js:345:33
+    at Array.map (<anonymous>)
+Running the test...
+mjsunit/harmony/array-flatMap-species-typerhappy
