@@ -337,7 +337,7 @@ DEFINE_BOOL_READONLY(string_slices, true, "use string slices")
 #else
 #define FLAG FLAG_READONLY
 #endif
-DEFINE_INT(interrupt_budget, 144 * KB,
+DEFINE_INT(interrupt_budget, 1 * KB,
            "interrupt budget which should be used for the profiler counter")
 #undef FLAG
 #define FLAG FLAG_FULL

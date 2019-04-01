@@ -36,7 +36,7 @@ static const int kOSRBytecodeSizeAllowancePerTick = 48;
 static const int kMaxBytecodeSizeForEarlyOpt = 90;
 
 // Certain functions are simply too big to be worth optimizing.
-static const int kMaxBytecodeSizeForOpt = 60 * KB;
+static const int kMaxBytecodeSizeForOpt = 120 * KB;
 
 #define OPTIMIZATION_REASON_LIST(V)                            \
   V(DoNotOptimize, "do not optimize")                          \
