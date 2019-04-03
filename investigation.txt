@@ -109,3 +109,8 @@ Received signal 6
 Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/array-indexing-receiver-typerhappy.js --random-seed=-1006589600 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --expose-gc
 [00:06|%   0|+   0|-   1]: Done
 >>> 1 tests ran
+
+
+
+
+

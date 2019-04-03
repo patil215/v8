@@ -33,6 +33,7 @@ LoopVariableOptimizer::LoopVariableOptimizer(Graph* graph,
       induction_vars_(zone) {}
 
 void LoopVariableOptimizer::Run() {
+  std::cout << "Running loop variable optimizer\n";
   ZoneQueue<Node*> queue(zone());
   queue.push(graph()->start());
   NodeMarker<bool> queued(graph(), 2);

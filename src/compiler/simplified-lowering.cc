@@ -2628,6 +2628,7 @@ class RepresentationSelector {
         return;
       }
       case IrOpcode::kStringIndexOf: {
+        std::cout << "Lowering string index of in simplified-lowering\n";
         ProcessInput(node, 0, UseInfo::AnyTagged());
         ProcessInput(node, 1, UseInfo::AnyTagged());
         ProcessInput(node, 2, UseInfo::TaggedSigned());

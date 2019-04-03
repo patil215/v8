@@ -1605,6 +1605,7 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
       return Type::String();
     case BuiltinFunctionId::kStringIndexOf:
     case BuiltinFunctionId::kStringLastIndexOf:
+      std::cout << "Hitting typer.cc\n";
       return Type::Range(-1.0, String::kMaxLength, t->zone());
     case BuiltinFunctionId::kStringEndsWith:
     case BuiltinFunctionId::kStringIncludes:
@@ -1661,6 +1662,7 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
     case BuiltinFunctionId::kArrayIncludes:
       return Type::Boolean();
     case BuiltinFunctionId::kArrayIndexOf:
+      std::cout << "Hitting arrayindex of typer.cc\n";
       return Type::Range(-1, kMaxSafeInteger, t->zone());
     case BuiltinFunctionId::kArrayJoin:
       return Type::String();

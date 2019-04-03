@@ -874,6 +874,7 @@ bool EffectControlLinearizer::TryWireInStateEffect(Node* node,
       result = LowerStringFromSingleCodePoint(node);
       break;
     case IrOpcode::kStringIndexOf:
+      std::cout << "Lowering string index of in effect-control-linearizer\n";
       result = LowerStringIndexOf(node);
       break;
     case IrOpcode::kStringLength:
