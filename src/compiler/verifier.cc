@@ -72,9 +72,6 @@ class Verifier::Visitor {
   }
   void CheckValueInputIs(Node* node, int i, Type type) {
     Node* input = NodeProperties::GetValueInput(node, i);
-    if (typing == TYPED) {
-      std::cout << NodeProperties::GetType(input) << "\n";
-    }
     if (typing == TYPED && !NodeProperties::GetType(input).Is(type)) {
       std::ostringstream str;
       str << "TypeError: node #" << node->id() << ":" << *node->op()

@@ -255,13 +255,13 @@ public:
 
     static void checkStringIndexOf(double value) {
         CHECK(
-            inRange(value, -1, String::kMaxLength)
+            inRange(value, -1, String::kMaxLength - 1)
         );
     }
 
     static void checkStringLastIndexOf(double value) {
         CHECK(
-            inRange(value, -1, String::kMaxLength)
+            inRange(value, -1, String::kMaxLength - 1)
         );
     }
 

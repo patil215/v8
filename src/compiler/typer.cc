@@ -1486,6 +1486,7 @@ Type Typer::Visitor::TypeJSObjectIsArray(Node* node) { return Type::Boolean(); }
 Type Typer::Visitor::TypeDateNow(Node* node) { return Type::Number(); }
 
 Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
+  std::cout << "Running JSCallTyper function\n";
   if (!fun.IsHeapConstant() || !fun.AsHeapConstant()->Ref().IsJSFunction()) {
     return Type::NonInternal();
   }
@@ -1531,6 +1532,7 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
     case BuiltinFunctionId::kMathMax:
     case BuiltinFunctionId::kMathMin:
     case BuiltinFunctionId::kMathCheckReturnedType:
+      std::cout << "Hitting mathcheckreturnedtype in typer.cc\n";
       return Type::Number();
     case BuiltinFunctionId::kMathImul:
       return Type::Signed32();
@@ -1605,8 +1607,7 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
       return Type::String();
     case BuiltinFunctionId::kStringIndexOf:
     case BuiltinFunctionId::kStringLastIndexOf:
-      std::cout << "Hitting typer.cc\n";
-      return Type::Range(-1.0, String::kMaxLength, t->zone());
+      return Type::Range(-1.0, String::kMaxLength - 1, t->zone());
     case BuiltinFunctionId::kStringEndsWith:
     case BuiltinFunctionId::kStringIncludes:
       return Type::Boolean();
