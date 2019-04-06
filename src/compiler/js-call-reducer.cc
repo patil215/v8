@@ -2621,7 +2621,7 @@ Reduction JSCallReducer::ReduceArrayIndexOfIncludes(
             graph()->NewNode(simplified()->NumberAdd(), length, from_index),
             jsgraph()->ZeroConstant()),
         from_index);
-      std::cout << "Constructing new_from_index\n";
+      //std::cout << "Constructing new_from_index\n";
   }
 
   Node* context = NodeProperties::GetContextInput(node);
@@ -2629,7 +2629,7 @@ Reduction JSCallReducer::ReduceArrayIndexOfIncludes(
       common()->Call(desc), jsgraph()->HeapConstant(callable.code()), elements,
       search_element, length, new_from_index, context, effect);
   ReplaceWithValue(node, replacement_node, effect);
-  std::cout << "Doing arrayindexof replacement\n";
+  //std::cout << "Doing arrayindexof replacement\n";
   return Replace(replacement_node);
 }
 
@@ -3482,7 +3482,7 @@ Reduction JSCallReducer::ReduceJSCall(Node* node,
     case Builtins::kArrayEvery:
       return ReduceArrayEvery(node, shared);
     case Builtins::kArrayIndexOf:
-      std::cout << "Changing array index of op in js-call-reducer\n";
+      //std::cout << "Changing array index of op in js-call-reducer\n";
       // THIS LINE IS SKETCHY.
       return ReduceArrayIndexOfIncludes(SearchVariant::kIndexOf, node);
     case Builtins::kArrayIncludes:

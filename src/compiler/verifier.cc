@@ -1040,7 +1040,7 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
     case IrOpcode::kNumberMax:
     case IrOpcode::kNumberMin:
     case IrOpcode::kNumberPow:
-      std::cout << "Checking type of thing\n";
+      //std::cout << "Checking type of thing\n";
       // (Number, Number) -> Number
       CheckValueInputIs(node, 0, Type::Number());
       CheckValueInputIs(node, 1, Type::Number());

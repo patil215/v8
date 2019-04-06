@@ -1,0 +1,405 @@
+Start of test
+Running fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js
+fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js:2: ReferenceError: gc is not defined
+const v3 = [gc,1,1337];
+            ^
+ReferenceError: gc is not defined
+    at main (fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js:2:13)
+    at fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js:17:1
+
+Running fuzzer_output/actually_crashes/crash_1554132336835_9628_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 121
+# Debug check failed: effect_edges > 0 (0 vs. 0).
+#
+#
+#
+#FailureMessage Object: 0x7f94061bfe30
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f940a6485ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f940a5ee467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f940a636f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x3495c) [0x7f940a63695c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Dcheck(char const*, int, char const*)+0x32) [0x7f940a636ff2]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x2a4) [0x7f9409362304]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f94093690c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f94092ca19c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f94092c4c81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f94092bdaaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x108) [0x7f94092bc868]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f94092bc6fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f9409076bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7f9409072861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7f9409075b52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7f9409060c4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7f940a5fb9ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7f940a647999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7f940a6470b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7f9407ca36db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7f940742688f]
+Received signal 4 ILL_ILLOPN 7f940a645d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554135069188_6133_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 121
+# Debug check failed: effect_edges > 0 (0 vs. 0).
+#
+#
+#
+#FailureMessage Object: 0x7fdb928e3e30
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7fdb96d6c5ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7fdb96d12467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7fdb96d5af18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x3495c) [0x7fdb96d5a95c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Dcheck(char const*, int, char const*)+0x32) [0x7fdb96d5aff2]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x2a4) [0x7fdb95a86304]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7fdb95a8d0c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7fdb959ee19c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7fdb959e8c81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7fdb959e1aaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x108) [0x7fdb959e0868]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7fdb959e06fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7fdb9579abf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7fdb95796861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7fdb95799b52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7fdb95784c4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7fdb96d1f9ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7fdb96d6b999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7fdb96d6b0b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7fdb943c76db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fdb93b4a88f]
+Received signal 4 ILL_ILLOPN 7fdb96d69d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554141465895_27875_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #31:NumberCheckReturnedType(input @0 = Call:Call) type Any is not Number
+#
+#
+#
+#FailureMessage Object: 0x7f83c3670cd0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f83c7af95ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f83c7a9f467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f83c7ae7f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f83c681cefd]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f83c6817edb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f83c681a0c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f83c677b19c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f83c6775c81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f83c676eaaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f83c676d7bf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f83c676d6fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f83c6527bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7f83c6523861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7f83c6526b52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7f83c6511c4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7f83c7aac9ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7f83c7af8999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7f83c7af80b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7f83c51546db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7f83c48d788f]
+Received signal 4 ILL_ILLOPN 7f83c7af6d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554141982659_31494_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 121
+# Debug check failed: effect_edges > 0 (0 vs. 0).
+#
+#
+#
+#FailureMessage Object: 0x7f4ae93abe30
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f4aee0355ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f4aedfdb467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f4aee023f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x3495c) [0x7f4aee02395c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Dcheck(char const*, int, char const*)+0x32) [0x7f4aee023ff2]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x2a4) [0x7f4aecd4f304]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f4aecd560c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f4aeccb719c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f4aeccb1c81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f4aeccaaaaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x108) [0x7f4aecca9868]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f4aecca96fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f4aeca63bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7f4aeca5f861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7f4aeca62b52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7f4aeca4dc4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7f4aedfe89ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7f4aee034999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7f4aee0340b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7f4aeb6906db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7f4aeae1388f]
+Received signal 4 ILL_ILLOPN 7f4aee032d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554181469553_14987_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/objects/string-inl.h, line 37
+# Check failed: !v8::internal::FLAG_enable_slow_asserts || (IsString()).
+#
+#
+#
+#FailureMessage Object: 0x7ffc5351a8d0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7fde8d6dd5ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7fde8d683467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7fde8d6cbf18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::String::String(unsigned long)+0x82) [0x7fde8bf23f72]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::String::cast(v8::internal::Object)+0x21) [0x7fde8bf1cc81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, v8::internal::compiler::Node* const*, unsigned long, int, bool)+0x37e) [0x7fde8c1b7d9e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, v8::internal::compiler::Node* const*, unsigned long, int)+0x36) [0x7fde8c1b7a16]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, std::initializer_list<v8::internal::compiler::Node*>, int)+0x59) [0x7fde8c1bc1c9]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitCallProperty0()+0xcc) [0x7fde8c1b16dc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitSingleBytecode(v8::internal::SourcePositionTableIterator*)+0x66f) [0x7fde8c1ae2df]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitBytecodes()+0x2b2) [0x7fde8c1ad512]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::CreateGraph()+0x1c1) [0x7fde8c1ad0f1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::GraphBuilderPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*)+0x1f4) [0x7fde8c35f654]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::GraphBuilderPhase>()+0x54) [0x7fde8c359e64]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::CreateGraph()+0x29d) [0x7fde8c35145d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::PrepareJobImpl(v8::internal::Isolate*)+0x2e9) [0x7fde8c351129]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::PrepareJob(v8::internal::Isolate*)+0x2b1) [0x7fde8c10bac1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183bb1) [0x7fde8c115bb1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d1da) [0x7fde8c10f1da]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7fde8c10fa5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5df51) [0x7fde8c9eff51]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_Concurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7fde8c9efc42]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bb09) [0x7fde8d0adb09]
+Received signal 4 ILL_ILLOPN 7fde8d6dad31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554201574004_3760_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #62:NumberCheckReturnedType(input @0 = JSCall:JSCall) type NonInternal is not Number
+#
+#
+#
+#FailureMessage Object: 0x7fc9fe827cd0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7fca034b15ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7fca03457467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7fca0349ff18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7fca021d4efd]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7fca021cfedb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7fca021d20c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7fca0213319c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7fca0212dc81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7fca02126aaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7fca021257bf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7fca021256fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7fca01edfbf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7fca01edb861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7fca01edeb52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7fca01ec9c4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7fca034649ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7fca034b0999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7fca034b00b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7fca00b0c6db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7fca0028f88f]
+Received signal 4 ILL_ILLOPN 7fca034aed31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554204507541_19144_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #36:NumberCheckReturnedType(input @0 = JSCall:JSCall) type NonInternal is not Number
+#
+#
+#
+#FailureMessage Object: 0x7faacebdacd0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7faad30635ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7faad3009467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7faad3051f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7faad1d86efd]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7faad1d81edb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7faad1d840c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7faad1ce519c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7faad1cdfc81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7faad1cd8aaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7faad1cd77bf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7faad1cd76fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7faad1a91bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7faad1a8d861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7faad1a90b52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7faad1a7bc4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7faad30169ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7faad3062999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7faad30620b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7faad06be6db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7faacfe4188f]
+Received signal 4 ILL_ILLOPN 7faad3060d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554205018905_21066_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/objects/string-inl.h, line 37
+# Check failed: !v8::internal::FLAG_enable_slow_asserts || (IsString()).
+#
+#
+#
+#FailureMessage Object: 0x7ffcd6dbb760
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7fb09fe4b5ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7fb09fdf1467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7fb09fe39f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::String::String(unsigned long)+0x82) [0x7fb09e691f72]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::String::cast(v8::internal::Object)+0x21) [0x7fb09e68ac81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, v8::internal::compiler::Node* const*, unsigned long, int, bool)+0x37e) [0x7fb09e925d9e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, v8::internal::compiler::Node* const*, unsigned long, int)+0x36) [0x7fb09e925a16]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::BuildCall(v8::internal::ConvertReceiverMode, std::initializer_list<v8::internal::compiler::Node*>, int)+0x59) [0x7fb09e92a1c9]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitCallProperty0()+0xcc) [0x7fb09e91f6dc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitSingleBytecode(v8::internal::SourcePositionTableIterator*)+0x66f) [0x7fb09e91c2df]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::VisitBytecodes()+0x2b2) [0x7fb09e91b512]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::BytecodeGraphBuilder::CreateGraph()+0x1c1) [0x7fb09e91b0f1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::GraphBuilderPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*)+0x1f4) [0x7fb09eacd654]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::GraphBuilderPhase>()+0x54) [0x7fb09eac7e64]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::CreateGraph()+0x29d) [0x7fb09eabf45d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::PrepareJobImpl(v8::internal::Isolate*)+0x2e9) [0x7fb09eabf129]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::PrepareJob(v8::internal::Isolate*)+0x2b1) [0x7fb09e879ac1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183d9a) [0x7fb09e883d9a]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d3eb) [0x7fb09e87d3eb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7fb09e87da5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5eb5e) [0x7fb09f15eb5e]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_NotConcurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7fb09f15e852]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bb09) [0x7fb09f81bb09]
+Received signal 4 ILL_ILLOPN 7fb09fe48d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554228341659_3251_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #36:NumberCheckReturnedType(input @0 = JSCall:JSCall) type NonInternal is not Number
+#
+#
+#
+#FailureMessage Object: 0x7f751d612cd0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f7521a9b5ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f7521a41467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f7521a89f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f75207beefd]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f75207b9edb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f75207bc0c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f752071d19c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f7520717c81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f7520710aaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f752070f7bf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f752070f6fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f75204c9bf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7f75204c5861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7f75204c8b52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7f75204b3c4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7f7521a4e9ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7f7521a9a999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7f7521a9a0b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7f751f0f66db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7f751e87988f]
+Received signal 4 ILL_ILLOPN 7f7521a98d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554251771702_24175_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 81
+# TypeError: node #37:NumberCheckReturnedType(input @0 = JSCall:JSCall) type (Undefined | Range(0, 1114111)) is not Number
+#
+#
+#
+#FailureMessage Object: 0x7f2971e97cd0
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7f2976b215ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7f2976ac7467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7f2976b0ff18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::CheckValueInputIs(v8::internal::compiler::Node*, int, v8::internal::compiler::Type)+0x26d) [0x7f2975844efd]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x4e7b) [0x7f297583fedb]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7f29758420c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7f29757a319c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7f297579dc81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7f2975796aaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::OptimizeGraph(v8::internal::compiler::Linkage*)+0x5f) [0x7f29757957bf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl()+0x2c) [0x7f29757956fc]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::ExecuteJob()+0xd3) [0x7f297554fbf3]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileNext(v8::internal::OptimizedCompilationJob*)+0x31) [0x7f297554b861]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal()+0x1b2) [0x7f297554eb52]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::CancelableTask::Run()+0x3d) [0x7f2975539c4d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(v8::platform::WorkerThread::Run()+0x5c) [0x7f2976ad49ec]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::Thread::NotifyStartedAndRun()+0x39) [0x7f2976b20999]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(+0x450b6) [0x7f2976b200b6]
+    /lib/x86_64-linux-gnu/libpthread.so.0(+0x76db) [0x7f297417c6db]
+    /lib/x86_64-linux-gnu/libc.so.6(clone+0x3f) [0x7f29738ff88f]
+Received signal 4 ILL_ILLOPN 7f2976b1ed31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554312162633_13750_deterministic_4.js
+
+
+#
+# Fatal error in ../../src/compiler/verifier.cc, line 512
+# Check failed: non_phi_use_found.
+#
+#
+#
+#FailureMessage Object: 0x7ffe95fd0800
+==== C stack trace ===============================
+
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x1e) [0x7fce427755ce]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libplatform.so(+0x2d467) [0x7fce4271b467]
+    /home/patil215/proj/v8/out/x64.debug/./libv8_libbase.so(V8_Fatal(char const*, int, char const*, ...)+0x218) [0x7fce42763f18]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Visitor::Check(v8::internal::compiler::Node*, v8::internal::compiler::AllNodes const&)+0x2c3d) [0x7fce41491c9d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::Verifier::Run(v8::internal::compiler::Graph*, v8::internal::compiler::Verifier::Typing, v8::internal::compiler::Verifier::CheckInputs, v8::internal::compiler::Verifier::CodeType)+0x1a4) [0x7fce414960c4]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::VerifyGraphPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*, bool, bool)+0x9c) [0x7fce413f719c]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(void v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::VerifyGraphPhase, bool>(bool&&)+0x71) [0x7fce413f1c81]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::RunPrintAndVerify(char const*, bool)+0x7f) [0x7fce413eaaaf]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineImpl::CreateGraph()+0x2f7) [0x7fce413e94b7]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::compiler::PipelineCompilationJob::PrepareJobImpl(v8::internal::Isolate*)+0x2e9) [0x7fce413e9129]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::OptimizedCompilationJob::PrepareJob(v8::internal::Isolate*)+0x2b1) [0x7fce411a3ac1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1183bb1) [0x7fce411adbb1]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x117d1da) [0x7fce411a71da]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode)+0xdd) [0x7fce411a7a5d]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x1a5df51) [0x7fce41a87f51]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(v8::internal::Runtime_CompileOptimized_Concurrent(int, unsigned long*, v8::internal::Isolate*)+0x122) [0x7fce41a87c42]
+    /home/patil215/proj/v8/out/x64.debug/./libv8.so(+0x211bb09) [0x7fce42145b09]
+Received signal 4 ILL_ILLOPN 7fce42772d31
+Illegal instruction (core dumped)
+Running fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js
+fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:18: RangeError: Maximum call stack size exceeded
+    const v34 = v33.indexOf(1337,Uint32Array);
+                    ^
+RangeError: Maximum call stack size exceeded
+    at Function.valueOf (<anonymous>)
+    at Uint32Array.indexOf (<anonymous>)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:18:21)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:19:17)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:19:17)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:19:17)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:19:17)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:19:17)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:19:17)
+    at v27 (fuzzer_output/actually_crashes/crash_1554518353134_13429_flaky_4.js:19:17)
+

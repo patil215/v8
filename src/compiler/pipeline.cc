@@ -1884,13 +1884,13 @@ void PipelineImpl::RunPrintAndVerify(const char* phase, bool untyped) {
     Run<PrintGraphPhase>(phase);
   }
   if (FLAG_turbo_verify) {
-    std::cout << "Running Verify Graph Phase (untyped)\n";
+    //std::cout << "Running Verify Graph Phase (untyped)\n";
     Run<VerifyGraphPhase>(untyped);
   }
 }
 
 bool PipelineImpl::CreateGraph() {
-  std::cout << "Running create graph\n";
+  //std::cout << "Running create graph\n";
   PipelineData* data = this->data_;
 
   data->BeginPhaseKind("graph creation");
@@ -1921,9 +1921,9 @@ bool PipelineImpl::CreateGraph() {
     data->broker()->SetNativeContextRef();
   }
 
-  std::cout << "Graph builder phase\n";
+  //std::cout << "Graph builder phase\n";
   Run<GraphBuilderPhase>();
-  std::cout << "Verify built graph phase\n";
+  //std::cout << "Verify built graph phase\n";
   RunPrintAndVerify(GraphBuilderPhase::phase_name(), true);
 
   if (FLAG_concurrent_inlining) {
@@ -1932,13 +1932,13 @@ bool PipelineImpl::CreateGraph() {
 
   // Perform function context specialization and inlining (if enabled).
   Run<InliningPhase>();
-  std::cout << "Verify inlining phase\n";
+  //std::cout << "Verify inlining phase\n";
   RunPrintAndVerify(InliningPhase::phase_name(), true);
 
   // Remove dead->live edges from the graph.
-  std::cout << "Graph trimming phase\n";
+  //std::cout << "Graph trimming phase\n";
   Run<EarlyGraphTrimmingPhase>();
-  std::cout << "Running verifying early graph trimming phase\n";
+  //std::cout << "Running verifying early graph trimming phase\n";
   RunPrintAndVerify(EarlyGraphTrimmingPhase::phase_name(), true);
 
   // Determine the Typer operation flags.
@@ -1975,20 +1975,20 @@ bool PipelineImpl::CreateGraph() {
 }
 
 bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
-  std::cout << "Running optimize graph\n";
+  //std::cout << "Running optimize graph\n";
   PipelineData* data = this->data_;
 
   data->BeginPhaseKind("lowering");
 
   // Type the graph and keep the Typer running such that new nodes get
   // automatically typed when they are created.
-  std::cout << "Creating typer\n";
+  //std::cout << "Creating typer\n";
   Run<TyperPhase>(data->CreateTyper());
-  std::cout << "Verifying typer phase...\n";
+  //std::cout << "Verifying typer phase...\n";
   RunPrintAndVerify(TyperPhase::phase_name());
-  std::cout << "Running typed lowering phase...\n";
+  //std::cout << "Running typed lowering phase...\n";
   Run<TypedLoweringPhase>();
-  std::cout << "Verifying typed lowering phase...\n";
+  //std::cout << "Verifying typed lowering phase...\n";
   RunPrintAndVerify(TypedLoweringPhase::phase_name());
 
   if (data->info()->is_loop_peeling_enabled()) {
@@ -2061,12 +2061,12 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
   // Optimize memory access and allocation operations.
   Run<MemoryOptimizationPhase>();
   // TODO(jarin, rossberg): Remove UNTYPED once machine typing works.
-  std::cout << "Verifying memory optimization phase...\n";
+  //std::cout << "Verifying memory optimization phase...\n";
   RunPrintAndVerify(MemoryOptimizationPhase::phase_name(), true);
 
   // Lower changes that have been inserted before.
   Run<LateOptimizationPhase>();
-  std::cout << "Verifying late optimization phase...\n";
+  //std::cout << "Verifying late optimization phase...\n";
   // TODO(jarin, rossberg): Remove UNTYPED once machine typing works.
   RunPrintAndVerify(LateOptimizationPhase::phase_name(), true);
 
@@ -2085,7 +2085,7 @@ MaybeHandle<Code> Pipeline::GenerateCodeForCodeStub(
     SourcePositionTable* source_positions, Code::Kind kind,
     const char* debug_name, int32_t builtin_index,
     PoisoningMitigationLevel poisoning_level, const AssemblerOptions& options) {
-      std::cout << "Running generate code for code stub\n";
+      //std::cout << "Running generate code for code stub\n";
   OptimizedCompilationInfo info(CStrVector(debug_name), graph->zone(), kind);
   info.set_builtin_index(builtin_index);
 
@@ -2135,7 +2135,7 @@ MaybeHandle<Code> Pipeline::GenerateCodeForCodeStub(
   pipeline.Run<CsaOptimizationPhase>();
   pipeline.RunPrintAndVerify(CsaOptimizationPhase::phase_name(), true);
 
-  std::cout << "Running Verify Graph Phase (true)\n";
+  //std::cout << "Running Verify Graph Phase (true)\n";
   pipeline.Run<VerifyGraphPhase>(true);
   pipeline.ComputeScheduledGraph();
   DCHECK_NOT_NULL(data.schedule());
