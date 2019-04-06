@@ -1,0 +1,32 @@
+function main() {
+const v4 = [13.37,13.37,13.37,13.37];
+const v6 = [1337,1337];
+const v7 = [13.37,2147483647];
+const v8 = {a:v4,find:v6,expm1:1337};
+const v9 = {valueOf:13.37,find:v4,hypot:Map};
+let v10 = v8;
+delete v4[1065059055];
+const v15 = 1337 - 1;
+const v16 = [-0.0,String,-0.0,-0.0];
+let v17 = 1337;
+let v21 = v16;
+let v22 = -2866800045;
+const v23 = parseInt(v21,13.37,"setInt8");
+const v25 = [13.37,13.37,13.37,13.37];
+const v27 = [1337,1337,1337,1337,1337];
+const v28 = [v25,v27,"/C*n/eRFaF"];
+const v29 = {toStringTag:-2866800045,SQRT1_2:v28,fill:v28};
+const v30 = {fromEntries:-2866800045,NEGATIVE_INFINITY:v27,setFloat32:v25,isSafeInteger:"/C*n/eRFaF"};
+let v31 = v30;
+const v42 = Math.tanh(0,1679973038);
+const v43 = [1337];
+let v48 = v16;
+let v49 = undefined;
+let v54 = 0;
+let v55 = "toString";
+const v56 = v55.search(v21,0);
+const v57 = v54 + 1;
+v54 = v57;
+}
+%NeverOptimizeFunction(main);
+main();

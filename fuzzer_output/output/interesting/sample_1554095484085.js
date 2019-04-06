@@ -1,0 +1,56 @@
+function main() {
+const v4 = [13.37,13.37,13.37,13.37];
+const v6 = [1337];
+const v7 = [v6];
+const v8 = {max:Function,setPrototypeOf:10};
+const v9 = {exec:v6};
+let v10 = "undefined";
+const v15 = [13.37,13.37,13.37,13.37];
+const v17 = [1337];
+const v22 = [1000000000.0,1000000000.0,1000000000.0,1000000000.0];
+const v24 = [1337];
+const v25 = [v24];
+const v26 = {max:Function,setPrototypeOf:10};
+const v27 = {exec:v24};
+let v28 = "undefined";
+const v33 = [13.37,13.37,13.37,13.37];
+const v35 = [1337];
+const v36 = [v35];
+const v37 = {max:Function,setPrototypeOf:10};
+const v38 = {exec:v35};
+let v39 = "undefined";
+const v44 = Function && 13.37;
+let v47 = 0;
+v47 = 1024;
+const v48 = v47 + 1;
+v47 = v48;
+const v49 = [13.37,13.37,13.37,13.37];
+const v51 = [1337];
+const v52 = "undefined" - 1;
+v28 = v33;
+const v58 = [Function];
+const v65 = [v51];
+const v66 = {max:Function,setPrototypeOf:1024};
+const v67 = {exec:v51};
+let v68 = "undefined";
+let v71 = 13.37;
+const v75 = [13.37];
+const v76 = [v75];
+const v78 = {pow:v75,catch:"undefined",b:v76,flat:v49};
+const v79 = [v17];
+const v80 = Function.has;
+const v81 = v66.max;
+let v82 = "undefined";
+for (const v87 in Function) {
+}
+const v88 = [13.37,13.37,13.37,13.37];
+const v90 = v88.sin;
+const v91 = [1337];
+const v92 = [v91];
+const v93 = {max:Function,setPrototypeOf:10};
+let v94 = 10;
+let v95 = "undefined";
+const v97 = Object();
+}
+%NeverOptimizeFunction(main);
+main();

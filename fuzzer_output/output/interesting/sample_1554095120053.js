@@ -1,0 +1,35 @@
+function main() {
+const v4 = [13.37,13.37,13.37,13.37,13.37];
+const v6 = [1337,1337,1337,1337];
+const v7 = [13.37];
+const v8 = {find:v6,fill:RegExp,length:"number",acos:"number"};
+const v9 = {MIN_VALUE:"number",multiline:v8};
+let v10 = v6;
+const v15 = [13.37,13.37,13.37,13.37,13.37];
+const v16 = RegExp[65537];
+v15.cbrt = 13.37;
+delete (13.37)[13.37];
+const v18 = "number"["number"];
+const v19 = "number" + v9;
+const v20 = [1337,1337,1337,1337];
+const v21 = [13.37];
+const v22 = {find:v20,fill:RegExp,length:"number",acos:"number"};
+const v23 = {MIN_VALUE:"number",multiline:v22};
+let v24 = v20;
+const v25 = v18 / RegExp;
+const v30 = [13.37,13.37,13.37,13.37,13.37];
+const v32 = [1337,1337,1337,1337];
+const v33 = [13.37];
+const v34 = {find:v32,fill:RegExp,length:"number",acos:"number"};
+const v35 = {MIN_VALUE:"number",multiline:v34};
+let v36 = v32;
+const v42 = [1337,1337,1337,1337];
+const v43 = [-956001.3254401154];
+const v44 = {find:v42,fill:arguments,length:"number",acos:"number"};
+const v45 = {MIN_VALUE:"number",multiline:v44};
+const v47 = Object();
+const v49 = -521713708 * v35;
+const v50 = Object();
+}
+%NeverOptimizeFunction(main);
+main();

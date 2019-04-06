@@ -1,0 +1,138 @@
+function main() {
+const v4 = [13.37,13.37,13.37,13.37];
+const v6 = [1337];
+const v7 = [v6];
+const v8 = {max:Function,setPrototypeOf:10};
+const v9 = {exec:v6};
+let v10 = "undefined";
+const v15 = [13.37,13.37,13.37,13.37];
+const v17 = [1337];
+const v18 = [v17];
+const v19 = {max:Function,setPrototypeOf:10};
+const v20 = {exec:v17};
+let v21 = "undefined";
+const v26 = [13.37,13.37,13.37,13.37];
+const v28 = [1337];
+const v29 = [v28];
+const v30 = {max:Function,setPrototypeOf:10};
+const v31 = {exec:v28};
+let v32 = "undefined";
+const v37 = [13.37,13.37,13.37,13.37];
+const v39 = [1337];
+const v40 = [v39];
+const v41 = {max:Function,setPrototypeOf:10};
+const v42 = {exec:v39};
+const v47 = [13.37,13.37,13.37,13.37];
+const v49 = [1337];
+const v50 = [v49];
+const v51 = {max:Function,setPrototypeOf:10};
+const v52 = {exec:v49};
+let v53 = "undefined";
+const v58 = [13.37,v26,13.37,13.37];
+const v64 = [13.37,13.37,13.37,13.37];
+const v66 = [1337];
+const v67 = [v66];
+const v68 = {max:Function,setPrototypeOf:10};
+const v69 = {exec:v66};
+let v70 = "undefined";
+const v75 = [13.37,13.37,13.37,13.37];
+const v77 = [v64];
+const v78 = [v77];
+const v79 = {max:Function,setPrototypeOf:10};
+const v80 = {exec:v77};
+let v81 = "undefined";
+const v86 = Function && 13.37;
+let v89 = 0;
+const v90 = v89 + 1;
+const v91 = [13.37,13.37,13.37,13.37];
+const v93 = [1337];
+const v94 = [v93];
+const v95 = {max:Function,setPrototypeOf:10};
+const v96 = {exec:v93};
+let v97 = "undefined";
+let v99 = 13.37;
+const v106 = [13.37,13.37,13.37,13.37];
+const v108 = [1337];
+const v109 = [v108];
+const v110 = {max:Function,setPrototypeOf:10};
+const v111 = {exec:v108};
+let v112 = "undefined";
+const v117 = Function && 13.37;
+let v120 = 0;
+const v121 = v120 + 1;
+const v122 = [13.37,13.37,13.37,13.37];
+const v124 = [1337];
+const v130 = [Function];
+const v137 = [v124];
+const v138 = {max:Function,setPrototypeOf:10};
+const v139 = {exec:v124};
+let v140 = "undefined";
+let v142 = 13.37;
+const v144 = [13.37,13.37,13.37,13.37];
+const v145 = [13.37];
+const v146 = [v145];
+let v147 = "undefined";
+const v149 = {pow:v145,catch:"undefined",b:v146,flat:v122};
+const v150 = Object();
+const v151 = [13.37,13.37,13.37,13.37];
+const v157 = [13.37,13.37,13.37,13.37];
+const v159 = [1337];
+const v160 = [v159];
+const v161 = {max:Function,setPrototypeOf:10};
+const v162 = {exec:v159};
+let v163 = "undefined";
+const v167 = [13.37,13.37,13.37,13.37];
+const v169 = [13.37];
+const v170 = [v169];
+const v171 = {max:Function,setPrototypeOf:1337};
+let v172 = "undefined";
+const v174 = Object();
+const v175 = [13.37];
+const v176 = [v175];
+const v177 = {max:Function,setPrototypeOf:1337};
+let v178 = "undefined";
+const v183 = [13.37,13.37,13.37,13.37];
+const v185 = [1337];
+const v186 = [v185];
+const v187 = {max:Function,setPrototypeOf:10};
+const v188 = {exec:v185};
+let v189 = "undefined";
+let v196 = 0;
+while (v196 < 3) {
+    v196 = 10;
+    function v197(v198,v199,v200) {
+    }
+}
+for (const v201 in v189) {
+}
+const v202 = [13.37,13.37,13.37,13.37];
+const v204 = [1337];
+const v205 = [v204];
+const v206 = {max:Function,setPrototypeOf:10};
+const v207 = {exec:v204};
+let v208 = "undefined";
+let v211 = 13.37;
+let v213 = "undefined";
+const v216 = [13.37,13.37,13.37,13.37];
+const v218 = [13.37];
+const v219 = [v218];
+const v220 = {max:Function,setPrototypeOf:1337};
+let v221 = "undefined";
+const v223 = {pow:v218,catch:"undefined",b:v219,flat:v202};
+const v224 = Object();
+const v225 = {pow:v175,catch:"undefined",b:v176,flat:v91};
+const v226 = [1337];
+const v227 = [v226];
+const v228 = {max:Function,setPrototypeOf:10};
+let v229 = "undefined";
+for (const v234 in Function) {
+}
+const v235 = [13.37,13.37,13.37,13.37];
+const v237 = v235.sin;
+const v238 = [1337];
+const v239 = [v238];
+for (const v265 in Function) {
+}
+}
+%NeverOptimizeFunction(main);
+main();

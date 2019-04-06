@@ -1,0 +1,7 @@
+function main() {
+for (let v5 = 0; v5 < 5; v5++) {
+    const v6 = parseInt(1,v5,v5,v5,v5);
+}
+}
+%NeverOptimizeFunction(main);
+main();

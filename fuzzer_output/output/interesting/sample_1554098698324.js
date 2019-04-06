@@ -1,0 +1,33 @@
+function main() {
+const v4 = [13.37];
+const v6 = [1337,1337];
+const v7 = [v4,13.37,BigInt64Array];
+const v8 = {getFloat64:1337,SQRT1_2:1337,flatMap:1337};
+const v9 = {getOwnPropertyDescriptor:v4,flatMap:v8,prototype:v6,log10:"apply",map:v8,clz32:v4};
+const v14 = [13.37,13.37,13.37,13.37];
+let v16 = 0;
+const v18 = [-4096];
+const v19 = {toFixed:-1526103785};
+const v20 = {replace:-1526103785,forEach:13.37,tan:v19,fromEntries:v14,global:v19,log:Math,getPrototypeOf:Math};
+let v21 = v20;
+v21 = v20;
+const v24 = {atanh:v16,expm1:-1526103785,reduce:v14,propertyIsEnumerable:v14,...v18,...Math,..."0AZSOZ2XLy",...-1526103785,...BigUint64Array};
+v16 = v21;
+const v27 = v7 && v19;
+const v30 = new Int32Array(5534);
+const v32 = v18 | v20;
+let v36 = 65536;
+const v37 = {asyncIterator:13.37,rightContext:v32,..."apply"};
+const v39 = [-822822.0088286116,-822822.0088286116,-822822.0088286116,-822822.0088286116];
+const v40 = [];
+const v41 = typeof v39;
+const v43 = v41 === "string";
+v39.__proto__ = v40;
+let v48 = 0;
+v48 = 10;
+let v51 = 0;
+const v52 = v51 + 1;
+v51 = v52;
+}
+%NeverOptimizeFunction(main);
+main();

@@ -1,0 +1,10 @@
+function main() {
+const v4 = [13.37,13.37,13.37,13.37,13.37];
+const v6 = [1337];
+const v7 = [1000,v6,Error];
+const v8 = {clz32:1337,asin:13.37,unicode:1000,setInt32:"undefined",finally:v7,then:13.37,acos:Error,setPrototypeOf:v6};
+const v9 = {asin:v8,finally:1337,prototype:1000,match:v4,getOwnPropertyNames:Error,reverse:v6,toPrecision:v4};
+const v12 = {fromEntries:v7,asin:this,charAt:this,trunc:3457141139,NaN:13.37,isArray:v4,...this,...v8,...v9};
+}
+%NeverOptimizeFunction(main);
+main();

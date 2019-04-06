@@ -1,0 +1,7 @@
+function main() {
+const v2 = [-9007199254740992,-9007199254740992,-9007199254740992,-9007199254740992,-9007199254740992];
+v2.length = 1337;
+const v6 = new Int16Array(v2,8154,2093446874);
+}
+%NeverOptimizeFunction(main);
+main();
