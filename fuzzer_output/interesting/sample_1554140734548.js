@@ -1,0 +1,6 @@
+function main() {
+const v4 = [9007199254740993,9007199254740993,9007199254740993,9007199254740993,-2.220446049250313e-16];
+const v5 = new Uint16Array(v4,1337);
+}
+%NeverOptimizeFunction(main);
+main();

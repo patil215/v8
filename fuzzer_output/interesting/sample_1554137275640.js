@@ -1,0 +1,7 @@
+function main() {
+const v2 = [458198.53978967085,458198.53978967085,458198.53978967085,458198.53978967085,458198.53978967085];
+const v4 = [1337,-2546872425];
+const v7 = v2.toLocaleString("function",-2546872425,v4,3547325953);
+}
+%NeverOptimizeFunction(main);
+main();
