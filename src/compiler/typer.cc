@@ -404,6 +404,39 @@ class Typer::Visitor : public Reducer {
 
 void Typer::Run() { Run(NodeVector(zone()), nullptr); }
 
+void Typer::AddRangeAssertions() {
+
+  ZoneStack<NodeState> stack(zone());
+  ZoneSet<Node*> visited(zone());
+
+  // DFS over the graph
+
+  stack.push({graph()->end(), 0});
+
+  while (!stack.empty()) {
+
+    NodeState& entry = stack.top();
+    Node* node = entry.node;
+    stack.pop();
+
+    if (visited.find(node) != visited.end()) {
+      continue; // Already visited this node.
+    }
+    visited.insert(node);
+
+    Node::Inputs node_inputs = node->inputs();
+    for (int i = 0; i < node_inputs.count(); i++) {
+      Node* input = node_inputs[i];
+      stack.push({input, 0});
+    }
+
+    if (NodeProperties::IsTyped(node) && strcmp(node->op()->mnemonic(), "HeapConstant") != 0) {
+      std::cout << "Node types information for " << node->op()->mnemonic() << "\n";
+      std::cout << NodeProperties::GetType(node) << "\n";
+    }
+  }
+}
+
 void Typer::Run(const NodeVector& roots,
                 LoopVariableOptimizer* induction_vars) {
   if (induction_vars != nullptr) {
@@ -413,7 +446,10 @@ void Typer::Run(const NodeVector& roots,
   GraphReducer graph_reducer(zone(), graph());
   graph_reducer.AddReducer(&visitor);
   for (Node* const root : roots) graph_reducer.ReduceNode(root);
+  // TODO: Add check right after here?
   graph_reducer.ReduceGraph();
+
+  AddRangeAssertions();
 
   if (induction_vars != nullptr) {
     induction_vars->ChangeToPhisAndInsertGuards();

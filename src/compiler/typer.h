@@ -33,7 +33,14 @@ class V8_EXPORT_PRIVATE Typer {
   void Run(const ZoneVector<Node*>& roots,
            LoopVariableOptimizer* induction_vars);
 
+  void AddRangeAssertions();
+
  private:
+  struct NodeState {
+    Node* node;
+    int input_index;
+  };
+
   class Visitor;
   class Decorator;
 
