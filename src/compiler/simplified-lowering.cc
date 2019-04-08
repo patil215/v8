@@ -2423,6 +2423,19 @@ class RepresentationSelector {
         if (lower()) NodeProperties::ChangeOp(node, Float64Op(node));
         return;
       }
+      case IrOpcode::kNumberCheckRangeType:
+        DCHECK_EQ(3, node->op()->ValueInputCount());
+        ProcessInput(node, 0, UseInfo::TruncatingFloat64());
+        ProcessInput(node, 1, UseInfo::TruncatingFloat64());
+        ProcessInput(node, 2, UseInfo::TruncatingFloat64());
+
+        for (int i = 3; i < node->InputCount(); i++) {
+          EnqueueInput(node, i);
+        }
+
+        SetOutput(node, MachineRepresentation::kFloat64, Type::Any());
+
+        return;
       case IrOpcode::kNumberCeil:
       case IrOpcode::kNumberFloor:
       case IrOpcode::kNumberRound:

@@ -53,6 +53,8 @@ class V8_EXPORT_PRIVATE OperationTyper {
   SIMPLIFIED_SPECULATIVE_NUMBER_BINOP_LIST(DECLARE_METHOD)
 #undef DECLARE_METHOD
 
+  Type NumberCheckRangeType(Type a, Type b, Type c);
+
   // Comparison operators.
   Type SameValue(Type lhs, Type rhs);
   Type StrictEqual(Type lhs, Type rhs);

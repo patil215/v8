@@ -1,12 +1,4 @@
 Start of test
-Running fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js
-fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js:2: ReferenceError: gc is not defined
-const v3 = [gc,1,1337];
-            ^
-ReferenceError: gc is not defined
-    at main (fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js:2:13)
-    at fuzzer_output/actually_crashes/crash_1554131652251_31516_deterministic_4.js:17:1
-
 Running fuzzer_output/actually_crashes/crash_1554132336835_9628_deterministic_4.js
 
 

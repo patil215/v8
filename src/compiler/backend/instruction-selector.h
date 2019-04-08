@@ -595,6 +595,7 @@ class V8_EXPORT_PRIVATE InstructionSelector final {
   // Visit the node and generate code for IEEE 754 functions.
   void VisitFloat64Ieee754Binop(Node*, InstructionCode code);
   void VisitFloat64Ieee754Unop(Node*, InstructionCode code);
+  void VisitFloat64Ieee754Triop(Node*, InstructionCode code);
 
 #define DECLARE_GENERATOR(x) void Visit##x(Node* node);
   MACHINE_OP_LIST(DECLARE_GENERATOR)

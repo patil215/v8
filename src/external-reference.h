@@ -153,6 +153,7 @@ class StatsCounter;
   V(log_enter_external_function, "Logger::EnterExternal")                     \
   V(log_leave_external_function, "Logger::LeaveExternal")                     \
   V(check_type_function, "TyperHappy::CheckType")                             \
+  V(check_range_type_function, "TyperHappy::CheckRangeTypeNode")              \
   V(mod_two_doubles_operation, "mod_two_doubles")                             \
   V(new_deoptimizer_function, "Deoptimizer::New()")                           \
   V(orderedhashmap_gethash_raw, "orderedhashmap_gethash_raw")                 \

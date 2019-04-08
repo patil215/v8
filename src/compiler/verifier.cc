@@ -1046,6 +1046,12 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
       CheckValueInputIs(node, 1, Type::Number());
       CheckTypeIs(node, Type::Number());
       break;
+    case IrOpcode::kNumberCheckRangeType:
+      CheckValueInputIs(node, 0, Type::Number());
+      CheckValueInputIs(node, 1, Type::Number());
+      CheckValueInputIs(node, 2, Type::Number());
+      CheckTypeIs(node, Type::Number());
+      break;
     case IrOpcode::kNumberAbs:
     case IrOpcode::kNumberCeil:
     case IrOpcode::kNumberFloor:
@@ -1706,6 +1712,7 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
     case IrOpcode::kFloat64Exp:
     case IrOpcode::kFloat64Expm1:
     case IrOpcode::kFloat64CheckReturnedType:
+    case IrOpcode::kFloat64CheckRangeType:
     case IrOpcode::kFloat64Log:
     case IrOpcode::kFloat64Log1p:
     case IrOpcode::kFloat64Log10:

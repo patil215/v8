@@ -592,6 +592,7 @@ class V8_EXPORT_PRIVATE SimplifiedOperatorBuilder final
   const Operator* NumberExp();
   const Operator* NumberExpm1();
   const Operator* NumberCheckReturnedType();
+  const Operator* NumberCheckRangeType();
   const Operator* NumberLog();
   const Operator* NumberLog1p();
   const Operator* NumberLog10();

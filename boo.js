@@ -1,7 +1,7 @@
 let f = (o) => {
   var obj = [1,2,3];
-  //var x = Math.ceil(Math.random());
-  var x = obj.indexOf(Math.floor(Math.random() * 3));
+  var x = Math.ceil(Math.random() << 2);
+  //var x = obj.indexOf(Math.floor(Math.random() * 3));
   return obj[o+x];
 }
 

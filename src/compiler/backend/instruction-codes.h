@@ -127,6 +127,7 @@ enum class RecordWriteMode { kValueIsMap, kValueIsPointer, kValueIsAny };
   V(Ieee754Float64Exp)                    \
   V(Ieee754Float64Expm1)                  \
   V(Ieee754Float64CheckReturnedType)      \
+  V(Ieee754Float64CheckRangeType)         \
   V(Ieee754Float64Log)                    \
   V(Ieee754Float64Log1p)                  \
   V(Ieee754Float64Log10)                  \

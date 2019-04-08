@@ -1,0 +1,56 @@
+(gdb) bt
+#0  0x00007ffff7c8a530 in v8::internal::compiler::Type::IntersectAux(v8::internal::compiler::Type, v8::internal::compiler::Type, v8::internal::compiler::UnionType*, int, v8::internal::compiler::RangeType::Limits*, v8::internal::Zone*)@plt () from /home/patil215/proj/v8/out/x64.debug/./libv8.so
+#1  0x00007ffff6d06906 in v8::internal::compiler::Type::Intersect (type1=..., type2=..., zone=0x5555556944c0) at ../../src/compiler/types.cc:693
+#2  0x00007ffff6c5be6d in v8::internal::compiler::OperationTyper::ConvertReceiver (this=0x5555556edc98, type=...) at ../../src/compiler/operation-typer.cc:259
+#3  0x00007ffff6d0071d in v8::internal::compiler::Typer::Visitor::TypeConvertReceiver (this=0x7fffffffb6e8, node=0x555555702fb0) at ../../src/compiler/typer.cc:2112
+#4  0x00007ffff6cf9e35 in v8::internal::compiler::Typer::Visitor::Reduce (this=0x7fffffffb6e8, node=0x555555702fb0) at ../../src/compiler/typer.cc:84
+#5  0x00007ffff6b4ba17 in v8::internal::compiler::GraphReducer::Reduce (this=0x7fffffffb5f0, node=0x555555702fb0) at ../../src/compiler/graph-reducer.cc:85
+#6  0x00007ffff6b4b6fc in v8::internal::compiler::GraphReducer::ReduceTop (this=0x7fffffffb5f0) at ../../src/compiler/graph-reducer.cc:150
+#7  0x00007ffff6b4b1df in v8::internal::compiler::GraphReducer::ReduceNode (this=0x7fffffffb5f0, node=0x5555556ffc88) at ../../src/compiler/graph-reducer.cc:56
+#8  0x00007ffff6b4b94d in v8::internal::compiler::GraphReducer::ReduceGraph (this=0x7fffffffb5f0) at ../../src/compiler/graph-reducer.cc:78
+#9  0x00007ffff6cf24d7 in v8::internal::compiler::Typer::Run (this=0x5555556edc70, roots=..., induction_vars=0x7fffffffb790) at ../../src/compiler/typer.cc:416
+#10 0x00007ffff6c74608 in v8::internal::compiler::TyperPhase::Run (this=0x7fffffffb898, data=0x555555693ef0, temp_zone=0x5555556a7660, typer=0x5555556edc70) at ../../src/compiler/pipeline.cc:1132
+#11 0x00007ffff6c6e129 in v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::TyperPhase, v8::internal::compiler::Typer*> (this=0x5555556940a8, args=@0x7fffffffb8f8: 0x5555556edc70)
+    at ../../src/compiler/pipeline.cc:1009
+#12 0x00007ffff6c657ac in v8::internal::compiler::PipelineImpl::OptimizeGraph (this=0x5555556940a8, linkage=0x5555556ec208) at ../../src/compiler/pipeline.cc:1986
+#13 0x00007ffff6c656fc in v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl (this=0x555555693d80) at ../../src/compiler/pipeline.cc:955
+#14 0x00007ffff6a1fbf3 in v8::internal::OptimizedCompilationJob::ExecuteJob (this=0x555555693d80) at ../../src/compiler.cc:225
+#15 0x00007ffff6a29dac in v8::internal::(anonymous namespace)::GetOptimizedCodeNow (job=0x555555693d80, isolate=0x555555606d80) at ../../src/compiler.cc:680
+#16 0x00007ffff6a233eb in v8::internal::(anonymous namespace)::GetOptimizedCode (function=..., mode=v8::internal::ConcurrencyMode::kNotConcurrent, osr_offset=..., osr_frame=0x7fffffffc220)
+    at ../../src/compiler.cc:834
+#17 0x00007ffff6a2783b in v8::internal::Compiler::GetOptimizedCodeForOSR (function=..., osr_offset=..., osr_frame=0x7fffffffc220) at ../../src/compiler.cc:2063
+#18 0x00007ffff7306936 in v8::internal::__RT_impl_Runtime_CompileForOnStackReplacement (args=..., isolate=0x555555606d80) at ../../src/runtime/runtime-compiler.cc:251
+#19 0x00007ffff73063a2 in v8::internal::Runtime_CompileForOnStackReplacement (args_length=1, args_object=0x7fffffffc5c0, isolate=0x555555606d80) at ../../src/runtime/runtime-compiler.cc:225
+#20 0x00007ffff79c1b09 in Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit () from /home/patil215/proj/v8/out/x64.debug/./libv8.so
+#21 0x00007ffff76d8280 in Builtins_InterpreterOnStackReplacement () from /home/patil215/proj/v8/out/x64.debug/./libv8.so
+
+
+
+(gdb) bt
+#0  0x00007ffff7c7fea0 in v8::internal::compiler::OperationTyper::NumberShiftLeft(v8::internal::compiler::Type, v8::internal::compiler::Type)@plt () from /home/patil215/proj/v8/out/x64.debug/./libv8.so
+#1  0x00007ffff6c6259e in v8::internal::compiler::OperationTyper::SpeculativeNumberShiftLeft (this=0x7fffec000b68, lhs=..., rhs=...) at ../../src/compiler/operation-typer.cc:1115
+#2  0x00007ffff6d02424 in v8::internal::compiler::Typer::Visitor::SpeculativeNumberShiftLeft (lhs=..., rhs=..., t=0x7fffec000b40) at ../../src/compiler/typer.cc:287
+#3  0x00007ffff6cf27c1 in v8::internal::compiler::Typer::Visitor::TypeBinaryOp (this=0x7ffff3b69a28, node=0x5555556b3a30, 
+    f=0x7ffff6d023e0 <v8::internal::compiler::Typer::Visitor::SpeculativeNumberShiftLeft(v8::internal::compiler::Type, v8::internal::compiler::Type, v8::internal::compiler::Typer*)>)
+    at ../../src/compiler/typer.cc:456
+#4  0x00007ffff6cfce73 in v8::internal::compiler::Typer::Visitor::Reduce (this=0x7ffff3b69a28, node=0x5555556b3a30) at ../../src/compiler/typer.cc:95
+#5  0x00007ffff6b4ba17 in v8::internal::compiler::GraphReducer::Reduce (this=0x7ffff3b69930, node=0x5555556b3a30) at ../../src/compiler/graph-reducer.cc:85
+#6  0x00007ffff6b4b6fc in v8::internal::compiler::GraphReducer::ReduceTop (this=0x7ffff3b69930) at ../../src/compiler/graph-reducer.cc:150
+#7  0x00007ffff6b4b1df in v8::internal::compiler::GraphReducer::ReduceNode (this=0x7ffff3b69930, node=0x5555556b43b8) at ../../src/compiler/graph-reducer.cc:56
+#8  0x00007ffff6b4b94d in v8::internal::compiler::GraphReducer::ReduceGraph (this=0x7ffff3b69930) at ../../src/compiler/graph-reducer.cc:78
+#9  0x00007ffff6cf24d7 in v8::internal::compiler::Typer::Run (this=0x7fffec000b40, roots=..., induction_vars=0x7ffff3b69ad0) at ../../src/compiler/typer.cc:416
+#10 0x00007ffff6c74608 in v8::internal::compiler::TyperPhase::Run (this=0x7ffff3b69bd8, data=0x5555556942f0, temp_zone=0x7fffec000bf0, typer=0x7fffec000b40) at ../../src/compiler/pipeline.cc:1132
+#11 0x00007ffff6c6e129 in v8::internal::compiler::PipelineImpl::Run<v8::internal::compiler::TyperPhase, v8::internal::compiler::Typer*> (this=0x5555556944a8, args=@0x7ffff3b69c38: 0x7fffec000b40)
+    at ../../src/compiler/pipeline.cc:1009
+#12 0x00007ffff6c657ac in v8::internal::compiler::PipelineImpl::OptimizeGraph (this=0x5555556944a8, linkage=0x5555556a30f8) at ../../src/compiler/pipeline.cc:1986
+#13 0x00007ffff6c656fc in v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl (this=0x555555694180) at ../../src/compiler/pipeline.cc:955
+#14 0x00007ffff6a1fbf3 in v8::internal::OptimizedCompilationJob::ExecuteJob (this=0x555555694180) at ../../src/compiler.cc:225
+#15 0x00007ffff6a1b861 in v8::internal::OptimizingCompileDispatcher::CompileNext (this=0x55555567f5a0, job=0x555555694180) at ../../src/compiler-dispatcher/optimizing-compile-dispatcher.cc:130
+#16 0x00007ffff6a1eb52 in v8::internal::OptimizingCompileDispatcher::CompileTask::RunInternal (this=0x555555693c90) at ../../src/compiler-dispatcher/optimizing-compile-dispatcher.cc:80
+#17 0x00007ffff6a09c4d in v8::internal::CancelableTask::Run (this=0x555555693c90) at ../../src/cancelable-task.h:155
+#18 0x00007ffff7f9f9ec in v8::platform::WorkerThread::Run (this=0x5555556007e0) at ../../src/libplatform/worker-thread.cc:26
+#19 0x00007ffff7feb999 in v8::base::Thread::NotifyStartedAndRun (this=0x5555556007e0) at ../../src/base/platform/platform.h:390
+#20 0x00007ffff7feb0b6 in v8::base::ThreadEntry (arg=0x5555556007e0) at ../../src/base/platform/platform-posix.cc:747
+#21 0x00007ffff564b6db in start_thread (arg=0x7ffff3b6a700) at pthread_create.c:463
+#22 0x00007ffff4dce88f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+

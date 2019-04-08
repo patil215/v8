@@ -1022,6 +1022,11 @@ Type OperationTyper::NumberCheckReturnedType(Type lhs, Type rhs) {
   return Type::Number();
 }
 
+Type OperationTyper::NumberCheckRangeType(Type a, Type b, Type c) {
+  // TODO DCHECK necessary?
+  return Type::Number();
+}
+
 Type OperationTyper::NumberImul(Type lhs, Type rhs) {
   DCHECK(lhs.Is(Type::Number()));
   DCHECK(rhs.Is(Type::Number()));

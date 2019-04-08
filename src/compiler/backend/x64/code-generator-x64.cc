@@ -1078,6 +1078,12 @@ CodeGenerator::CodeGenResult CodeGenerator::AssembleArchInstruction(
         __ CallCFunction(ExternalReference::check_type_function(), 2);
       } while (false);
       break;
+    case kIeee754Float64CheckRangeType:
+        do {
+        __ PrepareCallCFunction(3);
+        __ CallCFunction(ExternalReference::check_type_function(), 3);
+      } while (false);
+      break;
     case kIeee754Float64Log:
       ASSEMBLE_IEEE754_UNOP(log);
       break;

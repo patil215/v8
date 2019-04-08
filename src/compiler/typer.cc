@@ -34,9 +34,10 @@ class Typer::Decorator final : public GraphDecorator {
   Typer* const typer_;
 };
 
-Typer::Typer(JSHeapBroker* broker, Flags flags, Graph* graph)
+Typer::Typer(JSHeapBroker* broker, Flags flags, Graph* graph, JSGraph* jsgraph)
     : flags_(flags),
       graph_(graph),
+      jsgraph_(jsgraph),
       decorator_(nullptr),
       cache_(TypeCache::Get()),
       broker_(broker),
@@ -321,6 +322,7 @@ class Typer::Visitor : public Reducer {
   static Type StringFromSingleCharCodeTyper(Type, Typer*);
   static Type StringFromSingleCodePointTyper(Type, Typer*);
 
+  // GOOD PLACE TO STICK IN OUR RANGE CHECKING NODE AS WELL?
   Reduction UpdateType(Node* node, Type current) {
     if (NodeProperties::IsTyped(node)) {
       // Widen the type of a previously typed node.
@@ -430,7 +432,31 @@ void Typer::AddRangeAssertions() {
       stack.push({input, 0});
     }
 
-    if (NodeProperties::IsTyped(node) && strcmp(node->op()->mnemonic(), "HeapConstant") != 0) {
+    if (NodeProperties::IsTyped(node) 
+        && strcmp(node->op()->mnemonic(), "HeapConstant") != 0 
+        && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0) {
+      // Create range checker node that links from previous close
+      double min_value = 0;
+      double max_value = 0;
+      Node* rangeChecker = graph()->NewNode(
+        jsgraph_->simplified()->NumberCheckRangeType(),
+        node,
+        jsgraph_->Constant(min_value),
+        jsgraph_->Constant(max_value)
+      );
+
+      if (node == graph()->end()) {
+        graph()->SetEnd(rangeChecker);
+      }
+
+      // Point all the nodes that depend on the node to depend on the range checker instead
+      for (Edge edge : node->use_edges()) {
+        Node* const user = edge.from();
+        if (user->id() != rangeChecker->id()) {
+          edge.UpdateTo(rangeChecker);
+        }
+      }
+
       std::cout << "Node types information for " << node->op()->mnemonic() << "\n";
       std::cout << NodeProperties::GetType(node) << "\n";
     }
@@ -1520,6 +1546,10 @@ Type Typer::Visitor::TypeJSConstructWithSpread(Node* node) {
 Type Typer::Visitor::TypeJSObjectIsArray(Node* node) { return Type::Boolean(); }
 
 Type Typer::Visitor::TypeDateNow(Node* node) { return Type::Number(); }
+
+Type Typer::Visitor::TypeNumberCheckRangeType(Node* node) {
+  return Type::Number();
+}
 
 Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
   //std::cout << "Running JSCallTyper function\n";

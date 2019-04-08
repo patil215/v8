@@ -115,6 +115,11 @@ public:
 
     static double CheckType(double value, double functionId);
 
+    static double CheckRangeTypeNode(double value, double min, double max) {
+        std::cout << "Checking range\n";
+        return value;
+    }
+
     static int functionIdFromName(char* module, char* name);
 
     static void checkMathClz32(double value) {

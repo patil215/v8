@@ -997,6 +997,8 @@ class V8_EXPORT_PRIVATE CodeAssembler {
   CODE_ASSEMBLER_BINARY_OP_LIST(DECLARE_CODE_ASSEMBLER_BINARY_OP)
 #undef DECLARE_CODE_ASSEMBLER_BINARY_OP
 
+  TNode<Float64T> Float64CheckRangeType(SloppyTNode<Float64T> a, SloppyTNode<Float64T> b, SloppyTNode<Float64T> c);
+
   TNode<IntPtrT> WordShr(TNode<IntPtrT> left, TNode<IntegralT> right) {
     return UncheckedCast<IntPtrT>(
         WordShr(static_cast<Node*>(left), static_cast<Node*>(right)));

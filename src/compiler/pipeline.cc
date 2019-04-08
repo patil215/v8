@@ -322,7 +322,7 @@ class PipelineData {
 
   Typer* CreateTyper() {
     DCHECK_NULL(typer_);
-    typer_ = new Typer(broker(), typer_flags_, graph());
+    typer_ = new Typer(broker(), typer_flags_, graph(), jsgraph());
     return typer_;
   }
 

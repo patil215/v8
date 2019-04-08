@@ -364,6 +364,7 @@
 #define SIMPLIFIED_SPECULATIVE_NUMBER_UNOP_LIST(V) V(SpeculativeToNumber)
 
 #define SIMPLIFIED_OTHER_OP_LIST(V)     \
+  V(NumberCheckRangeType)               \
   V(PlainPrimitiveToNumber)             \
   V(PlainPrimitiveToWord32)             \
   V(PlainPrimitiveToFloat64)            \
@@ -607,6 +608,7 @@
   MACHINE_FLOAT32_BINOP_LIST(V)      \
   MACHINE_FLOAT32_UNOP_LIST(V)       \
   MACHINE_FLOAT64_BINOP_LIST(V)      \
+  V(Float64CheckRangeType)           \
   MACHINE_FLOAT64_UNOP_LIST(V)       \
   MACHINE_WORD64_ATOMIC_OP_LIST(V)   \
   V(DebugAbort)                      \

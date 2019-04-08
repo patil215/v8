@@ -1487,6 +1487,15 @@ void InstructionSelector::VisitFloat64Neg(Node* node) {
   VisitFloatUnop(this, node, node->InputAt(0), kAVXFloat64Neg, kSSEFloat64Neg);
 }
 
+void InstructionSelector::VisitFloat64Ieee754Triop(Node * node, InstructionCode opcode) {
+  X64OperandGenerator g(this);
+  Emit(opcode, g.DefineAsFixed(node, xmm0), 
+      g.UseFixed(node->InputAt(0), xmm0),
+      g.UseFixed(node->InputAt(1), xmm1),
+      g.UseFixed(node->InputAt(2), xmm2))
+      ->MarkAsCall();
+}
+
 void InstructionSelector::VisitFloat64Ieee754Binop(Node* node,
                                                    InstructionCode opcode) {
   X64OperandGenerator g(this);
