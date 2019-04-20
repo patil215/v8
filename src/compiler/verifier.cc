@@ -1047,10 +1047,10 @@ void Verifier::Visitor::Check(Node* node, const AllNodes& all) {
       CheckTypeIs(node, Type::Number());
       break;
     case IrOpcode::kNumberCheckRangeType:
-      CheckValueInputIs(node, 0, Type::Number());
+      CheckValueInputIs(node, 0, Type::Any());
       CheckValueInputIs(node, 1, Type::Number());
       CheckValueInputIs(node, 2, Type::Number());
-      CheckTypeIs(node, Type::Number());
+      //CheckTypeIs(node, Type::Number());
       break;
     case IrOpcode::kNumberAbs:
     case IrOpcode::kNumberCeil:

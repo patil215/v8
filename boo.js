@@ -5,7 +5,14 @@ let f = (o) => {
   return obj[o+x];
 }
 
-for (let i = 0; i < 0x10000; ++i) {
+/*for (let i = 0; i < 0x10000; ++i) {
  f(i); 
-}
+}*/
+
+
+f(1);
+%OptimizeFunctionOnNextCall(f)
+f(2);
+f(3);
+
 

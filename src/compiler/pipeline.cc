@@ -15,6 +15,7 @@
 #include "src/base/platform/elapsed-timer.h"
 #include "src/bootstrapper.h"
 #include "src/code-tracer.h"
+#include "src/compiler/common-operator.h"
 #include "src/compiler.h"
 #include "src/compiler/backend/code-generator.h"
 #include "src/compiler/backend/frame-elider.h"
@@ -78,6 +79,7 @@
 #include "src/compiler/zone-stats.h"
 #include "src/disassembler.h"
 #include "src/isolate-inl.h"
+#include "src/zone/zone-containers.h"
 #include "src/objects/shared-function-info.h"
 #include "src/optimized-compilation-info.h"
 #include "src/ostreams.h"
@@ -87,6 +89,8 @@
 #include "src/wasm/function-body-decoder.h"
 #include "src/wasm/function-compiler.h"
 #include "src/wasm/wasm-engine.h"
+#include "src/compiler/node-properties.h"
+#include "src/compiler/node.h"
 
 namespace v8 {
 namespace internal {
@@ -1133,6 +1137,79 @@ struct TyperPhase {
   }
 };
 
+struct RangeCheckingPhase {
+
+
+  struct NodeState {
+    Node* node;
+    int input_index;
+  };
+
+  static const char* phase_name() { return "rangecheck"; }
+
+  void Run(PipelineData* data, Zone* temp_zone) {
+
+    ZoneStack<NodeState> stack(data->graph()->zone());
+    ZoneSet<Node*> visited(data->graph()->zone());
+
+    // DFS over the graph
+
+    stack.push({data->graph()->end(), 0});
+
+    while (!stack.empty()) {
+
+      NodeState& entry = stack.top();
+      Node* node = entry.node;
+      stack.pop();
+
+      if (visited.find(node) != visited.end()) {
+        continue; // Already visited this node.
+      }
+      visited.insert(node);
+
+      Node::Inputs node_inputs = node->inputs();
+      for (int i = 0; i < node_inputs.count(); i++) {
+        Node* input = node_inputs[i];
+        stack.push({input, 0});
+      }
+
+      if (NodeProperties::IsTyped(node) 
+          && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0) {
+        Type nodeType = NodeProperties::GetType(node);
+        if (!nodeType.IsRange()) { // TODO we can make this broader to encapsulate union types
+          continue;
+        }
+        
+        // Create range checker node that links from previous close
+        double min_value = nodeType.AsRange()->Min();
+        double max_value = nodeType.AsRange()->Max();
+        Node* rangeChecker = data->graph()->NewNode(
+          data->jsgraph()->simplified()->NumberCheckRangeType(),
+          node,
+          data->jsgraph()->Constant(min_value),
+          data->jsgraph()->Constant(max_value)
+        );
+
+        if (node == data->graph()->end()) {
+          data->graph()->SetEnd(rangeChecker);
+        }
+
+        // Point all the nodes that depend on the node to depend on the range checker instead
+        for (Edge edge : node->use_edges()) {
+          if (!NodeProperties::IsControlEdge(edge) && !NodeProperties::IsEffectEdge(edge)) {
+            Node* const user = edge.from();
+            if (user->id() != rangeChecker->id()) {
+              edge.UpdateTo(rangeChecker);
+            }
+          }
+        }
+
+        NodeProperties::SetType(rangeChecker, NodeProperties::GetType(node));
+      }
+    }
+  }
+};
+
 struct UntyperPhase {
   static const char* phase_name() { return "untyper"; }
 
@@ -1986,6 +2063,7 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
   Run<TyperPhase>(data->CreateTyper());
   //std::cout << "Verifying typer phase...\n";
   RunPrintAndVerify(TyperPhase::phase_name());
+
   //std::cout << "Running typed lowering phase...\n";
   Run<TypedLoweringPhase>();
   //std::cout << "Verifying typed lowering phase...\n";
@@ -2003,6 +2081,10 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
     Run<LoadEliminationPhase>();
     RunPrintAndVerify(LoadEliminationPhase::phase_name());
   }
+
+  // Add range assertion checking nodes
+  Run<RangeCheckingPhase>();
+
   data->DeleteTyper();
 
   if (FLAG_turbo_escape) {

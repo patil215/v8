@@ -406,74 +406,6 @@ class Typer::Visitor : public Reducer {
 
 void Typer::Run() { Run(NodeVector(zone()), nullptr); }
 
-void Typer::AddRangeAssertions() {
-
-  ZoneStack<NodeState> stack(zone());
-  ZoneSet<Node*> visited(zone());
-
-  // DFS over the graph
-
-  stack.push({graph()->end(), 0});
-
-  bool inserted = false;
-
-  while (!stack.empty() && !inserted) {
-
-    NodeState& entry = stack.top();
-    Node* node = entry.node;
-    stack.pop();
-
-    if (visited.find(node) != visited.end()) {
-      continue; // Already visited this node.
-    }
-    visited.insert(node);
-
-    Node::Inputs node_inputs = node->inputs();
-    for (int i = 0; i < node_inputs.count(); i++) {
-      Node* input = node_inputs[i];
-      stack.push({input, 0});
-    }
-
-    if (NodeProperties::IsTyped(node) 
-        && strcmp(node->op()->mnemonic(), "HeapConstant") != 0 
-        && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0) {
-      // Create range checker node that links from previous close
-      double min_value = 0;
-      double max_value = 100;
-      Node* rangeChecker = graph()->NewNode(
-        jsgraph_->simplified()->NumberCheckRangeType(),
-        node,
-        jsgraph_->Constant(min_value),
-        jsgraph_->Constant(max_value)
-      );
-
-      if (node == graph()->end()) {
-        graph()->SetEnd(rangeChecker);
-      }
-
-      // Point all the nodes that depend on the node to depend on the range checker instead
-      for (Edge edge : node->use_edges()) {
-        if (NodeProperties::IsControlEdge(edge)) {
-          std::cout << "Control edge\n";
-        } else if (NodeProperties::IsEffectEdge(edge)) {
-          std::cout << "Effect edge\n";
-        } else {
-          std::cout << "Other edge\n";
-          Node* const user = edge.from();
-          if (user->id() != rangeChecker->id()) {
-            edge.UpdateTo(rangeChecker);
-          }
-        }
-      }
-
-      inserted = true;
-
-      std::cout << "Node types information for " << node->op()->mnemonic() << "\n";
-      std::cout << NodeProperties::GetType(node) << "\n";
-    }
-  }
-}
-
 void Typer::Run(const NodeVector& roots,
                 LoopVariableOptimizer* induction_vars) {
   if (induction_vars != nullptr) {
@@ -485,8 +417,6 @@ void Typer::Run(const NodeVector& roots,
   for (Node* const root : roots) graph_reducer.ReduceNode(root);
   // TODO: Add check right after here?
   graph_reducer.ReduceGraph();
-
-  AddRangeAssertions();
 
   if (induction_vars != nullptr) {
     induction_vars->ChangeToPhisAndInsertGuards();
