@@ -1612,6 +1612,9 @@ void InstructionSelector::VisitNode(Node* node) {
     case IrOpcode::kFloat64CheckReturnedType:
       return MarkAsFloat64(node), VisitFloat64CheckReturnedType(node);
     case IrOpcode::kFloat64CheckRangeType:
+      // TODO not sure if this is needed anymore
+      return MarkAsFloat64(node), VisitFloat64CheckRangeType(node);
+    case IrOpcode::kNumberCheckRangeType:
       return MarkAsFloat64(node), VisitFloat64CheckRangeType(node);
     case IrOpcode::kFloat64Expm1:
       return MarkAsFloat64(node), VisitFloat64Expm1(node);

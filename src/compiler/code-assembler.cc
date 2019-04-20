@@ -467,6 +467,11 @@ TNode<WordT> CodeAssembler::WordPoisonOnSpeculation(SloppyTNode<WordT> value) {
 CODE_ASSEMBLER_BINARY_OP_LIST(DEFINE_CODE_ASSEMBLER_BINARY_OP)
 #undef DEFINE_CODE_ASSEMBLER_BINARY_OP
 
+TNode<Float64T> CodeAssembler::Float64CheckRangeType(SloppyTNode<Float64T> a, 
+      SloppyTNode<Float64T> b, SloppyTNode<Float64T> c) {
+    return UncheckedCast<Float64T>(raw_assembler()->Float64CheckRangeType(a, b, c));  
+  }
+
 TNode<WordT> CodeAssembler::IntPtrAdd(SloppyTNode<WordT> left,
                                       SloppyTNode<WordT> right) {
   intptr_t left_constant;

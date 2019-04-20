@@ -415,7 +415,9 @@ void Typer::AddRangeAssertions() {
 
   stack.push({graph()->end(), 0});
 
-  while (!stack.empty()) {
+  bool inserted = false;
+
+  while (!stack.empty() && !inserted) {
 
     NodeState& entry = stack.top();
     Node* node = entry.node;
@@ -437,7 +439,7 @@ void Typer::AddRangeAssertions() {
         && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0) {
       // Create range checker node that links from previous close
       double min_value = 0;
-      double max_value = 0;
+      double max_value = 100;
       Node* rangeChecker = graph()->NewNode(
         jsgraph_->simplified()->NumberCheckRangeType(),
         node,
@@ -451,11 +453,20 @@ void Typer::AddRangeAssertions() {
 
       // Point all the nodes that depend on the node to depend on the range checker instead
       for (Edge edge : node->use_edges()) {
-        Node* const user = edge.from();
-        if (user->id() != rangeChecker->id()) {
-          edge.UpdateTo(rangeChecker);
+        if (NodeProperties::IsControlEdge(edge)) {
+          std::cout << "Control edge\n";
+        } else if (NodeProperties::IsEffectEdge(edge)) {
+          std::cout << "Effect edge\n";
+        } else {
+          std::cout << "Other edge\n";
+          Node* const user = edge.from();
+          if (user->id() != rangeChecker->id()) {
+            edge.UpdateTo(rangeChecker);
+          }
         }
       }
+
+      inserted = true;
 
       std::cout << "Node types information for " << node->op()->mnemonic() << "\n";
       std::cout << NodeProperties::GetType(node) << "\n";

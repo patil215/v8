@@ -1081,7 +1081,7 @@ CodeGenerator::CodeGenResult CodeGenerator::AssembleArchInstruction(
     case kIeee754Float64CheckRangeType:
         do {
         __ PrepareCallCFunction(3);
-        __ CallCFunction(ExternalReference::check_type_function(), 3);
+        __ CallCFunction(ExternalReference::check_range_type_function(), 3);
       } while (false);
       break;
     case kIeee754Float64Log:

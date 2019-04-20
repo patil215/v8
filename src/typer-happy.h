@@ -116,7 +116,7 @@ public:
     static double CheckType(double value, double functionId);
 
     static double CheckRangeTypeNode(double value, double min, double max) {
-        std::cout << "Checking range\n";
+        std::cout << "Checking range. value: " << value << " min: " << min << " max: " << max << "\n";
         return value;
     }
 
