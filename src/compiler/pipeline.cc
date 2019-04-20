@@ -2064,10 +2064,16 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
   //std::cout << "Verifying typer phase...\n";
   RunPrintAndVerify(TyperPhase::phase_name());
 
+  // Add range assertion checking nodes
+  Run<RangeCheckingPhase>();
+
   //std::cout << "Running typed lowering phase...\n";
   Run<TypedLoweringPhase>();
   //std::cout << "Verifying typed lowering phase...\n";
   RunPrintAndVerify(TypedLoweringPhase::phase_name());
+
+  // Add range assertion checking nodes
+  Run<RangeCheckingPhase>();
 
   if (data->info()->is_loop_peeling_enabled()) {
     Run<LoopPeelingPhase>();
