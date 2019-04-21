@@ -1174,7 +1174,9 @@ struct RangeCheckingPhase {
       }
 
       if (NodeProperties::IsTyped(node) 
-          && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0) {
+          && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0
+          && strcmp(node->op()->mnemonic(), "HeapConstant") != 0) {
+            std::cout << node->op()->mnemonic() << " " << NodeProperties::GetType(node) << "\n";
         Type nodeType = NodeProperties::GetType(node);
         if (!nodeType.IsRange()) { // TODO we can make this broader to encapsulate union types
           continue;
@@ -1183,6 +1185,7 @@ struct RangeCheckingPhase {
         // Create range checker node that links from previous close
         double min_value = nodeType.AsRange()->Min();
         double max_value = nodeType.AsRange()->Max();
+        std::cout << "Range checking node: " << node->op()->mnemonic() << " " << min_value << " " << max_value << "\n";
         Node* rangeChecker = data->graph()->NewNode(
           data->jsgraph()->simplified()->NumberCheckRangeType(),
           node,
@@ -2065,7 +2068,7 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
   RunPrintAndVerify(TyperPhase::phase_name());
 
   // Add range assertion checking nodes
-  Run<RangeCheckingPhase>();
+  //Run<RangeCheckingPhase>();
 
   //std::cout << "Running typed lowering phase...\n";
   Run<TypedLoweringPhase>();
@@ -2073,7 +2076,7 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
   RunPrintAndVerify(TypedLoweringPhase::phase_name());
 
   // Add range assertion checking nodes
-  Run<RangeCheckingPhase>();
+  //Run<RangeCheckingPhase>();
 
   if (data->info()->is_loop_peeling_enabled()) {
     Run<LoopPeelingPhase>();
