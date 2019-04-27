@@ -5,10 +5,27 @@
   
 function crash() {
   var s = "4000111222"; // Outside Smi range.
-  var end = s >>> 0;
-  s = s.substring(0, end);
+  var end = s >>> 0; // Has to be >>>
+  console.log(end);
+  s.substring(0, end); // Has to be substring
+  var p = end + 1;
+  return p;
+
+  /*let aux = {z: end, y: 4000111222};
+  var is = Object.is(aux.z, aux.y);
+
+  let i = is + 0;
+  i &= 1;
+  i *= 6;
+
+  let arr = [1.1, 1.2, 1.3, 1.4];
+
+  console.log(i);
+
+  return arr[i];*/
 }
 
 crash();
 %OptimizeFunctionOnNextCall(crash);
-crash();
+let result = crash();
+console.log(result);
