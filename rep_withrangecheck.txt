@@ -1,0 +1,252 @@
+Concurrent recompilation has been disabled for tracing.
+---------------------------------------------------
+Begin compiling method crash using Turbofan
+Start Internal
+FrameState Internal
+Parameter OtherInternal
+StateValues Internal
+StateValues Internal
+Parameter Receiver
+StringSubstring String
+CheckSmi Unsigned31
+NumberConstant Range(4000111222, 4000111222)
+Range checking node: NumberConstant 4.00011e+09 4.00011e+09
+NumberMax Range(0, 10)
+Range checking node: NumberMax 0 10
+NumberMin Range(0, 10)
+Range checking node: NumberMin 0 10
+NumberConstant Range(10, 10)
+Range checking node: NumberConstant 10 10
+NumberMax Range(0, 2147483647)
+Range checking node: NumberMax 0 2.14748e+09
+NumberConstant Range(0, 0)
+Range checking node: NumberConstant 0 0
+--{Propagation phase}--
+ visit #30: End (trunc: no-value-use)
+  initial #29: no-value-use
+ visit #29: Return (trunc: no-value-use)
+  initial #69: truncate-to-word32
+  initial #2: no-truncation (but distinguish zeros)
+  initial #54: no-value-use
+  initial #12: no-value-use
+ visit #69: NumberCheckRangeType (trunc: truncate-to-word32)
+  initial #15: truncate-to-float64 (distinguish zeros)
+   queue #15?: truncate-to-float64 (distinguish zeros)
+   queue #15?: truncate-to-float64 (distinguish zeros)
+ visit #2: HeapConstant (trunc: no-truncation (but distinguish zeros))
+ visit #54: StringSubstring (trunc: no-value-use)
+  initial #14: no-truncation (but distinguish zeros)
+   queue #69?: truncate-to-word32
+  initial #64: truncate-to-word32
+  initial #44: no-value-use
+   queue #12?: no-value-use
+ visit #12: JSStackCheck (trunc: no-value-use)
+  initial #11: no-truncation (but distinguish zeros)
+  initial #13: no-truncation (but distinguish zeros)
+  initial #5: no-value-use
+  initial #0: no-value-use
+ visit #15: NumberConstant (trunc: truncate-to-float64 (distinguish zeros))
+ visit #14: HeapConstant (trunc: no-truncation (but distinguish zeros))
+ visit #64: NumberCheckRangeType (trunc: truncate-to-word32)
+  initial #53: truncate-to-float64 (distinguish zeros)
+   queue #69?: truncate-to-word32
+   added: truncate-to-float64 (distinguish zeros)
+  initial #66: truncate-to-float64 (distinguish zeros)
+ visit #44: CheckSmi (trunc: no-value-use)
+  initial #63: no-truncation (but distinguish zeros)
+   queue #12?: no-value-use
+   queue #12?: no-value-use
+ visit #11: HeapConstant (trunc: no-truncation (but distinguish zeros))
+ visit #13: FrameState (trunc: no-truncation (but distinguish zeros))
+  initial #6: no-truncation (but distinguish zeros)
+  initial #7: no-truncation (but distinguish zeros)
+  initial #8: no-truncation (but distinguish zeros)
+  initial #3: no-truncation (but distinguish zeros)
+  initial #33: no-truncation (but distinguish zeros)
+   queue #0?: no-value-use
+ inqueue: no-truncation (but distinguish zeros)
+ visit #5: Checkpoint (trunc: no-value-use)
+   queue #13?: no-truncation (but distinguish zeros)
+   queue #0?: no-truncation (but distinguish zeros)
+   queue #0?: no-truncation (but distinguish zeros)
+ visit #0: Start (trunc: no-truncation (but distinguish zeros))
+ visit #53: NumberMax (trunc: truncate-to-float64 (distinguish zeros))
+   queue #69?: truncate-to-float64 (distinguish zeros)
+  initial #65: truncate-to-word32
+ visit #69: NumberCheckRangeType (trunc: truncate-to-float64 (distinguish zeros))
+   queue #15?: truncate-to-float64 (distinguish zeros)
+   queue #15?: truncate-to-float64 (distinguish zeros)
+   queue #15?: truncate-to-float64 (distinguish zeros)
+ visit #66: NumberCheckRangeType (trunc: truncate-to-float64 (distinguish zeros))
+  initial #60: truncate-to-float64 (distinguish zeros)
+   queue #60?: truncate-to-float64 (distinguish zeros)
+   queue #60?: truncate-to-float64 (distinguish zeros)
+ visit #63: NumberCheckRangeType (trunc: no-truncation (but distinguish zeros))
+  initial #59: truncate-to-float64 (distinguish zeros)
+   queue #59?: truncate-to-float64 (distinguish zeros)
+   queue #59?: truncate-to-float64 (distinguish zeros)
+ visit #6: StateValues (trunc: no-truncation (but distinguish zeros))
+  initial #1: no-truncation (but distinguish zeros)
+ visit #7: StateValues (trunc: no-truncation (but distinguish zeros))
+ visit #8: HeapConstant (trunc: no-truncation (but distinguish zeros))
+ visit #3: Parameter (trunc: no-truncation (but distinguish zeros))
+   queue #0?: no-truncation (but distinguish zeros)
+ visit #33: HeapConstant (trunc: no-truncation (but distinguish zeros))
+ visit #65: NumberCheckRangeType (trunc: truncate-to-word32)
+  initial #51: truncate-to-float64 (distinguish zeros)
+   queue #69?: truncate-to-float64 (distinguish zeros)
+   queue #66?: truncate-to-float64 (distinguish zeros)
+ visit #60: NumberConstant (trunc: truncate-to-float64 (distinguish zeros))
+ visit #59: NumberConstant (trunc: truncate-to-float64 (distinguish zeros))
+ visit #1: Parameter (trunc: no-truncation (but distinguish zeros))
+   queue #0?: no-truncation (but distinguish zeros)
+ visit #51: NumberMin (trunc: truncate-to-float64 (distinguish zeros))
+  initial #68: truncate-to-word32
+   queue #66?: truncate-to-float64 (distinguish zeros)
+ visit #68: NumberCheckRangeType (trunc: truncate-to-word32)
+  initial #50: truncate-to-float64 (distinguish zeros)
+   queue #69?: truncate-to-float64 (distinguish zeros)
+  initial #67: truncate-to-float64 (distinguish zeros)
+ visit #50: NumberMax (trunc: truncate-to-float64 (distinguish zeros))
+   queue #44?: no-value-use
+   added: truncate-to-word32
+   queue #69?: truncate-to-float64 (distinguish zeros)
+ visit #67: NumberConstant (trunc: truncate-to-float64 (distinguish zeros))
+ visit #44: CheckSmi (trunc: truncate-to-word32)
+   queue #63?: no-truncation (but distinguish zeros)
+   queue #12?: no-value-use
+   queue #12?: no-value-use
+--{Type propagation phase}--
+ visit #15: NumberConstant
+  ==> output kRepTaggedSigned
+ visit #69: NumberCheckRangeType
+  ==> output kRepFloat64
+ visit #2: HeapConstant
+  ==> output kRepTaggedPointer
+ visit #14: HeapConstant
+  ==> output kRepTaggedPointer
+ visit #59: NumberConstant
+  ==> output kRepTagged
+ visit #63: NumberCheckRangeType
+  ==> output kRepFloat64
+ visit #11: HeapConstant
+  ==> output kRepTaggedPointer
+ visit #0: Start
+  ==> output kRepTagged
+ visit #1: Parameter
+  ==> output kRepTagged
+ visit #6: StateValues
+  ==> output kRepTagged
+ visit #7: StateValues
+  ==> output kRepTagged
+ visit #8: HeapConstant
+  ==> output kRepTaggedPointer
+ visit #3: Parameter
+  ==> output kRepTagged
+ visit #33: HeapConstant
+  ==> output kRepTaggedPointer
+ visit #13: FrameState
+  ==> output kRepTagged
+ visit #5: Checkpoint
+  ==> output kRepTagged
+ visit #12: JSStackCheck
+  ==> output kRepTagged
+ visit #44: CheckSmi
+  ==> output kRepWord32
+#50:NumberMax(#44:CheckSmi, #69:NumberCheckRangeType)  [Static type: Range(0, 2147483647)]
+ visit #50: NumberMax
+  ==> output kRepWord32
+ visit #67: NumberConstant
+  ==> output kRepTaggedSigned
+ visit #68: NumberCheckRangeType
+  ==> output kRepFloat64
+ visit #60: NumberConstant
+  ==> output kRepTaggedSigned
+ visit #66: NumberCheckRangeType
+  ==> output kRepFloat64
+#51:NumberMin(#68:NumberCheckRangeType, #66:NumberCheckRangeType)  [Static type: Range(0, 10)]
+ visit #51: NumberMin
+  ==> output kRepWord32
+ visit #65: NumberCheckRangeType
+  ==> output kRepFloat64
+#53:NumberMax(#69:NumberCheckRangeType, #65:NumberCheckRangeType)  [Static type: Range(0, 10)]
+ visit #53: NumberMax
+  ==> output kRepWord32
+ visit #64: NumberCheckRangeType
+  ==> output kRepFloat64
+ visit #54: StringSubstring
+  ==> output kRepTaggedPointer
+ visit #29: Return
+  ==> output kRepTagged
+ visit #30: End
+  ==> output kRepTagged
+--{Simplified lowering phase}--
+ visit #30: End
+ visit #29: Return
+  change: #29:Return(@0 #69:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+  change: #29:Return(@1 #2:HeapConstant)  from kRepTaggedPointer to kRepTagged:no-truncation (but distinguish zeros)
+ visit #69: NumberCheckRangeType
+  change: #69:NumberCheckRangeType(@0 #15:NumberConstant)  from kRepTaggedSigned to kRepFloat64:truncate-to-float64 (distinguish zeros)
+  change: #69:NumberCheckRangeType(@1 #15:NumberConstant)  from kRepTaggedSigned to kRepFloat64:truncate-to-float64 (distinguish zeros)
+  change: #69:NumberCheckRangeType(@2 #15:NumberConstant)  from kRepTaggedSigned to kRepFloat64:truncate-to-float64 (distinguish zeros)
+ visit #2: HeapConstant
+ visit #54: StringSubstring
+  change: #54:StringSubstring(@0 #14:HeapConstant)  from kRepTaggedPointer to kRepTagged:no-truncation (but distinguish zeros)
+  change: #54:StringSubstring(@1 #69:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+  change: #54:StringSubstring(@2 #64:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+ visit #12: JSStackCheck
+  change: #12:JSStackCheck(@0 #11:HeapConstant)  from kRepTaggedPointer to kRepTagged:no-truncation (but distinguish zeros)
+ visit #15: NumberConstant
+defer replacement #15:NumberConstant with #74:Int64Constant
+ visit #14: HeapConstant
+ visit #64: NumberCheckRangeType
+  change: #64:NumberCheckRangeType(@0 #53:NumberMax)  from kRepWord32 to kRepFloat64:truncate-to-float64 (distinguish zeros)
+ visit #44: CheckSmi
+  change: #44:CheckSmi(@0 #63:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:no-truncation (but distinguish zeros)
+defer replacement #44:CheckSmi with #76:CheckedFloat64ToInt32
+ visit #11: HeapConstant
+ visit #13: FrameState
+  change: #13:FrameState(@4 #33:HeapConstant)  from kRepTaggedPointer to kRepTagged:no-truncation (but distinguish zeros)
+ visit #5: Checkpoint
+ visit #0: Start
+ visit #53: NumberMax
+  change: #53:NumberMax(@0 #69:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+  change: #53:NumberMax(@1 #65:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+ visit #66: NumberCheckRangeType
+  change: #66:NumberCheckRangeType(@0 #60:NumberConstant)  from kRepTaggedSigned to kRepFloat64:truncate-to-float64 (distinguish zeros)
+  change: #66:NumberCheckRangeType(@1 #60:NumberConstant)  from kRepTaggedSigned to kRepFloat64:truncate-to-float64 (distinguish zeros)
+  change: #66:NumberCheckRangeType(@2 #60:NumberConstant)  from kRepTaggedSigned to kRepFloat64:truncate-to-float64 (distinguish zeros)
+ visit #63: NumberCheckRangeType
+  change: #63:NumberCheckRangeType(@0 #59:NumberConstant)  from kRepTagged to kRepFloat64:truncate-to-float64 (distinguish zeros)
+  change: #63:NumberCheckRangeType(@1 #59:NumberConstant)  from kRepTagged to kRepFloat64:truncate-to-float64 (distinguish zeros)
+  change: #63:NumberCheckRangeType(@2 #59:NumberConstant)  from kRepTagged to kRepFloat64:truncate-to-float64 (distinguish zeros)
+ visit #6: StateValues
+ visit #7: StateValues
+ visit #8: HeapConstant
+ visit #3: Parameter
+ visit #33: HeapConstant
+ visit #65: NumberCheckRangeType
+  change: #65:NumberCheckRangeType(@0 #51:NumberMin)  from kRepWord32 to kRepFloat64:truncate-to-float64 (distinguish zeros)
+ visit #60: NumberConstant
+defer replacement #60:NumberConstant with #84:Int64Constant
+ visit #59: NumberConstant
+ visit #1: Parameter
+ visit #51: NumberMin
+  change: #51:NumberMin(@0 #68:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+  change: #51:NumberMin(@1 #66:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+ visit #68: NumberCheckRangeType
+  change: #68:NumberCheckRangeType(@0 #50:NumberMax)  from kRepWord32 to kRepFloat64:truncate-to-float64 (distinguish zeros)
+  change: #68:NumberCheckRangeType(@2 #67:NumberConstant)  from kRepTaggedSigned to kRepFloat64:truncate-to-float64 (distinguish zeros)
+ visit #50: NumberMax
+  change: #50:NumberMax(@1 #69:NumberCheckRangeType)  from kRepFloat64 to kRepWord32:truncate-to-word32
+ visit #67: NumberConstant
+defer replacement #67:NumberConstant with #92:Int64Constant
+cewewefw
+---------------------------------------------------
+Finished compiling method crash using Turbofan
+Checking range. value: 0 min: 0 max: 0
+Checking range. value: 4.00011e+09 min: 4.00011e+09 max: 4.00011e+09
+Checking range. value: 10 min: 10 max: 10
+Checking range. value: -2.14748e+09 min: 0 max: 2.14748e+09
+Checking range. value: 10 min: 0 max: 10
+undefined
