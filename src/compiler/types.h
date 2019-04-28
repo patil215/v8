@@ -573,6 +573,9 @@ class V8_EXPORT_PRIVATE HeapConstantType : public NON_EXPORTED_BASE(TypeBase) {
 class StructuralType : public TypeBase {
  public:
   int LengthForTesting() const { return Length(); }
+  Type GetForTesting(int i) const {
+    return Get(i);
+  }
 
  protected:
   friend class Type;

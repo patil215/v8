@@ -1,0 +1,6 @@
+run() -> doRun() -> run(args) -> Module['callMain'](args); -> var ret = Module['_main'](argc, argv, 0); -> _main 
+-> _printf(48, i1 | 0) | 0; -> return _fprintf(stdout, format, varargs); -> __formatString(format, varargs)
+
+called with 48, 616
+
+CRASHES RIGHT AT "// Colombo"

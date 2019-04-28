@@ -1177,18 +1177,39 @@ struct RangeCheckingPhase {
           && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0
           && strcmp(node->op()->mnemonic(), "HeapConstant") != 0
           && strcmp(node->op()->mnemonic(), "CheckBounds") != 0
-          && strcmp(node->op()->mnemonic(), "PoisonIndex") != 0) {
+          && strcmp(node->op()->mnemonic(), "PoisonIndex") != 0
+          && strcmp(node->op()->mnemonic(), "Select") != 0) {
 
-        std::cout << node->op()->mnemonic() << " " << NodeProperties::GetType(node) << "\n";
         Type nodeType = NodeProperties::GetType(node);
         if (nodeType.GetRange().IsInvalid()) {
+          continue;
+        }
+        if (nodeType.Maybe(Type::Undefined())  || nodeType.Maybe(Type::OtherObject()) || nodeType.Maybe(Type::Function()) || nodeType.Maybe(Type::None()) || nodeType.Maybe(Type::Object())) {
+          continue;
+        }
+        if (nodeType.IsUnionForTesting()) {
+          const UnionType * unionType = nodeType.AsUnionForTesting();
+          bool shouldSkip = false;
+          for (int i = 0; i < unionType->LengthForTesting(); i++) {
+            Type subType = unionType->GetForTesting(i);
+            if (subType.IsHeapConstant() || subType.IsOtherNumberConstant()) {
+              shouldSkip = true;
+              break;
+            }
+          }
+          if (shouldSkip) {
+            continue;
+          }
+        }
+        if (nodeType.IsHeapConstant()) {
           continue;
         }
         
         // Create range checker node that links from previous close
         double min_value = nodeType.GetRange().Min();
         double max_value = nodeType.GetRange().Max();
-        //std::cout << "Range checking node: " << node->op()->mnemonic() << " " << min_value << " " << max_value << "\n";
+        // std::cout << node->op()->mnemonic() << " " << NodeProperties::GetType(node) << "\n";
+        // std::cout << "Range checking node: " << node->op()->mnemonic() << " " << min_value << " " << max_value << "\n\n";
         Node* rangeChecker = data->graph()->NewNode(
           data->jsgraph()->simplified()->NumberCheckRangeType(),
           node,
