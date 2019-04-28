@@ -326,7 +326,7 @@ class PipelineData {
 
   Typer* CreateTyper() {
     DCHECK_NULL(typer_);
-    typer_ = new Typer(broker(), typer_flags_, graph(), jsgraph());
+    typer_ = new Typer(broker(), typer_flags_, graph());
     return typer_;
   }
 
@@ -1175,17 +1175,20 @@ struct RangeCheckingPhase {
 
       if (NodeProperties::IsTyped(node) 
           && strcmp(node->op()->mnemonic(), "NumberCheckRangeType") != 0
-          && strcmp(node->op()->mnemonic(), "HeapConstant") != 0) {
-            std::cout << node->op()->mnemonic() << " " << NodeProperties::GetType(node) << "\n";
+          && strcmp(node->op()->mnemonic(), "HeapConstant") != 0
+          && strcmp(node->op()->mnemonic(), "CheckBounds") != 0
+          && strcmp(node->op()->mnemonic(), "PoisonIndex") != 0) {
+
+        std::cout << node->op()->mnemonic() << " " << NodeProperties::GetType(node) << "\n";
         Type nodeType = NodeProperties::GetType(node);
-        if (!nodeType.IsRange()) { // TODO we can make this broader to encapsulate union types
+        if (nodeType.GetRange().IsInvalid()) {
           continue;
         }
         
         // Create range checker node that links from previous close
-        double min_value = nodeType.AsRange()->Min();
-        double max_value = nodeType.AsRange()->Max();
-        std::cout << "Range checking node: " << node->op()->mnemonic() << " " << min_value << " " << max_value << "\n";
+        double min_value = nodeType.GetRange().Min();
+        double max_value = nodeType.GetRange().Max();
+        //std::cout << "Range checking node: " << node->op()->mnemonic() << " " << min_value << " " << max_value << "\n";
         Node* rangeChecker = data->graph()->NewNode(
           data->jsgraph()->simplified()->NumberCheckRangeType(),
           node,
@@ -1206,6 +1209,8 @@ struct RangeCheckingPhase {
             }
           }
         }
+
+        std::cout << min_value << ", " << max_value << " " << rangeChecker->id() << "\n";
 
         NodeProperties::SetType(rangeChecker, NodeProperties::GetType(node));
       }
@@ -2076,6 +2081,10 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
   RunPrintAndVerify(TypedLoweringPhase::phase_name());
 
   // Add range assertion checking nodes
+  Run<RangeCheckingPhase>();
+  RunPrintAndVerify(RangeCheckingPhase::phase_name(), true);
+
+  // Add range assertion checking nodes
   //Run<RangeCheckingPhase>();
 
   if (data->info()->is_loop_peeling_enabled()) {
@@ -2090,9 +2099,6 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
     Run<LoadEliminationPhase>();
     RunPrintAndVerify(LoadEliminationPhase::phase_name());
   }
-
-  // Add range assertion checking nodes
-  Run<RangeCheckingPhase>();
 
   data->DeleteTyper();
 

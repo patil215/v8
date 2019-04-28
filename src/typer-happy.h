@@ -117,6 +117,9 @@ public:
 
     static double CheckRangeTypeNode(double value, double min, double max) {
         std::cout << "Checking range. value: " << value << " min: " << min << " max: " << max << "\n";
+        if (IsMinusZero(value) || isnan(value)) {
+            return value;
+        }
         CHECK(min <= value && value <= max);
         return value;
     }

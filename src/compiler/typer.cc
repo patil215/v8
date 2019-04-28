@@ -34,10 +34,9 @@ class Typer::Decorator final : public GraphDecorator {
   Typer* const typer_;
 };
 
-Typer::Typer(JSHeapBroker* broker, Flags flags, Graph* graph, JSGraph* jsgraph)
+Typer::Typer(JSHeapBroker* broker, Flags flags, Graph* graph)
     : flags_(flags),
       graph_(graph),
-      jsgraph_(jsgraph),
       decorator_(nullptr),
       cache_(TypeCache::Get()),
       broker_(broker),
