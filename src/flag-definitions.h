@@ -1356,6 +1356,8 @@ DEFINE_STRING(log_instruction_file, "arm64_inst.csv",
 DEFINE_INT(log_instruction_period, 1 << 22,
            "AArch64 instruction statistics logging period.")
 
+DEFINE_BOOL(range_checking, false, "add nodes that check ranges inferred by typer.")
+
 DEFINE_BOOL(redirect_code_traces, false,
             "output deopt information and disassembly into file "
             "code-<pid>-<isolate id>.asm")

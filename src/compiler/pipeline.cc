@@ -2101,9 +2101,11 @@ bool PipelineImpl::OptimizeGraph(Linkage* linkage) {
   //std::cout << "Verifying typed lowering phase...\n";
   RunPrintAndVerify(TypedLoweringPhase::phase_name());
 
-  // Add range assertion checking nodes
-  Run<RangeCheckingPhase>();
-  RunPrintAndVerify(RangeCheckingPhase::phase_name(), true);
+  if (FLAG_range_checking) {
+    // Add range assertion checking nodes
+    Run<RangeCheckingPhase>();
+    RunPrintAndVerify(RangeCheckingPhase::phase_name(), true); 
+  }
 
   // Add range assertion checking nodes
   //Run<RangeCheckingPhase>();
