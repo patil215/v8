@@ -3604,8 +3604,6 @@ Reduction JSCallReducer::ReduceJSCall(Node* node,
       return ReduceMathUnary(node, simplified()->NumberExp());
     case Builtins::kMathCheckReturnedType:
       return ReduceMathBinary(node, simplified()->NumberCheckReturnedType());
-    //case Builtins::kMathCheckRangeType:
-      //return Reduce
     case Builtins::kMathExpm1:
       return ReduceMathUnary(node, simplified()->NumberExpm1());
     case Builtins::kMathFloor:
