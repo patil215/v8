@@ -4109,6 +4109,10 @@ Reduction JSCallReducer::ReduceStringPrototypeSubstring(Node* node) {
 
   Node* value = effect = graph()->NewNode(simplified()->StringSubstring(),
                                           receiver, from, to, effect, control);
+  // Basically encodes max(min(max(0, strlen | input), strlen), min(max(0, input), strlen)) and min() of previous and feeds to substring
+  // Later (in escape analysis) this gets simplified to max(0, min(max(0, input), strlen))
+  // Then to Select[kRepWord32|None] 
+  // std::cout << "maoiw\n";
   ReplaceWithValue(node, value, effect, control);
   return Replace(value);
 }

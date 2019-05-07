@@ -921,6 +921,7 @@ Reduction JSTypedLowering::ReduceJSToName(Node* node) {
 }
 
 Reduction JSTypedLowering::ReduceJSToLength(Node* node) {
+  // std::cout << "naoaowww\n";
   Node* input = NodeProperties::GetValueInput(node, 0);
   Type input_type = NodeProperties::GetType(input);
   if (input_type.Is(type_cache_->kIntegerOrMinusZero)) {

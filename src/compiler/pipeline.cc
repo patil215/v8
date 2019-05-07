@@ -1231,8 +1231,6 @@ struct RangeCheckingPhase {
           }
         }
 
-        std::cout << min_value << ", " << max_value << " " << rangeChecker->id() << "\n";
-
         NodeProperties::SetType(rangeChecker, NodeProperties::GetType(node));
       }
     }

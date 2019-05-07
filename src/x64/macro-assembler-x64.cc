@@ -938,7 +938,7 @@ void TurboAssembler::Cvttsd2si(Register dst, XMMRegister src) {
     CpuFeatureScope scope(this, AVX);
     vcvttsd2si(dst, src);
   } else {
-    cvttsd2si(dst, src);
+    cvttsd2si(dst, src); // Convert with truncation scalar double precision floating point value to signed integer
   }
 }
 

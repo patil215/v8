@@ -2209,6 +2209,7 @@ class RepresentationSelector {
         return;
       }
       case IrOpcode::kNumberShiftRightLogical: {
+        // std::cout << "zoioiwoiw\n";
         Type rhs_type = GetUpperBound(node->InputAt(1));
         VisitBinop(node, UseInfo::TruncatingWord32(),
                    UseInfo::TruncatingWord32(), MachineRepresentation::kWord32);
@@ -2219,6 +2220,7 @@ class RepresentationSelector {
         return;
       }
       case IrOpcode::kSpeculativeNumberShiftRightLogical: {
+        // std::cout << "apzxo\n";
         NumberOperationHint hint = NumberOperationHintOf(node->op());
         Type rhs_type = GetUpperBound(node->InputAt(1));
         if (rhs_type.Is(type_cache_->kZeroish) &&

@@ -1541,6 +1541,7 @@ CodeGenerator::CodeGenResult CodeGenerator::AssembleArchInstruction(
       ASSEMBLE_SSE_UNOP(Cvtsd2ss);
       break;
     case kSSEFloat64ToInt32:
+      // std::cout << "uywahao\n";
       if (instr->InputAt(0)->IsFPRegister()) {
         __ Cvttsd2si(i.OutputRegister(), i.InputDoubleRegister(0));
       } else {

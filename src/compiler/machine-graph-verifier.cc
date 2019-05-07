@@ -243,6 +243,7 @@ class MachineRepresentationInferrer {
           case IrOpcode::kFloat64LessThan:
           case IrOpcode::kFloat64LessThanOrEqual:
           case IrOpcode::kChangeTaggedToBit:
+            // std::cout << "oajwij\n";
             representation_vector_[node->id()] = MachineRepresentation::kBit;
             break;
 #define LABEL(opcode) case IrOpcode::k##opcode:

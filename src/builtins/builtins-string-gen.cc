@@ -2105,6 +2105,8 @@ TF_BUILTIN(StringPrototypeSubstring, StringBuiltinsAssembler) {
   TVARIABLE(Smi, var_start);
   TVARIABLE(Smi, var_end);
 
+  //std::coutstd::cout << "RUNNING SUBSTRING BUILTIN\n";
+
   // Check that {receiver} is coercible to Object and convert it to a String.
   TNode<String> const string =
       ToThisString(context, receiver, "String.prototype.substring");

@@ -216,6 +216,7 @@ Node* RepresentationChanger::GetTaggedSignedRepresentationFor(
     default:
       break;
   }
+            // std::cout << "awnwneinw\n";
   // Select the correct X -> Tagged operator.
   const Operator* op;
   if (output_type.Is(Type::None())) {
@@ -286,6 +287,7 @@ Node* RepresentationChanger::GetTaggedSignedRepresentationFor(
       node = InsertChangeFloat64ToUint32(node);
       op = simplified()->CheckedUint32ToTaggedSigned(use_info.feedback());
     } else if (use_info.type_check() == TypeCheckKind::kSignedSmall) {
+
       op = simplified()->CheckedFloat64ToInt32(
           output_type.Maybe(Type::MinusZero())
               ? CheckForMinusZeroMode::kCheckForMinusZero

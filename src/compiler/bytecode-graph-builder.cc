@@ -1795,7 +1795,7 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
   std::cout << "Node specifics: " << String::cast(*(((Operator1<NamedAccess> *) ((*args[0]).op()))->parameter().name())).ToCString().get() << "\n";
   std::cout << "END print node specifics:\n";*/
 
-  const char * mnemonic = (*args[0]).op()->mnemonic();
+  /*const char * mnemonic = (*args[0]).op()->mnemonic();
 
   double functionId = 0;
   if (strcmp(mnemonic, "JSLoadNamed") == 0 || strcmp(mnemonic, "JSLoadGlobal") == 0) {
@@ -1803,11 +1803,6 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
     NamedAccess parameter = access->parameter();
     Handle<Name> name = parameter.name();
     std::unique_ptr<char[]> toCheck = String::cast(*name).ToCString();
-
-    /*Operator1<NamedAccess>* accessModule = (Operator1<NamedAccess> *) (*args[1]).op();
-    NamedAccess parameterModule = accessModule->parameter();
-    Handle<Name> nameModule = parameterModule.name();
-    std::unique_ptr<char[]> toCheckModule = String::cast(*nameModule).ToCString();*/
     char bad[1] = "";
 
     functionId = TyperHappy::functionIdFromName(bad, toCheck.get());
@@ -1821,18 +1816,7 @@ void BytecodeGraphBuilder::BuildCall(ConvertReceiverMode receiver_mode,
       jsgraph()->Constant(functionId)
     );
     environment()->BindAccumulator(test, Environment::kAttachFrameState);
-    /* Create node to check types (typer-happy)
-    The node takes only the previous node as an argument, and functions as an identity node.
-    It does the following:
-    1) Check if the previous node is a call to a function implemented in V8. (If not, goto 5).
-    2) If it is, get the value that the previous node outputs.
-    3) Check this value against the hardcoded list of valid types.
-    4) If it does not match, throw an error (AssertionFailed).
-    5) Return (pass through) the value from the previous node (i.e. make no effect). */
-    //std::cout << "Creating type checking\n";
-    //Node* checkerNode = BuildCheckerNode(node);
-    //environment()->BindAccumulator(checkerNode, Environment::kAttachFrameState);
-  }
+  }*/
 }
 
 Node* const* BytecodeGraphBuilder::ProcessCallVarArgs(

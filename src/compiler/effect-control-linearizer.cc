@@ -750,6 +750,7 @@ bool EffectControlLinearizer::TryWireInStateEffect(Node* node,
       result = LowerCheckedUint64ToTaggedSigned(node, frame_state);
       break;
     case IrOpcode::kCheckedFloat64ToInt32:
+      // std::cout << "cewewefw\n";
       result = LowerCheckedFloat64ToInt32(node, frame_state);
       break;
     case IrOpcode::kCheckedFloat64ToInt64:
@@ -1653,6 +1654,8 @@ Node* EffectControlLinearizer::LowerCheckString(Node* node, Node* frame_state) {
   Node* value_instance_type =
       __ LoadField(AccessBuilder::ForMapInstanceType(), value_map);
 
+
+  // std::cout << "aoweij\n";
   Node* check = __ Uint32LessThan(value_instance_type,
                                   __ Uint32Constant(FIRST_NONSTRING_TYPE));
   __ DeoptimizeIfNot(DeoptimizeReason::kNotAString, params.feedback(), check,
