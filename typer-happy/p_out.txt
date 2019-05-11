@@ -1,741 +1,0 @@
-Building d8...
-/Users/patil215/proj/depot_tools/ninja -C out/x64.debug d8
-ninja: Entering directory `out/x64.debug'
-ninja: no work to do.
-# autoninja -C out/x64.debug d8
-Done! - V8 compilation finished successfully.
-Running file test/mjsunit/math-floor-of-div-minus-zero.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-of-div-minus-zero-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:05|%   0|+   1|-   0]: mjsunit/math-floor-of-div-minus-zero-typerhappy                                                                           [00:05|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/asm/math-floor.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/asm/math-floor-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/asm/math-floor-typerhappy                                                             === mjsunit/asm/math-floor-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/asm/math-floor-typerhappy.js:10: SyntaxError: Unexpected token return
-    a = + a return + floor ( a );
-            ^^^^^^
-SyntaxError: Unexpected token return
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/asm/math-floor-typerhappy.js --random-seed=771741344 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                            [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/regress/regress-smi-math-floor-round.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/regress/regress-smi-math-floor-round-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/regress/regress-smi-math-floor-round-typ...                                                                               [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-floor-part3.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-part3-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/math-floor-part3-typerhappy                                                               === mjsunit/math-floor-part3-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/math-floor-part3-typerhappy.js:32: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";return Math.floor(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/math-floor-part3-typerhappy.js --random-seed=1041209485 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                              [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-floor-part2.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-part2-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/math-floor-part2-typerhappy                                                               === mjsunit/math-floor-part2-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/math-floor-part2-typerhappy.js:32: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";return Math.floor(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/math-floor-part2-typerhappy.js --random-seed=-80701972 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                              [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-floor-of-div.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-of-div-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[01:05|%   0|+   1|-   0]: mjsunit/math-floor-of-div-typerhappy                                                                [01:05|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-floor-of-div-nosudiv.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-of-div-nosudiv-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[01:05|%   0|+   1|-   0]: mjsunit/math-floor-of-div-nosudiv-typerhappy                                                                        [01:05|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-floor-part1.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-part1-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/math-floor-part1-typerhappy                                                               === mjsunit/math-floor-part1-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/math-floor-part1-typerhappy.js:32: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";return Math.floor(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/math-floor-part1-typerhappy.js --random-seed=-438268016 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                              [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-floor-negative.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-negative-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/math-floor-negative-typerhappy                                                                  [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-floor-part4.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-floor-part4-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/math-floor-part4-typerhappy                                                               === mjsunit/math-floor-part4-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/math-floor-part4-typerhappy.js:32: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";return Math.floor(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/math-floor-part4-typerhappy.js --random-seed=1567638869 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                              [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/math-floor-global.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/math-floor-global-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/math-floor-global-typerhappy                                                                         === mjsunit/compiler/math-floor-global-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js:34: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";return flo(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-global-typerhappy.js --random-seed=1713166820 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                                        [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/math-floor-local.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/math-floor-local-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/math-floor-local-typerhappy                                                                        === mjsunit/compiler/math-floor-local-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-local-typerhappy.js:33: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";var f = Math.floor; return f(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/math-floor-local-typerhappy.js --random-seed=1014511794 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                                       [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/number-floor.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/number-floor-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/number-floor-typerhappy                                                                    === mjsunit/compiler/number-floor-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (should be optimized: undefined): expected <true> found <false>
-
-Stack: MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js 29:3
-    throw new MjsUnitAssertionError(message);
-    ^
-MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js 29:3
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/number-floor-typerhappy.js --random-seed=-515421280 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                   [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/asm/math-ceil.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/asm/math-ceil-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/asm/math-ceil-typerhappy                                                            [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-ceil.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-ceil-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/math-ceil-typerhappy                                                        === mjsunit/math-ceil-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/math-ceil-typerhappy.js:9: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";return Math.ceil(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/math-ceil-typerhappy.js --random-seed=126662521 --nohard-abort --enable-slow-asserts --verify-heap --max-semi-space-size=1 --allow-natives-syntax
-                                                       [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/number-ceil.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/number-ceil-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/number-ceil-typerhappy                                                                   === mjsunit/compiler/number-ceil-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (should be optimized: undefined): expected <true> found <false>
-
-Stack: MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js 29:3
-    throw new MjsUnitAssertionError(message);
-    ^
-MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js 29:3
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/number-ceil-typerhappy.js --random-seed=-1788233465 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                  [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/math-ceil.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/math-ceil-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/compiler/math-ceil-typerhappy                                                                 [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/asm/math-fround.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/asm/math-fround-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/asm/math-fround-typerhappy                                                              [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/regress/regress-smi-math-floor-round.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/regress/regress-smi-math-floor-round-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/regress/regress-smi-math-floor-round-typ...                                                                               [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/pixel-array-rounding.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/pixel-array-rounding-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/pixel-array-rounding-typerhappy                                                                   [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/es6/math-fround.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/es6/math-fround-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:16|%   0|+   1|-   0]: mjsunit/es6/math-fround-typerhappy                                                              [00:16|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-round.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-round-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/math-round-typerhappy                                                         === mjsunit/math-round-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/math-round-typerhappy.js:32: SyntaxError: missing ) after argument list
-  var doRound = new Function ( "input" , """ + ( test_id ++ ) + "";return Math.round(input)" );
-                                         ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/math-round-typerhappy.js --random-seed=743855027 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                        [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/number-round.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/number-round-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/number-round-typerhappy                                                                    === mjsunit/compiler/number-round-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (should be optimized: undefined): expected <true> found <false>
-
-Stack: MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js 29:3
-    throw new MjsUnitAssertionError(message);
-    ^
-MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js 29:3
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/number-round-typerhappy.js --random-seed=1435928377 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                   [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/math-round.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/math-round-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/compiler/math-round-typerhappy                                                                  [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/regress/regress-int32-truncation.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/regress/regress-int32-truncation-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/regress/regress-int32-truncation-typerha...                                                                               [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/regress/regress-phi-truncation.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/regress/regress-phi-truncation-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/regress/regress-phi-truncation-typerhapp...                                                                               [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/double-truncation.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/double-truncation-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/double-truncation-typerhappy                                                                [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/es6/math-trunc.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/es6/math-trunc-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/es6/math-trunc-typerhappy                                                             === mjsunit/es6/math-trunc-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/es6/math-trunc-typerhappy.js:32: SyntaxError: missing ) after argument list
-  var test = new Function ( "n" , """ + ( test_id ++ ) + "";return Math.trunc(n)" );
-                                  ^^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/es6/math-trunc-typerhappy.js --random-seed=1872339135 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax
-                                                            [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/truncating-store.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/truncating-store-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/compiler/truncating-store-typerhappy                                                                        [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/math-trunc.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/math-trunc-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/compiler/math-trunc-typerhappy                                                                  [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/number-trunc.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/number-trunc-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/number-trunc-typerhappy                                                                    === mjsunit/compiler/number-trunc-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/mjsunit.js:329: Failure (should be optimized: undefined): expected <true> found <false>
-
-Stack: MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js 29:3
-    throw new MjsUnitAssertionError(message);
-    ^
-MjsUnitAssertionError
-    at assertOptimized /Users/patil215/proj/v8/test/mjsunit/mjsunit.js 767:5
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js 26:3
-    at                 /Users/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js 29:3
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/number-trunc-typerhappy.js --random-seed=659057265 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                   [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/truncating-store-deopt.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/truncating-store-deopt-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/compiler/truncating-store-deopt-typerhap...                                                                               [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/number-comparison-truncations.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/number-comparison-truncations-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:04|%   0|+   1|-   0]: mjsunit/compiler/number-comparison-truncations-t...                                                                               [00:04|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/regress-truncate-number-or-undefined-to-float64.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/regress-truncate-number-or-undefined-to-float64-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/compiler/regress-truncate-number-or-unde...                                                                               [00:03|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/asm/math-abs.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/asm/math-abs-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:04|%   0|+   1|-   0]: mjsunit/asm/math-abs-typerhappy                                                           [00:04|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-abs.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-abs-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:09|%   0|+   1|-   0]: mjsunit/math-abs-typerhappy                                                       [00:09|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/abstract-equal-receiver.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/abstract-equal-receiver-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:04|%   0|+   1|-   0]: mjsunit/compiler/abstract-equal-receiver-typerha...                                                                               [00:04|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/abstract-equal-symbol.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/abstract-equal-symbol-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   1|-   0]: mjsunit/compiler/abstract-equal-symbol-typerhapp...                                                                               [00:04|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/abstract-equal-undetectable.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/abstract-equal-undetectable-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/abstract-equal-undetectable-typ...                                                                               === mjsunit/compiler/abstract-equal-undetectable-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-undetectable-typerhappy.js:7: SyntaxError: Unexpected token ;
-const undetectable = %GetUndetectable;
-                      ^^^^^^^^^^^^^^^
-SyntaxError: Unexpected token ;
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/abstract-equal-undetectable-typerhappy.js --random-seed=-21795113 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt --noalways-opt
-                                                                              [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/compiler/number-abs.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/compiler/number-abs-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/compiler/number-abs-typerhappy                                                                  === mjsunit/compiler/number-abs-typerhappy ===
-/Users/patil215/proj/v8/test/mjsunit/compiler/number-abs-typerhappy.js:75: SyntaxError: missing ) after argument list
-    return Math . abs ( Math . min ( x * - 2 , 2 32 ) );
-                                               ^
-SyntaxError: missing ) after argument list
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/compiler/number-abs-typerhappy.js --random-seed=629815897 --nohard-abort --enable-slow-asserts --verify-heap --allow-natives-syntax --opt
-                                                                 [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/math-exp-precision.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/math-exp-precision-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:19|%   0|+   1|-   0]: mjsunit/math-exp-precision-typerhappy                                                                 [00:19|%   0|+   1|-   0]: Done
->>> 1 tests ran
-
-
-
-Running file test/mjsunit/es6/math-expm1.js...
-Generating compiled file with modified testcases...
-Running the test...
-mjsunit/es6/math-expm1-typerhappy
-Build found: /Users/patil215/proj/v8/out/x64.debug
->>> Autodetected:
-embedded_builtins
->>> Running tests for x64.debug
->>> Running with test processors
-[00:03|%   0|+   0|-   1]: mjsunit/es6/math-expm1-typerhappy                                                             === mjsunit/es6/math-expm1-typerhappy ===
-#
-# Fatal error in ../../src/typer-happy.h, line 147
-# Check failed: isPlainNumberType(value) || std::isnan(value).
-#
-#
-#
-#FailureMessage Object: 0x7ffee00fea60
-==== C stack trace ===============================
-
-    0   libv8_libbase.dylib                 0x000000010fd6464e v8::base::debug::StackTrace::StackTrace() + 30
-    1   libv8_libbase.dylib                 0x000000010fd64685 v8::base::debug::StackTrace::StackTrace() + 21
-    2   libv8_libplatform.dylib             0x000000010fdfd0c5 v8::platform::(anonymous namespace)::PrintStackTrace() + 37
-    3   libv8_libbase.dylib                 0x000000010fd4cf78 V8_Fatal(char const*, int, char const*, ...) + 536
-    4   libv8.dylib                         0x00000001163bda44 v8::internal::TyperHappy::checkPlainNumberNaNUnionType(double) + 116
-    5   libv8.dylib                         0x00000001163bd7db v8::internal::TyperHappy::CheckType(double, double) + 139
-    6   ???                                 0x0000329cc80839c1 0x0 + 55648952269249
-Received signal 6
-Command: /Users/patil215/proj/v8/out/x64.debug/d8 --test /Users/patil215/proj/v8/test/mjsunit/mjsunit.js /Users/patil215/proj/v8/test/mjsunit/es6/math-expm1-typerhappy.js --random-seed=2051969967 --nohard-abort --enable-slow-asserts --verify-heap --no-fast-math --allow-natives-syntax
-                                                            [00:03|%   0|+   0|-   1]: Done
->>> 1 tests ran
-
-
-
